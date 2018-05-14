@@ -83,6 +83,7 @@ export default {
         .data(this.chartData)
         .enter()
         .append("circle")
+        .attr("class", "startYear")
         .attr("r", 0)
         .attr("cx", function(d){ return this.calcStartX(d); }.bind(this))
         .attr("cy", function(d, i){ return this.calcTopY(i); }.bind(this))
@@ -98,6 +99,7 @@ export default {
         .data(this.chartData)
         .enter()
         .append("circle")
+        .attr("class", "endYear")
         .attr("r", 0)
         .attr("cx", function(d){ return this.calcEndX(d); }.bind(this))
         .attr("cy", function(d, i){ return this.calcTopY(i); }.bind(this))
@@ -107,6 +109,38 @@ export default {
         .attr("fill", function(d){ return this.colorMapping[d.category]; }.bind(this))
         .attr("cx", function(d){ return this.calcEndX(d); }.bind(this))
         .attr("cy", function(d, i){ return this.calcTopY(i); }.bind(this));
+
+      // 誕生年にマウスオーバー
+      svg.selectAll(".startYear")
+        .on("mouseover", function(d, i){
+          var coordinates = d3.mouse(this);
+          svg.append("text")
+            .text(d.birth)
+            .attr("id", "startPoint")
+            .attr("fill","gray")
+            .attr("x", coordinates[0])
+            .attr("y", _calcTopY(i) + 20)
+            .attr("font-size", 12);
+        })
+        .on("mouseout", function(){
+          svg.select("#startPoint").remove();
+        });
+
+      // 没年にマウスオーバー
+      svg.selectAll(".endYear")
+        .on("mouseover", function(d, i){
+          var coordinates = d3.mouse(this);
+          svg.append("text")
+            .text(d.dead)
+            .attr("id", "endPoint")
+            .attr("fill","gray")
+            .attr("x", coordinates[0])
+            .attr("y", _calcTopY(i) + 20)
+            .attr("font-size", 12);
+        })
+        .on("mouseout", function(){
+          svg.select("#endPoint").remove();
+        });
 
       // text
       svg.selectAll("text")
@@ -151,12 +185,10 @@ export default {
         .attr("cy", function(d, i){ return this.calcTopY(d.baseIndex); }.bind(this));
 
       // イベントポイントへのマウスオーバーイベント
-      var _calcTopY = this.calcTopY;
       svg.selectAll(".eventPoint")
         .on("mouseover", function(d, i){
           var coordinates = d3.mouse(this);
           var baseIndex = d.baseIndex;
-
           svg.append("text")
             .text(d.start + " : " + d.content)
             .attr("id", "eventContent")
