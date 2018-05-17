@@ -120,7 +120,7 @@ export default {
             .attr("fill","gray")
             .attr("x", coordinates[0])
             .attr("y", _calcTopY(i) + 20)
-            .attr("font-size", 12);
+            .attr("font-size", 14);
         })
         .on("mouseout", function(){
           svg.select("#startPoint").remove();
@@ -136,7 +136,7 @@ export default {
             .attr("fill","gray")
             .attr("x", coordinates[0])
             .attr("y", _calcTopY(i) + 20)
-            .attr("font-size", 12);
+            .attr("font-size", 14);
         })
         .on("mouseout", function(){
           svg.select("#endPoint").remove();
@@ -155,7 +155,7 @@ export default {
         .attr("fill","black")
         .attr("x", function(d){ return this.calcStartX(d); }.bind(this))
         .attr("y", function(d, i){ return this.calcTopY(i) - 12; }.bind(this))
-        .attr("font-size", 12);
+        .attr("font-size", 14);
 
       // thumbnail
       svg.selectAll("thumb")
@@ -195,7 +195,7 @@ export default {
             .attr("fill","gray")
             .attr("x", coordinates[0])
             .attr("y", _calcTopY(baseIndex) - 10)
-            .attr("font-size", 12);
+            .attr("font-size", 14);
         })
         .on("mouseout", function(){
           svg.select("#eventContent").remove();
@@ -251,7 +251,7 @@ export default {
             })
             .attr("x", coordinates[0] + 5)
             .attr("y", function(d, i){ return _calcTopY(i) + 17; }.bind(this))
-            .attr("font-size", 12);
+            .attr("font-size", 14);
         })
 
         function _calcTopY(index){
