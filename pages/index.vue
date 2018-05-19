@@ -4,8 +4,38 @@
       <!-- As a heading -->
       <b-navbar variant="faded" type="light">
         <b-navbar-brand tag="h1" class="mb-0">History Timeline</b-navbar-brand>
+        <b-nav-form>
+          <b-button size="sm" class="my-2 my-sm-0" type="button" v-b-modal.myModal>Search</b-button>
+        </b-nav-form>
       </b-navbar>
     </div>
+
+    <b-modal id="myModal">
+      <b-tabs>
+        <b-tab title="People" active>
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="people in peopleNames" v-bind:key="people.name">
+                <td><input type="checkbox" v-on:change="onPeopleSelect(people)" v-bind:value="people.value"></td>
+                <td>{{people.name}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </b-tab>
+        <b-tab title="Organization" >
+          <br>I'm the second tab content
+        </b-tab>
+        <b-tab title="disabled" disabled>
+          <br>Disabled tab!
+        </b-tab>
+      </b-tabs>
+    </b-modal>
 
     <div>
       <b-container fluid>
@@ -22,12 +52,14 @@ import * as d3 from "d3";
 import { mapGetters, mapActions, mapMutations } from "vuex"
 
 export default {
+  name: "timeline",
   data: function(){
     return {
       colorMapping: {
         people: "blue",
         organization: "green"
-      }
+      },
+      selectedPeoples: []
     }
   },
   computed: {
@@ -37,7 +69,7 @@ export default {
     height: function(){
       return window.innerHeight - 40
     },
-    ...mapGetters(["chartData", "eventData", "areaStartYear", "areaEndYear", "areaPeriod"])
+    ...mapGetters(["chartData", "peopleNames", "eventData", "areaStartYear", "areaEndYear", "areaPeriod"])
   },
   components: {
     // AppLogo
@@ -46,6 +78,17 @@ export default {
     this.renderChart()
   },
   methods: {
+    onPeopleSelect: function(people){
+      var index = this.selectedPeoples.findIndex(function(row){ if(row === people.name){ return true; } })
+      if (index > -1){
+        this.selectedPeoples.splice(index, 1) 
+      }
+      else {
+        this.selectedPeoples.push(people.name)
+      }
+      this.getPeoplesAsync(this.selectedPeoples)
+      this.renderChart()
+    },
     renderChart: function(){
       // var vue = this;
       var $_this = this;
@@ -283,7 +326,8 @@ export default {
     calcTopY: function(index){
       return (index + 1) * 60;
     },
-    ...mapMutations(["getStartX"])
+    ...mapMutations(["getStartX"]),
+    ...mapActions(["getPeoplesAsync"])
   }
 }
 </script>
