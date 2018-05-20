@@ -31,15 +31,30 @@
         <b-tab title="Organization" >
           <br>I'm the second tab content
         </b-tab>
-        <b-tab title="disabled" disabled>
-          <br>Disabled tab!
+        <b-tab title="sample">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Name</th>
+                <th scope="col">Peoples</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="sample in sampleData" v-bind:key="sample.name">
+                <td><input type="checkbox" v-on:change="onSampleSelect(sample)" v-bind:value="sample.value"></td>
+                <td>{{sample.title}}</td>
+                <td>{{sample.peoples.join(", ")}}</td>
+              </tr>
+            </tbody>
+          </table>
         </b-tab>
       </b-tabs>
     </b-modal>
 
     <div>
       <b-container fluid>
-        <h2>{{ areaStartYear }} ~ {{ areaEndYear }}</h2>
+        <h2>{{ timelineTitle }} {{ areaStartYear }} ~ {{ areaEndYear }}</h2>
         <b-button class="button" v-on:click="renderChart">Render</b-button>
         <div id="svgArea" class=""></div>
       </b-container>
@@ -59,7 +74,8 @@ export default {
         people: "blue",
         organization: "green"
       },
-      selectedPeoples: []
+      selectedSample: null,
+      timelineTitle: ""
     }
   },
   computed: {
@@ -69,7 +85,7 @@ export default {
     height: function(){
       return window.innerHeight - 40
     },
-    ...mapGetters(["chartData", "peopleNames", "eventData", "areaStartYear", "areaEndYear", "areaPeriod"])
+    ...mapGetters(["chartData", "sampleData", "selectedPeoples", "peopleNames", "eventData", "areaStartYear", "areaEndYear", "areaPeriod"])
   },
   components: {
     // AppLogo
@@ -88,6 +104,8 @@ export default {
       }
       this.getPeoplesAsync(this.selectedPeoples)
       this.renderChart()
+    },
+    onSampleSelect: function(sample){
     },
     renderChart: function(){
       // var vue = this;
@@ -327,7 +345,7 @@ export default {
       return (index + 1) * 60;
     },
     ...mapMutations(["getStartX"]),
-    ...mapActions(["getPeoplesAsync"])
+    ...mapActions(["addSelectedPeoplesAsync", "getPeoplesAsync"])
   }
 }
 </script>
