@@ -36,6 +36,7 @@ module.exports = {
     }
   },
   modules: [
+    '@nuxtjs/axios',
     // Simple usage
     '@nuxtjs/bootstrap-vue', 
     // With options
