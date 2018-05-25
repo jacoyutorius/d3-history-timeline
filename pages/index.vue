@@ -29,7 +29,20 @@
           </table>
         </b-tab>
         <b-tab title="Organization" >
-          <br>I'm the second tab content
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="organization in organizationNames" v-bind:key="organization.name">
+                <td><input type="checkbox" v-on:change="onOrganizationSelect(organization)" v-bind:value="organization.value"></td>
+                <td>{{organization.name}}</td>
+              </tr>
+            </tbody>
+          </table>
         </b-tab>
         <b-tab title="sample">
           <table class="table">
@@ -85,7 +98,7 @@ export default {
     height: function(){
       return window.innerHeight - 40
     },
-    ...mapGetters(["chartData", "sampleData", "selectedPeoples", "peopleNames", "eventData", "areaStartYear", "areaEndYear", "areaPeriod"])
+    ...mapGetters(["chartData", "sampleData", "selectedPeoples", "selectedOrganizations", "peopleNames", "organizationNames", "eventData", "areaStartYear", "areaEndYear", "areaPeriod"])
   },
   components: {
     // AppLogo
@@ -103,6 +116,17 @@ export default {
         this.selectedPeoples.push(people.name)
       }
       this.getPeoplesAsync(this.selectedPeoples)
+      this.renderChart()
+    },
+    onOrganizationSelect: function(organization){
+      var index = this.selectedOrganizations.findIndex((row)=>{ return (row === organization.name) })
+      if (index > -1){
+        this.selectedOrganizations.splice(index, 1) 
+      }
+      else {
+        this.selectedOrganizations.push(organization.name)
+      }
+      this.getOrganizationsAsync(this.selectedOrganizations)
       this.renderChart()
     },
     onSampleSelect: function(sample){
@@ -345,7 +369,7 @@ export default {
       return (index + 1) * 60;
     },
     ...mapMutations(["getStartX"]),
-    ...mapActions(["addSelectedPeoplesAsync", "getPeoplesAsync"])
+    ...mapActions(["addSelectedPeoplesAsync", "getPeoplesAsync", "getOrganizationsAsync"])
   }
 }
 </script>

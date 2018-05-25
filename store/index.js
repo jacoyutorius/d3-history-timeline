@@ -9,6 +9,7 @@ const store = () => new Vuex.Store({
     chartData: [],
     histories: [],
     selectedPeoples: [],
+    selectedOrganizations: [],
     peoples: [],
     currentX: 0,
     currentY: 9,
@@ -26,10 +27,20 @@ const store = () => new Vuex.Store({
       return state.chartData
     },
     selectedPeoples: state => state.selectedPeoples,
+    selectedOrganizations: state => state.selectedOrganizations,
     peopleNames: function(state){
       return state.histories
         .filter((row)=>{
           if (row.category === "people"){ return true; }
+        })
+        .map((row) => {
+          return {name: row.title}
+        })
+    },
+    organizationNames: (state) => {
+      return state.histories
+        .filter((row) => {
+          return (row.category === "organization")
         })
         .map((row) => {
           return {name: row.title}
@@ -79,24 +90,19 @@ const store = () => new Vuex.Store({
     getHistories(state, histories){
       state.histories = histories
     },
-    // addSelectedPeoples(state, people){
-    //   state.selectedPeoples.push(people)
-    // },
     getPeoples(state, peoples){
-      // state.peoples = peoples
-      // state.chartData = state.chartData.concat(state.peoples)
       state.chartData = peoples
+    },
+    getOrganizations(state, organizations){
+      state.chartData = organizations
     }
   },
   actions: {
     async nuxtServerInit({commit}){
-      const res = await axios.get('https://api.myjson.com/bins/1cic7m')
-      commit("getHistories", res.data)
+      const res = await axios.get('https://api.myjson.com/bins/1cic7m').catch((e) => { console.dir(e) })
+      var data = res.data.map((row) => { row["selected"] = false; return row; })
+      commit("getHistories", data)
     },
-    // addSelectedPeoplesAsync({commit, state}, people){
-    //   commit("addSelectedPeoples", people)
-    //   this._actions.getPeoplesAsync({commit, state}, [people.name])
-    // },
     getPeoplesAsync({commit, state}, peoples){
       var ret = peoples.map((peopleName) => {
         var index = state.histories.findIndex((row) => {
@@ -105,6 +111,15 @@ const store = () => new Vuex.Store({
         return state.histories[index];
       })
       commit("getPeoples", ret)
+    },
+    getOrganizationsAsync({commit, state}, organizations){
+      var ret = organizations.map((organizationName) => {
+        var index = state.histories.findIndex((row) => {
+          if (row.title === organizationName){ return true }
+        })
+        return state.histories[index];
+      })
+      commit("getOrganizations", ret)
     }
   }
 })
