@@ -3,6 +3,8 @@ import Vuex from "vuex"
 import axios from "axios"
 Vue.use(Vuex)
 
+let apiUrl = "https://api.myjson.com/bins/1cic7m"
+
 const store = () => new Vuex.Store({
   state: {
     timelineTitle: "",
@@ -84,7 +86,7 @@ const store = () => new Vuex.Store({
   },
   actions: {
     async nuxtServerInit({commit}){
-      const res = await axios.get('https://api.myjson.com/bins/1cic7m').catch((e) => { console.dir(e) })
+      const res = await axios.get(apiUrl).catch((e) => { console.dir(e) })
       var data = res.data.map((row) => { 
         row["selected"] = false
         return row
