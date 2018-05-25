@@ -21,9 +21,9 @@
               </tr>
             </thead>
             <tbody>
-              <tr v-for="people in peopleNames" v-bind:key="people.name">
-                <td><input type="checkbox" v-on:change="onPeopleSelect(people)" v-bind:value="people.value"></td>
-                <td>{{people.name}}</td>
+              <tr v-for="people in peoples" v-bind:key="people.title">
+                <td><input type="checkbox" v-on:change="onPeopleSelect(people)" v-bind:value="people.title"></td>
+                <td>{{people.title}}</td>
               </tr>
             </tbody>
           </table>
@@ -37,9 +37,9 @@
               </tr>
             </thead>
             <tbody>
-              <tr v-for="organization in organizationNames" v-bind:key="organization.name">
-                <td><input type="checkbox" v-on:change="onOrganizationSelect(organization)" v-bind:value="organization.value"></td>
-                <td>{{organization.name}}</td>
+              <tr v-for="organization in organizations" v-bind:key="organization.title">
+                <td><input type="checkbox" v-on:change="onOrganizationSelect(organization)" v-bind:value="organization.title"></td>
+                <td>{{organization.title}}</td>
               </tr>
             </tbody>
           </table>
@@ -98,7 +98,7 @@ export default {
     height: function(){
       return window.innerHeight - 40
     },
-    ...mapGetters(["chartData", "sampleData", "selectedPeoples", "selectedOrganizations", "peopleNames", "organizationNames", "eventData", "areaStartYear", "areaEndYear", "areaPeriod"])
+    ...mapGetters(["chartData", "sampleData", "peoples", "organizations", "eventData", "areaStartYear", "areaEndYear", "areaPeriod"])
   },
   components: {
     // AppLogo
@@ -108,31 +108,16 @@ export default {
   },
   methods: {
     onPeopleSelect: function(people){
-      var index = this.selectedPeoples.findIndex(function(row){ if(row === people.name){ return true; } })
-      if (index > -1){
-        this.selectedPeoples.splice(index, 1) 
-      }
-      else {
-        this.selectedPeoples.push(people.name)
-      }
-      this.getPeoplesAsync(this.selectedPeoples)
+      this.onSelectStateChanged(people)
       this.renderChart()
     },
     onOrganizationSelect: function(organization){
-      var index = this.selectedOrganizations.findIndex((row)=>{ return (row === organization.name) })
-      if (index > -1){
-        this.selectedOrganizations.splice(index, 1) 
-      }
-      else {
-        this.selectedOrganizations.push(organization.name)
-      }
-      this.getOrganizationsAsync(this.selectedOrganizations)
+      this.onSelectStateChanged(organization)
       this.renderChart()
     },
     onSampleSelect: function(sample){
     },
     renderChart: function(){
-      // var vue = this;
       var $_this = this;
       var width = window.innerWidth - 40;
       var height = window.innerHeight - 40;
@@ -368,8 +353,7 @@ export default {
     calcTopY: function(index){
       return (index + 1) * 60;
     },
-    ...mapMutations(["getStartX"]),
-    ...mapActions(["addSelectedPeoplesAsync", "getPeoplesAsync", "getOrganizationsAsync"])
+    ...mapMutations(["getStartX", "onSelectStateChanged"])
   }
 }
 </script>

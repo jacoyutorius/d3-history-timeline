@@ -8,12 +8,8 @@ const store = () => new Vuex.Store({
     timelineTitle: "",
     chartData: [],
     histories: [],
-    selectedPeoples: [],
-    selectedOrganizations: [],
-    peoples: [],
     currentX: 0,
     currentY: 9,
-    testAPIResult: [],
     sampleData: [
       {title: "Bauhaus", peoples: ["Walter Adolph Georg Gropius", "Johannes Itten", "Moholy-Nagy László", "Hannes Meyer"]},
       {title: "Japanese Anime Director", peoples:[ "手塚治虫", "宮崎駿", "高畑勲", "押井守", "富野由悠季", "庵野秀明", "永野護"]}
@@ -23,31 +19,23 @@ const store = () => new Vuex.Store({
     timelineTitle: state => state.timelineTitle,
     histories: state => state.histories,
     sampleData: state => state.sampleData,
-    chartData: function(state){
-      return state.chartData
+    chartData: (state) => {
+      return state.histories.filter((row) => { return row.selected })
     },
-    selectedPeoples: state => state.selectedPeoples,
-    selectedOrganizations: state => state.selectedOrganizations,
-    peopleNames: function(state){
+    peoples: (state) => {
       return state.histories
-        .filter((row)=>{
-          if (row.category === "people"){ return true; }
-        })
-        .map((row) => {
-          return {name: row.title}
+        .filter((row) => { 
+          return (row.category === "people") 
         })
     },
-    organizationNames: (state) => {
+    organizations: (state) => {
       return state.histories
         .filter((row) => {
           return (row.category === "organization")
         })
-        .map((row) => {
-          return {name: row.title}
-        })
     },
     eventData: function(state){
-      var list = state.chartData.map(function(row, i){
+      var list = state.histories.filter((row) => { return row.selected }).map(function(row, i){
         return row.events.map(function(event){
           return {
             title: row.title,
@@ -62,7 +50,7 @@ const store = () => new Vuex.Store({
       return Array.prototype.concat.apply([], list);
     },
     birthData: function(state){
-      return state.chartData.map(function(row){
+      return state.histories.filter((row) => { return row.selected }).map(function(row){
         return {
           start: row.start,
           birth: row.birth
@@ -70,17 +58,17 @@ const store = () => new Vuex.Store({
       });
     },
     deadData: function(state){
-      return state.chartData.map(function(row){
+      return state.histories.filter((row) => { return row.selected }).map(function(row){
         return row.dead;
       });
     },
     areaStartYear: function(state){
       // 全データにおける歴史開始年の最小値を求める, -10ぶんをマージン
-      return Math.min.apply(null, state.chartData.map(function(row){ return row.start })) - 10;
+      return Math.min.apply(null, state.histories.filter((row) => { return row.selected }).map(function(row){ return row.start })) - 10
     },
     areaEndYear: function(state){
       // 全データにおける歴史終了年の最大値を求める. +10年ぶんをマージン
-      return Math.max.apply(null, state.chartData.map(function(row){ return row.end })) + 10;;
+      return Math.max.apply(null, state.histories.filter((row) => { return row.selected }).map(function(row){ return row.end })) + 10
     },
     areaPeriod: function(state, getters) {
       return getters.areaEndYear - getters.areaStartYear;
@@ -90,36 +78,18 @@ const store = () => new Vuex.Store({
     getHistories(state, histories){
       state.histories = histories
     },
-    getPeoples(state, peoples){
-      state.chartData = peoples
-    },
-    getOrganizations(state, organizations){
-      state.chartData = organizations
+    onSelectStateChanged(state, people) {
+      people.selected = !people.selected
     }
   },
   actions: {
     async nuxtServerInit({commit}){
       const res = await axios.get('https://api.myjson.com/bins/1cic7m').catch((e) => { console.dir(e) })
-      var data = res.data.map((row) => { row["selected"] = false; return row; })
+      var data = res.data.map((row) => { 
+        row["selected"] = false
+        return row
+      })
       commit("getHistories", data)
-    },
-    getPeoplesAsync({commit, state}, peoples){
-      var ret = peoples.map((peopleName) => {
-        var index = state.histories.findIndex((row) => {
-          if (row.title === peopleName){ return true }
-        })
-        return state.histories[index];
-      })
-      commit("getPeoples", ret)
-    },
-    getOrganizationsAsync({commit, state}, organizations){
-      var ret = organizations.map((organizationName) => {
-        var index = state.histories.findIndex((row) => {
-          if (row.title === organizationName){ return true }
-        })
-        return state.histories[index];
-      })
-      commit("getOrganizations", ret)
     }
   }
 })
