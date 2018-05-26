@@ -1,10 +1,8 @@
 <template>
   <div>
-    <div class="container">
-      <b-navbar variant="faded" type="light">
-        <b-navbar-brand tag="h1" class="mb-0">History Timeline</b-navbar-brand>
-      </b-navbar>
-    </div>
+    <b-navbar variant="faded" type="dark" class="bg-dark">
+      <b-navbar-brand tag="h1" class="mb-0">History Timeline</b-navbar-brand>
+    </b-navbar>
 
     <nuxt/>
   </div>
@@ -29,5 +27,9 @@ html {
 
 .navbar {
   background-color: f5f5f5;
+}
+
+.container {
+  margin-top: 20px;
 }
 </style>
