@@ -2,21 +2,19 @@
 
 > Nuxt.js project
 
+Visualize History.
+
+![https://s3-ap-northeast-1.amazonaws.com/public.jacoyutorius.com/d3-history-timeline.gif](https://s3-ap-northeast-1.amazonaws.com/public.jacoyutorius.com/d3-history-timeline.gif)
+
+![https://s3-ap-northeast-1.amazonaws.com/public.jacoyutorius.com/d3-history-timeline.jpg](https://s3-ap-northeast-1.amazonaws.com/public.jacoyutorius.com/d3-history-timeline.jpg)
+
 ## Build Setup
 
 ``` bash
 # install dependencies
-$ npm install # Or yarn install
+$ yarn install # Or yarn install
 
 # serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
+$ yarn dev
 ```
-
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+
