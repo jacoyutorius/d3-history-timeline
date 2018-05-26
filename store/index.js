@@ -66,11 +66,13 @@ const store = () => new Vuex.Store({
     },
     areaStartYear: function(state){
       // 全データにおける歴史開始年の最小値を求める, -10ぶんをマージン
-      return Math.min.apply(null, state.histories.filter((row) => { return row.selected }).map(function(row){ return row.start })) - 10
+      var v = state.histories.filter((row) => { return row.selected }).map((row) => { return row.start })
+      return v.length > 0 ? Math.min.apply(null, v) - 10 : 0
     },
     areaEndYear: function(state){
       // 全データにおける歴史終了年の最大値を求める. +10年ぶんをマージン
-      return Math.max.apply(null, state.histories.filter((row) => { return row.selected }).map(function(row){ return row.end })) + 10
+      var v = state.histories.filter((row) => { return row.selected }).map((row) => { return row.end })
+      return v.length > 0 ?  Math.max.apply(null, v) + 10 : 0
     },
     areaPeriod: function(state, getters) {
       return getters.areaEndYear - getters.areaStartYear;
