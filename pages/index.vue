@@ -1,15 +1,5 @@
 <template>
   <section class="container">
-    <div>
-      <!-- As a heading -->
-      <b-navbar variant="faded" type="light">
-        <b-navbar-brand tag="h1" class="mb-0">History Timeline</b-navbar-brand>
-        <b-nav-form>
-          <b-button size="sm" class="my-2 my-sm-0" type="button" v-b-modal.myModal>Search</b-button>
-        </b-nav-form>
-      </b-navbar>
-    </div>
-
     <b-modal id="myModal">
       <b-tabs>
         <b-tab title="People" active>
@@ -44,7 +34,7 @@
             </tbody>
           </table>
         </b-tab>
-        <b-tab title="sample">
+        <b-tab title="Sample">
           <table class="table">
             <thead class="thead-light">
               <tr>
@@ -69,11 +59,23 @@
       <b-container fluid>
         <div v-if="dataSelected">
           <h2>{{ timelineTitle }} {{ historyRange }}</h2>
-          <b-button class="button" v-on:click="renderChart">Render</b-button>
+          <span><b-button v-b-modal.myModal variant="outline-success">Select Data</b-button></span>
           <div id="svgArea" class=""></div>
         </div>
         <div v-else>
-          <p>no data selected.</p>
+          <b-alert show variant="light">
+            <h4 class="alert-heading">No data selected.</h4>
+            <p>
+              以下のボタンからタイムラインに表示するデータを選択してください。
+            </p>
+            <p>
+              select Timeline data from under button.
+            </p>
+            <hr>
+            <p class="mb-0">
+              <b-button v-b-modal.myModal variant="outline-success">Select Data</b-button>
+            </p>
+          </b-alert>
         </div>
       </b-container>
     </div>
@@ -89,8 +91,10 @@ export default {
   data: function(){
     return {
       colorMapping: {
-        people: "blue",
-        organization: "green"
+        // people: "blue",
+        // organization: "lightseagreen"
+        people: "#364f6b",
+        organization: "#364f6b"
       },
       selectedSample: null,
       timelineTitle: ""
@@ -261,7 +265,7 @@ export default {
         .transition()
         .duration(2500)
         .attr("r", 5)
-        .attr("fill", function(d){ return "red"; })
+        .attr("fill", function(d){ return "#fc5185"; })
         .attr("cx", function(d){ return this.calcStartX(d); }.bind(this))
         .attr("cy", function(d, i){ return this.calcTopY(d.baseIndex); }.bind(this));
 

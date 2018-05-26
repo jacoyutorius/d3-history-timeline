@@ -35,12 +35,11 @@ module.exports = {
       }
     }
   },
+  css: [
+    '@/assets/scss/app.scss'
+  ],
   modules: [
     '@nuxtjs/axios',
-    // Simple usage
-    '@nuxtjs/bootstrap-vue', 
-    // With options
-    // ['@nuxtjs/bootstrap-vue', { css: false }],
-    // '~/modules/chart_helper'
+    ['@nuxtjs/bootstrap-vue', { css: false }]
   ]
 }

@@ -1,5 +1,11 @@
 <template>
   <div>
+    <div class="container">
+      <b-navbar variant="faded" type="light">
+        <b-navbar-brand tag="h1" class="mb-0">History Timeline</b-navbar-brand>
+      </b-navbar>
+    </div>
+
     <nuxt/>
   </div>
 </template>
@@ -21,32 +27,7 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.navbar {
+  background-color: f5f5f5;
 }
 </style>
