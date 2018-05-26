@@ -67,9 +67,14 @@
 
     <div>
       <b-container fluid>
-        <h2>{{ timelineTitle }} {{ areaStartYear }} ~ {{ areaEndYear }}</h2>
-        <b-button class="button" v-on:click="renderChart">Render</b-button>
-        <div id="svgArea" class=""></div>
+        <div v-if="dataSelected">
+          <h2>{{ timelineTitle }} {{ historyRange }}</h2>
+          <b-button class="button" v-on:click="renderChart">Render</b-button>
+          <div id="svgArea" class=""></div>
+        </div>
+        <div v-else>
+          <p>no data selected.</p>
+        </div>
       </b-container>
     </div>
   </section>
@@ -97,6 +102,12 @@ export default {
     },
     height: function(){
       return window.innerHeight - 40
+    },
+    historyRange: function(){
+      return this.areaStartYear + " ~ " + this.areaEndYear
+    },
+    dataSelected: function(){
+      return this.chartData.length > 0
     },
     ...mapGetters(["chartData", "sampleData", "peoples", "organizations", "eventData", "areaStartYear", "areaEndYear", "areaPeriod"])
   },
