@@ -4,15 +4,10 @@
       <b-tabs>
         <b-tab title="People" active>
           <table class="table">
-            <thead class="thead-light">
-              <tr>
-                <th scope="col"></th>
-                <th scope="col">Name</th>
-              </tr>
-            </thead>
             <tbody>
               <tr v-for="people in peoples" v-bind:key="people.title">
                 <td><input type="checkbox" v-on:change="onPeopleSelect(people)" v-bind:value="people.title"></td>
+                <td><b-img rounded width="45" height="45" blank-color="#777" alt="img" v-bind:src="people.imageUrl" /></td>
                 <td>{{people.title}}</td>
               </tr>
             </tbody>
@@ -20,15 +15,10 @@
         </b-tab>
         <b-tab title="Organization" >
           <table class="table">
-            <thead class="thead-light">
-              <tr>
-                <th scope="col"></th>
-                <th scope="col">Name</th>
-              </tr>
-            </thead>
             <tbody>
               <tr v-for="organization in organizations" v-bind:key="organization.title">
                 <td><input type="checkbox" v-on:change="onOrganizationSelect(organization)" v-bind:value="organization.title"></td>
+                <td><b-img rounded width="45" height="45" blank-color="#777" alt="img" v-bind:src="organization.imageUrl" /></td>
                 <td>{{organization.title}}</td>
               </tr>
             </tbody>
@@ -247,11 +237,30 @@ export default {
         .data(this.chartData)
         .enter()
         .append("image")
+        .attr("class", "thumb")
         .attr("xlink:href", function(d){ return d.imageUrl; })
         .attr("x", function(d){ return this.calcStartX(d) - 50; }.bind(this))
         .attr("y", function(d, i){ return this.calcTopY(i) - 20; }.bind(this))
         .attr("width", "40")
         .attr("height", "40");
+
+      // サムネイルにマウスオーバーしたら拡大画像を表示する
+      svg.selectAll(".thumb")
+        .on("mouseover", function(d, i){
+          var coordinates = d3.mouse(this);
+          var baseIndex = d.baseIndex;
+          svg.select("#focusedImage").remove();
+          svg.append("image")
+            .attr("id", "focusedImage")
+            .attr("xlink:href", d.imageUrl)
+            .attr("x", coordinates[0] - 20)
+            .attr("y", coordinates[1])
+            .attr("width", 220)
+            .attr("height", 220);
+        })
+        .on("mouseout", function(){
+          svg.select("#focusedImage").remove();
+        });
 
       // イベントポイントを描画する
       svg.selectAll("eventPoint")
