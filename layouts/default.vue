@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-navbar variant="faded" type="dark" class="bg-dark">
-      <b-navbar-brand tag="h1" class="mb-0">History Timeline</b-navbar-brand>
+      <b-navbar-brand  href="/" tag="h1" class="mb-0">History Timeline</b-navbar-brand>
     </b-navbar>
 
     <nuxt/>

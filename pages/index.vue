@@ -56,14 +56,14 @@
           <b-alert show variant="light">
             <h4 class="alert-heading">No data selected.</h4>
             <p>
-              以下のボタンからタイムラインに表示するデータを選択してください。
+              タイムラインに表示するデータを選択してください。
             </p>
             <p>
-              select Timeline data from under button.
+              select Timeline data.
             </p>
             <hr>
             <p class="mb-0">
-              <b-button v-b-modal.myModal variant="outline-success">Select Data</b-button>
+              <b-button v-b-modal.myModal variant="outline-success">SELECT</b-button>
             </p>
           </b-alert>
         </div>
@@ -98,7 +98,7 @@ export default {
       return window.innerHeight - 40
     },
     historyRange: function(){
-      return this.areaStartYear + " ~ " + this.areaEndYear
+      return "A.D. " + this.areaStartYear + " ~ " + this.areaEndYear
     },
     dataSelected: function(){
       return this.chartData.length > 0
