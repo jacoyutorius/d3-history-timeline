@@ -12,8 +12,8 @@ const store = () => new Vuex.Store({
     currentX: 0,
     currentY: 9,
     sampleData: [
-      {title: "Bauhaus", peoples: ["Walter Adolph Georg Gropius", "Johannes Itten", "Moholy-Nagy László", "Hannes Meyer"]},
-      {title: "Japanese Anime Director", peoples:[ "手塚治虫", "宮崎駿", "高畑勲", "押井守", "富野由悠季", "庵野秀明", "永野護"]}
+      {title: "Bauhaus", peoples: ["Walter Adolph Georg Gropius", "Johannes Itten", "Moholy-Nagy László", "Hannes Meyer"], organizations: ["Bauhaus Weimarer", "Bauhaus Dessau", "Bauhaus Berlin"], selected: false},
+      {title: "Japanese Anime Director", peoples:[ "手塚治虫", "宮崎駿", "高畑勲", "押井守", "富野由悠季", "庵野秀明", "永野護"], organizations: [], selected: false}
     ]
   },
   getters: {
@@ -97,6 +97,22 @@ const store = () => new Vuex.Store({
       return new Promise((resolve) => {
         setTimeout(()=>{
           people.selected = !people.selected
+          resolve()
+        }, 200)
+      })
+    },
+    onSampleSelectAsync({commit, state}, sample){
+      return new Promise((resolve) => {
+        setTimeout(()=>{
+          sample.peoples.forEach(people => {
+            var p = state.histories.find((row) => { return row.title === people })
+            p.selected = sample.selected
+          });
+          sample.organizations.forEach(organization => {
+            var p = state.histories.find((row) => { return row.title === organization })
+            p.selected = sample.selected
+          });
+
           resolve()
         }, 200)
       })

@@ -29,15 +29,17 @@
             <thead class="thead-light">
               <tr>
                 <th scope="col"></th>
-                <th scope="col">Name</th>
+                <th scope="col">Title</th>
                 <th scope="col">Peoples</th>
+                <th scope="col">Organizations</th>
               </tr>
             </thead>
             <tbody>
               <tr v-for="sample in sampleData" v-bind:key="sample.name">
-                <td><input type="checkbox" v-on:change="onSampleSelect(sample)" v-bind:value="sample.value"></td>
+                <td><input type="checkbox" v-on:change="onSampleSelect(sample)" v-model="sample.selected"></td>
                 <td>{{sample.title}}</td>
                 <td>{{sample.peoples.join(", ")}}</td>
+                <td>{{sample.organizations.join(", ")}}</td>
               </tr>
             </tbody>
           </table>
@@ -125,6 +127,10 @@ export default {
         })
     },
     onSampleSelect: function(sample){
+      this.onSampleSelectAsync(sample)
+        .then(() => {
+          this.renderChart()
+        })
     },
     renderChart: function(){
       var $_this = this;
@@ -382,7 +388,7 @@ export default {
       return (index + 1) * 60;
     },
     ...mapMutations(["getStartX"]),
-    ...mapActions(["onSelectStateChangedAsync"])
+    ...mapActions(["onSelectStateChangedAsync", "onSampleSelectAsync"])
   }
 }
 </script>
