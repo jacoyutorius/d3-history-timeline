@@ -18,7 +18,9 @@
   - peopleは人
   - organizaitonは団体、組織
 
-- [] 2つ以上チェックを入れないとチャートが描画されない
+- [x] 
+  - people.stateの変更が、chartDataに伝搬させる前にrenderChart()が実行されてしまうのが原因と推察
+  - チェック入力後、people.selectedの変更がgetters.chartDataに反映されるまで0.2秒待つように改修
 
 
 --- 

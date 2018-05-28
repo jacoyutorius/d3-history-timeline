@@ -113,12 +113,16 @@ export default {
   },
   methods: {
     onPeopleSelect: function(people){
-      this.onSelectStateChanged(people)
-      this.renderChart()
+      this.onSelectStateChangedAsync(people)
+        .then(() => {
+          this.renderChart()
+        })
     },
     onOrganizationSelect: function(organization){
-      this.onSelectStateChanged(organization)
-      this.renderChart()
+      this.onSelectStateChangedAsync(organization)
+        .then(() => {
+          this.renderChart()
+        })
     },
     onSampleSelect: function(sample){
     },
@@ -377,7 +381,8 @@ export default {
     calcTopY: function(index){
       return (index + 1) * 60;
     },
-    ...mapMutations(["getStartX", "onSelectStateChanged"])
+    ...mapMutations(["getStartX"]),
+    ...mapActions(["onSelectStateChangedAsync"])
   }
 }
 </script>

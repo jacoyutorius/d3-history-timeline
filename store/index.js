@@ -8,7 +8,6 @@ let apiUrl = "https://api.myjson.com/bins/1cic7m"
 const store = () => new Vuex.Store({
   state: {
     timelineTitle: "",
-    chartData: [],
     histories: [],
     currentX: 0,
     currentY: 9,
@@ -81,9 +80,6 @@ const store = () => new Vuex.Store({
   mutations: {
     getHistories(state, histories){
       state.histories = histories
-    },
-    onSelectStateChanged(state, people) {
-      people.selected = !people.selected
     }
   },
   actions: {
@@ -94,6 +90,16 @@ const store = () => new Vuex.Store({
         return row
       })
       commit("getHistories", data)
+    },
+    onSelectStateChangedAsync({commit}, people){
+      // 1つ目のチェックonでチャートが描画されない問題への対応
+      // people.selectedの変更がgetters.chartDataに反映されるまで0.2秒待つ
+      return new Promise((resolve) => {
+        setTimeout(()=>{
+          people.selected = !people.selected
+          resolve()
+        }, 200)
+      })
     }
   }
 })
