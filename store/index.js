@@ -3,7 +3,8 @@ import Vuex from "vuex"
 import axios from "axios"
 Vue.use(Vuex)
 
-let apiUrl = "https://api.myjson.com/bins/1cic7m"
+// let apiUrl = "https://api.myjson.com/bins/1cic7m"
+let apiUrl = "http://localhost:4567/data"
 
 const store = () => new Vuex.Store({
   state: {
