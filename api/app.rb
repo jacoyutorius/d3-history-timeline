@@ -143,31 +143,31 @@ get "/data" do
       title: "RHCP Guitarist - Jack Sherman", category: "organization", start: 1983, end: 1985,
       events: [
       ],
-      imageUrl: ""
+      imageUrl: "http://via.placeholder.com/90x100"
     },
     { 
       title: "RHCP Guitarist - Duane 'Blackbird' McKnight", category: "organization", start: 1988, end: 1989,
       events: [
       ],
-      imageUrl: ""
+      imageUrl: "http://via.placeholder.com/90x100"
     },
     { 
       title: "RHCP Guitarist - Zander Schloss", category: "organization", start: 1992, end: 1992,
       events: [
       ],
-      imageUrl: ""
+      imageUrl: "http://via.placeholder.com/90x100"
     },
     { 
       title: "RHCP Guitarist - Arik Marshall", category: "organization", start: 1992, end: 1993,
       events: [
         {start: 1992, content: "J"},
       ],
-      imageUrl: ""
+      imageUrl: "http://via.placeholder.com/90x100"
     },
     { 
       title: "RHCP Guitarist - Jess Tobias", category: "organization", start: 1993, end: 1993,
       events: [],
-      imageUrl: ""
+      imageUrl: "http://via.placeholder.com/90x100"
     },
     { 
       title: "RHCP Guitarist - Dave Navarro", category: "organization", start: 1993, end: 1999,

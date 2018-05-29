@@ -70,7 +70,10 @@ const store = () => new Vuex.Store({
     areaEndYear: function(state){
       // 全データにおける歴史終了年の最大値を求める. +10年ぶんをマージン
       var v = state.histories.filter((row) => { return row.selected }).map((row) => { return row.end })
-      return v.length > 0 ?  Math.max.apply(null, v) + 10 : 0
+      if (v.length <= 0){ return 0 }
+
+      // 選択されたレコードのendが全て0だった場合は、現年度を終了年とし、マージン+10を加算
+      return (Math.max.apply(null, v) === 0 ? (new Date()).getFullYear() : Math.max.apply(null, v)) + 10
     },
     areaPeriod: function(state, getters) {
       return getters.areaEndYear - getters.areaStartYear;
