@@ -5,22 +5,20 @@ Vue.use(Vuex)
 
 // let apiUrl = "https://api.myjson.com/bins/1cic7m"
 let apiUrl = "http://localhost:4567/data"
+let apiSampleUrl = "http://localhost:4567/samples"
 
 const store = () => new Vuex.Store({
   state: {
     timelineTitle: "",
     histories: [],
+    samples: [],
     currentX: 0,
     currentY: 9,
-    sampleData: [
-      {title: "Bauhaus", peoples: ["Walter Adolph Georg Gropius", "Johannes Itten", "Moholy-Nagy László", "Hannes Meyer"], organizations: ["Bauhaus Weimarer", "Bauhaus Dessau", "Bauhaus Berlin"], selected: false},
-      {title: "Japanese Anime Director", peoples:[ "手塚治虫", "宮崎駿", "高畑勲", "押井守", "富野由悠季", "庵野秀明", "永野護"], organizations: [], selected: false}
-    ]
   },
   getters: {
     timelineTitle: state => state.timelineTitle,
     histories: state => state.histories,
-    sampleData: state => state.sampleData,
+    sampleData: state => state.samples,
     chartData: (state) => {
       return state.histories.filter((row) => { return row.selected })
     },
@@ -81,16 +79,32 @@ const store = () => new Vuex.Store({
   mutations: {
     getHistories(state, histories){
       state.histories = histories
+    },
+    getSamples(state, samples){
+      state.samples = samples
     }
   },
   actions: {
     async nuxtServerInit({commit}){
-      const res = await axios.get(apiUrl).catch((e) => { console.dir(e) })
-      var data = res.data.map((row) => { 
-        row["selected"] = false
-        return row
-      })
-      commit("getHistories", data)
+
+      await Promise.all([axios.get(apiUrl), axios.get(apiSampleUrl)])
+        .then(((ret)=>{
+          var historyData = ret[0].data.map((row) => { 
+            row["selected"] = false
+            return row
+          })
+          commit("getHistories", historyData)
+
+          var sampleData = ret[1].data.map((row) => { 
+            row["selected"] = false
+            return row
+          })
+          commit("getSamples", sampleData)
+
+        }))
+        .catch((e) => {
+          console.dir(e)
+        })
     },
     onSelectStateChangedAsync({commit}, people){
       // 1つ目のチェックonでチャートが描画されない問題への対応

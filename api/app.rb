@@ -10,6 +10,29 @@ get "/" do
   "hi"
 end
 
+get "/samples" do
+  [
+    {title: "Bauhaus", peoples: ["Walter Adolph Georg Gropius", "Johannes Itten", "Moholy-Nagy László", "Hannes Meyer"], organizations: ["Bauhaus Weimarer", "Bauhaus Dessau", "Bauhaus Berlin"]},
+    {title: "Japanese Anime Director", peoples:[ "手塚治虫", "宮崎駿", "高畑勲", "押井守", "富野由悠季", "庵野秀明", "永野護"], organizations: []},
+    {
+      title: "Red Hot Chili Peppers Guitarists", peoples: [], 
+      organizations: [
+        "Red Hot Chili Peppers",
+        "RHCP Guitarist - Hillel Slovak",
+        "RHCP Guitarist - John Frusciante 1",
+        "RHCP Guitarist - Jack Sherman",
+        "RHCP Guitarist - Duane 'Blackbird' McKnight",
+        "RHCP Guitarist - Zander Schloss",
+        "RHCP Guitarist - Arik Marshall",
+        "RHCP Guitarist - Jess Tobias",
+        "RHCP Guitarist - Dave Navarro",
+        "RHCP Guitarist - John Frusciante 2",
+        "RHCP Guitarist - Josh Klinghoffer"
+      ]
+    }
+  ].to_json
+end
+
 get "/data" do
   [
     { title: "Bauhaus Weimarer", category: "organization", start: 1919, end: 1923, events: [], imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/61/Van-de-Velde-Bau_in_Weimar_%28Draufsicht%29.jpg" },
@@ -84,6 +107,83 @@ get "/data" do
       birth: "1887.10.6",
       dead: "1965.8.27",
       imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/23/Le_Corbusier_1933.JPG"
+    },
+    { 
+      title: "Red Hot Chili Peppers", category: "organization", start: 1983, end: 0,
+      events: [
+        {start: 1984, content: "The Red Hot Chili Peppers"},
+        {start: 1985, content: "Freaky Styley"},
+        {start: 1987, content: "The Uplift Mofo Party Plan"},
+        {start: 1989, content: "Mother's Milk"},
+        {start: 1991, content: "Blood Sugar Sex Magik"},
+        {start: 1995, content: "One Hot Minute"},
+        {start: 1999, content: "Californication"},
+        {start: 2002, content: "By the Way"},
+        {start: 2006, content: "Stadium Arcadium"},
+        {start: 2011, content: "I'm with You"},
+        {start: 2016, content: "The Getaway"}
+      ],
+      imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Rhcp-live-pinkpop05.jpg/270px-Rhcp-live-pinkpop05.jpg"
+    },
+    { 
+      title: "RHCP Guitarist - Hillel Slovak", category: "organization", start: 1985, end: 1988,
+      events: [
+        {start: 1988, content: "Hillel was deat at 1988.6.25"},
+      ],
+      imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/HillelSlovak1983.jpg/220px-HillelSlovak1983.jpg"
+    },
+    { 
+      title: "RHCP Guitarist - John Frusciante 1", category: "organization", start: 1989, end: 1992,
+      events: [
+        {start: 1992, content: "John left the band after returning home"},
+      ],
+      imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/JohnFruscianteAugust2006.jpg/220px-JohnFruscianteAugust2006.jpg"
+    },
+    { 
+      title: "RHCP Guitarist - Jack Sherman", category: "organization", start: 1983, end: 1985,
+      events: [
+      ],
+      imageUrl: ""
+    },
+    { 
+      title: "RHCP Guitarist - Duane 'Blackbird' McKnight", category: "organization", start: 1988, end: 1989,
+      events: [
+      ],
+      imageUrl: ""
+    },
+    { 
+      title: "RHCP Guitarist - Zander Schloss", category: "organization", start: 1992, end: 1992,
+      events: [
+      ],
+      imageUrl: ""
+    },
+    { 
+      title: "RHCP Guitarist - Arik Marshall", category: "organization", start: 1992, end: 1993,
+      events: [
+        {start: 1992, content: "J"},
+      ],
+      imageUrl: ""
+    },
+    { 
+      title: "RHCP Guitarist - Jess Tobias", category: "organization", start: 1993, end: 1993,
+      events: [],
+      imageUrl: ""
+    },
+    { 
+      title: "RHCP Guitarist - Dave Navarro", category: "organization", start: 1993, end: 1999,
+      events: [],
+      imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Dave_Navarro_2010.jpg/220px-Dave_Navarro_2010.jpg"
+    },
+    { 
+      title: "RHCP Guitarist - John Frusciante 2", category: "organization", start: 1999, end: 2009,
+      events: [
+      ],
+      imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/JohnFruscianteAugust2006.jpg/220px-JohnFruscianteAugust2006.jpg"
+    },
+    { 
+      title: "RHCP Guitarist - Josh Klinghoffer", category: "organization", start: 2010, end: 0,
+      events: [],
+      imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/JoshKlinghoffer.jpg/220px-JoshKlinghoffer.jpg"
     },
     { title: "手塚治虫", category: "people", start: 1928, end: 1989, 
       events: [],
