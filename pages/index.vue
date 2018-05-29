@@ -135,7 +135,7 @@ export default {
     renderChart: function(){
       var $_this = this;
       var width = window.innerWidth - 40;
-      var height = window.innerHeight - 40;
+      var height = this.chartData.length * 50 + 250;
 
       // 以前のは消す
       d3.select(".svg").remove();
