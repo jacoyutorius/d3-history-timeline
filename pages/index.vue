@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <b-modal id="myModal">
+    <b-modal id="myModal" size="lg">
       <b-tabs>
         <b-tab title="People" active>
           <table class="table">
