@@ -2,8 +2,12 @@
   <div>
     <b-navbar variant="faded" type="dark" class="bg-dark">
       <b-navbar-brand  href="/" tag="h1" class="mb-0">History Timeline</b-navbar-brand>
+      <b-navbar-nav>
+        <b-nav-item href="/about">About</b-nav-item>
+      </b-navbar-nav>
     </b-navbar>
 
+    <!-- main -->
     <nuxt/>
   </div>
 </template>
