@@ -3,9 +3,8 @@ import Vuex from "vuex"
 import axios from "axios"
 Vue.use(Vuex)
 
-// let apiUrl = "https://api.myjson.com/bins/1cic7m"
-let apiUrl = "http://localhost:4567/data"
-let apiSampleUrl = "http://localhost:4567/samples"
+let apiUrl = process.env.baseHistoryUrl
+let apiSampleUrl = process.env.baseSampleUrl
 
 const store = () => new Vuex.Store({
   state: {
@@ -14,11 +13,13 @@ const store = () => new Vuex.Store({
     samples: [],
     currentX: 0,
     currentY: 9,
+    error: null
   },
   getters: {
     timelineTitle: state => state.timelineTitle,
     histories: state => state.histories,
     sampleData: state => state.samples,
+    error: state => state.error,
     chartData: (state) => {
       return state.histories.filter((row) => { return row.selected })
     },
@@ -85,6 +86,9 @@ const store = () => new Vuex.Store({
     },
     getSamples(state, samples){
       state.samples = samples
+    },
+    setError(state, error){
+      state.error = error
     }
   },
   actions: {
@@ -109,6 +113,7 @@ const store = () => new Vuex.Store({
         }))
         .catch((e) => {
           console.dir(e)
+          commit("setError", e)
         })
     },
     onSelectStateChangedAsync({commit}, people){

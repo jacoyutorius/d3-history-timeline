@@ -47,6 +47,16 @@
       </b-tabs>
     </b-modal>
 
+    <div v-if="error">
+      <b-container fluid>
+        <b-alert show variant="danger" dismissible>
+          <h4 class="alert-heading">{{error.message}}</h4>
+          <hr>
+          <p>{{error.stack}}</p>
+        </b-alert>
+      </b-container>
+    </div>
+
     <div>
       <b-container fluid>
         <div v-if="dataSelected">
@@ -105,7 +115,10 @@ export default {
     dataSelected: function(){
       return this.chartData.length > 0
     },
-    ...mapGetters(["chartData", "sampleData", "peoples", "organizations", "eventData", "areaStartYear", "areaEndYear", "areaPeriod"])
+    hasError: () => {
+      return this.error === null
+    },
+    ...mapGetters(["chartData", "sampleData", "error", "peoples", "organizations", "eventData", "areaStartYear", "areaEndYear", "areaPeriod"])
   },
   components: {
     // AppLogo
