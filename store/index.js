@@ -88,8 +88,10 @@ const store = () => new Vuex.Store({
     }
   },
   actions: {
-    async nuxtServerInit({commit}){
-
+    // async nuxtServerInit({commit}){
+    //   return this.onInitialize(commit)
+    // },
+    async onInitialize({commit}){
       await Promise.all([axios.get(apiUrl), axios.get(apiSampleUrl)])
         .then(((ret)=>{
           var historyData = ret[0].data.map((row) => { 

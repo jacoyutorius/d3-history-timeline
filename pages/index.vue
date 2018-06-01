@@ -111,7 +111,7 @@ export default {
     // AppLogo
   },
   mounted: function(){
-    this.renderChart()
+    this.onInitialize()
   },
   methods: {
     onPeopleSelect: function(people){
@@ -388,7 +388,7 @@ export default {
       return (index + 1) * 60;
     },
     ...mapMutations(["getStartX"]),
-    ...mapActions(["onSelectStateChangedAsync", "onSampleSelectAsync"])
+    ...mapActions(["onInitialize", "onSelectStateChangedAsync", "onSampleSelectAsync"])
   }
 }
 </script>
