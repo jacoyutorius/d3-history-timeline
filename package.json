@@ -5,7 +5,7 @@
   "author": "yutoogi <yuto.ogi@fourier.jp>",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "HOST=0.0.0.0 PORT=4000 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -15,6 +15,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
     "@nuxtjs/bootstrap-vue": "^2.0.4",
+    "@nuxtjs/font-awesome": "^1.0.3",
     "bootstrap-vue": "^2.0.0-rc.9",
     "d3": "^5.4.0",
     "node-sass": "^4.9.0",

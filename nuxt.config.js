@@ -1,35 +1,52 @@
 module.exports = {
   mode: "spa",
   env: {
-    baseHistoryUrl: process.env.BASE_HISTORY_URL || "http://localhost:4567/data",
-    baseSampleUrl: process.env.BASE_SAMPLE_URL || "http://localhost:4567/samples",
+    // baseHistoryUrl: process.env.BASE_HISTORY_URL || "http://localhost:4567/data",
+    // baseSampleUrl: process.env.BASE_SAMPLE_URL || "http://localhost:4567/samples",
+    baseHistoryUrl: process.env.BASE_HISTORY_URL || "http://localhost:3000/users",
+    baseSampleUrl: process.env.BASE_SAMPLE_URL || "http://localhost:3000/samples",
   },
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     title: 'd3-history-timeline',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+    meta: [{
+        charset: 'utf-8'
+      },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1'
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Nuxt.js project'
+      }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{
+      rel: 'icon',
+      type: 'image/x-icon',
+      href: '/favicon.ico'
+    }]
   },
   /*
-  ** Customize the progress bar color
-  */
-  loading: { color: '#3B8070' },
+   ** Customize the progress bar color
+   */
+  loading: {
+    color: '#3B8070'
+  },
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     /*
-    ** Run ESLint on save
-    */
-    extend (config, { isDev, isClient }) {
+     ** Run ESLint on save
+     */
+    extend(config, {
+      isDev,
+      isClient
+    }) {
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
@@ -45,6 +62,8 @@ module.exports = {
   ],
   modules: [
     '@nuxtjs/axios',
-    ['@nuxtjs/bootstrap-vue', { css: false }]
+    '@nuxtjs/font-awesome', ['@nuxtjs/bootstrap-vue', {
+      css: false
+    }]
   ]
 }
