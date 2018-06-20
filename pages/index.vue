@@ -47,6 +47,10 @@
       </b-tabs>
     </b-modal>
 
+    <b-modal id="newHistoryForm" size="lg">
+      <history-form></history-form>
+    </b-modal>
+
     <!-- error message -->
     <div v-if="error">
       <b-container fluid>
@@ -88,6 +92,9 @@
             <p class="mb-0">
               <b-button v-b-modal.myModal variant="outline-success">SELECT</b-button>
             </p>
+            <p class="mb-0">
+              <b-button v-b-modal.newHistoryForm variant="outline-info">New Record</b-button>
+            </p>
           </b-alert>
         </div>
       </b-container>
@@ -98,6 +105,7 @@
 <script>
 import * as d3 from "d3";
 import { mapGetters, mapActions, mapMutations } from "vuex";
+import HistoryForm from "~/components/HistoryForm";
 
 export default {
   name: "timeline",
@@ -143,7 +151,7 @@ export default {
     ])
   },
   components: {
-    // AppLogo
+    HistoryForm
   },
   mounted: async function() {
     this.loading = true;

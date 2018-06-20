@@ -1,9 +1,7 @@
 module.exports = {
   mode: "spa",
   env: {
-    // baseHistoryUrl: process.env.BASE_HISTORY_URL || "http://localhost:4567/data",
-    // baseSampleUrl: process.env.BASE_SAMPLE_URL || "http://localhost:4567/samples",
-    baseHistoryUrl: process.env.BASE_HISTORY_URL || "http://localhost:3000/users",
+    baseHistoryUrl: process.env.BASE_HISTORY_URL || "http://localhost:3000/histories",
     baseSampleUrl: process.env.BASE_SAMPLE_URL || "http://localhost:3000/samples",
   },
   /*

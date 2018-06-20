@@ -20,7 +20,9 @@
     "d3": "^5.4.0",
     "node-sass": "^4.9.0",
     "nuxt": "^1.0.0",
-    "sass-loader": "^7.0.1"
+    "qs": "^6.5.2",
+    "sass-loader": "^7.0.1",
+    "uuid": "^3.2.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
