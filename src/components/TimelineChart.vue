@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref, useTemplateRef } from 'vue'
 
+import { formatHistoricalDate, formatHistoricalPeriod } from '../domain/historicalDate'
 import { calculateTimelineRange, resolveEndYear } from '../domain/timelineRange'
 import {
   ageAtYear,
@@ -10,7 +11,7 @@ import {
   createYearScale,
   yearFromX,
 } from '../domain/timelineScale'
-import type { HistoryRecord } from '../types/timeline'
+import type { HistoryRecord, TimelineEvent } from '../types/timeline'
 
 const props = defineProps<{ records: HistoryRecord[] }>()
 
@@ -18,6 +19,13 @@ const currentYear = new Date().getFullYear()
 const container = useTemplateRef<HTMLElement>('container')
 const containerWidth = ref(0)
 const selectedYear = ref<number | null>(null)
+const activeRecord = ref<HistoryRecord | null>(null)
+const eventTooltip = ref<{
+  event: TimelineEvent
+  record: HistoryRecord
+  x: number
+  y: number
+} | null>(null)
 let resizeObserver: ResizeObserver | undefined
 
 const range = computed(() => calculateTimelineRange(props.records, currentYear))
@@ -50,6 +58,31 @@ function selectYear(event: MouseEvent): void {
   selectedYear.value = yearFromX(viewBoxX, yearScale.value)
 }
 
+function showEventTooltip(
+  record: HistoryRecord,
+  timelineEvent: TimelineEvent,
+  domEvent: Event,
+): void {
+  if (!container.value) return
+  const target = domEvent.currentTarget as SVGCircleElement
+  const targetBounds = target.getBoundingClientRect()
+  const containerBounds = container.value.getBoundingClientRect()
+  eventTooltip.value = {
+    event: timelineEvent,
+    record,
+    x: targetBounds.left - containerBounds.left + container.value.scrollLeft,
+    y: targetBounds.bottom - containerBounds.top + container.value.scrollTop + 8,
+  }
+}
+
+function hideEventTooltip(): void {
+  eventTooltip.value = null
+}
+
+function showRecord(record: HistoryRecord): void {
+  activeRecord.value = record
+}
+
 onMounted(() => {
   if (!container.value) return
   resizeObserver = new ResizeObserver(([entry]) => {
@@ -62,18 +95,19 @@ onBeforeUnmount(() => resizeObserver?.disconnect())
 </script>
 
 <template>
-  <div ref="container" class="timeline-chart-container">
-    <p class="chart-help">年表をクリックすると、その年と人物の年齢を表示します。</p>
-    <svg
-      v-if="yearScale && range"
-      class="timeline-chart"
-      :height="layout.height"
-      role="img"
-      :viewBox="`0 0 ${layout.width} ${layout.height}`"
-      :width="layout.width"
-      aria-labelledby="timeline-chart-title"
-      @click="selectYear"
-    >
+  <div class="timeline-chart-shell">
+    <p class="chart-help">年表をクリックすると年齢を表示します。名称を選ぶと詳細を確認できます。</p>
+    <div ref="container" class="timeline-chart-container">
+      <svg
+        v-if="yearScale && range"
+        class="timeline-chart"
+        :height="layout.height"
+        role="img"
+        :viewBox="`0 0 ${layout.width} ${layout.height}`"
+        :width="layout.width"
+        aria-labelledby="timeline-chart-title"
+        @click="selectYear"
+      >
       <title id="timeline-chart-title">選択した人物と組織の歴史年表</title>
 
       <g class="chart-axis">
@@ -95,22 +129,37 @@ onBeforeUnmount(() => resizeObserver?.disconnect())
         </g>
       </g>
 
-      <g v-for="(record, index) in records" :key="record.id" class="timeline-row">
-        <image
-          v-if="record.image"
-          :href="record.image.url"
-          x="8"
-          :y="rowY(index) - 22"
-          width="44"
-          height="44"
-          preserveAspectRatio="xMidYMid slice"
+      <g
+        v-for="(record, index) in records"
+        :key="record.id"
+        class="timeline-row"
+        :class="`category-${record.category}`"
+      >
+        <g
+          class="record-summary"
+          role="button"
+          tabindex="0"
+          :aria-label="`${record.title}の詳細を表示`"
+          @click.stop="showRecord(record)"
+          @keydown.enter.prevent="showRecord(record)"
+          @keydown.space.prevent="showRecord(record)"
         >
-          <title>{{ record.image.alt }}</title>
-        </image>
-        <text class="record-title" x="60" :y="rowY(index) - 4">{{ record.title }}</text>
-        <text class="record-period" x="60" :y="rowY(index) + 16">
-          {{ record.period.start.year }}〜{{ record.period.end?.year ?? '現在' }}
-        </text>
+          <image
+            v-if="record.image"
+            :href="record.image.url"
+            x="8"
+            :y="rowY(index) - 22"
+            width="44"
+            height="44"
+            preserveAspectRatio="xMidYMid slice"
+          >
+            <title>{{ record.image.alt }}</title>
+          </image>
+          <text class="record-title" x="60" :y="rowY(index) - 4">{{ record.title }}</text>
+          <text class="record-period" x="60" :y="rowY(index) + 16">
+            {{ formatHistoricalPeriod(record.period.start, record.period.end) }}
+          </text>
+        </g>
 
         <line
           class="history-line"
@@ -129,6 +178,14 @@ onBeforeUnmount(() => resizeObserver?.disconnect())
           :cx="yearScale(event.date.year)"
           :cy="rowY(index)"
           r="5"
+          tabindex="0"
+          role="button"
+          :aria-label="`${record.title}、${formatHistoricalDate(event.date)}、${event.title}`"
+          @click.stop
+          @mouseenter="showEventTooltip(record, event, $event)"
+          @mouseleave="hideEventTooltip"
+          @focus="showEventTooltip(record, event, $event)"
+          @blur="hideEventTooltip"
         >
           <title>{{ event.date.year }}：{{ event.title }}</title>
         </circle>
@@ -154,6 +211,43 @@ onBeforeUnmount(() => resizeObserver?.disconnect())
           {{ selectedYear }}年
         </text>
       </g>
-    </svg>
+      </svg>
+
+      <aside
+        v-if="eventTooltip"
+        class="event-tooltip"
+        :style="{ left: `${eventTooltip.x}px`, top: `${eventTooltip.y}px` }"
+        role="tooltip"
+      >
+        <strong>{{ formatHistoricalDate(eventTooltip.event.date) }}：{{ eventTooltip.event.title }}</strong>
+        <span>{{ eventTooltip.record.title }}</span>
+        <p v-if="eventTooltip.event.description">{{ eventTooltip.event.description }}</p>
+      </aside>
+    </div>
+
+    <aside v-if="activeRecord" class="record-details" aria-live="polite">
+      <div class="record-details-heading">
+        <div>
+          <span class="detail-category">{{ activeRecord.category }}</span>
+          <h3>{{ activeRecord.title }}</h3>
+        </div>
+        <button class="icon-button" type="button" aria-label="詳細を閉じる" @click="activeRecord = null">×</button>
+      </div>
+      <p>{{ activeRecord.description }}</p>
+      <dl>
+        <dt>期間</dt>
+        <dd>{{ formatHistoricalPeriod(activeRecord.period.start, activeRecord.period.end) }}</dd>
+        <dt>イベント</dt>
+        <dd>{{ activeRecord.events.length }}件</dd>
+      </dl>
+      <div v-if="activeRecord.sources.length">
+        <h4>出典</h4>
+        <ul>
+          <li v-for="source in activeRecord.sources" :key="source.url">
+            <a :href="source.url" target="_blank" rel="noreferrer">{{ source.title }}</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
   </div>
 </template>

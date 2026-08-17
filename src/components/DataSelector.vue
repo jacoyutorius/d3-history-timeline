@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
+import { formatHistoricalPeriod } from '../domain/historicalDate'
 import type { SelectableHistoryRecord, TimelineSample } from '../types/timeline'
 
 defineProps<{
@@ -49,7 +50,7 @@ const activeTab = ref<Tab>('people')
             <img v-if="record.image" :src="record.image.url" :alt="record.image.alt">
             <span>
               <strong>{{ record.title }}</strong>
-              <small>{{ record.period.start.year }}〜{{ record.period.end?.year ?? '現在' }}</small>
+              <small>{{ formatHistoricalPeriod(record.period.start, record.period.end) }}</small>
             </span>
           </label>
         </template>

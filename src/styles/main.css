@@ -9,6 +9,17 @@
   box-sizing: border-box;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 body {
   margin: 0;
   min-width: 320px;
@@ -88,8 +99,7 @@ button {
   background: #fdecec;
 }
 
-.timeline-chart-container {
-  overflow-x: auto;
+.timeline-chart-shell {
   border: 1px solid #d9e2ec;
   border-radius: 0.75rem;
   background: #fff;
@@ -97,9 +107,15 @@ button {
 
 .chart-help {
   margin: 0;
-  padding: 0.75rem 1rem 0;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #edf2f7;
   color: #52616b;
   font-size: 0.9rem;
+}
+
+.timeline-chart-container {
+  position: relative;
+  overflow: auto;
 }
 
 .timeline-chart {
@@ -127,6 +143,19 @@ button {
   fill: #283149;
   font-size: 13px;
   font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+
+.record-summary {
+  cursor: pointer;
+  outline: none;
+}
+
+.record-summary:hover .record-title,
+.record-summary:focus .record-title {
+  fill: #176b73;
+  text-decoration-color: currentcolor;
 }
 
 .history-line {
@@ -139,10 +168,34 @@ button {
   fill: #364f6b;
 }
 
+.category-organization .history-line {
+  stroke: #16817a;
+}
+
+.category-organization .endpoint {
+  fill: #16817a;
+}
+
+.category-movement .history-line {
+  stroke: #7c3aed;
+}
+
+.category-movement .endpoint {
+  fill: #7c3aed;
+}
+
 .event-point {
   fill: #e84a7f;
   stroke: #fff;
   stroke-width: 1.5;
+  cursor: pointer;
+  outline: none;
+}
+
+.event-point:hover,
+.event-point:focus {
+  r: 7px;
+  stroke: #9f1239;
 }
 
 .selected-year line {
@@ -156,6 +209,75 @@ button {
   fill: #b45309;
   font-size: 12px;
   font-weight: 700;
+}
+
+.event-tooltip {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  gap: 0.25rem;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 3rem));
+  padding: 0.65rem 0.75rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  background: #283149;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 22%);
+  font-size: 0.85rem;
+  pointer-events: none;
+  transform: translateX(-12px);
+}
+
+.event-tooltip span {
+  color: #cbd5e1;
+}
+
+.event-tooltip p {
+  margin: 0.25rem 0 0;
+}
+
+.record-details {
+  padding: 1rem 1.25rem;
+  border-top: 1px solid #d9e2ec;
+  background: #f8fafc;
+}
+
+.record-details-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.record-details h3,
+.record-details h4 {
+  margin: 0.2rem 0 0.5rem;
+}
+
+.record-details dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.35rem 1rem;
+}
+
+.record-details dt {
+  font-weight: 700;
+}
+
+.record-details dd {
+  margin: 0;
+}
+
+.record-details ul {
+  margin-bottom: 0;
+  padding-left: 1.25rem;
+}
+
+.detail-category {
+  color: #176b73;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .dialog-backdrop {

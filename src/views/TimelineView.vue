@@ -21,7 +21,7 @@ const {
 
 <template>
   <section>
-    <h1>History Timeline</h1>
+    <h1 class="visually-hidden">History Timeline</h1>
 
     <p v-if="loading" class="notice">データを読み込んでいます…</p>
     <p v-else-if="error" class="notice error-notice">{{ error }}</p>
