@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 
 import DataSelector from '../components/DataSelector.vue'
+import TimelineChart from '../components/TimelineChart.vue'
 import { useTimelineData } from '../composables/useTimelineData'
 
 const selectorOpen = ref(false)
@@ -40,19 +41,8 @@ const {
       </div>
 
       <section v-else aria-labelledby="selected-title">
-        <h2 id="selected-title">選択したデータ</h2>
-        <p class="migration-note">D3年表を移植するまで、選択結果を一覧で表示しています。</p>
-        <ul class="record-grid">
-          <li v-for="record in selectedRecords" :key="record.id ?? record.title" class="record-card">
-            <img v-if="record.imageUrl" :src="record.imageUrl" :alt="`${record.title}の画像`">
-            <div>
-              <span class="category-label">{{ record.category === 'people' ? '人物' : '組織' }}</span>
-              <h3>{{ record.title }}</h3>
-              <p>{{ record.start }}〜{{ record.end || '現在' }}</p>
-              <p>{{ record.events.length }}件のイベント</p>
-            </div>
-          </li>
-        </ul>
+        <h2 id="selected-title">選択したデータの年表</h2>
+        <TimelineChart :records="selectedRecords" />
       </section>
     </template>
 

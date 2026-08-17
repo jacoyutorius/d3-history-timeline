@@ -88,42 +88,73 @@ button {
   background: #fdecec;
 }
 
-.migration-note {
-  color: #52616b;
-}
-
-.record-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1rem;
-  padding: 0;
-  list-style: none;
-}
-
-.record-card {
-  display: flex;
-  gap: 1rem;
-  padding: 1rem;
+.timeline-chart-container {
+  overflow-x: auto;
   border: 1px solid #d9e2ec;
   border-radius: 0.75rem;
   background: #fff;
 }
 
-.record-card img {
-  width: 72px;
-  height: 72px;
-  border-radius: 0.5rem;
-  object-fit: cover;
+.chart-help {
+  margin: 0;
+  padding: 0.75rem 1rem 0;
+  color: #52616b;
+  font-size: 0.9rem;
 }
 
-.record-card h3,
-.record-card p {
-  margin: 0.3rem 0;
+.timeline-chart {
+  display: block;
+  cursor: crosshair;
 }
 
-.category-label {
-  color: #176b73;
-  font-size: 0.8rem;
+.chart-axis line,
+.grid-line {
+  stroke: #cbd5e1;
+  stroke-width: 1;
+}
+
+.chart-axis .grid-line {
+  stroke: #e7edf3;
+}
+
+.chart-axis text,
+.record-period {
+  fill: #52616b;
+  font-size: 12px;
+}
+
+.record-title {
+  fill: #283149;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.history-line {
+  stroke: #364f6b;
+  stroke-linecap: round;
+  stroke-width: 4;
+}
+
+.endpoint {
+  fill: #364f6b;
+}
+
+.event-point {
+  fill: #e84a7f;
+  stroke: #fff;
+  stroke-width: 1.5;
+}
+
+.selected-year line {
+  stroke: #d97706;
+  stroke-dasharray: 5 4;
+  stroke-width: 1.5;
+}
+
+.selected-year text,
+.age-label {
+  fill: #b45309;
+  font-size: 12px;
   font-weight: 700;
 }
 
