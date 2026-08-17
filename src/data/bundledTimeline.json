@@ -103,6 +103,43 @@
       "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
     },
     {
+      "id": "hfg-ulm",
+      "title": "Hochschule für Gestaltung Ulm",
+      "category": "organization",
+      "description": "1953年にインゲ・ショル、オトル・アイヒャー、マックス・ビルによって設立された、戦後ドイツのデザイン教育を代表する造形大学。",
+      "period": { "start": { "year": 1953, "month": 8, "day": 3 }, "end": { "year": 1968 } },
+      "events": [
+        {
+          "id": "hfg-ulm-teaching-starts",
+          "date": { "year": 1953, "month": 8, "day": 3 },
+          "title": "ウルム市民大学の部屋で授業を開始",
+          "sources": [{ "title": "History（HfG Ulm）", "url": "https://www.hfg-ulm.de/en/hfg-ulm/history/" }]
+        },
+        {
+          "id": "hfg-ulm-campus-foundation-stone",
+          "date": { "year": 1953, "month": 9 },
+          "title": "オーバラー・クーベルクの校舎建設が始まる",
+          "sources": [{ "title": "History（HfG Ulm）", "url": "https://www.hfg-ulm.de/en/hfg-ulm/history/" }]
+        },
+        {
+          "id": "hfg-ulm-official-opening",
+          "date": { "year": 1955, "month": 10, "day": 1 },
+          "title": "マックス・ビル設計の校舎が開校",
+          "sources": [{ "title": "Die Hochschule für Gestaltung HfG（Stadt Ulm）", "url": "https://www.ulm.de/tourismus/stadtgeschichte/markenzeichen/die-hochschule-f%C3%BCr-gestaltung-hfg" }]
+        },
+        {
+          "id": "hfg-ulm-ends",
+          "date": { "year": 1968 },
+          "title": "早すぎる終焉を迎える",
+          "sources": [{ "title": "HfG-Archiv（Museum Ulm）", "url": "https://museumulm.de/sammlungen/hfg-ulm/" }]
+        }
+      ],
+      "sources": [
+        { "title": "The History of the Ulm School of Design（HfG-Archiv Ulm）", "url": "https://hfg-archiv.museumulm.de/en/the-hfg-archive/" },
+        { "title": "HfG-Archiv（Museum Ulm）", "url": "https://museumulm.de/sammlungen/hfg-ulm/" }
+      ]
+    },
+    {
       "id": "walter-gropius",
       "title": "Walter Adolph Georg Gropius",
       "category": "person",
@@ -130,6 +167,102 @@
         "alt": "ヴァルター・グロピウスの肖像"
       },
       "sources": [{ "title": "Walter Gropius（Bauhaus Kooperation）", "url": "https://bauhauskooperation.com/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-1436" }]
+    },
+    {
+      "id": "max-bill",
+      "title": "Max Bill",
+      "category": "person",
+      "description": "バウハウスで学び、ウルム造形大学の設立・校舎設計・初代校長として戦後デザイン教育に大きな影響を与えた建築家・芸術家・デザイナー。",
+      "period": {
+        "start": { "year": 1908, "month": 12, "day": 22 },
+        "end": { "year": 1994, "month": 12, "day": 9 }
+      },
+      "events": [
+        {
+          "id": "max-bill-bauhaus-student",
+          "date": { "year": 1927 },
+          "title": "バウハウス・デッサウで学ぶ",
+          "sources": [{ "title": "Max Bill（Bauhaus Kooperation）", "url": "https://bauhauskooperation.com/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-Bill-Max-1448" }]
+        },
+        {
+          "id": "max-bill-hfg-first-rector",
+          "date": { "year": 1953 },
+          "title": "ウルム造形大学の初代校長となる",
+          "sources": [{ "title": "The History of the Ulm School of Design（HfG-Archiv Ulm）", "url": "https://hfg-archiv.museumulm.de/en/the-hfg-archive/" }]
+        },
+        {
+          "id": "max-bill-leaves-hfg-rector",
+          "date": { "year": 1956 },
+          "title": "ウルム造形大学の校長を退任",
+          "sources": [{ "title": "Max Bill（Bauhaus Kooperation）", "url": "https://bauhauskooperation.com/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-Bill-Max-1448" }]
+        }
+      ],
+      "sources": [
+        { "title": "Max Bill（Bauhaus Kooperation）", "url": "https://bauhauskooperation.com/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-Bill-Max-1448" },
+        { "title": "The History of the Ulm School of Design（HfG-Archiv Ulm）", "url": "https://hfg-archiv.museumulm.de/en/the-hfg-archive/" }
+      ]
+    },
+    {
+      "id": "otl-aicher",
+      "title": "Otl Aicher",
+      "category": "person",
+      "description": "ウルム造形大学の共同創設者で、視覚コミュニケーション教育、企業アイデンティティ、ミュンヘン五輪のピクトグラムで知られるグラフィックデザイナー。",
+      "period": {
+        "start": { "year": 1922, "month": 5, "day": 13 },
+        "end": { "year": 1991, "month": 9, "day": 1 }
+      },
+      "events": [
+        {
+          "id": "otl-aicher-hfg-founder",
+          "date": { "year": 1953 },
+          "title": "ウルム造形大学を共同創設",
+          "sources": [{ "title": "The bequest of Otl Aicher（HfG-Archiv Ulm）", "url": "https://hfg-archiv.museumulm.de/en/bequests/the-bequest-of-otl-aicher/" }]
+        },
+        {
+          "id": "otl-aicher-visual-communication",
+          "date": { "year": 1954 },
+          "title": "視覚コミュニケーション部門で教え始める",
+          "sources": [{ "title": "The biography of an exceptional designer（otl aicher 100）", "url": "https://www.otlaicher.de/en/vita/" }]
+        },
+        {
+          "id": "otl-aicher-munich-olympics",
+          "date": { "year": 1968 },
+          "title": "ミュンヘン五輪のデザイン責任者となる",
+          "sources": [{ "title": "The bequest of Otl Aicher（HfG-Archiv Ulm）", "url": "https://hfg-archiv.museumulm.de/en/bequests/the-bequest-of-otl-aicher/" }]
+        }
+      ],
+      "sources": [
+        { "title": "The bequest of Otl Aicher（HfG-Archiv Ulm）", "url": "https://hfg-archiv.museumulm.de/en/bequests/the-bequest-of-otl-aicher/" },
+        { "title": "Aicher, Otl（Deutsche Biographie）", "url": "https://www.deutsche-biographie.de/gnd118501208.html?language=en" }
+      ]
+    },
+    {
+      "id": "inge-aicher-scholl",
+      "title": "Inge Aicher-Scholl",
+      "category": "person",
+      "description": "ウルム市民大学を創設し、オトル・アイヒャー、マックス・ビルとともにウルム造形大学の設立を推進した教育者・著述家。",
+      "period": {
+        "start": { "year": 1917, "month": 8, "day": 11 },
+        "end": { "year": 1998, "month": 9, "day": 4 }
+      },
+      "events": [
+        {
+          "id": "inge-scholl-vh-ulm",
+          "date": { "year": 1946 },
+          "title": "ウルム市民大学を創設",
+          "sources": [{ "title": "Aicher-Scholl, Inge（Deutsche Biographie）", "url": "https://www.deutsche-biographie.de/sfz115568.html" }]
+        },
+        {
+          "id": "inge-scholl-hfg-founder",
+          "date": { "year": 1953 },
+          "title": "ウルム造形大学を共同創設",
+          "sources": [{ "title": "History（HfG Ulm）", "url": "https://www.hfg-ulm.de/en/hfg-ulm/history/" }]
+        }
+      ],
+      "sources": [
+        { "title": "Aicher-Scholl, Inge（Deutsche Biographie）", "url": "https://www.deutsche-biographie.de/sfz115568.html" },
+        { "title": "Educator, author, activist（otl aicher 100）", "url": "https://www.otlaicher.de/en/articles/educator-author-activist/" }
+      ]
     },
     {
       "id": "hannes-meyer",
@@ -223,8 +356,18 @@
       "period": { "start": { "year": 1941, "month": 1, "day": 5 }, "end": null },
       "events": [
         { "id": "miyazaki-cagliostro", "date": { "year": 1979 }, "title": "ルパン三世 カリオストロの城", "sources": [] },
-        { "id": "miyazaki-spirited-away", "date": { "year": 2001 }, "title": "千と千尋の神隠し", "sources": [] },
-        { "id": "miyazaki-boy-and-heron", "date": { "year": 2023 }, "title": "君たちはどう生きるか", "sources": [] }
+        {
+          "id": "miyazaki-spirited-away",
+          "date": { "year": 2001, "month": 7, "day": 20 },
+          "title": "千と千尋の神隠し",
+          "sources": [{ "title": "千と千尋の神隠し（スタジオジブリ）", "url": "https://www.ghibli.jp/works/chihiro/" }]
+        },
+        {
+          "id": "miyazaki-boy-and-heron",
+          "date": { "year": 2023, "month": 7 },
+          "title": "君たちはどう生きるか",
+          "sources": [{ "title": "スタジオジブリの年表（スタジオジブリ）", "url": "https://www.ghibli.jp/chronology/" }]
+        }
       ],
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Hayao_Miyazaki.jpg",
@@ -243,37 +386,261 @@
       },
       "events": [
         { "id": "takahata-horus", "date": { "year": 1968 }, "title": "太陽の王子 ホルスの大冒険", "sources": [] },
-        { "id": "takahata-grave-fireflies", "date": { "year": 1988 }, "title": "火垂るの墓", "sources": [] },
-        { "id": "takahata-kaguya", "date": { "year": 2013 }, "title": "かぐや姫の物語", "sources": [] }
+        {
+          "id": "takahata-grave-fireflies",
+          "date": { "year": 1988, "month": 4, "day": 16 },
+          "title": "火垂るの墓",
+          "sources": [{ "title": "火垂るの墓（スタジオジブリ）", "url": "https://www.ghibli.jp/works/hotarunohaka/" }]
+        },
+        {
+          "id": "takahata-kaguya",
+          "date": { "year": 2013 },
+          "title": "かぐや姫の物語",
+          "sources": [{ "title": "高畑勲監督作品集（スタジオジブリ）", "url": "https://www.ghibli.jp/info/009689/" }]
+        }
       ],
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Isao_Takahata.jpg",
         "alt": "高畑勲の肖像"
       },
       "sources": [{ "title": "高畑勲（Wikipedia）", "url": "https://ja.wikipedia.org/wiki/高畑勲" }]
+    },
+    {
+      "id": "mamoru-oshii",
+      "title": "押井守",
+      "category": "person",
+      "description": "『機動警察パトレイバー the Movie』や『GHOST IN THE SHELL / 攻殻機動隊』で知られる映画監督。実写、脚本、小説、演劇などにも活動を広げた。",
+      "period": { "start": { "year": 1951, "month": 8, "day": 8 }, "end": null },
+      "events": [
+        {
+          "id": "oshii-freelance",
+          "date": { "year": 1984 },
+          "title": "フリーランスとして活動を始める",
+          "sources": [{ "title": "OSHII Mamoru（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/oshii-mamoru/index-2.html" }]
+        },
+        {
+          "id": "oshii-patlabor",
+          "date": { "year": 1989 },
+          "title": "機動警察パトレイバー the Movieを監督",
+          "sources": [{ "title": "Mamoru Oshii interview（Ghost in the Shell Official Global Site）", "url": "https://theghostintheshell.jp/en/feature/interview02_2" }]
+        },
+        {
+          "id": "oshii-ghost-in-the-shell",
+          "date": { "year": 1995 },
+          "title": "GHOST IN THE SHELL / 攻殻機動隊を監督",
+          "sources": [{ "title": "Mamoru Oshii interview（Ghost in the Shell Official Global Site）", "url": "https://theghostintheshell.jp/en/feature/interview02_2" }]
+        },
+        {
+          "id": "oshii-innocence-cannes",
+          "date": { "year": 2004 },
+          "title": "イノセンスがカンヌ国際映画祭コンペティション部門に出品",
+          "sources": [{ "title": "OSHII Mamoru（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/oshii-mamoru/index-2.html" }]
+        }
+      ],
+      "sources": [
+        { "title": "OSHII Mamoru（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/oshii-mamoru/index-2.html" },
+        { "title": "Mamoru Oshii interview（Ghost in the Shell Official Global Site）", "url": "https://theghostintheshell.jp/en/feature/interview02_2" }
+      ]
+    },
+    {
+      "id": "satoshi-kon",
+      "title": "今敏",
+      "category": "person",
+      "description": "現実、記憶、夢、虚構が交錯する映像表現で知られるアニメーション監督・漫画家。『PERFECT BLUE』『千年女優』『東京ゴッドファーザーズ』『パプリカ』を監督した。",
+      "period": {
+        "start": { "year": 1963, "month": 10, "day": 12 },
+        "end": { "year": 2010, "month": 8, "day": 24 }
+      },
+      "events": [
+        {
+          "id": "kon-perfect-blue",
+          "date": { "year": 1997 },
+          "title": "PERFECT BLUEを監督",
+          "sources": [{ "title": "Who am I ?（KON'S TONE）", "url": "https://konstone.s-kon.net/modules/works/" }]
+        },
+        {
+          "id": "kon-millennium-actress",
+          "date": { "year": 2002 },
+          "title": "千年女優が公開",
+          "sources": [{ "title": "Who am I ?（KON'S TONE）", "url": "https://konstone.s-kon.net/modules/works/" }]
+        },
+        {
+          "id": "kon-tokyo-godfathers",
+          "date": { "year": 2003 },
+          "title": "東京ゴッドファーザーズが公開",
+          "sources": [{ "title": "Who am I ?（KON'S TONE）", "url": "https://konstone.s-kon.net/modules/works/" }]
+        },
+        {
+          "id": "kon-paprika",
+          "date": { "year": 2006 },
+          "title": "パプリカが公開",
+          "sources": [{ "title": "Who am I ?（KON'S TONE）", "url": "https://konstone.s-kon.net/modules/works/" }]
+        }
+      ],
+      "sources": [
+        { "title": "Who am I ?（KON'S TONE）", "url": "https://konstone.s-kon.net/modules/works/" },
+        { "title": "KON Satoshi（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/kon-satoshi/index.html" }
+      ]
+    },
+    {
+      "id": "makoto-shinkai",
+      "title": "新海誠",
+      "category": "person",
+      "description": "個人制作から商業長編へ進み、『君の名は。』『天気の子』『すずめの戸締まり』で国際的に広く知られるアニメーション監督。",
+      "period": { "start": { "year": 1973 }, "end": null },
+      "events": [
+        {
+          "id": "shinkai-voices-distant-star",
+          "date": { "year": 2002 },
+          "title": "ほしのこえで商業デビュー",
+          "sources": [{ "title": "Profile（Makoto Shinkai Works）", "url": "https://en.shinkaiworks.com/profile" }]
+        },
+        {
+          "id": "shinkai-your-name",
+          "date": { "year": 2016 },
+          "title": "君の名は。が公開",
+          "sources": [{ "title": "Profile（Makoto Shinkai Works）", "url": "https://en.shinkaiworks.com/profile" }]
+        },
+        {
+          "id": "shinkai-weathering-with-you",
+          "date": { "year": 2019 },
+          "title": "天気の子が公開",
+          "sources": [{ "title": "Weathering With You（CoMix Wave Films）", "url": "https://www.cwfilms.jp/en/products/article/tenkinoko.html" }]
+        },
+        {
+          "id": "shinkai-suzume",
+          "date": { "year": 2022 },
+          "title": "すずめの戸締まりが公開",
+          "sources": [{ "title": "Profile（Makoto Shinkai Works）", "url": "https://en.shinkaiworks.com/profile" }]
+        }
+      ],
+      "sources": [
+        { "title": "Profile（Makoto Shinkai Works）", "url": "https://en.shinkaiworks.com/profile" },
+        { "title": "WORKS（CoMix Wave Films）", "url": "https://www.cwfilms.jp/en/products/" }
+      ]
+    },
+    {
+      "id": "yoshiyuki-tomino",
+      "title": "富野由悠季",
+      "category": "person",
+      "description": "『海のトリトン』『機動戦士ガンダム』『伝説巨神イデオン』などを手がけ、ロボットアニメーションに新しい表現と物語性を持ち込んだアニメーション監督・演出家。",
+      "period": { "start": { "year": 1941 }, "end": null },
+      "events": [
+        {
+          "id": "tomino-triton",
+          "date": { "year": 1972 },
+          "title": "海のトリトンを監督",
+          "sources": [{ "title": "TOMINO Yoshiyuki（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/tomino-yoshiyuki/index-2.html" }]
+        },
+        {
+          "id": "tomino-gundam",
+          "date": { "year": 1979 },
+          "title": "機動戦士ガンダムを監督",
+          "sources": [{ "title": "TOMINO Yoshiyuki（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/tomino-yoshiyuki/index-2.html" }]
+        },
+        {
+          "id": "tomino-ideon",
+          "date": { "year": 1980 },
+          "title": "伝説巨神イデオンを監督",
+          "sources": [{ "title": "TOMINO Yoshiyuki（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/tomino-yoshiyuki/index-2.html" }]
+        },
+        {
+          "id": "tomino-king-gainer",
+          "date": { "year": 2002 },
+          "title": "OVERMANキングゲイナーを手がける",
+          "sources": [{ "title": "TOMINO Yoshiyuki（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/tomino-yoshiyuki/index-2.html" }]
+        }
+      ],
+      "sources": [
+        { "title": "TOMINO Yoshiyuki（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/tomino-yoshiyuki/index-2.html" },
+        { "title": "TOMINO Yoshiyuki × KAWAMORI Shoji（Shoji Kawamori Official Web Site）", "url": "https://shojikawamori.jp/en/expo2025/interview/tomino-kawamori/" }
+      ]
+    },
+    {
+      "id": "yoshinori-kanada",
+      "title": "金田伊功",
+      "category": "person",
+      "description": "大胆なタイミング、パース、エフェクト表現で後続のアニメーターに大きな影響を与えたアニメーター。ロボットアニメ、劇場長編、スタジオジブリ作品、ゲーム映像まで幅広く参加した。",
+      "period": {
+        "start": { "year": 1952 },
+        "end": { "year": 2009, "month": 7, "day": 21 }
+      },
+      "events": [
+        {
+          "id": "kanada-mako-debut",
+          "date": { "year": 1970 },
+          "title": "魔法のマコちゃんで動画デビュー",
+          "sources": [{ "title": "KANADA Yoshinori（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/kanada-yoshinori/index-2.html" }]
+        },
+        {
+          "id": "kanada-gaiking",
+          "date": { "year": 1976 },
+          "title": "大空魔竜ガイキングで作画監督となる",
+          "sources": [{ "title": "KANADA Yoshinori（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/kanada-yoshinori/index-2.html" }]
+        },
+        {
+          "id": "kanada-zambot-daitarn",
+          "date": { "year": 1977 },
+          "title": "無敵超人ザンボット3などのロボットアニメで注目される",
+          "sources": [{ "title": "KANADA Yoshinori（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/kanada-yoshinori/index-2.html" }]
+        },
+        {
+          "id": "kanada-ghibli",
+          "date": { "year": 1984 },
+          "title": "風の谷のナウシカ以降、ジブリ作品にも参加",
+          "sources": [{ "title": "KANADA Yoshinori（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/kanada-yoshinori/index-2.html" }]
+        }
+      ],
+      "sources": [
+        { "title": "KANADA Yoshinori（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/kanada-yoshinori/index-2.html" }
+      ]
     }
   ],
   "samples": [
     {
       "id": "bauhaus",
       "title": "Bauhaus",
-      "description": "バウハウスの運動、歴代校長、教育者、3つの拠点",
+      "description": "バウハウスの運動、歴代校長、教育者、拠点、ウルム造形大学への接続",
       "recordIds": [
         "bauhaus-movement",
         "walter-gropius",
+        "max-bill",
         "hannes-meyer",
         "ludwig-mies-van-der-rohe",
         "johannes-itten",
         "bauhaus-weimar",
         "bauhaus-dessau",
-        "bauhaus-berlin"
+        "bauhaus-berlin",
+        "hfg-ulm"
+      ]
+    },
+    {
+      "id": "modern-design-education",
+      "title": "近代デザイン教育",
+      "description": "バウハウスからウルム造形大学へつながるデザイン教育の系譜",
+      "recordIds": [
+        "bauhaus-movement",
+        "bauhaus-dessau",
+        "hfg-ulm",
+        "walter-gropius",
+        "max-bill",
+        "otl-aicher",
+        "inge-aicher-scholl"
       ]
     },
     {
       "id": "japanese-animation-directors",
-      "title": "日本のアニメーション監督",
-      "description": "日本のアニメーション史を代表する監督",
-      "recordIds": ["hayao-miyazaki", "isao-takahata"]
+      "title": "日本のアニメーション作家",
+      "description": "戦後から現代までの日本アニメーションを代表する監督とアニメーター",
+      "recordIds": [
+        "isao-takahata",
+        "yoshiyuki-tomino",
+        "yoshinori-kanada",
+        "hayao-miyazaki",
+        "mamoru-oshii",
+        "satoshi-kon",
+        "makoto-shinkai"
+      ]
     }
   ]
 }
