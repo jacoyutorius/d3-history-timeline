@@ -13,6 +13,7 @@ export function useTimelineData() {
   const selectedRecords = computed(() => histories.value.filter(({ selected }) => selected))
   const people = computed(() => histories.value.filter(({ category }) => category === 'person'))
   const organizations = computed(() => histories.value.filter(({ category }) => category === 'organization'))
+  const movements = computed(() => histories.value.filter(({ category }) => category === 'movement'))
 
   async function initialize(): Promise<void> {
     loading.value = true
@@ -46,6 +47,7 @@ export function useTimelineData() {
     error,
     initialize,
     loading,
+    movements,
     organizations,
     people,
     sampleIsSelected,

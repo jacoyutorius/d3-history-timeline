@@ -9,6 +9,7 @@ const selectorOpen = ref(false)
 const {
   error,
   loading,
+  movements,
   organizations,
   people,
   sampleIsSelected,
@@ -48,6 +49,7 @@ const {
 
     <DataSelector
       v-if="selectorOpen"
+      :movements="movements"
       :organizations="organizations"
       :people="people"
       :sample-is-selected="sampleIsSelected"

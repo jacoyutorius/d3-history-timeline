@@ -79,6 +79,10 @@ function hideEventTooltip(): void {
   eventTooltip.value = null
 }
 
+function selectEventYear(timelineEvent: TimelineEvent): void {
+  selectedYear.value = timelineEvent.date.year
+}
+
 function showRecord(record: HistoryRecord): void {
   activeRecord.value = record
 }
@@ -181,7 +185,7 @@ onBeforeUnmount(() => resizeObserver?.disconnect())
           tabindex="0"
           role="button"
           :aria-label="`${record.title}、${formatHistoricalDate(event.date)}、${event.title}`"
-          @click.stop
+          @click.stop="selectEventYear(event)"
           @mouseenter="showEventTooltip(record, event, $event)"
           @mouseleave="hideEventTooltip"
           @focus="showEventTooltip(record, event, $event)"

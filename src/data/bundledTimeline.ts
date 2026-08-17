@@ -1,8 +1,26 @@
 import type { HistoryRecord, TimelineSample } from '../types/timeline'
 
 const wikipedia = (title: string, url: string) => [{ title, url }]
+const bauhausChronology = {
+  title: 'Chronology（Bauhaus Dessau Foundation）',
+  url: 'https://bauhaus-dessau.de/en/institution/chronology/',
+}
 
 export const bundledHistories: HistoryRecord[] = [
+  {
+    id: 'bauhaus-movement',
+    title: 'Bauhaus',
+    category: 'movement',
+    description: '1919年にヴァイマルで創設され、芸術・工芸・建築を横断した教育と制作を展開した造形運動。',
+    period: { start: { year: 1919, month: 4 }, end: { year: 1933, month: 7, day: 20 } },
+    events: [
+      { id: 'bauhaus-founded', date: { year: 1919, month: 4 }, title: 'ヴァイマルで創設', sources: [bauhausChronology] },
+      { id: 'bauhaus-moves-dessau', date: { year: 1925 }, title: 'デッサウへ移転', sources: [bauhausChronology] },
+      { id: 'bauhaus-moves-berlin', date: { year: 1932 }, title: 'ベルリンで私立学校として継続', sources: [bauhausChronology] },
+      { id: 'bauhaus-closed', date: { year: 1933, month: 7, day: 20 }, title: '教員会議が閉鎖を決定', sources: [bauhausChronology] },
+    ],
+    sources: [bauhausChronology],
+  },
   {
     id: 'bauhaus-weimar',
     title: 'Bauhaus Weimar',
@@ -14,14 +32,14 @@ export const bundledHistories: HistoryRecord[] = [
         id: 'bauhaus-weimar-founded',
         date: { year: 1919 },
         title: 'ヴァイマルで開校',
-        sources: [],
+        sources: [bauhausChronology],
       },
     ],
     image: {
       url: 'https://upload.wikimedia.org/wikipedia/commons/6/61/Van-de-Velde-Bau_in_Weimar_%28Draufsicht%29.jpg',
       alt: 'ヴァイマルの旧バウハウス校舎',
     },
-    sources: wikipedia('Bauhaus（Wikipedia）', 'https://ja.wikipedia.org/wiki/バウハウス'),
+    sources: [bauhausChronology],
   },
   {
     id: 'bauhaus-dessau',
@@ -34,14 +52,27 @@ export const bundledHistories: HistoryRecord[] = [
         id: 'bauhaus-dessau-building',
         date: { year: 1926 },
         title: 'デッサウ校舎が完成',
-        sources: [],
+        sources: [bauhausChronology],
       },
     ],
     image: {
       url: 'https://upload.wikimedia.org/wikipedia/commons/e/e1/Bauhaus.JPG',
       alt: 'デッサウのバウハウス校舎',
     },
-    sources: wikipedia('Bauhaus（Wikipedia）', 'https://ja.wikipedia.org/wiki/バウハウス'),
+    sources: [bauhausChronology],
+  },
+  {
+    id: 'bauhaus-berlin',
+    title: 'Bauhaus Berlin',
+    category: 'organization',
+    description: 'デッサウ閉鎖後、ミース・ファン・デル・ローエがベルリンで私立学校として継続した最後の拠点。',
+    period: { start: { year: 1932, month: 10 }, end: { year: 1933, month: 7, day: 20 } },
+    events: [
+      { id: 'bauhaus-berlin-opens', date: { year: 1932, month: 10 }, title: 'ベルリンで私立学校として開校', sources: [bauhausChronology] },
+      { id: 'bauhaus-berlin-sealed', date: { year: 1933, month: 4, day: 11 }, title: 'ゲシュタポによる捜索後に校舎を封鎖', sources: [bauhausChronology] },
+      { id: 'bauhaus-berlin-closes', date: { year: 1933, month: 7, day: 20 }, title: '教員会議が学校の閉鎖を決定', sources: [bauhausChronology] },
+    ],
+    sources: [bauhausChronology],
   },
   {
     id: 'walter-gropius',
@@ -57,20 +88,55 @@ export const bundledHistories: HistoryRecord[] = [
         id: 'gropius-bauhaus-director',
         date: { year: 1919 },
         title: 'バウハウス初代校長に就任',
-        sources: [],
+        sources: [{ title: 'Walter Gropius（Bauhaus Kooperation）', url: 'https://bauhauskooperation.com/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-1436' }],
       },
       {
         id: 'gropius-leaves-bauhaus',
         date: { year: 1928 },
         title: 'バウハウス校長を退任',
-        sources: [],
+        sources: [{ title: 'Walter Gropius（Bauhaus Kooperation）', url: 'https://bauhauskooperation.com/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-1436' }],
       },
     ],
     image: {
       url: 'https://upload.wikimedia.org/wikipedia/commons/6/61/1955_01-Oct_HansGConrad_Portrait-WalterGropius_HfGUlm-Opening.jpg',
       alt: 'ヴァルター・グロピウスの肖像',
     },
-    sources: wikipedia('ヴァルター・グロピウス（Wikipedia）', 'https://ja.wikipedia.org/wiki/ヴァルター・グロピウス'),
+    sources: [{ title: 'Walter Gropius（Bauhaus Kooperation）', url: 'https://bauhauskooperation.com/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-1436' }],
+  },
+  {
+    id: 'hannes-meyer',
+    title: 'Hannes Meyer',
+    category: 'person',
+    description: 'バウハウス第2代校長。科学的な分析と社会的要請を重視する設計教育を推進した建築家。',
+    period: { start: { year: 1889 }, end: { year: 1954 } },
+    events: [
+      { id: 'meyer-bauhaus-director', date: { year: 1928 }, title: 'バウハウス第2代校長に就任', sources: [bauhausChronology] },
+      { id: 'meyer-dismissed', date: { year: 1930, month: 8, day: 1 }, title: 'バウハウス校長を解任', sources: [bauhausChronology] },
+    ],
+    sources: [
+      bauhausChronology,
+      { title: 'People（Bauhaus Kooperation）', url: 'https://bauhauskooperation.com/knowledge/the-bauhaus/people/' },
+    ],
+  },
+  {
+    id: 'ludwig-mies-van-der-rohe',
+    title: 'Ludwig Mies van der Rohe',
+    category: 'person',
+    description: 'バウハウス第3代・最後の校長を務めた建築家。デッサウからベルリンへの移転後も学校を率いた。',
+    period: {
+      start: { year: 1886, month: 3, day: 27 },
+      end: { year: 1969, month: 8, day: 17 },
+    },
+    events: [
+      { id: 'mies-bauhaus-director', date: { year: 1930 }, title: 'バウハウス第3代校長に就任', sources: [bauhausChronology] },
+      { id: 'mies-bauhaus-berlin', date: { year: 1932 }, title: 'ベルリンで私立学校として運営を継続', sources: [bauhausChronology] },
+    ],
+    sources: [
+      {
+        title: 'Ludwig Mies van der Rohe（Bauhaus Kooperation）',
+        url: 'https://bauhauskooperation.com/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-1438',
+      },
+    ],
   },
   {
     id: 'johannes-itten',
@@ -144,8 +210,17 @@ export const bundledSamples: TimelineSample[] = [
   {
     id: 'bauhaus',
     title: 'Bauhaus',
-    description: 'バウハウスの主要人物と拠点',
-    recordIds: ['walter-gropius', 'johannes-itten', 'bauhaus-weimar', 'bauhaus-dessau'],
+    description: 'バウハウスの運動、歴代校長、教育者、3つの拠点',
+    recordIds: [
+      'bauhaus-movement',
+      'walter-gropius',
+      'hannes-meyer',
+      'ludwig-mies-van-der-rohe',
+      'johannes-itten',
+      'bauhaus-weimar',
+      'bauhaus-dessau',
+      'bauhaus-berlin',
+    ],
   },
   {
     id: 'japanese-animation-directors',

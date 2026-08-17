@@ -7,6 +7,7 @@ import type { SelectableHistoryRecord, TimelineSample } from '../types/timeline'
 defineProps<{
   people: SelectableHistoryRecord[]
   organizations: SelectableHistoryRecord[]
+  movements: SelectableHistoryRecord[]
   samples: TimelineSample[]
   sampleIsSelected: (sample: TimelineSample) => boolean
 }>()
@@ -17,7 +18,7 @@ const emit = defineEmits<{
   toggleSample: [sample: TimelineSample]
 }>()
 
-type Tab = 'people' | 'organizations' | 'samples'
+type Tab = 'people' | 'organizations' | 'movements' | 'samples'
 const activeTab = ref<Tab>('people')
 </script>
 
@@ -36,6 +37,9 @@ const activeTab = ref<Tab>('people')
         <button :class="{ active: activeTab === 'organizations' }" type="button" @click="activeTab = 'organizations'">
           組織（{{ organizations.length }}）
         </button>
+        <button :class="{ active: activeTab === 'movements' }" type="button" @click="activeTab = 'movements'">
+          運動（{{ movements.length }}）
+        </button>
         <button :class="{ active: activeTab === 'samples' }" type="button" @click="activeTab = 'samples'">
           サンプル（{{ samples.length }}）
         </button>
@@ -43,7 +47,7 @@ const activeTab = ref<Tab>('people')
 
       <div class="selection-list">
         <template v-if="activeTab !== 'samples'">
-          <label v-for="record in activeTab === 'people' ? people : organizations"
+          <label v-for="record in activeTab === 'people' ? people : activeTab === 'organizations' ? organizations : movements"
                  :key="record.id ?? record.title"
                  class="selection-item">
             <input :checked="record.selected" type="checkbox" @change="emit('toggleRecord', record)">
