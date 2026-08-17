@@ -3,12 +3,16 @@ node_modules
 
 # logs
 npm-debug.log
+package-lock.json.old
 
 # Nuxt build
 .nuxt
 
 # Nuxt generate
 dist
+
+# Vite
+.vite
 
 # RubyGems
 .bundle
