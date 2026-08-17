@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 
 import { formatHistoricalPeriod } from '../domain/historicalDate'
 import type { SelectableHistoryRecord, TimelineSample } from '../types/timeline'
 
-defineProps<{
+const props = defineProps<{
   people: SelectableHistoryRecord[]
   organizations: SelectableHistoryRecord[]
   movements: SelectableHistoryRecord[]
@@ -20,6 +20,49 @@ const emit = defineEmits<{
 
 type Tab = 'people' | 'organizations' | 'movements' | 'samples'
 const activeTab = ref<Tab>('people')
+const searchQuery = ref('')
+
+const normalizedSearchQuery = computed(() => searchQuery.value.trim().toLowerCase())
+
+const filteredPeople = computed(() => filterRecords(props.people))
+const filteredOrganizations = computed(() => filterRecords(props.organizations))
+const filteredMovements = computed(() => filterRecords(props.movements))
+const filteredSamples = computed(() => {
+  if (!normalizedSearchQuery.value) return props.samples
+
+  return props.samples.filter((sample) => (
+    includesSearchQuery(sample.title)
+    || includesSearchQuery(sample.description)
+    || sample.recordIds.some(includesSearchQuery)
+  ))
+})
+
+const activeRecords = computed(() => {
+  if (activeTab.value === 'people') return filteredPeople.value
+  if (activeTab.value === 'organizations') return filteredOrganizations.value
+  return filteredMovements.value
+})
+
+const activeListIsEmpty = computed(() => (
+  activeTab.value === 'samples'
+    ? filteredSamples.value.length === 0
+    : activeRecords.value.length === 0
+))
+
+function includesSearchQuery(value: string): boolean {
+  return value.toLowerCase().includes(normalizedSearchQuery.value)
+}
+
+function filterRecords(records: SelectableHistoryRecord[]): SelectableHistoryRecord[] {
+  if (!normalizedSearchQuery.value) return records
+
+  return records.filter((record) => (
+    includesSearchQuery(record.title)
+    || includesSearchQuery(record.description)
+    || includesSearchQuery(formatHistoricalPeriod(record.period.start, record.period.end))
+    || record.events.some((event) => includesSearchQuery(event.title))
+  ))
+}
 </script>
 
 <template>
@@ -32,22 +75,35 @@ const activeTab = ref<Tab>('people')
 
       <div class="tabs" role="tablist" aria-label="データ種別">
         <button :class="{ active: activeTab === 'people' }" type="button" @click="activeTab = 'people'">
-          人物（{{ people.length }}）
+          人物（{{ filteredPeople.length }}/{{ people.length }}）
         </button>
         <button :class="{ active: activeTab === 'organizations' }" type="button" @click="activeTab = 'organizations'">
-          組織（{{ organizations.length }}）
+          組織（{{ filteredOrganizations.length }}/{{ organizations.length }}）
         </button>
         <button :class="{ active: activeTab === 'movements' }" type="button" @click="activeTab = 'movements'">
-          運動（{{ movements.length }}）
+          運動（{{ filteredMovements.length }}/{{ movements.length }}）
         </button>
         <button :class="{ active: activeTab === 'samples' }" type="button" @click="activeTab = 'samples'">
-          サンプル（{{ samples.length }}）
+          サンプル（{{ filteredSamples.length }}/{{ samples.length }}）
         </button>
       </div>
 
+      <div class="selection-search">
+        <label for="selection-search-input">検索</label>
+        <input
+          id="selection-search-input"
+          v-model="searchQuery"
+          autocomplete="off"
+          placeholder="名前、説明、イベントで絞り込み"
+          type="search"
+        >
+      </div>
+
       <div class="selection-list">
-        <template v-if="activeTab !== 'samples'">
-          <label v-for="record in activeTab === 'people' ? people : activeTab === 'organizations' ? organizations : movements"
+        <p v-if="activeListIsEmpty" class="selection-empty">該当するデータはありません。</p>
+
+        <template v-else-if="activeTab !== 'samples'">
+          <label v-for="record in activeRecords"
                  :key="record.id ?? record.title"
                  class="selection-item">
             <input :checked="record.selected" type="checkbox" @change="emit('toggleRecord', record)">
@@ -60,7 +116,7 @@ const activeTab = ref<Tab>('people')
         </template>
 
         <template v-else>
-          <label v-for="sample in samples"
+          <label v-for="sample in filteredSamples"
                  :key="sample.id"
                  class="selection-item sample-item">
             <input :checked="sampleIsSelected(sample)" type="checkbox" @change="emit('toggleSample', sample)">
