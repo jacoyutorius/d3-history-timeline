@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onBeforeUnmount, onMounted, ref, useTemplateRef } from 'vue'
+import { computed, nextTick, onBeforeUnmount, onMounted, ref, useTemplateRef, watch } from 'vue'
 
 import { formatHistoricalDate, formatHistoricalPeriod } from '../domain/historicalDate'
 import { calculateTimelineRange, resolveEndYear } from '../domain/timelineRange'
@@ -7,19 +7,22 @@ import {
   ageAtYear,
   calculateTimelineLayout,
   CHART_MARGIN,
-  CHART_ROW_HEIGHT,
   createYearScale,
+  timelineRowHeight,
   yearFromX,
 } from '../domain/timelineScale'
 import type { HistoryRecord, TimelineEvent } from '../types/timeline'
 
 const props = defineProps<{ records: HistoryRecord[] }>()
+type DetailMode = 'panel' | 'dialog'
 
 const currentYear = new Date().getFullYear()
 const container = useTemplateRef<HTMLElement>('container')
+const recordDetails = useTemplateRef<HTMLElement>('recordDetails')
 const containerWidth = ref(0)
 const selectedYear = ref<number | null>(null)
 const activeRecord = ref<HistoryRecord | null>(null)
+const detailMode = ref<DetailMode>('panel')
 const eventTooltip = ref<{
   event: TimelineEvent
   record: HistoryRecord
@@ -35,9 +38,10 @@ const yearScale = computed(() => {
   return createYearScale(range.value[0], range.value[1], layout.value)
 })
 const ticks = computed(() => yearScale.value?.ticks(8) ?? [])
+const rowHeight = computed(() => timelineRowHeight(props.records.length))
 
 function rowY(index: number): number {
-  return CHART_MARGIN.top + index * CHART_ROW_HEIGHT + CHART_ROW_HEIGHT / 2
+  return CHART_MARGIN.top + index * rowHeight.value + rowHeight.value / 2
 }
 
 function endYear(record: HistoryRecord): number {
@@ -87,6 +91,10 @@ function showRecord(record: HistoryRecord): void {
   activeRecord.value = record
 }
 
+function closeRecord(): void {
+  activeRecord.value = null
+}
+
 onMounted(() => {
   if (!container.value) return
   resizeObserver = new ResizeObserver(([entry]) => {
@@ -96,11 +104,33 @@ onMounted(() => {
 })
 
 onBeforeUnmount(() => resizeObserver?.disconnect())
+
+watch([activeRecord, detailMode], async () => {
+  if (!activeRecord.value || detailMode.value !== 'dialog') return
+  await nextTick()
+  recordDetails.value?.focus()
+})
 </script>
 
 <template>
   <div class="timeline-chart-shell">
-    <p class="chart-help">年表をクリックすると年齢を表示します。名称を選ぶと詳細を確認できます。</p>
+    <div class="chart-header">
+      <p class="chart-help">年表をクリックすると年齢を表示します。名称を選ぶと詳細を確認できます。</p>
+      <fieldset class="detail-mode-control">
+        <legend>詳細表示</legend>
+        <div class="segmented-control">
+          <label :class="{ active: detailMode === 'panel' }">
+            <input v-model="detailMode" type="radio" value="panel">
+            下部
+          </label>
+          <label :class="{ active: detailMode === 'dialog' }">
+            <input v-model="detailMode" type="radio" value="dialog">
+            モーダル
+          </label>
+        </div>
+      </fieldset>
+    </div>
+
     <div ref="container" class="timeline-chart-container">
       <svg
         v-if="yearScale && range"
@@ -229,28 +259,57 @@ onBeforeUnmount(() => resizeObserver?.disconnect())
       </aside>
     </div>
 
-    <aside v-if="activeRecord" class="record-details" aria-live="polite">
-      <div class="record-details-heading">
-        <div>
-          <span class="detail-category">{{ activeRecord.category }}</span>
-          <h3>{{ activeRecord.title }}</h3>
+    <aside
+      v-if="activeRecord"
+      ref="recordDetails"
+      class="record-details"
+      :class="{ 'record-details-dialog': detailMode === 'dialog' }"
+      :role="detailMode === 'dialog' ? 'dialog' : undefined"
+      :aria-modal="detailMode === 'dialog' ? 'true' : undefined"
+      aria-live="polite"
+      aria-labelledby="record-details-title"
+      tabindex="-1"
+      @click.self="detailMode === 'dialog' && closeRecord()"
+      @keydown.esc="closeRecord"
+    >
+      <div class="record-details-content">
+        <div class="record-details-heading">
+          <div>
+            <span class="detail-category">{{ activeRecord.category }}</span>
+            <h3 id="record-details-title">{{ activeRecord.title }}</h3>
+          </div>
+          <button class="icon-button" type="button" aria-label="詳細を閉じる" @click="closeRecord">×</button>
         </div>
-        <button class="icon-button" type="button" aria-label="詳細を閉じる" @click="activeRecord = null">×</button>
-      </div>
-      <p>{{ activeRecord.description }}</p>
-      <dl>
-        <dt>期間</dt>
-        <dd>{{ formatHistoricalPeriod(activeRecord.period.start, activeRecord.period.end) }}</dd>
-        <dt>イベント</dt>
-        <dd>{{ activeRecord.events.length }}件</dd>
-      </dl>
-      <div v-if="activeRecord.sources.length">
-        <h4>出典</h4>
-        <ul>
-          <li v-for="source in activeRecord.sources" :key="source.url">
-            <a :href="source.url" target="_blank" rel="noreferrer">{{ source.title }}</a>
-          </li>
-        </ul>
+        <p>{{ activeRecord.description }}</p>
+        <dl>
+          <dt>期間</dt>
+          <dd>{{ formatHistoricalPeriod(activeRecord.period.start, activeRecord.period.end) }}</dd>
+          <dt>イベント</dt>
+          <dd>{{ activeRecord.events.length }}件</dd>
+        </dl>
+        <div v-if="activeRecord.events.length">
+          <h4>イベント</h4>
+          <ol class="detail-event-list">
+            <li v-for="event in activeRecord.events" :key="event.id">
+              <span>{{ formatHistoricalDate(event.date) }}</span>
+              <strong>{{ event.title }}</strong>
+              <p v-if="event.description">{{ event.description }}</p>
+              <ul v-if="event.sources.length" class="inline-source-list">
+                <li v-for="source in event.sources" :key="source.url">
+                  <a :href="source.url" target="_blank" rel="noreferrer">{{ source.title }}</a>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        <div v-if="activeRecord.sources.length">
+          <h4>出典</h4>
+          <ul>
+            <li v-for="source in activeRecord.sources" :key="source.url">
+              <a :href="source.url" target="_blank" rel="noreferrer">{{ source.title }}</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </aside>
   </div>

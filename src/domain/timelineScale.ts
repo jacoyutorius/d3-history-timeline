@@ -8,6 +8,8 @@ export const CHART_MARGIN = {
   left: 190,
 } as const
 export const CHART_ROW_HEIGHT = 76
+export const CHART_COMPACT_ROW_HEIGHT = 62
+export const CHART_COMPACT_ROW_THRESHOLD = 8
 
 export interface TimelineLayout {
   width: number
@@ -21,12 +23,22 @@ export function calculateTimelineLayout(
   rowCount: number,
 ): TimelineLayout {
   const width = Math.max(CHART_MIN_WIDTH, Math.floor(containerWidth))
+  const rowHeight = rowCount >= CHART_COMPACT_ROW_THRESHOLD
+    ? CHART_COMPACT_ROW_HEIGHT
+    : CHART_ROW_HEIGHT
+
   return {
     width,
-    height: CHART_MARGIN.top + Math.max(rowCount, 1) * CHART_ROW_HEIGHT + CHART_MARGIN.bottom,
+    height: CHART_MARGIN.top + Math.max(rowCount, 1) * rowHeight + CHART_MARGIN.bottom,
     plotLeft: CHART_MARGIN.left,
     plotRight: width - CHART_MARGIN.right,
   }
+}
+
+export function timelineRowHeight(rowCount: number): number {
+  return rowCount >= CHART_COMPACT_ROW_THRESHOLD
+    ? CHART_COMPACT_ROW_HEIGHT
+    : CHART_ROW_HEIGHT
 }
 
 export function createYearScale(

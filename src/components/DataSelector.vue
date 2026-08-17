@@ -27,6 +27,12 @@ const normalizedSearchQuery = computed(() => searchQuery.value.trim().toLowerCas
 const filteredPeople = computed(() => filterRecords(props.people))
 const filteredOrganizations = computed(() => filterRecords(props.organizations))
 const filteredMovements = computed(() => filterRecords(props.movements))
+const allRecords = computed(() => [
+  ...props.people,
+  ...props.organizations,
+  ...props.movements,
+])
+const recordById = computed(() => new Map(allRecords.value.map((record) => [record.id, record])))
 const filteredSamples = computed(() => {
   if (!normalizedSearchQuery.value) return props.samples
 
@@ -34,6 +40,7 @@ const filteredSamples = computed(() => {
     includesSearchQuery(sample.title)
     || includesSearchQuery(sample.description)
     || sample.recordIds.some(includesSearchQuery)
+    || sampleRecords(sample).some((record) => includesSearchQuery(record.title))
   ))
 })
 
@@ -62,6 +69,33 @@ function filterRecords(records: SelectableHistoryRecord[]): SelectableHistoryRec
     || includesSearchQuery(formatHistoricalPeriod(record.period.start, record.period.end))
     || record.events.some((event) => includesSearchQuery(event.title))
   ))
+}
+
+function sampleRecords(sample: TimelineSample): SelectableHistoryRecord[] {
+  return sample.recordIds
+    .map((recordId) => recordById.value.get(recordId))
+    .filter((record): record is SelectableHistoryRecord => record !== undefined)
+}
+
+function samplePreview(sample: TimelineSample): string {
+  return sampleRecords(sample).slice(0, 4).map(({ title }) => title).join('、')
+}
+
+function sampleCategorySummary(sample: TimelineSample): string {
+  const counts = sampleRecords(sample).reduce<Record<string, number>>((result, record) => {
+    result[record.category] = (result[record.category] ?? 0) + 1
+    return result
+  }, {})
+  const labels = [
+    ['person', '人物'],
+    ['organization', '組織'],
+    ['movement', '運動'],
+  ] as const
+
+  return labels
+    .filter(([category]) => counts[category])
+    .map(([category, label]) => `${label}${counts[category]}`)
+    .join(' / ')
 }
 </script>
 
@@ -123,6 +157,8 @@ function filterRecords(records: SelectableHistoryRecord[]): SelectableHistoryRec
             <span>
               <strong>{{ sample.title }}</strong>
               <small>{{ sample.description }}（{{ sample.recordIds.length }}件）</small>
+              <small v-if="samplePreview(sample)">含む：{{ samplePreview(sample) }}</small>
+              <small v-if="sampleCategorySummary(sample)" class="sample-meta">{{ sampleCategorySummary(sample) }}</small>
             </span>
           </label>
         </template>

@@ -2,8 +2,12 @@ import { describe, expect, it } from 'vitest'
 
 import {
   ageAtYear,
+  CHART_COMPACT_ROW_HEIGHT,
+  CHART_MARGIN,
+  CHART_ROW_HEIGHT,
   calculateTimelineLayout,
   createYearScale,
+  timelineRowHeight,
   yearFromX,
 } from './timelineScale'
 
@@ -28,6 +32,13 @@ describe('timeline scale', () => {
 
   it('狭い画面でも最小描画幅を維持する', () => {
     expect(calculateTimelineLayout(320, 1).width).toBe(720)
+  })
+
+  it('件数が多い場合は行間を詰める', () => {
+    expect(timelineRowHeight(7)).toBe(CHART_ROW_HEIGHT)
+    expect(timelineRowHeight(8)).toBe(CHART_COMPACT_ROW_HEIGHT)
+    expect(calculateTimelineLayout(1000, 8).height)
+      .toBe(CHART_MARGIN.top + 8 * CHART_COMPACT_ROW_HEIGHT + CHART_MARGIN.bottom)
   })
 })
 
