@@ -1,28 +1,53 @@
-export type HistoryCategory = 'people' | 'organization'
+export type HistoryCategory = 'person' | 'organization' | 'movement'
+
+export interface HistoricalDate {
+  year: number
+  month?: number
+  day?: number
+}
+
+export interface SourceReference {
+  title: string
+  url: string
+}
+
+export interface TimelineImage {
+  url: string
+  alt: string
+  sourceUrl?: string
+}
 
 export interface TimelineEvent {
-  id?: string
-  start: number
-  content: string
+  id: string
+  date: HistoricalDate
+  title: string
+  description?: string
+  sources: SourceReference[]
 }
 
 export interface HistoryRecord {
-  id?: string
+  id: string
   title: string
   category: HistoryCategory
-  start: number
-  /** 0は現在も継続中であることを表す。 */
-  end: number
+  description: string
+  period: {
+    start: HistoricalDate
+    /** nullは現在も継続中であることを表す。 */
+    end: HistoricalDate | null
+  }
   events: TimelineEvent[]
-  birth?: string
-  dead?: string
-  imageUrl?: string
-  selected?: boolean
+  image?: TimelineImage
+  sources: SourceReference[]
+}
+
+/** 画面上の選択状態。永続化する年表データには含めない。 */
+export interface SelectableHistoryRecord extends HistoryRecord {
+  selected: boolean
 }
 
 export interface TimelineSample {
+  id: string
   title: string
-  peoples: string[]
-  organizations: string[]
-  selected?: boolean
+  description: string
+  recordIds: string[]
 }

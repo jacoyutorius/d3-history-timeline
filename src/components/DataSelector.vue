@@ -1,18 +1,18 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-import type { HistoryRecord, TimelineSample } from '../types/timeline'
+import type { SelectableHistoryRecord, TimelineSample } from '../types/timeline'
 
 defineProps<{
-  people: HistoryRecord[]
-  organizations: HistoryRecord[]
+  people: SelectableHistoryRecord[]
+  organizations: SelectableHistoryRecord[]
   samples: TimelineSample[]
   sampleIsSelected: (sample: TimelineSample) => boolean
 }>()
 
 const emit = defineEmits<{
   close: []
-  toggleRecord: [record: HistoryRecord]
+  toggleRecord: [record: SelectableHistoryRecord]
   toggleSample: [sample: TimelineSample]
 }>()
 
@@ -46,22 +46,22 @@ const activeTab = ref<Tab>('people')
                  :key="record.id ?? record.title"
                  class="selection-item">
             <input :checked="record.selected" type="checkbox" @change="emit('toggleRecord', record)">
-            <img v-if="record.imageUrl" :src="record.imageUrl" :alt="`${record.title}の画像`">
+            <img v-if="record.image" :src="record.image.url" :alt="record.image.alt">
             <span>
               <strong>{{ record.title }}</strong>
-              <small>{{ record.start }}〜{{ record.end || '現在' }}</small>
+              <small>{{ record.period.start.year }}〜{{ record.period.end?.year ?? '現在' }}</small>
             </span>
           </label>
         </template>
 
         <template v-else>
           <label v-for="sample in samples"
-                 :key="sample.title"
+                 :key="sample.id"
                  class="selection-item sample-item">
             <input :checked="sampleIsSelected(sample)" type="checkbox" @change="emit('toggleSample', sample)">
             <span>
               <strong>{{ sample.title }}</strong>
-              <small>{{ [...sample.peoples, ...sample.organizations].join('、') }}</small>
+              <small>{{ sample.description }}（{{ sample.recordIds.length }}件）</small>
             </span>
           </label>
         </template>

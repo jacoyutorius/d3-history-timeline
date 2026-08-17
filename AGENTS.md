@@ -26,7 +26,7 @@ VueコンポーネントはPascalCase（`HistoryForm.vue`）、ページはル�
 
 ## テスト方針
 
-単体テストにはVitestを使用し、対象ファイルと同じディレクトリに`*.test.ts`として置きます。すべての変更で`npm run lint`、`npm run typecheck`、`npm test`を通してください。年表の変更では、イベントなし、継続中のレコード（`end: 0`）、人物と組織の混在、日本語表示を確認します。API変更では対象ルートを`curl`で呼び出し、JSONの構造を検証してください。
+単体テストにはVitestを使用し、対象ファイルと同じディレクトリに`*.test.ts`として置きます。すべての変更で`npm run lint`、`npm run typecheck`、`npm test`を通してください。年表の変更では、イベントなし、継続中のレコード（`period.end: null`）、人物と組織の混在、日本語表示を確認します。API変更では対象ルートを`curl`で呼び出し、JSONの構造を検証してください。
 
 ## コミットとプルリクエスト
 

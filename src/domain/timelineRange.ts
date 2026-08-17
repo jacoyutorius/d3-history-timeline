@@ -3,8 +3,8 @@ import type { HistoryRecord } from '../types/timeline'
 export const TIMELINE_MARGIN_YEARS = 10
 
 /** 保存値の0を、描画時だけ現在年へ変換する。 */
-export function resolveEndYear(end: number, currentYear: number): number {
-  return end === 0 ? currentYear : end
+export function resolveEndYear(end: HistoryRecord['period']['end'], currentYear: number): number {
+  return end?.year ?? currentYear
 }
 
 export function calculateTimelineRange(
@@ -13,9 +13,9 @@ export function calculateTimelineRange(
 ): [startYear: number, endYear: number] | null {
   if (records.length === 0) return null
 
-  const startYear = Math.min(...records.map(({ start }) => start))
+  const startYear = Math.min(...records.map(({ period }) => period.start.year))
   const endYear = Math.max(
-    ...records.map(({ end }) => resolveEndYear(end, currentYear)),
+    ...records.map(({ period }) => resolveEndYear(period.end, currentYear)),
   )
 
   return [startYear - TIMELINE_MARGIN_YEARS, endYear + TIMELINE_MARGIN_YEARS]

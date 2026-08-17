@@ -33,13 +33,13 @@ function rowY(index: number): number {
 }
 
 function endYear(record: HistoryRecord): number {
-  return resolveEndYear(record.end, currentYear)
+  return resolveEndYear(record.period.end, currentYear)
 }
 
 function recordAge(record: HistoryRecord): number | null {
-  if (selectedYear.value === null || record.category !== 'people') return null
+  if (selectedYear.value === null || record.category !== 'person') return null
   if (selectedYear.value > endYear(record)) return null
-  return ageAtYear(record.start, selectedYear.value)
+  return ageAtYear(record.period.start.year, selectedYear.value)
 }
 
 function selectYear(event: MouseEvent): void {
@@ -95,48 +95,48 @@ onBeforeUnmount(() => resizeObserver?.disconnect())
         </g>
       </g>
 
-      <g v-for="(record, index) in records" :key="record.id ?? record.title" class="timeline-row">
+      <g v-for="(record, index) in records" :key="record.id" class="timeline-row">
         <image
-          v-if="record.imageUrl"
-          :href="record.imageUrl"
+          v-if="record.image"
+          :href="record.image.url"
           x="8"
           :y="rowY(index) - 22"
           width="44"
           height="44"
           preserveAspectRatio="xMidYMid slice"
         >
-          <title>{{ record.title }}</title>
+          <title>{{ record.image.alt }}</title>
         </image>
         <text class="record-title" x="60" :y="rowY(index) - 4">{{ record.title }}</text>
         <text class="record-period" x="60" :y="rowY(index) + 16">
-          {{ record.start }}〜{{ record.end || '現在' }}
+          {{ record.period.start.year }}〜{{ record.period.end?.year ?? '現在' }}
         </text>
 
         <line
           class="history-line"
-          :x1="yearScale(record.start)"
+          :x1="yearScale(record.period.start.year)"
           :x2="yearScale(endYear(record))"
           :y1="rowY(index)"
           :y2="rowY(index)"
         />
-        <circle class="endpoint" :cx="yearScale(record.start)" :cy="rowY(index)" r="5" />
+        <circle class="endpoint" :cx="yearScale(record.period.start.year)" :cy="rowY(index)" r="5" />
         <circle class="endpoint" :cx="yearScale(endYear(record))" :cy="rowY(index)" r="5" />
 
         <circle
           v-for="event in record.events"
-          :key="`${record.id ?? record.title}-${event.start}-${event.content}`"
+          :key="event.id"
           class="event-point"
-          :cx="yearScale(event.start)"
+          :cx="yearScale(event.date.year)"
           :cy="rowY(index)"
           r="5"
         >
-          <title>{{ event.start }}：{{ event.content }}</title>
+          <title>{{ event.date.year }}：{{ event.title }}</title>
         </circle>
 
         <text
           v-if="recordAge(record) !== null"
           class="age-label"
-          :x="yearScale(selectedYear ?? record.start) + 7"
+          :x="yearScale(selectedYear ?? record.period.start.year) + 7"
           :y="rowY(index) + 20"
         >
           {{ recordAge(record) }}歳

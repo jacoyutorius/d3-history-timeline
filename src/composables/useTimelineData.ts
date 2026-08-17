@@ -2,16 +2,16 @@ import { computed, onMounted, ref } from 'vue'
 
 import { isSampleSelected, setSampleSelected } from '../domain/timelineSelection'
 import { loadTimelineData } from '../services/timelineApi'
-import type { HistoryRecord, TimelineSample } from '../types/timeline'
+import type { SelectableHistoryRecord, TimelineSample } from '../types/timeline'
 
 export function useTimelineData() {
-  const histories = ref<HistoryRecord[]>([])
+  const histories = ref<SelectableHistoryRecord[]>([])
   const samples = ref<TimelineSample[]>([])
   const loading = ref(true)
   const error = ref<string | null>(null)
 
   const selectedRecords = computed(() => histories.value.filter(({ selected }) => selected))
-  const people = computed(() => histories.value.filter(({ category }) => category === 'people'))
+  const people = computed(() => histories.value.filter(({ category }) => category === 'person'))
   const organizations = computed(() => histories.value.filter(({ category }) => category === 'organization'))
 
   async function initialize(): Promise<void> {
@@ -28,7 +28,7 @@ export function useTimelineData() {
     }
   }
 
-  function toggleRecord(record: HistoryRecord): void {
+  function toggleRecord(record: SelectableHistoryRecord): void {
     record.selected = !record.selected
   }
 

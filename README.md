@@ -26,28 +26,11 @@ npm test           # Vitest
 npm run build      # 型検査と本番ビルド
 ```
 
-Vue 3への段階的な移行方針は[`docs/modernization-plan.md`](docs/modernization-plan.md)を参照してください。旧Nuxt実装は機能移植が完了するまで比較用に残しています。
+Vue 3への段階的な移行方針は[`docs/modernization-plan.md`](docs/modernization-plan.md)、データ形式は[`docs/data-schema.md`](docs/data-schema.md)を参照してください。旧Nuxt実装は機能移植が完了するまで比較用に残しています。
 
 ## テストデータ
 
-レコードのフォーマットは以下の通り。
-
-**format**
-
-```json
-{ 
-  title: "Walter Adolph Georg Gropius",
-  category: "people",
-  start: 1883,
-  end: 1969,
-  events: [
-    {start: 1919, content: "Become the first principal of Bauhaus"},
-  ], 
-  birth: "1883.5.18",
-  dead: "1969.7.5",
-  imageUrl: "" 
-},
-```
+同梱データは`src/data/bundledTimeline.ts`にあります。レコード形式、ID、日付、出典の規約は[`docs/data-schema.md`](docs/data-schema.md)を参照してください。
 
 
 ローカルAPIが必要な場合は、Sinatraサーバーを起動します。

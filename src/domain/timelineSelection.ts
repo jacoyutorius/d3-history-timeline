@@ -1,26 +1,21 @@
-import type { HistoryRecord, TimelineSample } from '../types/timeline'
-
-export function sampleTitles(sample: TimelineSample): Set<string> {
-  return new Set([...sample.peoples, ...sample.organizations])
-}
+import type { SelectableHistoryRecord, TimelineSample } from '../types/timeline'
 
 export function isSampleSelected(
-  histories: HistoryRecord[],
+  histories: SelectableHistoryRecord[],
   sample: TimelineSample,
 ): boolean {
-  const titles = sampleTitles(sample)
-  return titles.size > 0 && histories
-    .filter(({ title }) => titles.has(title))
-    .every(({ selected }) => selected === true)
+  const ids = new Set(sample.recordIds)
+  const targets = histories.filter(({ id }) => ids.has(id))
+  return targets.length === ids.size && targets.every(({ selected }) => selected)
 }
 
 export function setSampleSelected(
-  histories: HistoryRecord[],
+  histories: SelectableHistoryRecord[],
   sample: TimelineSample,
   selected: boolean,
 ): void {
-  const titles = sampleTitles(sample)
+  const ids = new Set(sample.recordIds)
   histories.forEach((history) => {
-    if (titles.has(history.title)) history.selected = selected
+    if (ids.has(history.id)) history.selected = selected
   })
 }
