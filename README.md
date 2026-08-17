@@ -26,7 +26,7 @@ npm test           # Vitest
 npm run build      # 型検査と本番ビルド
 ```
 
-Vue 3への段階的な移行方針は[`docs/modernization-plan.md`](docs/modernization-plan.md)、データ形式は[`docs/data-schema.md`](docs/data-schema.md)を参照してください。旧Nuxt実装は機能移植が完了するまで比較用に残しています。
+Vue 3への段階的な移行方針は[`docs/modernization-plan.md`](docs/modernization-plan.md)、データ形式は[`docs/data-schema.md`](docs/data-schema.md)、公開方法は[`docs/cloudflare-deployment.md`](docs/cloudflare-deployment.md)を参照してください。旧Nuxt実装は機能移植が完了するまで比較用に残しています。
 
 ## テストデータ
 
