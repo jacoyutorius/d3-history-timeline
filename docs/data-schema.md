@@ -4,6 +4,8 @@
 
 年表データは、表示文言ではなく安定した`id`で関連付ける。年の座標計算に必要な情報と、出典・画像などの表示情報を分離し、人物以外にも同じ構造を利用する。TypeScript上の正式な定義は`src/types/timeline.ts`を参照すること。
 
+同梱データは`src/data/bundledTimeline.json`に保存し、`src/data/bundledTimeline.ts`から型付きデータとして読み込む。データ追加後は`src/domain/timelineDataValidation.test.ts`で重複ID、期間、イベント日、サンプル参照切れを検証する。
+
 ## HistoryRecord
 
 | フィールド | 必須 | 説明 |

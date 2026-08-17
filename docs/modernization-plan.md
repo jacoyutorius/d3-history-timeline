@@ -57,7 +57,7 @@ Nuxt 1／Vue 2で実装された歴史年表SPAを、Vue 3とViteを中心とし
 
 1. `HistoryRecord`、`TimelineEvent`、`TimelineSample`のスキーマを確定する。（完了：`docs/data-schema.md`）
 2. 人物・組織以外のカテゴリ、出典、説明、日付精度、画像代替テキストを検討する。（完了）
-3. サンプルデータを外部JSONへ分離し、重複ID、期間、参照先を検証する。（検証の自動化に着手：`src/domain/timelineDataValidation.ts`）
+3. サンプルデータを外部JSONへ分離し、重複ID、期間、参照先を検証する。（完了：`src/data/bundledTimeline.json`、`src/domain/timelineDataValidation.ts`）
 4. 出典が確認できるデータから段階的に追加する。
 
 完了条件：データ検証が自動化され、追加データが既存表示を壊さない。
@@ -79,4 +79,4 @@ Nuxt 1／Vue 2で実装された歴史年表SPAを、Vue 3とViteを中心とし
 
 ## 現在の着手範囲
 
-Phase 3の残作業として、同梱データの整合性検証を自動化し、データ追加時に重複ID、期間、イベント日、サンプル参照切れを検出できる状態にする。次の区切りでは、同梱データの外部JSON化と追加データの出典確認を進める。
+Phase 3の残作業として、出典が確認できるデータを段階的に追加する。データ追加時は`src/data/bundledTimeline.json`を更新し、整合性検証テストで重複ID、期間、イベント日、サンプル参照切れを確認する。
