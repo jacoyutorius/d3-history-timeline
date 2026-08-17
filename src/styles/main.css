@@ -46,8 +46,17 @@ a {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   font-size: 1.25rem;
   font-weight: 700;
+}
+
+.brand img {
+  display: block;
+  width: 2rem;
+  height: 2rem;
 }
 
 .page-container {

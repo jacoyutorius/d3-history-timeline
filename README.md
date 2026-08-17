@@ -1,8 +1,8 @@
-# d3-history-timeline
+# TimeLends
 
 Vue 3とD3で、歴史上の人物や組織の関係を年表として可視化するSPAです。
 
-Visualize History.
+Visualize connected histories.
 
 ![https://s3-ap-northeast-1.amazonaws.com/public.jacoyutorius.com/d3-history-timeline.gif](https://s3-ap-northeast-1.amazonaws.com/public.jacoyutorius.com/d3-history-timeline.gif)
 
@@ -30,7 +30,7 @@ Vue 3への段階的な移行方針は[`docs/modernization-plan.md`](docs/modern
 
 ## テストデータ
 
-同梱データは`src/data/bundledTimeline.ts`にあります。レコード形式、ID、日付、出典の規約は[`docs/data-schema.md`](docs/data-schema.md)を参照してください。
+同梱データは`src/data/bundledTimeline.json`にあります。レコード形式、ID、日付、出典の規約は[`docs/data-schema.md`](docs/data-schema.md)を参照してください。
 
 
 ローカルAPIが必要な場合は、Sinatraサーバーを起動します。
