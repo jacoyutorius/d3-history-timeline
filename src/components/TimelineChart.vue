@@ -115,7 +115,7 @@ watch([activeRecord, detailMode], async () => {
 <template>
   <div class="timeline-chart-shell">
     <div class="chart-header">
-      <p class="chart-help">年表をクリックすると年齢を表示します。名称を選ぶと詳細を確認できます。</p>
+      <p class="chart-help">年表をクリックすると年を選択できます。名称で詳細を開き、イベント点で出来事の年に移動できます。</p>
       <fieldset class="detail-mode-control">
         <legend>詳細表示</legend>
         <div class="segmented-control">

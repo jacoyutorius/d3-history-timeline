@@ -31,7 +31,7 @@ const {
       <div class="timeline-toolbar">
         <p>{{ selectedRecords.length }}件を選択中</p>
         <button class="primary-button" type="button" @click="selectorOpen = true">
-          表示データを選択
+          比較するデータを選ぶ
         </button>
       </div>
 
