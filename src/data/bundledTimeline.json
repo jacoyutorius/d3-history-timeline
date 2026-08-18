@@ -14,10 +14,40 @@
           "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
         },
         {
+          "id": "bauhaus-first-exhibition",
+          "date": { "year": 1923 },
+          "title": "バウハウス展で「芸術と技術、新たな統一」を掲げる",
+          "sources": [{ "title": "14 Years of Bauhaus（Bauhaus-Archiv）", "url": "https://www.bauhaus.de/en/discover/article/14-years-of-bauhaus/" }]
+        },
+        {
+          "id": "bauhaus-weimar-dissolution-declared",
+          "date": { "year": 1924, "month": 12, "day": 26 },
+          "title": "マイスターたちがヴァイマル校の閉鎖を宣言",
+          "sources": [{ "title": "14 Years of Bauhaus（Bauhaus-Archiv）", "url": "https://www.bauhaus.de/en/discover/article/14-years-of-bauhaus/" }]
+        },
+        {
           "id": "bauhaus-moves-dessau",
           "date": { "year": 1925 },
           "title": "デッサウへ移転",
           "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
+        },
+        {
+          "id": "bauhaus-dessau-official-status",
+          "date": { "year": 1926 },
+          "title": "デッサウでHochschule für Gestaltungとして公式地位を得る",
+          "sources": [{ "title": "Chronologie（Stiftung Bauhaus Dessau）", "url": "https://bauhaus-dessau.de/institution/chronologie/" }]
+        },
+        {
+          "id": "bauhaus-meyer-director",
+          "date": { "year": 1928 },
+          "title": "ハンネス・マイヤーが校長に就任",
+          "sources": [{ "title": "Chronologie（Stiftung Bauhaus Dessau）", "url": "https://bauhaus-dessau.de/institution/chronologie/" }]
+        },
+        {
+          "id": "bauhaus-mies-director",
+          "date": { "year": 1930 },
+          "title": "ミース・ファン・デル・ローエが校長に就任",
+          "sources": [{ "title": "Chronologie（Stiftung Bauhaus Dessau）", "url": "https://bauhaus-dessau.de/institution/chronologie/" }]
         },
         {
           "id": "bauhaus-moves-berlin",
@@ -46,6 +76,18 @@
           "date": { "year": 1919 },
           "title": "ヴァイマルで開校",
           "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
+        },
+        {
+          "id": "bauhaus-weimar-exhibition",
+          "date": { "year": 1923 },
+          "title": "最初の大規模なバウハウス展を開催",
+          "sources": [{ "title": "14 Years of Bauhaus（Bauhaus-Archiv）", "url": "https://www.bauhaus.de/en/discover/article/14-years-of-bauhaus/" }]
+        },
+        {
+          "id": "bauhaus-weimar-dissolution",
+          "date": { "year": 1924, "month": 12, "day": 26 },
+          "title": "学校の閉鎖を宣言",
+          "sources": [{ "title": "14 Years of Bauhaus（Bauhaus-Archiv）", "url": "https://www.bauhaus.de/en/discover/article/14-years-of-bauhaus/" }]
         }
       ],
       "image": {
@@ -66,6 +108,30 @@
           "date": { "year": 1926 },
           "title": "デッサウ校舎が完成",
           "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
+        },
+        {
+          "id": "bauhaus-dessau-public-opening",
+          "date": { "year": 1926, "month": 12, "day": 4 },
+          "title": "校舎、マイスターハウス、デッサウ・テルテン住宅を公開",
+          "sources": [{ "title": "Chronologie（Stiftung Bauhaus Dessau）", "url": "https://bauhaus-dessau.de/institution/chronologie/" }]
+        },
+        {
+          "id": "bauhaus-dessau-meyer-director",
+          "date": { "year": 1928 },
+          "title": "ハンネス・マイヤーが校長に就任",
+          "sources": [{ "title": "Chronologie（Stiftung Bauhaus Dessau）", "url": "https://bauhaus-dessau.de/institution/chronologie/" }]
+        },
+        {
+          "id": "bauhaus-dessau-mies-director",
+          "date": { "year": 1930 },
+          "title": "ミース・ファン・デル・ローエが校長に就任",
+          "sources": [{ "title": "Chronologie（Stiftung Bauhaus Dessau）", "url": "https://bauhaus-dessau.de/institution/chronologie/" }]
+        },
+        {
+          "id": "bauhaus-dessau-closing-resolution",
+          "date": { "year": 1932 },
+          "title": "デッサウ市議会がバウハウス閉鎖を決議",
+          "sources": [{ "title": "Chronologie（Stiftung Bauhaus Dessau）", "url": "https://bauhaus-dessau.de/institution/chronologie/" }]
         }
       ],
       "image": {
@@ -156,10 +222,28 @@
           "sources": [{ "title": "Walter Gropius（Bauhaus Kooperation）", "url": "https://bauhauskooperation.com/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-1436" }]
         },
         {
+          "id": "gropius-dessau-building",
+          "date": { "year": 1926 },
+          "title": "デッサウのバウハウス校舎を設計",
+          "sources": [{ "title": "Chronologie（Stiftung Bauhaus Dessau）", "url": "https://bauhaus-dessau.de/institution/chronologie/" }]
+        },
+        {
           "id": "gropius-leaves-bauhaus",
           "date": { "year": 1928 },
           "title": "バウハウス校長を退任",
           "sources": [{ "title": "Walter Gropius（Bauhaus Kooperation）", "url": "https://bauhauskooperation.com/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-1436" }]
+        },
+        {
+          "id": "gropius-harvard",
+          "date": { "year": 1937 },
+          "title": "ハーバード大学大学院デザインスクールの教授となる",
+          "sources": [{ "title": "Bauhaus exhibit showcases influential art movement（Harvard Gazette）", "url": "https://news.harvard.edu/gazette/story/2019/02/bauhaus-exhibit-showcases-influential-art-movement-as-it-celebrates-centennia/" }]
+        },
+        {
+          "id": "gropius-tac",
+          "date": { "year": 1945 },
+          "title": "The Architects Collaborativeを設立",
+          "sources": [{ "title": "Bauhaus exhibit showcases influential art movement（Harvard Gazette）", "url": "https://news.harvard.edu/gazette/story/2019/02/bauhaus-exhibit-showcases-influential-art-movement-as-it-celebrates-centennia/" }]
         }
       ],
       "image": {
@@ -333,13 +417,37 @@
           "id": "itten-bauhaus-master",
           "date": { "year": 1919 },
           "title": "バウハウスのマイスターに就任",
-          "sources": []
+          "sources": [{ "title": "Itten, Johannes（Bauhaus Kooperation）", "url": "https://bauhauskooperation.de/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-Itten-Johannes-565" }]
+        },
+        {
+          "id": "itten-leaves-bauhaus",
+          "date": { "year": 1923, "month": 3 },
+          "title": "バウハウスを離れる",
+          "sources": [{ "title": "Itten, Johannes（Bauhaus Kooperation）", "url": "https://bauhauskooperation.de/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-Itten-Johannes-565" }]
         },
         {
           "id": "itten-school",
           "date": { "year": 1926 },
           "title": "イッテン・シューレを設立",
-          "sources": []
+          "sources": [{ "title": "Itten, Johannes（Bauhaus Kooperation）", "url": "https://bauhauskooperation.de/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-Itten-Johannes-565" }]
+        },
+        {
+          "id": "itten-krefeld-school",
+          "date": { "year": 1932 },
+          "title": "クレーフェルトのテキスタイル専門学校の校長となる",
+          "sources": [{ "title": "Itten, Johannes（Bauhaus Kooperation）", "url": "https://bauhauskooperation.de/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-Itten-Johannes-565" }]
+        },
+        {
+          "id": "itten-zurich-school",
+          "date": { "year": 1938 },
+          "title": "チューリヒの工芸学校と工芸美術館を率いる",
+          "sources": [{ "title": "Itten, Johannes（Bauhaus Kooperation）", "url": "https://bauhauskooperation.de/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-Itten-Johannes-565" }]
+        },
+        {
+          "id": "itten-hfg-ulm",
+          "date": { "year": 1955 },
+          "title": "マックス・ビルに招かれウルム造形大学に関わる",
+          "sources": [{ "title": "Itten, Johannes（Bauhaus Kooperation）", "url": "https://bauhauskooperation.de/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-Itten-Johannes-565" }]
         }
       ],
       "image": {
@@ -355,7 +463,36 @@
       "description": "日本のアニメーション監督・映画監督。",
       "period": { "start": { "year": 1941, "month": 1, "day": 5 }, "end": null },
       "events": [
-        { "id": "miyazaki-cagliostro", "date": { "year": 1979 }, "title": "ルパン三世 カリオストロの城", "sources": [] },
+        {
+          "id": "miyazaki-cagliostro",
+          "date": { "year": 1979, "month": 12, "day": 15 },
+          "title": "ルパン三世 カリオストロの城",
+          "sources": [{ "title": "ルパン三世 カリオストロの城（トムス・エンタテインメント）", "url": "https://www.tms-e.co.jp/alltitles/lupin/010302.html" }]
+        },
+        {
+          "id": "miyazaki-nausicaa",
+          "date": { "year": 1984, "month": 3 },
+          "title": "風の谷のナウシカが公開",
+          "sources": [{ "title": "スタジオジブリの年表（スタジオジブリ）", "url": "https://www.ghibli.jp/chronology/" }]
+        },
+        {
+          "id": "miyazaki-laputa",
+          "date": { "year": 1986, "month": 8, "day": 2 },
+          "title": "天空の城ラピュタが公開",
+          "sources": [{ "title": "天空の城ラピュタ（スタジオジブリ）", "url": "https://www.ghibli.jp/works/laputa/" }]
+        },
+        {
+          "id": "miyazaki-totoro",
+          "date": { "year": 1988, "month": 4 },
+          "title": "となりのトトロが公開",
+          "sources": [{ "title": "スタジオジブリの年表（スタジオジブリ）", "url": "https://www.ghibli.jp/chronology/" }]
+        },
+        {
+          "id": "miyazaki-mononoke",
+          "date": { "year": 1997, "month": 7 },
+          "title": "もののけ姫が公開",
+          "sources": [{ "title": "スタジオジブリの年表（スタジオジブリ）", "url": "https://www.ghibli.jp/chronology/" }]
+        },
         {
           "id": "miyazaki-spirited-away",
           "date": { "year": 2001, "month": 7, "day": 20 },
@@ -385,12 +522,35 @@
         "end": { "year": 2018, "month": 4, "day": 5 }
       },
       "events": [
-        { "id": "takahata-horus", "date": { "year": 1968 }, "title": "太陽の王子 ホルスの大冒険", "sources": [] },
+        {
+          "id": "takahata-horus",
+          "date": { "year": 1968, "month": 7 },
+          "title": "太陽の王子 ホルスの大冒険",
+          "sources": [{ "title": "太陽の王子 ホルスの大冒険（東映ビデオ）", "url": "https://www.toei-video.co.jp/catalog/dutd02103/" }]
+        },
         {
           "id": "takahata-grave-fireflies",
           "date": { "year": 1988, "month": 4, "day": 16 },
           "title": "火垂るの墓",
           "sources": [{ "title": "火垂るの墓（スタジオジブリ）", "url": "https://www.ghibli.jp/works/hotarunohaka/" }]
+        },
+        {
+          "id": "takahata-only-yesterday",
+          "date": { "year": 1991, "month": 7 },
+          "title": "おもひでぽろぽろが公開",
+          "sources": [{ "title": "スタジオジブリの年表（スタジオジブリ）", "url": "https://www.ghibli.jp/chronology/" }]
+        },
+        {
+          "id": "takahata-pom-poko",
+          "date": { "year": 1994, "month": 7 },
+          "title": "平成狸合戦ぽんぽこが公開",
+          "sources": [{ "title": "スタジオジブリの年表（スタジオジブリ）", "url": "https://www.ghibli.jp/chronology/" }]
+        },
+        {
+          "id": "takahata-yamada",
+          "date": { "year": 1999, "month": 7 },
+          "title": "ホーホケキョ となりの山田くんが公開",
+          "sources": [{ "title": "スタジオジブリの年表（スタジオジブリ）", "url": "https://www.ghibli.jp/chronology/" }]
         },
         {
           "id": "takahata-kaguya",
