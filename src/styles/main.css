@@ -60,9 +60,9 @@ a {
 }
 
 .page-container {
-  width: min(1200px, 100%);
+  width: min(1440px, 100%);
   margin: 0 auto;
-  padding: 2rem clamp(1rem, 4vw, 3rem);
+  padding: 2rem clamp(0.75rem, 2.5vw, 2rem);
 }
 
 .empty-state {

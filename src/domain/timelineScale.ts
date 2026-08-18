@@ -3,9 +3,9 @@ import { scaleLinear, type ScaleLinear } from 'd3'
 export const CHART_MIN_WIDTH = 720
 export const CHART_MARGIN = {
   top: 56,
-  right: 36,
+  right: 24,
   bottom: 36,
-  left: 190,
+  left: 160,
 } as const
 export const CHART_ROW_HEIGHT = 76
 export const CHART_COMPACT_ROW_HEIGHT = 62
