@@ -1,0 +1,1399 @@
+{
+  "histories": [
+    {
+      "id": "chuck-berry",
+      "title": "Chuck Berry",
+      "category": "person",
+      "description": "ブルース、R&B、カントリーの要素を結び付け、ギター演奏と作曲の両面から初期ロックンロールの形成に大きな影響を与えたアメリカの音楽家。",
+      "period": {
+        "start": {
+          "year": 1926
+        },
+        "end": {
+          "year": 2017
+        }
+      },
+      "events": [
+        {
+          "id": "chuck-berry-maybellene",
+          "date": {
+            "year": 1955
+          },
+          "title": "「Maybellene」を発表",
+          "sources": [
+            {
+              "title": "Library of Congress - Rockabilly",
+              "url": "https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/rockabilly/"
+            }
+          ],
+          "description": "カントリーとR&Bの要素を結び付けた初期ロックンロールの代表曲を発表した。"
+        },
+        {
+          "id": "chuck-berry-johnny-b-goode",
+          "date": {
+            "year": 1958
+          },
+          "title": "「Johnny B. Goode」を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Chuck Berry",
+              "url": "https://rockhall.com/inductees/chuck-berry/"
+            }
+          ],
+          "description": "後世のロックギターとロックソングの様式に大きな影響を与えた代表曲を発表した。"
+        },
+        {
+          "id": "chuck-berry-rock-hall",
+          "date": {
+            "year": 1986
+          },
+          "title": "Rock & Roll Hall of Fame入り",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Chuck Berry",
+              "url": "https://rockhall.com/inductees/chuck-berry/"
+            }
+          ],
+          "description": "第1回の殿堂入りアーティストとして選出された。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rock & Roll Hall of Fame - Chuck Berry",
+          "url": "https://rockhall.com/inductees/chuck-berry/"
+        },
+        {
+          "title": "Encyclopaedia Britannica - Chuck Berry",
+          "url": "https://www.britannica.com/biography/Chuck-Berry"
+        }
+      ]
+    },
+    {
+      "id": "elvis-presley",
+      "title": "Elvis Presley",
+      "category": "person",
+      "description": "R&B、カントリー、ゴスペルなどの要素を横断し、ロックンロールを大衆文化の中心へ押し上げるうえで大きな影響を与えたアメリカの音楽家。",
+      "period": {
+        "start": {
+          "year": 1935
+        },
+        "end": {
+          "year": 1977
+        }
+      },
+      "events": [
+        {
+          "id": "elvis-presley-thats-all-right",
+          "date": {
+            "year": 1954
+          },
+          "title": "「That's All Right」を録音",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Elvis Presley",
+              "url": "https://rockhall.com/inductees/elvis-presley/"
+            }
+          ],
+          "description": "Sun Recordsで初期の代表的な録音を行い、ロックンロール初期の重要な活動につながった。"
+        },
+        {
+          "id": "elvis-presley-heartbreak-hotel",
+          "date": {
+            "year": 1956
+          },
+          "title": "「Heartbreak Hotel」を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Elvis Presley",
+              "url": "https://rockhall.com/inductees/elvis-presley/"
+            }
+          ],
+          "description": "全米規模での成功を象徴する代表曲を発表した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rock & Roll Hall of Fame - Elvis Presley",
+          "url": "https://rockhall.com/inductees/elvis-presley/"
+        },
+        {
+          "title": "Encyclopaedia Britannica - Elvis Presley",
+          "url": "https://www.britannica.com/biography/Elvis-Presley"
+        }
+      ]
+    },
+    {
+      "id": "buddy-holly",
+      "title": "Buddy Holly",
+      "category": "person",
+      "description": "ロックンロールのバンド編成、作曲、歌唱、ギター演奏の様式を発展させ、後続のロックバンドに大きな影響を与えたアメリカの音楽家。",
+      "period": {
+        "start": {
+          "year": 1936
+        },
+        "end": {
+          "year": 1959
+        }
+      },
+      "events": [
+        {
+          "id": "buddy-holly-thatll-be-the-day",
+          "date": {
+            "year": 1957
+          },
+          "title": "「That'll Be the Day」を発表",
+          "sources": [
+            {
+              "title": "Library of Congress - Rockabilly",
+              "url": "https://www.loc.gov/collections/songs-of-america/articles-and-essays/musical-styles/popular-songs-of-the-day/rockabilly/"
+            }
+          ],
+          "description": "カントリーとロックンロールを結び付けた代表曲を発表した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rock & Roll Hall of Fame - Buddy Holly",
+          "url": "https://rockhall.com/inductees/buddy-holly/"
+        },
+        {
+          "title": "Encyclopaedia Britannica - Buddy Holly",
+          "url": "https://www.britannica.com/biography/Buddy-Holly"
+        }
+      ]
+    },
+    {
+      "id": "little-richard",
+      "title": "Little Richard",
+      "category": "person",
+      "description": "激しいピアノ演奏、強烈な歌唱、舞台表現によって1950年代のロックンロールを発展させ、後続のロック表現に大きな影響を与えたアメリカの音楽家。",
+      "period": {
+        "start": {
+          "year": 1932
+        },
+        "end": {
+          "year": 2020
+        }
+      },
+      "events": [
+        {
+          "id": "little-richard-tutti-frutti",
+          "date": {
+            "year": 1955
+          },
+          "title": "「Tutti Frutti」を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Little Richard",
+              "url": "https://rockhall.com/inductees/little-richard/"
+            }
+          ],
+          "description": "強烈な歌唱とリズムを特徴とする初期ロックンロールの代表曲を発表した。"
+        },
+        {
+          "id": "little-richard-rock-hall",
+          "date": {
+            "year": 1986
+          },
+          "title": "Rock & Roll Hall of Fame入り",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Little Richard",
+              "url": "https://rockhall.com/inductees/little-richard/"
+            }
+          ],
+          "description": "第1回の殿堂入りアーティストとして選出された。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rock & Roll Hall of Fame - Little Richard",
+          "url": "https://rockhall.com/inductees/little-richard/"
+        },
+        {
+          "title": "Encyclopaedia Britannica - Little Richard",
+          "url": "https://www.britannica.com/biography/Little-Richard"
+        }
+      ]
+    },
+    {
+      "id": "the-beatles",
+      "title": "The Beatles",
+      "category": "organization",
+      "description": "作曲、録音技術、アルバム表現、バンド文化を大きく発展させ、1960年代以降のロックとポピュラー音楽に大きな影響を与えたイギリスのロックバンド。",
+      "period": {
+        "start": {
+          "year": 1960
+        },
+        "end": {
+          "year": 1970
+        }
+      },
+      "events": [
+        {
+          "id": "the-beatles-love-me-do",
+          "date": {
+            "year": 1962
+          },
+          "title": "「Love Me Do」を発表",
+          "sources": [
+            {
+              "title": "The Beatles - Biography",
+              "url": "https://www.thebeatles.com/"
+            }
+          ],
+          "description": "EMIからの初期ヒットとなるシングルを発表した。"
+        },
+        {
+          "id": "the-beatles-us-breakthrough",
+          "date": {
+            "year": 1964
+          },
+          "title": "アメリカで大きな成功を収める",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - The Beatles",
+              "url": "https://rockhall.com/inductees/beatles/"
+            }
+          ],
+          "description": "アメリカ市場で大きな成功を収め、ブリティッシュ・インヴェイジョンを象徴する存在となった。"
+        },
+        {
+          "id": "the-beatles-sgt-pepper",
+          "date": {
+            "year": 1967
+          },
+          "title": "『Sgt. Pepper's Lonely Hearts Club Band』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - The Beatles",
+              "url": "https://rockhall.com/inductees/beatles/"
+            }
+          ],
+          "description": "録音技術とアルバム表現の可能性を拡張した作品を発表した。"
+        },
+        {
+          "id": "the-beatles-abbey-road",
+          "date": {
+            "year": 1969
+          },
+          "title": "『Abbey Road』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - The Beatles",
+              "url": "https://rockhall.com/inductees/beatles/"
+            }
+          ],
+          "description": "後期を代表するスタジオ・アルバムを発表した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rock & Roll Hall of Fame - The Beatles",
+          "url": "https://rockhall.com/inductees/beatles/"
+        },
+        {
+          "title": "The Beatles - Official Website",
+          "url": "https://www.thebeatles.com/"
+        }
+      ]
+    },
+    {
+      "id": "the-rolling-stones",
+      "title": "The Rolling Stones",
+      "category": "organization",
+      "description": "アメリカのブルースと初期ロックンロールを基盤に独自のサウンドを発展させ、長期にわたりロックの演奏様式とバンド文化に大きな影響を与えたイギリスのロックバンド。",
+      "period": {
+        "start": {
+          "year": 1962
+        },
+        "end": null
+      },
+      "events": [
+        {
+          "id": "the-rolling-stones-satisfaction",
+          "date": {
+            "year": 1965
+          },
+          "title": "「(I Can't Get No) Satisfaction」を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - The Rolling Stones",
+              "url": "https://rockhall.com/inductees/rolling-stones/"
+            }
+          ],
+          "description": "バンドを国際的な代表格へ押し上げた代表曲を発表した。"
+        },
+        {
+          "id": "the-rolling-stones-rock-hall",
+          "date": {
+            "year": 1989
+          },
+          "title": "Rock & Roll Hall of Fame入り",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - The Rolling Stones",
+              "url": "https://rockhall.com/inductees/rolling-stones/"
+            }
+          ],
+          "description": "ロック史への長期的な影響を評価され殿堂入りした。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rock & Roll Hall of Fame - The Rolling Stones",
+          "url": "https://rockhall.com/inductees/rolling-stones/"
+        },
+        {
+          "title": "Rock & Roll Hall of Fame Library - Rolling Stones collection",
+          "url": "https://catalog.rockhall.com/rrhof-ais/Details/archive/110000881"
+        }
+      ]
+    },
+    {
+      "id": "bob-dylan",
+      "title": "Bob Dylan",
+      "category": "person",
+      "description": "フォークの語法とロックの電気的サウンドを結び付け、歌詞表現とシンガーソングライター像の発展に大きな影響を与えたアメリカの音楽家。",
+      "period": {
+        "start": {
+          "year": 1941
+        },
+        "end": null
+      },
+      "events": [
+        {
+          "id": "bob-dylan-highway-61-revisited",
+          "date": {
+            "year": 1965
+          },
+          "title": "『Highway 61 Revisited』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Bob Dylan",
+              "url": "https://rockhall.com/inductees/bob-dylan/"
+            }
+          ],
+          "description": "フォークとエレクトリック・ロックの接続を象徴する作品を発表した。"
+        },
+        {
+          "id": "bob-dylan-rock-hall",
+          "date": {
+            "year": 1988
+          },
+          "title": "Rock & Roll Hall of Fame入り",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Bob Dylan",
+              "url": "https://rockhall.com/inductees/bob-dylan/"
+            }
+          ],
+          "description": "作曲とロック表現への長期的な影響を評価され殿堂入りした。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rock & Roll Hall of Fame - Bob Dylan",
+          "url": "https://rockhall.com/inductees/bob-dylan/"
+        },
+        {
+          "title": "The Nobel Prize - Bob Dylan",
+          "url": "https://www.nobelprize.org/prizes/literature/2016/dylan/facts/"
+        }
+      ]
+    },
+    {
+      "id": "the-beach-boys",
+      "title": "The Beach Boys",
+      "category": "organization",
+      "description": "サーフ・ロックと緻密なコーラスワークを発展させ、スタジオ制作を重視したポップ／ロックの表現に大きな影響を与えたアメリカのロックバンド。",
+      "period": {
+        "start": {
+          "year": 1961
+        },
+        "end": null
+      },
+      "events": [
+        {
+          "id": "the-beach-boys-pet-sounds",
+          "date": {
+            "year": 1966
+          },
+          "title": "『Pet Sounds』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - The Beach Boys",
+              "url": "https://rockhall.com/inductees/beach-boys/"
+            }
+          ],
+          "description": "精緻なアレンジとスタジオ制作を追求した代表作を発表した。"
+        },
+        {
+          "id": "the-beach-boys-rock-hall",
+          "date": {
+            "year": 1988
+          },
+          "title": "Rock & Roll Hall of Fame入り",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - The Beach Boys",
+              "url": "https://rockhall.com/inductees/beach-boys/"
+            }
+          ],
+          "description": "ロックとポップの発展への影響を評価され殿堂入りした。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rock & Roll Hall of Fame - The Beach Boys",
+          "url": "https://rockhall.com/inductees/beach-boys/"
+        }
+      ]
+    },
+    {
+      "id": "the-jimi-hendrix-experience",
+      "title": "The Jimi Hendrix Experience",
+      "category": "organization",
+      "description": "ブルースを基盤にフィードバック、即興、スタジオ技術を大胆に取り入れ、ロックギターとサイケデリック・ロックの表現に大きな影響を与えたロックバンド。",
+      "period": {
+        "start": {
+          "year": 1966
+        },
+        "end": {
+          "year": 1969
+        }
+      },
+      "events": [
+        {
+          "id": "the-jimi-hendrix-experience-are-you-experienced",
+          "date": {
+            "year": 1967
+          },
+          "title": "『Are You Experienced』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Jimi Hendrix Experience",
+              "url": "https://rockhall.com/inductees/jimi-hendrix-experience/"
+            }
+          ],
+          "description": "サイケデリックな音響と革新的なギター演奏を示したデビュー・アルバムを発表した。"
+        },
+        {
+          "id": "the-jimi-hendrix-experience-electric-ladyland",
+          "date": {
+            "year": 1968
+          },
+          "title": "『Electric Ladyland』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Jimi Hendrix Experience",
+              "url": "https://rockhall.com/inductees/jimi-hendrix-experience/"
+            }
+          ],
+          "description": "スタジオ技術とギター表現をさらに拡張したアルバムを発表した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rock & Roll Hall of Fame - Jimi Hendrix Experience",
+          "url": "https://rockhall.com/inductees/jimi-hendrix-experience/"
+        }
+      ]
+    },
+    {
+      "id": "led-zeppelin",
+      "title": "Led Zeppelin",
+      "category": "organization",
+      "description": "ブルース、フォーク、ハードロックを融合し、重厚なリフ、アルバム志向、スタジアム規模のライブ表現を通じてハードロックとヘヴィメタルの発展に大きな影響を与えたイギリスのロックバンド。",
+      "period": {
+        "start": {
+          "year": 1968
+        },
+        "end": {
+          "year": 1980
+        }
+      },
+      "events": [
+        {
+          "id": "led-zeppelin-debut",
+          "date": {
+            "year": 1969
+          },
+          "title": "『Led Zeppelin』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Led Zeppelin",
+              "url": "https://rockhall.com/inductees/led-zeppelin/"
+            }
+          ],
+          "description": "重厚なブルース・ロックを打ち出したデビュー・アルバムを発表した。"
+        },
+        {
+          "id": "led-zeppelin-iv",
+          "date": {
+            "year": 1971
+          },
+          "title": "『Led Zeppelin IV』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Led Zeppelin",
+              "url": "https://rockhall.com/inductees/led-zeppelin/"
+            }
+          ],
+          "description": "「Stairway to Heaven」を収録した代表作を発表した。"
+        },
+        {
+          "id": "led-zeppelin-physical-graffiti",
+          "date": {
+            "year": 1975
+          },
+          "title": "『Physical Graffiti』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Led Zeppelin",
+              "url": "https://rockhall.com/inductees/led-zeppelin/"
+            }
+          ],
+          "description": "音楽性の幅をさらに拡張した2枚組アルバムを発表した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rock & Roll Hall of Fame - Led Zeppelin",
+          "url": "https://rockhall.com/inductees/led-zeppelin/"
+        }
+      ]
+    },
+    {
+      "id": "david-bowie",
+      "title": "David Bowie",
+      "category": "person",
+      "description": "グラム・ロック、アート・ロック、ソウル、電子音楽などを横断し、音楽性と視覚的表現の両面からロックの可能性を拡張したイギリスの音楽家。",
+      "period": {
+        "start": {
+          "year": 1947
+        },
+        "end": {
+          "year": 2016
+        }
+      },
+      "events": [
+        {
+          "id": "david-bowie-ziggy-stardust",
+          "date": {
+            "year": 1972
+          },
+          "title": "『The Rise and Fall of Ziggy Stardust and the Spiders from Mars』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - David Bowie",
+              "url": "https://rockhall.com/inductees/david-bowie/"
+            }
+          ],
+          "description": "架空のロックスター像と音楽を結び付けた代表作を発表した。"
+        },
+        {
+          "id": "david-bowie-low",
+          "date": {
+            "year": 1977
+          },
+          "title": "『Low』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - David Bowie",
+              "url": "https://rockhall.com/inductees/david-bowie/"
+            }
+          ],
+          "description": "電子音楽と実験的な制作手法を前面に出した作品を発表した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rock & Roll Hall of Fame - David Bowie",
+          "url": "https://rockhall.com/inductees/david-bowie/"
+        },
+        {
+          "title": "Encyclopaedia Britannica - David Bowie",
+          "url": "https://www.britannica.com/biography/David-Bowie"
+        }
+      ]
+    },
+    {
+      "id": "ramones",
+      "title": "Ramones",
+      "category": "organization",
+      "description": "短く速い楽曲、簡潔なコード進行、削ぎ落とした演奏を通じてパンク・ロックの様式確立に大きな影響を与えたアメリカのロックバンド。",
+      "period": {
+        "start": {
+          "year": 1974
+        },
+        "end": {
+          "year": 1996
+        }
+      },
+      "events": [
+        {
+          "id": "ramones-debut",
+          "date": {
+            "year": 1976
+          },
+          "title": "『Ramones』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Ramones",
+              "url": "https://rockhall.com/inductees/ramones/"
+            }
+          ],
+          "description": "短く高速な楽曲を中心とするパンク・ロックの基本形を示したデビュー・アルバムを発表した。"
+        },
+        {
+          "id": "ramones-rocket-to-russia",
+          "date": {
+            "year": 1977
+          },
+          "title": "『Rocket to Russia』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Ramones",
+              "url": "https://rockhall.com/inductees/ramones/"
+            }
+          ],
+          "description": "ポップな旋律と高速な演奏を結び付けた代表作を発表した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rock & Roll Hall of Fame - Ramones",
+          "url": "https://rockhall.com/inductees/ramones/"
+        }
+      ]
+    },
+    {
+      "id": "the-clash",
+      "title": "The Clash",
+      "category": "organization",
+      "description": "パンク・ロックを基盤にレゲエ、スカ、ロックンロールなどを取り込み、政治的・社会的な主題を扱うロック表現に大きな影響を与えたイギリスのロックバンド。",
+      "period": {
+        "start": {
+          "year": 1976
+        },
+        "end": {
+          "year": 1986
+        }
+      },
+      "events": [
+        {
+          "id": "the-clash-debut",
+          "date": {
+            "year": 1977
+          },
+          "title": "『The Clash』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - The Clash",
+              "url": "https://rockhall.com/inductees/clash/"
+            }
+          ],
+          "description": "イギリスのパンク・ロックを代表するデビュー・アルバムを発表した。"
+        },
+        {
+          "id": "the-clash-london-calling",
+          "date": {
+            "year": 1979
+          },
+          "title": "『London Calling』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - The Clash",
+              "url": "https://rockhall.com/inductees/clash/"
+            }
+          ],
+          "description": "パンクを基盤に多様な音楽様式を取り込んだ代表作を発表した。"
+        },
+        {
+          "id": "the-clash-combat-rock",
+          "date": {
+            "year": 1982
+          },
+          "title": "『Combat Rock』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - The Clash",
+              "url": "https://rockhall.com/inductees/clash/"
+            }
+          ],
+          "description": "「Rock the Casbah」などを収録したアルバムを発表した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rock & Roll Hall of Fame - The Clash",
+          "url": "https://rockhall.com/inductees/clash/"
+        }
+      ]
+    },
+    {
+      "id": "talking-heads",
+      "title": "Talking Heads",
+      "category": "organization",
+      "description": "パンク以後のロックにファンク、アフリカ音楽、アート志向のアレンジを取り込み、ニュー・ウェイヴとアート・ロックの発展に大きな影響を与えたアメリカのロックバンド。",
+      "period": {
+        "start": {
+          "year": 1975
+        },
+        "end": {
+          "year": 1991
+        }
+      },
+      "events": [
+        {
+          "id": "talking-heads-77",
+          "date": {
+            "year": 1977
+          },
+          "title": "『Talking Heads: 77』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Talking Heads",
+              "url": "https://rockhall.com/inductees/talking-heads/"
+            }
+          ],
+          "description": "簡潔なバンドサウンドと独特の歌唱を示したデビュー・アルバムを発表した。"
+        },
+        {
+          "id": "talking-heads-remain-in-light",
+          "date": {
+            "year": 1980
+          },
+          "title": "『Remain in Light』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Talking Heads",
+              "url": "https://rockhall.com/inductees/talking-heads/"
+            }
+          ],
+          "description": "反復的なリズムと多層的なアレンジを追求した代表作を発表した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rock & Roll Hall of Fame - Talking Heads",
+          "url": "https://rockhall.com/inductees/talking-heads/"
+        }
+      ]
+    },
+    {
+      "id": "rem",
+      "title": "R.E.M.",
+      "category": "organization",
+      "description": "大学街のインディー・シーンから出発し、ギターを中心とするオルタナティヴ・ロックをアメリカのメインストリームへ広げるうえで大きな影響を与えたロックバンド。",
+      "period": {
+        "start": {
+          "year": 1980
+        },
+        "end": {
+          "year": 2011
+        }
+      },
+      "events": [
+        {
+          "id": "rem-murmur",
+          "date": {
+            "year": 1983
+          },
+          "title": "『Murmur』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - R.E.M.",
+              "url": "https://rockhall.com/inductees/rem/"
+            }
+          ],
+          "description": "初期オルタナティヴ・ロックを代表するデビュー・アルバムを発表した。"
+        },
+        {
+          "id": "rem-out-of-time",
+          "date": {
+            "year": 1991
+          },
+          "title": "『Out of Time』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - R.E.M.",
+              "url": "https://rockhall.com/inductees/rem/"
+            }
+          ],
+          "description": "国際的な成功を大きく広げたアルバムを発表した。"
+        },
+        {
+          "id": "rem-disbanded",
+          "date": {
+            "year": 2011
+          },
+          "title": "解散を発表",
+          "sources": [
+            {
+              "title": "R.E.M. HQ - R.E.M. Calls It a Day",
+              "url": "https://remhq.com/news/rem-calls-it-a-day-3/"
+            }
+          ],
+          "description": "31年間の活動を終え、バンドとしての活動を終了した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rock & Roll Hall of Fame - R.E.M.",
+          "url": "https://rockhall.com/inductees/rem/"
+        },
+        {
+          "title": "R.E.M. HQ",
+          "url": "https://remhq.com/"
+        }
+      ]
+    },
+    {
+      "id": "metallica",
+      "title": "Metallica",
+      "category": "organization",
+      "description": "高速なリフ、複雑な楽曲構成、重厚なサウンドを発展させ、スラッシュメタルとヘヴィメタルの大衆化に大きな影響を与えたアメリカのロックバンド。",
+      "period": {
+        "start": {
+          "year": 1981
+        },
+        "end": null
+      },
+      "events": [
+        {
+          "id": "metallica-kill-em-all",
+          "date": {
+            "year": 1983
+          },
+          "title": "『Kill 'Em All』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Metallica",
+              "url": "https://rockhall.com/inductees/metallica/"
+            }
+          ],
+          "description": "スラッシュメタル初期を代表するデビュー・アルバムを発表した。"
+        },
+        {
+          "id": "metallica-master-of-puppets",
+          "date": {
+            "year": 1986
+          },
+          "title": "『Master of Puppets』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Metallica",
+              "url": "https://rockhall.com/inductees/metallica/"
+            }
+          ],
+          "description": "複雑な構成と高速なリフを統合した代表作を発表した。"
+        },
+        {
+          "id": "metallica-black-album",
+          "date": {
+            "year": 1991
+          },
+          "title": "『Metallica』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Metallica",
+              "url": "https://rockhall.com/inductees/metallica/"
+            }
+          ],
+          "description": "より簡潔で重厚なサウンドによって世界的な成功を拡大した。"
+        },
+        {
+          "id": "metallica-rock-hall",
+          "date": {
+            "year": 2009
+          },
+          "title": "Rock & Roll Hall of Fame入り",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Metallica",
+              "url": "https://rockhall.com/inductees/metallica/"
+            }
+          ],
+          "description": "ヘヴィメタルとロックへの影響を評価され殿堂入りした。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rock & Roll Hall of Fame - Metallica",
+          "url": "https://rockhall.com/inductees/metallica/"
+        }
+      ]
+    },
+    {
+      "id": "nirvana",
+      "title": "Nirvana",
+      "category": "organization",
+      "description": "パンクの感覚、ポップな旋律、強いダイナミクスを結び付け、グランジとオルタナティヴ・ロックを世界的なメインストリームへ押し上げるうえで大きな影響を与えたアメリカのロックバンド。",
+      "period": {
+        "start": {
+          "year": 1987
+        },
+        "end": {
+          "year": 1994
+        }
+      },
+      "events": [
+        {
+          "id": "nirvana-bleach",
+          "date": {
+            "year": 1989
+          },
+          "title": "『Bleach』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Nirvana",
+              "url": "https://rockhall.com/inductees/nirvana/"
+            }
+          ],
+          "description": "シアトルのグランジ・シーンで注目を集めるきっかけとなったデビュー・アルバムを発表した。"
+        },
+        {
+          "id": "nirvana-nevermind",
+          "date": {
+            "year": 1991
+          },
+          "title": "『Nevermind』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Nirvana",
+              "url": "https://rockhall.com/inductees/nirvana/"
+            }
+          ],
+          "description": "グランジとオルタナティヴ・ロックを世界的なメインストリームへ押し上げた代表作を発表した。"
+        },
+        {
+          "id": "nirvana-in-utero",
+          "date": {
+            "year": 1993
+          },
+          "title": "『In Utero』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Nirvana",
+              "url": "https://rockhall.com/inductees/nirvana/"
+            }
+          ],
+          "description": "より生々しく実験的な音像を打ち出した最終スタジオ・アルバムを発表した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rock & Roll Hall of Fame - Nirvana",
+          "url": "https://rockhall.com/inductees/nirvana/"
+        }
+      ]
+    },
+    {
+      "id": "pearl-jam",
+      "title": "Pearl Jam",
+      "category": "organization",
+      "description": "グランジを起点にクラシック・ロックやパンクの要素を取り込み、1990年代以降のオルタナティヴ・ロックに大きな影響を与えたアメリカのロックバンド。",
+      "period": {
+        "start": {
+          "year": 1990
+        },
+        "end": null
+      },
+      "events": [
+        {
+          "id": "pearl-jam-ten",
+          "date": {
+            "year": 1991
+          },
+          "title": "『Ten』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Pearl Jam",
+              "url": "https://rockhall.com/inductees/pearl-jam/"
+            }
+          ],
+          "description": "グランジの世界的拡大を支えたデビュー・アルバムを発表した。"
+        },
+        {
+          "id": "pearl-jam-vs",
+          "date": {
+            "year": 1993
+          },
+          "title": "『Vs.』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Pearl Jam",
+              "url": "https://rockhall.com/inductees/pearl-jam/"
+            }
+          ],
+          "description": "前作の成功を受けつつ、より直接的で重厚なサウンドを示したアルバムを発表した。"
+        },
+        {
+          "id": "pearl-jam-rock-hall",
+          "date": {
+            "year": 2017
+          },
+          "title": "Rock & Roll Hall of Fame入り",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Pearl Jam",
+              "url": "https://rockhall.com/inductees/pearl-jam/"
+            }
+          ],
+          "description": "1990年代以降のロックへの影響を評価され殿堂入りした。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rock & Roll Hall of Fame - Pearl Jam",
+          "url": "https://rockhall.com/inductees/pearl-jam/"
+        }
+      ]
+    },
+    {
+      "id": "radiohead",
+      "title": "Radiohead",
+      "category": "organization",
+      "description": "ギター・ロックから電子音楽、実験音楽まで表現領域を拡張し、1990年代以降のオルタナティヴ・ロックとアート・ロックに大きな影響を与えたイギリスのロックバンド。",
+      "period": {
+        "start": {
+          "year": 1985
+        },
+        "end": null
+      },
+      "events": [
+        {
+          "id": "radiohead-the-bends",
+          "date": {
+            "year": 1995
+          },
+          "title": "『The Bends』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Radiohead",
+              "url": "https://rockhall.com/inductees/radiohead/"
+            }
+          ],
+          "description": "ギターを中心としたオルタナティヴ・ロックの表現を深化させたアルバムを発表した。"
+        },
+        {
+          "id": "radiohead-ok-computer",
+          "date": {
+            "year": 1997
+          },
+          "title": "『OK Computer』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Radiohead",
+              "url": "https://rockhall.com/inductees/radiohead/"
+            }
+          ],
+          "description": "ロックの構成と音響表現を拡張した代表作を発表した。"
+        },
+        {
+          "id": "radiohead-kid-a",
+          "date": {
+            "year": 2000
+          },
+          "title": "『Kid A』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Radiohead",
+              "url": "https://rockhall.com/inductees/radiohead/"
+            }
+          ],
+          "description": "電子音楽と実験的な制作手法を大胆に取り入れたアルバムを発表した。"
+        },
+        {
+          "id": "radiohead-rock-hall",
+          "date": {
+            "year": 2019
+          },
+          "title": "Rock & Roll Hall of Fame入り",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Radiohead",
+              "url": "https://rockhall.com/inductees/radiohead/"
+            }
+          ],
+          "description": "現代ロックへの長期的な影響を評価され殿堂入りした。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rock & Roll Hall of Fame - Radiohead",
+          "url": "https://rockhall.com/inductees/radiohead/"
+        }
+      ]
+    },
+    {
+      "id": "green-day",
+      "title": "Green Day",
+      "category": "organization",
+      "description": "パンク・ロックの簡潔さとポップな旋律を結び付け、1990年代以降のポップ・パンクを世界的に普及させるうえで大きな影響を与えたアメリカのロックバンド。",
+      "period": {
+        "start": {
+          "year": 1987
+        },
+        "end": null
+      },
+      "events": [
+        {
+          "id": "green-day-dookie",
+          "date": {
+            "year": 1994
+          },
+          "title": "『Dookie』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Green Day",
+              "url": "https://rockhall.com/inductees/green-day/"
+            }
+          ],
+          "description": "ポップ・パンクを世界的なメインストリームへ広げた代表作を発表した。"
+        },
+        {
+          "id": "green-day-american-idiot",
+          "date": {
+            "year": 2004
+          },
+          "title": "『American Idiot』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Green Day",
+              "url": "https://rockhall.com/inductees/green-day/"
+            }
+          ],
+          "description": "政治的主題とロック・オペラ的な構成を組み合わせた代表作を発表した。"
+        },
+        {
+          "id": "green-day-rock-hall",
+          "date": {
+            "year": 2015
+          },
+          "title": "Rock & Roll Hall of Fame入り",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Green Day",
+              "url": "https://rockhall.com/inductees/green-day/"
+            }
+          ],
+          "description": "パンクとロックへの長期的な影響を評価され殿堂入りした。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rock & Roll Hall of Fame - Green Day",
+          "url": "https://rockhall.com/inductees/green-day/"
+        }
+      ]
+    },
+    {
+      "id": "foo-fighters",
+      "title": "Foo Fighters",
+      "category": "organization",
+      "description": "オルタナティヴ・ロックとハードロックを軸に長期的な活動を続け、1990年代後半以降のメインストリーム・ロックに大きな影響を与えたアメリカのロックバンド。",
+      "period": {
+        "start": {
+          "year": 1994
+        },
+        "end": null
+      },
+      "events": [
+        {
+          "id": "foo-fighters-debut",
+          "date": {
+            "year": 1995
+          },
+          "title": "『Foo Fighters』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Foo Fighters",
+              "url": "https://rockhall.com/inductees/foo-fighters/"
+            }
+          ],
+          "description": "Dave Grohlを中心に制作されたデビュー・アルバムを発表した。"
+        },
+        {
+          "id": "foo-fighters-colour-and-shape",
+          "date": {
+            "year": 1997
+          },
+          "title": "『The Colour and the Shape』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Foo Fighters",
+              "url": "https://rockhall.com/inductees/foo-fighters/"
+            }
+          ],
+          "description": "バンドとしてのサウンドを確立した代表作を発表した。"
+        },
+        {
+          "id": "foo-fighters-rock-hall",
+          "date": {
+            "year": 2021
+          },
+          "title": "Rock & Roll Hall of Fame入り",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - Foo Fighters",
+              "url": "https://rockhall.com/inductees/foo-fighters/"
+            }
+          ],
+          "description": "1990年代以降のロックへの長期的な影響を評価され殿堂入りした。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rock & Roll Hall of Fame - Foo Fighters",
+          "url": "https://rockhall.com/inductees/foo-fighters/"
+        }
+      ]
+    },
+    {
+      "id": "the-white-stripes",
+      "title": "The White Stripes",
+      "category": "organization",
+      "description": "ギターとドラムを中心とする最小編成でブルースとガレージ・ロックを再解釈し、2000年代のガレージロック・リバイバルに大きな影響を与えたアメリカのロックバンド。",
+      "period": {
+        "start": {
+          "year": 1997
+        },
+        "end": {
+          "year": 2011
+        }
+      },
+      "events": [
+        {
+          "id": "the-white-stripes-debut",
+          "date": {
+            "year": 1999
+          },
+          "title": "『The White Stripes』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - The White Stripes",
+              "url": "https://rockhall.com/inductees/white-stripes/"
+            }
+          ],
+          "description": "ブルースとガレージ・ロックを簡潔な編成で提示したデビュー・アルバムを発表した。"
+        },
+        {
+          "id": "the-white-stripes-white-blood-cells",
+          "date": {
+            "year": 2001
+          },
+          "title": "『White Blood Cells』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - The White Stripes",
+              "url": "https://rockhall.com/inductees/white-stripes/"
+            }
+          ],
+          "description": "国際的な注目を集めるきっかけとなったアルバムを発表した。"
+        },
+        {
+          "id": "the-white-stripes-elephant",
+          "date": {
+            "year": 2003
+          },
+          "title": "『Elephant』を発表",
+          "sources": [
+            {
+              "title": "Rock & Roll Hall of Fame - The White Stripes",
+              "url": "https://rockhall.com/inductees/white-stripes/"
+            }
+          ],
+          "description": "「Seven Nation Army」を収録した代表作を発表した。"
+        },
+        {
+          "id": "the-white-stripes-disbanded",
+          "date": {
+            "year": 2011
+          },
+          "title": "解散を発表",
+          "sources": [
+            {
+              "title": "The White Stripes - Official Website",
+              "url": "https://www.whitestripes.com/"
+            }
+          ],
+          "description": "バンドとしての活動を終了した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rock & Roll Hall of Fame - The White Stripes",
+          "url": "https://rockhall.com/inductees/white-stripes/"
+        },
+        {
+          "title": "The White Stripes - Official Website",
+          "url": "https://www.whitestripes.com/"
+        }
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "id": "rock-and-roll-foundations",
+      "title": "ロックンロールの成立",
+      "description": "1950年代のロックンロール成立と初期の代表的アーティストを追うサンプル。",
+      "recordIds": [
+        "chuck-berry",
+        "elvis-presley",
+        "buddy-holly",
+        "little-richard"
+      ]
+    },
+    {
+      "id": "sixties-expansion",
+      "title": "1960年代の拡張",
+      "description": "ブリティッシュ・インヴェイジョン、フォーク・ロック、サーフ・ロック、サイケデリックな表現の拡張を追うサンプル。",
+      "recordIds": [
+        "the-beatles",
+        "the-rolling-stones",
+        "bob-dylan",
+        "the-beach-boys",
+        "the-jimi-hendrix-experience"
+      ]
+    },
+    {
+      "id": "seventies-rock-diversification",
+      "title": "1970年代の多様化",
+      "description": "ハードロック、グラム・ロック、パンク、ニュー・ウェイヴへ広がったロックの多様化を追うサンプル。",
+      "recordIds": [
+        "led-zeppelin",
+        "david-bowie",
+        "ramones",
+        "the-clash",
+        "talking-heads"
+      ]
+    },
+    {
+      "id": "alternative-and-heavy-eighties-nineties",
+      "title": "1980〜1990年代の転換",
+      "description": "ヘヴィメタル、オルタナティヴ・ロック、グランジ、ポップ・パンクがメインストリームへ広がる過程を追うサンプル。",
+      "recordIds": [
+        "rem",
+        "metallica",
+        "nirvana",
+        "pearl-jam",
+        "radiohead",
+        "green-day"
+      ]
+    },
+    {
+      "id": "modern-rock-after-nineties",
+      "title": "1990年代後半以降のロック",
+      "description": "オルタナティヴ・ロックの定着と2000年代のガレージロック再評価までを追うサンプル。",
+      "recordIds": [
+        "radiohead",
+        "green-day",
+        "foo-fighters",
+        "the-white-stripes"
+      ]
+    }
+  ]
+}

@@ -1,12 +1,27 @@
-import bundledTimeline from './bundledTimeline.json'
 import type { HistoryRecord, TimelineSample } from '../types/timeline'
 
-interface BundledTimelineData {
-  histories: HistoryRecord[]
-  samples: TimelineSample[]
+interface TimelineDataFile {
+  histories?: HistoryRecord[]
+  samples?: TimelineSample[]
 }
 
-const data = bundledTimeline as BundledTimelineData
+const timelineDataFiles = import.meta.glob<TimelineDataFile>('./*.json', {
+  eager: true,
+  import: 'default',
+})
 
-export const bundledHistories = data.histories
-export const bundledSamples = data.samples
+const mergedData = Object.entries(timelineDataFiles)
+  .sort(([leftPath], [rightPath]) => leftPath.localeCompare(rightPath))
+  .reduce(
+    (result, [, data]) => ({
+      histories: [...result.histories, ...(data.histories ?? [])],
+      samples: [...result.samples, ...(data.samples ?? [])],
+    }),
+    {
+      histories: [] as HistoryRecord[],
+      samples: [] as TimelineSample[],
+    },
+  )
+
+export const bundledHistories = mergedData.histories
+export const bundledSamples = mergedData.samples
