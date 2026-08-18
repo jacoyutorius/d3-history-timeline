@@ -13,7 +13,50 @@
           "year": 1600
         }
       },
-      "events": [],
+      "events": [
+        {
+          "id": "renaissance-church-polyphony",
+          "date": {
+            "year": 1400
+          },
+          "title": "教会の多声ミサ曲・モテットが中心的ジャンルとなる",
+          "sources": [
+            {
+              "title": "The Metropolitan Museum of Art - Music in the Renaissance",
+              "url": "https://www.metmuseum.org/essays/music-in-the-renaissance"
+            }
+          ],
+          "description": "15世紀初頭の宗教音楽では、複数の旋律を組み合わせるミサ曲やモテットが主要な制作領域となった。"
+        },
+        {
+          "id": "renaissance-petrucci-odhecaton",
+          "date": {
+            "year": 1501
+          },
+          "title": "Petrucciが多声曲集『Harmonice Musices Odhecaton A』を出版",
+          "sources": [
+            {
+              "title": "The Metropolitan Museum of Art - Music in the Renaissance",
+              "url": "https://www.metmuseum.org/essays/music-in-the-renaissance"
+            }
+          ],
+          "description": "ヴェネツィアの印刷業者Ottaviano Petrucciによる多声音楽の出版は、楽譜流通と音楽学習の広がりを促した。"
+        },
+        {
+          "id": "renaissance-instrumental-genres",
+          "date": {
+            "year": 1550
+          },
+          "title": "器楽の独立ジャンルが発展",
+          "sources": [
+            {
+              "title": "The Metropolitan Museum of Art - Music in the Renaissance",
+              "url": "https://www.metmuseum.org/essays/music-in-the-renaissance"
+            }
+          ],
+          "description": "16世紀にはカンツォーナ、リチェルカーレ、ファンタジア、変奏曲など、声楽から独立した器楽様式が発展した。"
+        }
+      ],
       "sources": [
         {
           "title": "The Metropolitan Museum of Art - Music in the Renaissance",
@@ -34,7 +77,54 @@
           "year": 1521
         }
       },
-      "events": [],
+      "events": [
+        {
+          "id": "josquin-international-style",
+          "date": {
+            "year": 1500
+          },
+          "title": "国際的なルネサンス様式を代表する存在となる",
+          "sources": [
+            {
+              "title": "The Metropolitan Museum of Art - Music in the Renaissance",
+              "url": "https://www.metmuseum.org/essays/music-in-the-renaissance"
+            }
+          ],
+          "description": "フランドル、フランス、イタリアをまたぐ音楽文化の交流の中で、Josquinは模倣対位法と歌詞表現を統合した作風を示した。"
+        },
+        {
+          "id": "josquin-misse-josquin",
+          "date": {
+            "year": 1502
+          },
+          "title": "Petrucciが『Misse Josquin』を出版",
+          "sources": [
+            {
+              "title": "Josquin Desprez - Masses and Mass sections",
+              "url": "https://josquindesprez.com/en/masses-and-mass-sections/"
+            }
+          ],
+          "description": "Petrucciによるミサ曲出版により、Josquinの作品は印刷楽譜を通じて広く流通した。"
+        },
+        {
+          "id": "josquin-pange-lingua",
+          "date": {
+            "year": 1514
+          },
+          "title": "『Missa Pange lingua』がPetrucciの第3巻に収録される",
+          "sources": [
+            {
+              "title": "Oxford Academic - Masses on Plainsong Cantus Firmi",
+              "url": "https://academic.oup.com/book/49339/chapter-abstract/422393170"
+            },
+            {
+              "title": "Josquin Desprez - Masses and Mass sections",
+              "url": "https://josquindesprez.com/en/masses-and-mass-sections/"
+            }
+          ],
+          "description": "賛歌旋律を基にしたミサ曲が印刷され、晩年の成熟したミサ曲様式を示した。"
+        }
+      ],
       "sources": [
         {
           "title": "Encyclopaedia Britannica - Josquin des Prez",
@@ -56,6 +146,38 @@
         }
       },
       "events": [
+        {
+          "id": "palestrina-cappella-giulia",
+          "date": {
+            "year": 1551
+          },
+          "title": "Cappella Giuliaの楽長となる",
+          "sources": [
+            {
+              "title": "The Metropolitan Museum of Art - Music in the Renaissance",
+              "url": "https://www.metmuseum.org/essays/music-in-the-renaissance"
+            },
+            {
+              "title": "Treccani - Giovanni Pierluigi da Palestrina",
+              "url": "https://www.treccani.it/enciclopedia/pierluigi-da-palestrina-giovanni-detto-anche-il-palestrina_%28Dizionario-Biografico%29/"
+            }
+          ],
+          "description": "ローマのサン・ピエトロ大聖堂に属するCappella Giuliaで活動し、反宗教改革期の教会音楽を代表する作曲家となった。"
+        },
+        {
+          "id": "palestrina-first-book-masses",
+          "date": {
+            "year": 1554
+          },
+          "title": "最初のミサ曲集を出版",
+          "sources": [
+            {
+              "title": "Treccani - Giovanni Pierluigi da Palestrina",
+              "url": "https://www.treccani.it/enciclopedia/pierluigi-da-palestrina-giovanni-detto-anche-il-palestrina_%28Dizionario-Biografico%29/"
+            }
+          ],
+          "description": "ローマでの教会音楽家としての地位を示すミサ曲集を出版し、声楽ポリフォニーの作曲家として知られるようになった。"
+        },
         {
           "id": "palestrina-pope-marcellus-mass",
           "date": {
@@ -105,6 +227,34 @@
             }
           ],
           "description": "フィレンツェ周辺の音楽家による試みから、歌唱と劇を統合するオペラが成立した。"
+        },
+        {
+          "id": "baroque-basso-continuo",
+          "date": {
+            "year": 1600
+          },
+          "title": "通奏低音がバロック期の伴奏様式となる",
+          "sources": [
+            {
+              "title": "The Metropolitan Museum of Art - Musical Terms for the Seventeenth and Eighteenth Centuries",
+              "url": "https://www.metmuseum.org/essays/musical-terms-for-the-seventeenth-and-eighteenth-centuries"
+            }
+          ],
+          "description": "低音線と和音記号を基に即興的に和声を補う通奏低音は、1600年頃から1750年頃までのバロック音楽を特徴づけた。"
+        },
+        {
+          "id": "baroque-concerto-spread",
+          "date": {
+            "year": 1711
+          },
+          "title": "協奏曲様式がヨーロッパで広がる",
+          "sources": [
+            {
+              "title": "Oxford Bibliographies - Antonio Vivaldi",
+              "url": "https://academic.oup.com/reference/62400/reference-article-abstract/555398242"
+            }
+          ],
+          "description": "Vivaldiの『L’estro armonico』出版は、独奏協奏曲とリトルネッロを軸とする器楽様式の国際的な影響を強めた。"
         }
       ],
       "sources": [
@@ -141,6 +291,38 @@
             }
           ],
           "description": "初期オペラを代表する作品を発表し、劇と音楽の統合を大きく発展させた。"
+        },
+        {
+          "id": "monteverdi-vespers-1610",
+          "date": {
+            "year": 1610
+          },
+          "title": "『Vespro della Beata Vergine』を出版",
+          "sources": [
+            {
+              "title": "Journal of Seventeenth-Century Music - Monteverdi’s Mass and Vespers of 1610",
+              "url": "https://sscm-jscm.org/jscm-issues/volume-18-no-1/monteverdis-mass-and-vespers-of-1610-the-economic-social-and-courtly-context/"
+            },
+            {
+              "title": "Oxford Academic - The Monteverdi Vespers Of 1610",
+              "url": "https://academic.oup.com/book/49367"
+            }
+          ],
+          "description": "多様な声部編成と古い対位法・新しい劇的様式を組み合わせた大規模な宗教曲集を出版した。"
+        },
+        {
+          "id": "monteverdi-san-marco",
+          "date": {
+            "year": 1613
+          },
+          "title": "ヴェネツィアのSan Marco楽長となる",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Claudio Monteverdi",
+              "url": "https://www.britannica.com/biography/Claudio-Monteverdi"
+            }
+          ],
+          "description": "マントヴァ宮廷を離れ、ヴェネツィアの主要な教会音楽職に就いたことで、宗教曲と劇場音楽の双方で影響を広げた。"
         }
       ],
       "sources": [
@@ -164,6 +346,38 @@
         }
       },
       "events": [
+        {
+          "id": "vivaldi-ospedale-pieta",
+          "date": {
+            "year": 1703
+          },
+          "title": "Ospedale della Pietàでヴァイオリン教師となる",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Antonio Vivaldi",
+              "url": "https://www.britannica.com/biography/Antonio-Vivaldi"
+            },
+            {
+              "title": "Oxford Bibliographies - Antonio Vivaldi",
+              "url": "https://academic.oup.com/reference/62400/reference-article-abstract/555398242"
+            }
+          ],
+          "description": "ヴェネツィアの女子慈善院兼音楽教育機関で教え、演奏家・作曲家としての活動基盤を築いた。"
+        },
+        {
+          "id": "vivaldi-lestro-armonico",
+          "date": {
+            "year": 1711
+          },
+          "title": "『L’estro armonico』を出版",
+          "sources": [
+            {
+              "title": "Oxford Bibliographies - Antonio Vivaldi",
+              "url": "https://academic.oup.com/reference/62400/reference-article-abstract/555398242"
+            }
+          ],
+          "description": "Op. 3の協奏曲集はヨーロッパ各地で演奏され、独奏協奏曲の形式とリトルネッロ構造の普及に大きく寄与した。"
+        },
         {
           "id": "vivaldi-four-seasons",
           "date": {
@@ -201,6 +415,20 @@
       },
       "events": [
         {
+          "id": "bach-weimar-court-organist",
+          "date": {
+            "year": 1708
+          },
+          "title": "ヴァイマル宮廷でオルガニストとして活動",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Johann Sebastian Bach",
+              "url": "https://www.britannica.com/biography/Johann-Sebastian-Bach"
+            }
+          ],
+          "description": "オルガン曲とカンタータの制作を進め、対位法と和声の語法を磨いた。"
+        },
+        {
           "id": "bach-brandenburg-concertos",
           "date": {
             "year": 1721
@@ -213,6 +441,24 @@
             }
           ],
           "description": "多様な独奏楽器と合奏の組み合わせを用いた協奏曲集を献呈した。"
+        },
+        {
+          "id": "bach-leipzig-thomaskantor",
+          "date": {
+            "year": 1723
+          },
+          "title": "ライプツィヒのThomaskantorに就任",
+          "sources": [
+            {
+              "title": "www.bach.de - Leben | Leipzig | 1723-1730",
+              "url": "https://bach.de/leben/leipzig.html"
+            },
+            {
+              "title": "Encyclopaedia Britannica - Johann Sebastian Bach",
+              "url": "https://www.britannica.com/biography/Johann-Sebastian-Bach"
+            }
+          ],
+          "description": "聖トーマス教会を中心に教会音楽を担当し、多数のカンタータと受難曲を生み出す時期に入った。"
         },
         {
           "id": "bach-st-matthew-passion",
@@ -251,6 +497,38 @@
       },
       "events": [
         {
+          "id": "handel-rinaldo",
+          "date": {
+            "year": 1711
+          },
+          "title": "ロンドンで歌劇『Rinaldo』を初演",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - George Frideric Handel",
+              "url": "https://www.britannica.com/biography/George-Frideric-Handel"
+            },
+            {
+              "title": "University of Otago Library - Music, A Quick Stab at the Eighteenth Century",
+              "url": "https://www.otago.ac.nz/library/exhibitions/18thc/cabinet10/index.html"
+            }
+          ],
+          "description": "イタリア・オペラをロンドンで成功させ、イギリスでの活動基盤を築いた。"
+        },
+        {
+          "id": "handel-water-music",
+          "date": {
+            "year": 1717
+          },
+          "title": "『Water Music』を王室行事で演奏",
+          "sources": [
+            {
+              "title": "Naxos - HANDEL: Water Music / Music for the Royal Fireworks",
+              "url": "https://www.naxos.com/CatalogueDetail/?id=6.110115"
+            }
+          ],
+          "description": "テムズ川上の王室行事のために書かれた器楽曲が、ヘンデルの管弦楽作品を代表する存在となった。"
+        },
+        {
           "id": "handel-messiah",
           "date": {
             "year": 1742
@@ -263,6 +541,20 @@
             }
           ],
           "description": "英語オラトリオを代表する作品をダブリンで初演した。"
+        },
+        {
+          "id": "handel-royal-fireworks",
+          "date": {
+            "year": 1749
+          },
+          "title": "『Music for the Royal Fireworks』を作曲",
+          "sources": [
+            {
+              "title": "Naxos - HANDEL: Water Music / Music for the Royal Fireworks",
+              "url": "https://www.naxos.com/CatalogueDetail/?id=6.110115"
+            }
+          ],
+          "description": "アーヘンの和約を祝うロンドンの花火行事のために、壮麗な管楽中心の祝典音楽を作曲した。"
         }
       ],
       "sources": [
@@ -285,7 +577,54 @@
           "year": 1820
         }
       },
-      "events": [],
+      "events": [
+        {
+          "id": "classical-period-bach-death-transition",
+          "date": {
+            "year": 1750
+          },
+          "title": "Bach没後、古典派様式への転換が進む",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Classical period",
+              "url": "https://www.britannica.com/art/Classical-period-music"
+            }
+          ],
+          "description": "バロック後期の対位法中心の様式から、明瞭な旋律、均整の取れた構成、機能和声を重視する古典派様式への変化が進んだ。"
+        },
+        {
+          "id": "classical-period-string-quartet-symphony",
+          "date": {
+            "year": 1760
+          },
+          "title": "交響曲と弦楽四重奏曲が主要な器楽形式として発展",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Classical period",
+              "url": "https://www.britannica.com/art/Classical-period-music"
+            },
+            {
+              "title": "Joseph Haydn Werke - Symphonies Hob.I:82-87",
+              "url": "https://www.joseph-haydn.art/en/sinfoniae/84"
+            }
+          ],
+          "description": "宮廷と公開演奏会の音楽文化の中で、交響曲と弦楽四重奏曲は古典派を代表する形式へ成長した。"
+        },
+        {
+          "id": "classical-period-vienna-style",
+          "date": {
+            "year": 1780
+          },
+          "title": "ウィーン古典派の様式が成熟",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Classical period",
+              "url": "https://www.britannica.com/art/Classical-period-music"
+            }
+          ],
+          "description": "Haydn、Mozart、Beethovenらの活動を通じて、ソナタ形式、交響曲、協奏曲、室内楽の語法が高度に洗練された。"
+        }
+      ],
       "sources": [
         {
           "title": "Encyclopaedia Britannica - Classical period",
@@ -307,6 +646,38 @@
         }
       },
       "events": [
+        {
+          "id": "haydn-esterhazy-service",
+          "date": {
+            "year": 1761
+          },
+          "title": "Esterházy家に仕える",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Joseph Haydn",
+              "url": "https://www.britannica.com/biography/Joseph-Haydn"
+            },
+            {
+              "title": "Joseph Haydn Werke - Symphonies Hob.I:82-87",
+              "url": "https://www.joseph-haydn.art/en/sinfoniae/84"
+            }
+          ],
+          "description": "宮廷楽団のために交響曲、室内楽、オペラを継続的に作曲し、古典派の器楽形式を発展させる環境を得た。"
+        },
+        {
+          "id": "haydn-paris-symphonies",
+          "date": {
+            "year": 1785
+          },
+          "title": "Paris Symphoniesを作曲",
+          "sources": [
+            {
+              "title": "Joseph Haydn Werke - Symphonies Hob.I:82-87",
+              "url": "https://www.joseph-haydn.art/en/sinfoniae/84"
+            }
+          ],
+          "description": "パリの演奏会組織から委嘱された交響曲群により、Haydnの器楽作品は国際的な聴衆へ広がった。"
+        },
         {
           "id": "haydn-london-symphonies",
           "date": {
@@ -344,6 +715,20 @@
       },
       "events": [
         {
+          "id": "mozart-vienna-freelance",
+          "date": {
+            "year": 1781
+          },
+          "title": "ウィーンで独立した音楽家として活動を始める",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Wolfgang Amadeus Mozart",
+              "url": "https://www.britannica.com/biography/Wolfgang-Amadeus-Mozart"
+            }
+          ],
+          "description": "ザルツブルク宮廷を離れてウィーンで活動し、ピアノ協奏曲、室内楽、オペラを中心に古典派様式を成熟させた。"
+        },
+        {
           "id": "mozart-marriage-of-figaro",
           "date": {
             "year": 1786
@@ -370,6 +755,20 @@
             }
           ],
           "description": "喜劇と悲劇の要素を統合した代表的オペラを初演した。"
+        },
+        {
+          "id": "mozart-jupiter-symphony",
+          "date": {
+            "year": 1788
+          },
+          "title": "交響曲第41番『Jupiter』を完成",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Wolfgang Amadeus Mozart",
+              "url": "https://www.britannica.com/biography/Wolfgang-Amadeus-Mozart"
+            }
+          ],
+          "description": "対位法的な終楽章と大規模な構成により、古典派交響曲の完成度を示す代表作となった。"
         }
       ],
       "sources": [
@@ -394,6 +793,24 @@
       },
       "events": [
         {
+          "id": "beethoven-heiligenstadt-testament",
+          "date": {
+            "year": 1802
+          },
+          "title": "Heiligenstadt Testamentを書く",
+          "sources": [
+            {
+              "title": "Beethoven Music Research Center - Heiligenstadt Testament",
+              "url": "https://www.lvbeethoven.org/biography06/"
+            },
+            {
+              "title": "Encyclopaedia Britannica - Ludwig van Beethoven",
+              "url": "https://www.britannica.com/biography/Ludwig-van-Beethoven"
+            }
+          ],
+          "description": "聴覚障害への苦悩を記した文書は、その後の英雄的・内面的な創作期への転換点として位置づけられる。"
+        },
+        {
           "id": "beethoven-eroica",
           "date": {
             "year": 1805
@@ -406,6 +823,24 @@
             }
           ],
           "description": "交響曲の規模と劇的展開を大きく拡張した作品を初演した。"
+        },
+        {
+          "id": "beethoven-fifth-sixth",
+          "date": {
+            "year": 1808
+          },
+          "title": "交響曲第5番と第6番を初演",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Symphony No. 5",
+              "url": "https://www.britannica.com/topic/Symphony-No-5-in-C-Minor"
+            },
+            {
+              "title": "Encyclopaedia Britannica - Pastoral Symphony",
+              "url": "https://www.britannica.com/topic/Pastoral-Symphony"
+            }
+          ],
+          "description": "動機展開の徹底と標題的な自然描写という異なる方向から、交響曲表現の可能性を拡張した。"
         },
         {
           "id": "beethoven-ninth",
@@ -442,7 +877,58 @@
           "year": 1900
         }
       },
-      "events": [],
+      "events": [
+        {
+          "id": "romantic-music-early-lyricism",
+          "date": {
+            "year": 1820
+          },
+          "title": "歌曲とピアノ小品で個人的抒情が強まる",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Romantic music",
+              "url": "https://www.britannica.com/art/Romantic-music"
+            },
+            {
+              "title": "The Metropolitan Museum of Art - Romanticism",
+              "url": "https://www.metmuseum.org/essays/romanticism"
+            }
+          ],
+          "description": "文学的な詩情、個人的感情、親密なピアノ表現が重視され、歌曲や小品がロマン派の重要な領域になった。"
+        },
+        {
+          "id": "romantic-music-program-music",
+          "date": {
+            "year": 1830
+          },
+          "title": "標題音楽が管弦楽表現を拡張",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Symphonie fantastique",
+              "url": "https://www.britannica.com/topic/Symphonie-fantastique"
+            },
+            {
+              "title": "Encyclopaedia Britannica - Romantic music",
+              "url": "https://www.britannica.com/art/Romantic-music"
+            }
+          ],
+          "description": "Berliozの標題交響曲などにより、物語、文学、心理を管弦楽で描く発想が大きく広がった。"
+        },
+        {
+          "id": "romantic-music-national-opera",
+          "date": {
+            "year": 1850
+          },
+          "title": "国民楽派と大規模オペラが発展",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Romantic music",
+              "url": "https://www.britannica.com/art/Romantic-music"
+            }
+          ],
+          "description": "各地域の舞曲、民謡、文学、歴史を取り込みながら、オペラ、交響曲、協奏曲はより大規模で色彩的な表現へ向かった。"
+        }
+      ],
       "sources": [
         {
           "title": "Encyclopaedia Britannica - Romantic music",
@@ -481,6 +967,42 @@
             }
           ],
           "description": "詩の物語とピアノ伴奏を劇的に統合した歌曲を作曲した。"
+        },
+        {
+          "id": "schubert-unfinished-symphony",
+          "date": {
+            "year": 1822
+          },
+          "title": "交響曲第8番『Unfinished』に着手",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Unfinished Symphony",
+              "url": "https://www.britannica.com/topic/Unfinished-Symphony"
+            },
+            {
+              "title": "Encyclopaedia Britannica - Franz Schubert",
+              "url": "https://www.britannica.com/biography/Franz-Schubert"
+            }
+          ],
+          "description": "完成された2楽章により、古典的な交響曲形式とロマン派的な和声・抒情性を結び付けた。"
+        },
+        {
+          "id": "schubert-winterreise",
+          "date": {
+            "year": 1827
+          },
+          "title": "歌曲集『Winterreise』を作曲",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Winterreise",
+              "url": "https://www.britannica.com/topic/Winterreise"
+            },
+            {
+              "title": "Encyclopaedia Britannica - Franz Schubert",
+              "url": "https://www.britannica.com/biography/Franz-Schubert"
+            }
+          ],
+          "description": "孤独な旅を描く連作歌曲により、詩、旋律、ピアノ伴奏を高度に統合した。"
         }
       ],
       "sources": [
@@ -517,6 +1039,42 @@
             }
           ],
           "description": "物語的構想と循環する固定楽想を用いた標題交響曲を初演した。"
+        },
+        {
+          "id": "berlioz-harold-in-italy",
+          "date": {
+            "year": 1834
+          },
+          "title": "『Harold en Italie』を初演",
+          "sources": [
+            {
+              "title": "Archive Larousse - Berlioz",
+              "url": "https://www.larousse.fr/archives/grande-encyclopedie/page/1784"
+            },
+            {
+              "title": "Encyclopaedia Britannica - Hector Berlioz",
+              "url": "https://www.britannica.com/biography/Hector-Berlioz"
+            }
+          ],
+          "description": "独奏ヴィオラを伴う標題的な交響曲により、文学的主題と管弦楽の新しい関係を探った。"
+        },
+        {
+          "id": "berlioz-requiem",
+          "date": {
+            "year": 1837
+          },
+          "title": "『Grande Messe des morts』を初演",
+          "sources": [
+            {
+              "title": "Archive Larousse - Berlioz",
+              "url": "https://www.larousse.fr/archives/grande-encyclopedie/page/1784"
+            },
+            {
+              "title": "Encyclopaedia Britannica - Hector Berlioz",
+              "url": "https://www.britannica.com/biography/Hector-Berlioz"
+            }
+          ],
+          "description": "巨大な合唱・管弦楽編成を用いたレクイエムを初演し、ロマン派の大規模な音響表現を示した。"
         }
       ],
       "sources": [
@@ -539,7 +1097,58 @@
           "year": 1849
         }
       },
-      "events": [],
+      "events": [
+        {
+          "id": "chopin-vienna-debut",
+          "date": {
+            "year": 1829
+          },
+          "title": "ウィーンで演奏し国際的な活動を始める",
+          "sources": [
+            {
+              "title": "Fryderyk Chopin Institute - Biography",
+              "url": "https://chopin.pl/biography_chopin.en.html"
+            },
+            {
+              "title": "Encyclopaedia Britannica - Frédéric Chopin",
+              "url": "https://www.britannica.com/biography/Frederic-Chopin"
+            }
+          ],
+          "description": "ワルシャワでの教育を経てウィーンで演奏し、ポーランド国外でピアニスト・作曲家として注目された。"
+        },
+        {
+          "id": "chopin-paris-arrival",
+          "date": {
+            "year": 1831
+          },
+          "title": "パリに移る",
+          "sources": [
+            {
+              "title": "Fryderyk Chopin Institute - Biography",
+              "url": "https://chopin.pl/biography_chopin.en.html"
+            },
+            {
+              "title": "Encyclopaedia Britannica - Frédéric Chopin",
+              "url": "https://www.britannica.com/biography/Frederic-Chopin"
+            }
+          ],
+          "description": "パリのサロン文化と出版網の中で活動し、ピアノ小品、練習曲、舞曲に独自の様式を築いた。"
+        },
+        {
+          "id": "chopin-pleyel-concert",
+          "date": {
+            "year": 1832
+          },
+          "title": "Salle Pleyelでパリ初期の公開演奏を行う",
+          "sources": [
+            {
+              "title": "Fryderyk Chopin Institute - Biography",
+              "url": "https://chopin.pl/biography_chopin.en.html"
+            }
+          ],
+          "description": "パリの音楽界で評価を高め、出版契約とサロンでの演奏・教育活動へつながった。"
+        }
+      ],
       "sources": [
         {
           "title": "Encyclopaedia Britannica - Frédéric Chopin",
@@ -562,6 +1171,20 @@
       },
       "events": [
         {
+          "id": "schumann-papillons",
+          "date": {
+            "year": 1831
+          },
+          "title": "ピアノ曲集『Papillons』を出版",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Robert Schumann",
+              "url": "https://www.britannica.com/biography/Robert-Schumann"
+            }
+          ],
+          "description": "文学的な断片性と人物的な性格表現をピアノ小品に取り込み、初期ロマン派のピアノ語法を示した。"
+        },
+        {
           "id": "schumann-song-year",
           "date": {
             "year": 1840
@@ -574,6 +1197,20 @@
             }
           ],
           "description": "後に「歌曲の年」と呼ばれる時期に多数の歌曲を作曲し、ドイツ歌曲の発展に貢献した。"
+        },
+        {
+          "id": "schumann-rhenish-symphony",
+          "date": {
+            "year": 1850
+          },
+          "title": "交響曲第3番『Rhenish』を作曲",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Robert Schumann",
+              "url": "https://www.britannica.com/biography/Robert-Schumann"
+            }
+          ],
+          "description": "ライン地方の印象を背景にした交響曲により、文学的・風土的なイメージを器楽形式へ結び付けた。"
         }
       ],
       "sources": [
@@ -598,6 +1235,20 @@
       },
       "events": [
         {
+          "id": "liszt-virtuoso-tours",
+          "date": {
+            "year": 1839
+          },
+          "title": "ヨーロッパ各地でヴィルトゥオーゾとして演奏旅行を行う",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Franz Liszt",
+              "url": "https://www.britannica.com/biography/Franz-Liszt"
+            }
+          ],
+          "description": "大規模な公開演奏を通じて、ピアノ独奏リサイタルとスター演奏家の文化を象徴する存在となった。"
+        },
+        {
           "id": "liszt-symphonic-poems",
           "date": {
             "year": 1848
@@ -610,6 +1261,20 @@
             }
           ],
           "description": "単一楽章の管弦楽による標題音楽を発展させた。"
+        },
+        {
+          "id": "liszt-b-minor-sonata",
+          "date": {
+            "year": 1853
+          },
+          "title": "ピアノ・ソナタ ロ短調を完成",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Franz Liszt",
+              "url": "https://www.britannica.com/biography/Franz-Liszt"
+            }
+          ],
+          "description": "単一楽章の中で主題変容と大規模構成を統合し、ロマン派ピアノ音楽の重要作となった。"
         }
       ],
       "sources": [
@@ -633,6 +1298,24 @@
         }
       },
       "events": [
+        {
+          "id": "wagner-flying-dutchman",
+          "date": {
+            "year": 1843
+          },
+          "title": "歌劇『Der fliegende Holländer』を初演",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - The Flying Dutchman",
+              "url": "https://www.britannica.com/topic/The-Flying-Dutchman-opera-by-Wagner"
+            },
+            {
+              "title": "Encyclopaedia Britannica - Richard Wagner",
+              "url": "https://www.britannica.com/biography/Richard-Wagner-German-composer"
+            }
+          ],
+          "description": "連続的な劇的構成と救済の主題を打ち出し、後の楽劇構想へつながる初期の重要作となった。"
+        },
         {
           "id": "wagner-tristan",
           "date": {
@@ -684,6 +1367,38 @@
       },
       "events": [
         {
+          "id": "brahms-schumann-article",
+          "date": {
+            "year": 1853
+          },
+          "title": "Schumannに紹介され注目を集める",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Johannes Brahms",
+              "url": "https://www.britannica.com/biography/Johannes-Brahms"
+            }
+          ],
+          "description": "Robert Schumannが若いBrahmsを高く評価し、ドイツ音楽の継承者として注目されるきっかけとなった。"
+        },
+        {
+          "id": "brahms-german-requiem",
+          "date": {
+            "year": 1868
+          },
+          "title": "『Ein deutsches Requiem』を初演",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - A German Requiem",
+              "url": "https://www.britannica.com/topic/A-German-Requiem"
+            },
+            {
+              "title": "Encyclopaedia Britannica - Johannes Brahms",
+              "url": "https://www.britannica.com/biography/Johannes-Brahms"
+            }
+          ],
+          "description": "聖書のドイツ語テキストを用いた大規模な合唱作品により、Brahmsの国際的な評価が高まった。"
+        },
+        {
           "id": "brahms-first-symphony",
           "date": {
             "year": 1876
@@ -720,6 +1435,20 @@
       },
       "events": [
         {
+          "id": "tchaikovsky-romeo-juliet",
+          "date": {
+            "year": 1869
+          },
+          "title": "幻想序曲『Romeo and Juliet』を作曲",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Pyotr Ilyich Tchaikovsky",
+              "url": "https://www.britannica.com/biography/Pyotr-Ilyich-Tchaikovsky"
+            }
+          ],
+          "description": "文学的主題と旋律的な情感を管弦楽で描き、ロシアのロマン派管弦楽作品として重要な位置を占めた。"
+        },
+        {
           "id": "tchaikovsky-swan-lake",
           "date": {
             "year": 1877
@@ -732,6 +1461,24 @@
             }
           ],
           "description": "後世のバレエ音楽を代表する作品を初演した。"
+        },
+        {
+          "id": "tchaikovsky-pathetique",
+          "date": {
+            "year": 1893
+          },
+          "title": "交響曲第6番『Pathétique』を初演",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Pathétique Symphony",
+              "url": "https://www.britannica.com/topic/Pathetique-Symphony"
+            },
+            {
+              "title": "Encyclopaedia Britannica - Pyotr Ilyich Tchaikovsky",
+              "url": "https://www.britannica.com/biography/Pyotr-Ilyich-Tchaikovsky"
+            }
+          ],
+          "description": "悲劇的な終楽章を持つ交響曲により、ロマン派後期の個人的・心理的表現を強く示した。"
         },
         {
           "id": "tchaikovsky-nutcracker",
@@ -770,6 +1517,38 @@
       },
       "events": [
         {
+          "id": "dvorak-slavonic-dances",
+          "date": {
+            "year": 1878
+          },
+          "title": "『Slavonic Dances』で国際的に知られる",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Antonín Dvořák",
+              "url": "https://www.britannica.com/biography/Antonin-Dvorak"
+            }
+          ],
+          "description": "スラヴ系の舞曲リズムと西欧的な作曲技法を結び付け、民族的語法を国際的な音楽市場へ広げた。"
+        },
+        {
+          "id": "dvorak-american-director",
+          "date": {
+            "year": 1892
+          },
+          "title": "ニューヨークのNational Conservatory院長となる",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Antonín Dvořák",
+              "url": "https://www.britannica.com/biography/Antonin-Dvorak"
+            },
+            {
+              "title": "Encyclopaedia Britannica - New World Symphony",
+              "url": "https://www.britannica.com/topic/New-World-Symphony"
+            }
+          ],
+          "description": "アメリカ滞在中に現地の音楽文化と接し、交響曲第9番などの作品へつながった。"
+        },
+        {
           "id": "dvorak-new-world",
           "date": {
             "year": 1893
@@ -806,6 +1585,24 @@
       },
       "events": [
         {
+          "id": "verdi-nabucco",
+          "date": {
+            "year": 1842
+          },
+          "title": "歌劇『Nabucco』を初演",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Giuseppe Verdi",
+              "url": "https://www.britannica.com/biography/Giuseppe-Verdi"
+            },
+            {
+              "title": "Encyclopaedia Britannica - Nabucco",
+              "url": "https://www.britannica.com/topic/Nabucco"
+            }
+          ],
+          "description": "合唱と劇的な旋律により大きな成功を収め、Verdiがイタリア・オペラの中心的作曲家となる契機になった。"
+        },
+        {
           "id": "verdi-rigoletto",
           "date": {
             "year": 1851
@@ -832,6 +1629,24 @@
             }
           ],
           "description": "大規模な舞台と親密な人物描写を両立したオペラを初演した。"
+        },
+        {
+          "id": "verdi-otello",
+          "date": {
+            "year": 1887
+          },
+          "title": "歌劇『Otello』を初演",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Otello",
+              "url": "https://www.britannica.com/topic/Otello-opera-by-Verdi"
+            },
+            {
+              "title": "Encyclopaedia Britannica - Giuseppe Verdi",
+              "url": "https://www.britannica.com/biography/Giuseppe-Verdi"
+            }
+          ],
+          "description": "晩年のシェイクスピア・オペラで、連続的な音楽構成と緻密な人物描写を高い水準で統合した。"
         }
       ],
       "sources": [
