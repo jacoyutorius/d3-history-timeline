@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 
 import type { SelectableHistoryRecord, TimelineSample } from '../types/timeline'
-import { isSampleSelected, setRecordSelected, setSampleSelected } from './timelineSelection'
+import { applySampleSelection, isSampleSelected, setRecordSelected, setSampleSelected } from './timelineSelection'
 
 const record = (id: string, selected = false): SelectableHistoryRecord => ({
   id,
@@ -48,6 +48,14 @@ describe('timeline sample selection', () => {
 
     expect(target.map(({ selected }) => selected)).toEqual([false, false, true])
     expect(isSampleSelected(target, sample)).toBe(false)
+  })
+
+  it('サンプルの参照IDだけを選択済みにする', () => {
+    const target = histories.map((history) => ({ ...history, selected: history.id === 'other' }))
+    applySampleSelection(target, sample)
+
+    expect(target.map(({ selected }) => selected)).toEqual([true, true, false])
+    expect(isSampleSelected(target, sample)).toBe(true)
   })
 
   it('参照先が欠けているサンプルを選択済みと判定しない', () => {

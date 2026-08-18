@@ -89,6 +89,85 @@ button {
   background: #12565d;
 }
 
+.secondary-button {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  color: #283149;
+  background: #fff;
+  cursor: pointer;
+}
+
+.secondary-button:hover {
+  border-color: #176b73;
+  color: #176b73;
+}
+
+.starter-samples {
+  display: grid;
+  gap: 0.85rem;
+  margin-bottom: 1.25rem;
+  padding: 1rem;
+  border: 1px solid #d9e2ec;
+  border-radius: 0.75rem;
+  background: #fff;
+}
+
+.starter-samples-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.starter-samples-heading h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.starter-sample-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.65rem;
+}
+
+.starter-sample-button {
+  display: grid;
+  gap: 0.25rem;
+  min-height: 4.5rem;
+  padding: 0.75rem;
+  border: 1px solid #d9e2ec;
+  border-radius: 0.5rem;
+  color: #283149;
+  background: #f8fafc;
+  text-align: left;
+  cursor: pointer;
+}
+
+.starter-sample-button strong {
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.starter-sample-button span {
+  color: #52616b;
+  font-size: 0.82rem;
+}
+
+.starter-sample-button:hover,
+.starter-sample-button:focus,
+.starter-sample-button.active {
+  border-color: #176b73;
+  background: #e6f6f7;
+  outline: none;
+}
+
+.starter-sample-button.active strong,
+.starter-sample-button:hover strong,
+.starter-sample-button:focus strong {
+  color: #12565d;
+}
+
 .timeline-toolbar {
   display: flex;
   align-items: center;

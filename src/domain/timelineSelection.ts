@@ -28,3 +28,13 @@ export function setSampleSelected(
     if (ids.has(history.id)) history.selected = selected
   })
 }
+
+export function applySampleSelection(
+  histories: SelectableHistoryRecord[],
+  sample: TimelineSample,
+): void {
+  const ids = new Set(sample.recordIds)
+  histories.forEach((history) => {
+    history.selected = ids.has(history.id)
+  })
+}

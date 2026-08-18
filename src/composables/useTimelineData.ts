@@ -1,6 +1,11 @@
 import { computed, onMounted, ref } from 'vue'
 
-import { isSampleSelected, setRecordSelected, setSampleSelected } from '../domain/timelineSelection'
+import {
+  applySampleSelection,
+  isSampleSelected,
+  setRecordSelected,
+  setSampleSelected,
+} from '../domain/timelineSelection'
 import { loadTimelineData } from '../services/timelineApi'
 import type { SelectableHistoryRecord, TimelineSample } from '../types/timeline'
 
@@ -45,9 +50,14 @@ export function useTimelineData() {
     setSampleSelected(histories.value, sample, !sampleIsSelected(sample))
   }
 
+  function applySample(sample: TimelineSample): void {
+    applySampleSelection(histories.value, sample)
+  }
+
   onMounted(initialize)
 
   return {
+    applySample,
     error,
     initialize,
     loading,

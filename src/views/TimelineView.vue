@@ -1,12 +1,22 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 
 import DataSelector from '../components/DataSelector.vue'
 import TimelineChart from '../components/TimelineChart.vue'
 import { useTimelineData } from '../composables/useTimelineData'
+import type { TimelineSample } from '../types/timeline'
 
 const selectorOpen = ref(false)
+const starterSampleIds = [
+  'renaissance-to-baroque',
+  'jazz-origins',
+  'rock-and-roll-foundations',
+  'bauhaus',
+  'japanese-animation-directors',
+  'modern-design-education',
+]
 const {
+  applySample,
   error,
   loading,
   movements,
@@ -19,6 +29,13 @@ const {
   toggleRecord,
   toggleSample,
 } = useTimelineData()
+
+const starterSamples = computed<TimelineSample[]>(() => {
+  const sampleById = new Map(samples.value.map((sample) => [sample.id, sample]))
+  return starterSampleIds
+    .map((id) => sampleById.get(id))
+    .filter((sample): sample is TimelineSample => sample !== undefined)
+})
 </script>
 
 <template>
@@ -29,6 +46,28 @@ const {
     <p v-else-if="error" class="notice error-notice">{{ error }}</p>
 
     <template v-else>
+      <section v-if="starterSamples.length" class="starter-samples" aria-labelledby="starter-samples-title">
+        <div class="starter-samples-heading">
+          <h2 id="starter-samples-title">サンプルから始める</h2>
+          <button class="secondary-button" type="button" @click="selectorOpen = true">
+            すべて見る
+          </button>
+        </div>
+        <div class="starter-sample-list">
+          <button
+            v-for="sample in starterSamples"
+            :key="sample.id"
+            class="starter-sample-button"
+            :class="{ active: sampleIsSelected(sample) }"
+            type="button"
+            @click="applySample(sample)"
+          >
+            <strong>{{ sample.title }}</strong>
+            <span>{{ sample.recordIds.length }}件</span>
+          </button>
+        </div>
+      </section>
+
       <div class="timeline-toolbar">
         <p>{{ selectedRecords.length }}件を選択中</p>
         <button class="primary-button" type="button" @click="selectorOpen = true">
