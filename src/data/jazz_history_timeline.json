@@ -1,0 +1,1101 @@
+{
+  "histories": [
+    {
+      "id": "ragtime",
+      "title": "Ragtime",
+      "category": "movement",
+      "description": "シンコペーションを特徴とするピアノ音楽を中心に発展し、初期ジャズのリズム感覚とアメリカ大衆音楽の形成に大きな影響を与えた音楽潮流。",
+      "period": {
+        "start": {
+          "year": 1890
+        },
+        "end": {
+          "year": 1920
+        }
+      },
+      "events": [
+        {
+          "id": "ragtime-maple-leaf-rag",
+          "date": {
+            "year": 1899
+          },
+          "title": "「Maple Leaf Rag」が出版される",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Scott Joplin",
+              "url": "https://www.britannica.com/biography/Scott-Joplin"
+            }
+          ],
+          "description": "Scott Joplinの代表作が出版され、ラグタイムの普及を象徴する作品となった。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Ragtime",
+          "url": "https://www.britannica.com/art/ragtime"
+        }
+      ]
+    },
+    {
+      "id": "new-orleans-jazz",
+      "title": "ニューオーリンズ・ジャズ",
+      "category": "movement",
+      "description": "ブルース、ラグタイム、ブラスバンド文化などを背景にニューオーリンズで形成され、集団即興を特徴として初期ジャズの基礎を築いた音楽潮流。",
+      "period": {
+        "start": {
+          "year": 1900
+        },
+        "end": {
+          "year": 1920
+        }
+      },
+      "events": [
+        {
+          "id": "new-orleans-jazz-odjb",
+          "date": {
+            "year": 1917
+          },
+          "title": "初期ジャズ録音が商業発売される",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Jazz",
+              "url": "https://www.britannica.com/art/jazz"
+            }
+          ],
+          "description": "Original Dixieland Jass Bandの録音が発売され、ジャズが録音媒体を通じて広く流通する契機となった。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Jazz",
+          "url": "https://www.britannica.com/art/jazz"
+        }
+      ]
+    },
+    {
+      "id": "jelly-roll-morton",
+      "title": "Jelly Roll Morton",
+      "category": "person",
+      "description": "ラグタイムとニューオーリンズの演奏様式を結び付け、作曲と編曲を通じて初期ジャズの発展に大きな影響を与えたアメリカの音楽家。",
+      "period": {
+        "start": {
+          "year": 1890
+        },
+        "end": {
+          "year": 1941
+        }
+      },
+      "events": [
+        {
+          "id": "jelly-roll-morton-red-hot-peppers",
+          "date": {
+            "year": 1926
+          },
+          "title": "Red Hot Peppersで録音を行う",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Jelly Roll Morton",
+              "url": "https://www.britannica.com/biography/Jelly-Roll-Morton"
+            }
+          ],
+          "description": "編曲されたアンサンブルと即興を組み合わせた代表的な録音を残した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Jelly Roll Morton",
+          "url": "https://www.britannica.com/biography/Jelly-Roll-Morton"
+        }
+      ]
+    },
+    {
+      "id": "louis-armstrong",
+      "title": "Louis Armstrong",
+      "category": "person",
+      "description": "卓越したトランペット演奏と歌唱を通じて、集団即興中心だった初期ジャズからソロ即興中心の表現への転換に大きな影響を与えたアメリカの音楽家。",
+      "period": {
+        "start": {
+          "year": 1901
+        },
+        "end": {
+          "year": 1971
+        }
+      },
+      "events": [
+        {
+          "id": "louis-armstrong-hot-five",
+          "date": {
+            "year": 1925
+          },
+          "title": "Hot Fiveの録音を開始",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Louis Armstrong",
+              "url": "https://www.britannica.com/biography/Louis-Armstrong"
+            }
+          ],
+          "description": "ソロ即興を前面に出した一連の録音を開始し、ジャズ演奏の方向性を大きく変えた。"
+        },
+        {
+          "id": "louis-armstrong-west-end-blues",
+          "date": {
+            "year": 1928
+          },
+          "title": "「West End Blues」を録音",
+          "sources": [
+            {
+              "title": "Library of Congress - National Recording Registry",
+              "url": "https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/"
+            }
+          ],
+          "description": "トランペット・ソロと歌唱の両面で初期ジャズを代表する録音を残した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Louis Armstrong",
+          "url": "https://www.britannica.com/biography/Louis-Armstrong"
+        }
+      ]
+    },
+    {
+      "id": "duke-ellington",
+      "title": "Duke Ellington",
+      "category": "person",
+      "description": "ビッグバンドを独自の作曲・編曲表現の媒体として発展させ、ジャズの音色、形式、長編作品の可能性を大きく拡張したアメリカの音楽家。",
+      "period": {
+        "start": {
+          "year": 1899
+        },
+        "end": {
+          "year": 1974
+        }
+      },
+      "events": [
+        {
+          "id": "duke-ellington-cotton-club",
+          "date": {
+            "year": 1927
+          },
+          "title": "Cotton Clubへの出演を開始",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Duke Ellington",
+              "url": "https://www.britannica.com/biography/Duke-Ellington"
+            }
+          ],
+          "description": "ニューヨークのCotton Clubで長期出演を開始し、楽団の知名度と音楽的発展につながった。"
+        },
+        {
+          "id": "duke-ellington-mood-indigo",
+          "date": {
+            "year": 1930
+          },
+          "title": "「Mood Indigo」を録音",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Duke Ellington",
+              "url": "https://www.britannica.com/biography/Duke-Ellington"
+            }
+          ],
+          "description": "独自の音色設計を示す代表曲を録音した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Duke Ellington",
+          "url": "https://www.britannica.com/biography/Duke-Ellington"
+        }
+      ]
+    },
+    {
+      "id": "swing",
+      "title": "スウィング",
+      "category": "movement",
+      "description": "大編成のビッグバンド、ダンス向けの強い拍感、編曲とソロ即興の組み合わせを特徴とし、1930年代から1940年代前半のアメリカ大衆音楽を代表したジャズの音楽潮流。",
+      "period": {
+        "start": {
+          "year": 1930
+        },
+        "end": {
+          "year": 1945
+        }
+      },
+      "events": [
+        {
+          "id": "swing-benny-goodman-carnegie",
+          "date": {
+            "year": 1938
+          },
+          "title": "Benny GoodmanがCarnegie Hallで公演",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Benny Goodman",
+              "url": "https://www.britannica.com/biography/Benny-Goodman"
+            }
+          ],
+          "description": "スウィングとジャズが主要なコンサート会場で演奏された象徴的な公演となった。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Swing",
+          "url": "https://www.britannica.com/art/swing-music"
+        },
+        {
+          "title": "Library of Congress - African Americans on the Recording Registry",
+          "url": "https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/descriptions-and-essays/african-americans-on-the-recording-registry/"
+        }
+      ]
+    },
+    {
+      "id": "count-basie",
+      "title": "Count Basie",
+      "category": "person",
+      "description": "簡潔で推進力のあるリズム・セクションと余白を生かした編曲を発展させ、カンザスシティ・ジャズとスウィングに大きな影響を与えたアメリカの音楽家。",
+      "period": {
+        "start": {
+          "year": 1904
+        },
+        "end": {
+          "year": 1984
+        }
+      },
+      "events": [
+        {
+          "id": "count-basie-one-oclock-jump",
+          "date": {
+            "year": 1937
+          },
+          "title": "「One O’Clock Jump」を録音",
+          "sources": [
+            {
+              "title": "Library of Congress - African Americans on the Recording Registry",
+              "url": "https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/descriptions-and-essays/african-americans-on-the-recording-registry/"
+            }
+          ],
+          "description": "Kansas City系スウィングを代表する楽団のスタイルを示した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Count Basie",
+          "url": "https://www.britannica.com/biography/Count-Basie"
+        }
+      ]
+    },
+    {
+      "id": "billie-holiday",
+      "title": "Billie Holiday",
+      "category": "person",
+      "description": "歌詞の語り方、タイミング、音色を重視した独自の歌唱によって、ジャズ・ヴォーカルの表現を大きく拡張したアメリカの歌手。",
+      "period": {
+        "start": {
+          "year": 1915
+        },
+        "end": {
+          "year": 1959
+        }
+      },
+      "events": [
+        {
+          "id": "billie-holiday-strange-fruit",
+          "date": {
+            "year": 1939
+          },
+          "title": "「Strange Fruit」を録音",
+          "sources": [
+            {
+              "title": "Library of Congress - National Recording Registry: Strange Fruit",
+              "url": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/StrangeFruit.pdf"
+            }
+          ],
+          "description": "人種差別とリンチを告発する楽曲を録音し、社会的主題を扱う歌唱の代表例となった。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Billie Holiday",
+          "url": "https://www.britannica.com/biography/Billie-Holiday"
+        }
+      ]
+    },
+    {
+      "id": "bebop",
+      "title": "ビバップ",
+      "category": "movement",
+      "description": "高速なテンポ、複雑な和声、長い即興フレーズ、小編成コンボを特徴とし、1940年代にジャズをダンス音楽中心の様式から演奏者中心のモダン・ジャズへ転換させた音楽潮流。",
+      "period": {
+        "start": {
+          "year": 1943
+        },
+        "end": {
+          "year": 1950
+        }
+      },
+      "events": [
+        {
+          "id": "bebop-eckstine-band",
+          "date": {
+            "year": 1943
+          },
+          "title": "Billy Eckstineがビバップ系ビッグバンドを結成",
+          "sources": [
+            {
+              "title": "Library of Congress - Jazz Singers Online Exhibition",
+              "url": "https://www.loc.gov/exhibits/jazz-singers/online-exhibition.html"
+            }
+          ],
+          "description": "Dizzy Gillespie、Charlie Parker、Sarah Vaughanらにつながる人材を含む楽団が活動を始めた。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Bebop",
+          "url": "https://www.britannica.com/art/bebop"
+        }
+      ]
+    },
+    {
+      "id": "charlie-parker",
+      "title": "Charlie Parker",
+      "category": "person",
+      "description": "高速で複雑な即興、拡張された和声感覚、独自のフレージングを通じてビバップを確立し、モダン・ジャズの即興表現に大きな影響を与えたアメリカの音楽家。",
+      "period": {
+        "start": {
+          "year": 1920
+        },
+        "end": {
+          "year": 1955
+        }
+      },
+      "events": [
+        {
+          "id": "charlie-parker-ko-ko",
+          "date": {
+            "year": 1945
+          },
+          "title": "「Ko-Ko」を録音",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Charlie Parker",
+              "url": "https://www.britannica.com/biography/Charlie-Parker"
+            }
+          ],
+          "description": "ビバップの革新的な即興語法を示す代表的な録音を残した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Charlie Parker",
+          "url": "https://www.britannica.com/biography/Charlie-Parker"
+        }
+      ]
+    },
+    {
+      "id": "dizzy-gillespie",
+      "title": "Dizzy Gillespie",
+      "category": "person",
+      "description": "高度なトランペット演奏、複雑な和声、作曲と編曲を通じてビバップを確立し、さらにアフロ・キューバン・ジャズの発展にも大きな影響を与えたアメリカの音楽家。",
+      "period": {
+        "start": {
+          "year": 1917
+        },
+        "end": {
+          "year": 1993
+        }
+      },
+      "events": [
+        {
+          "id": "dizzy-gillespie-manteca",
+          "date": {
+            "year": 1947
+          },
+          "title": "「Manteca」を発表",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Dizzy Gillespie",
+              "url": "https://www.britannica.com/biography/Dizzy-Gillespie"
+            }
+          ],
+          "description": "アフロ・キューバンのリズムとビバップを結び付けた代表曲を発表した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Dizzy Gillespie",
+          "url": "https://www.britannica.com/biography/Dizzy-Gillespie"
+        }
+      ]
+    },
+    {
+      "id": "thelonious-monk",
+      "title": "Thelonious Monk",
+      "category": "person",
+      "description": "独特の和声、間の取り方、角張った旋律、反復的な構造を通じて、ビバップ以降のジャズ作曲とピアノ表現に大きな影響を与えたアメリカの音楽家。",
+      "period": {
+        "start": {
+          "year": 1917
+        },
+        "end": {
+          "year": 1982
+        }
+      },
+      "events": [
+        {
+          "id": "thelonious-monk-blue-note",
+          "date": {
+            "year": 1947
+          },
+          "title": "Blue Noteでリーダー録音を開始",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Thelonious Monk",
+              "url": "https://www.britannica.com/biography/Thelonious-Monk"
+            }
+          ],
+          "description": "独自の作曲とピアノ語法を示す初期リーダー録音を開始した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Thelonious Monk",
+          "url": "https://www.britannica.com/biography/Thelonious-Monk"
+        }
+      ]
+    },
+    {
+      "id": "cool-jazz",
+      "title": "クール・ジャズ",
+      "category": "movement",
+      "description": "抑制された音色、緻密な編曲、滑らかなフレージングを特徴とし、ビバップの激しい表現に対する別の方向性として1940年代後半から1950年代に発展したジャズの音楽潮流。",
+      "period": {
+        "start": {
+          "year": 1948
+        },
+        "end": {
+          "year": 1960
+        }
+      },
+      "events": [
+        {
+          "id": "cool-jazz-birth-of-the-cool",
+          "date": {
+            "year": 1949
+          },
+          "title": "Miles Davis Nonetの録音が始まる",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Miles Davis",
+              "url": "https://www.britannica.com/biography/Miles-Davis"
+            }
+          ],
+          "description": "後に『Birth of the Cool』としてまとめられる録音が行われ、クール・ジャズを象徴する作品群となった。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Cool jazz",
+          "url": "https://www.britannica.com/art/cool-jazz"
+        }
+      ]
+    },
+    {
+      "id": "miles-davis",
+      "title": "Miles Davis",
+      "category": "person",
+      "description": "ビバップ、クール・ジャズ、ハードバップ、モード・ジャズ、ジャズ・ロックを横断し、編成とサウンドを継続的に刷新して戦後ジャズの方向性に大きな影響を与えたアメリカの音楽家。",
+      "period": {
+        "start": {
+          "year": 1926
+        },
+        "end": {
+          "year": 1991
+        }
+      },
+      "events": [
+        {
+          "id": "miles-davis-birth-of-the-cool",
+          "date": {
+            "year": 1949
+          },
+          "title": "Nonetで録音を行う",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Miles Davis",
+              "url": "https://www.britannica.com/biography/Miles-Davis"
+            }
+          ],
+          "description": "緻密な編曲と抑制された音色を用いた録音を行い、クール・ジャズの形成につながった。"
+        },
+        {
+          "id": "miles-davis-kind-of-blue",
+          "date": {
+            "year": 1959
+          },
+          "title": "『Kind of Blue』を発表",
+          "sources": [
+            {
+              "title": "Library of Congress - Kind of Blue essay",
+              "url": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/KindOfBlue.pdf"
+            }
+          ],
+          "description": "モードを基盤とする即興を中心に据えた代表作を発表した。"
+        },
+        {
+          "id": "miles-davis-bitches-brew",
+          "date": {
+            "year": 1970
+          },
+          "title": "『Bitches Brew』を発表",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Miles Davis",
+              "url": "https://www.britannica.com/biography/Miles-Davis"
+            }
+          ],
+          "description": "エレクトリック楽器とロック的なリズムを大規模に導入し、ジャズ・フュージョンの拡大につながる作品を発表した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Miles Davis",
+          "url": "https://www.britannica.com/biography/Miles-Davis"
+        }
+      ]
+    },
+    {
+      "id": "hard-bop",
+      "title": "ハードバップ",
+      "category": "movement",
+      "description": "ビバップを基盤にブルース、ゴスペル、R&Bの要素を強め、1950年代から1960年代に小編成ジャズの主要な様式となった音楽潮流。",
+      "period": {
+        "start": {
+          "year": 1955
+        },
+        "end": {
+          "year": 1965
+        }
+      },
+      "events": [
+        {
+          "id": "hard-bop-art-blakey",
+          "date": {
+            "year": 1955
+          },
+          "title": "Jazz Messengersが活動を本格化",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Art Blakey",
+              "url": "https://www.britannica.com/biography/Art-Blakey"
+            }
+          ],
+          "description": "Art Blakeyを中心とするJazz Messengersが、ハードバップを代表する演奏と若手育成の場となった。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Hard bop",
+          "url": "https://www.britannica.com/art/hard-bop"
+        }
+      ]
+    },
+    {
+      "id": "art-blakey",
+      "title": "Art Blakey",
+      "category": "person",
+      "description": "強いドラム演奏とJazz Messengersでの活動を通じてハードバップを代表し、多数の若手ジャズ演奏家の育成に大きな影響を与えたアメリカの音楽家。",
+      "period": {
+        "start": {
+          "year": 1919
+        },
+        "end": {
+          "year": 1990
+        }
+      },
+      "events": [
+        {
+          "id": "art-blakey-moanin",
+          "date": {
+            "year": 1958
+          },
+          "title": "『Moanin’』を録音",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Art Blakey",
+              "url": "https://www.britannica.com/biography/Art-Blakey"
+            }
+          ],
+          "description": "Jazz Messengersを代表するハードバップ作品を録音した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Art Blakey",
+          "url": "https://www.britannica.com/biography/Art-Blakey"
+        }
+      ]
+    },
+    {
+      "id": "john-coltrane",
+      "title": "John Coltrane",
+      "category": "person",
+      "description": "高速な即興、モードを用いた演奏、長時間の展開、精神性を重視した作品を通じて、ハードバップからフリー・ジャズに至るジャズの表現を大きく拡張したアメリカの音楽家。",
+      "period": {
+        "start": {
+          "year": 1926
+        },
+        "end": {
+          "year": 1967
+        }
+      },
+      "events": [
+        {
+          "id": "john-coltrane-giant-steps",
+          "date": {
+            "year": 1960
+          },
+          "title": "『Giant Steps』を発表",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - John Coltrane",
+              "url": "https://www.britannica.com/biography/John-Coltrane"
+            }
+          ],
+          "description": "急速なコード進行を用いた作曲と即興の到達点を示した。"
+        },
+        {
+          "id": "john-coltrane-a-love-supreme",
+          "date": {
+            "year": 1965
+          },
+          "title": "『A Love Supreme』を発表",
+          "sources": [
+            {
+              "title": "Library of Congress - A Love Supreme essay",
+              "url": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/A-Love-Supreme_Coltrane.pdf"
+            }
+          ],
+          "description": "モード、反復、精神的主題を統合した代表作を発表した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - John Coltrane",
+          "url": "https://www.britannica.com/biography/John-Coltrane"
+        }
+      ]
+    },
+    {
+      "id": "modal-jazz",
+      "title": "モード・ジャズ",
+      "category": "movement",
+      "description": "機能和声の頻繁なコード進行よりも旋法を基盤とする即興を重視し、1950年代後半以降のジャズに新しい旋律的・空間的自由をもたらした音楽潮流。",
+      "period": {
+        "start": {
+          "year": 1958
+        },
+        "end": {
+          "year": 1970
+        }
+      },
+      "events": [
+        {
+          "id": "modal-jazz-kind-of-blue",
+          "date": {
+            "year": 1959
+          },
+          "title": "『Kind of Blue』が発表される",
+          "sources": [
+            {
+              "title": "Library of Congress - Kind of Blue essay",
+              "url": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/KindOfBlue.pdf"
+            }
+          ],
+          "description": "Miles Davisを中心とする演奏によって、モードを基盤とする即興の代表例が示された。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Jazz",
+          "url": "https://www.britannica.com/art/jazz"
+        }
+      ]
+    },
+    {
+      "id": "ornette-coleman",
+      "title": "Ornette Coleman",
+      "category": "person",
+      "description": "固定的なコード進行や拍節への依存を弱めた即興を追求し、フリー・ジャズとアヴァンギャルド・ジャズの形成に大きな影響を与えたアメリカの音楽家。",
+      "period": {
+        "start": {
+          "year": 1930
+        },
+        "end": {
+          "year": 2015
+        }
+      },
+      "events": [
+        {
+          "id": "ornette-coleman-shape-of-jazz-to-come",
+          "date": {
+            "year": 1959
+          },
+          "title": "『The Shape of Jazz to Come』を発表",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Ornette Coleman",
+              "url": "https://www.britannica.com/biography/Ornette-Coleman"
+            }
+          ],
+          "description": "従来の和声進行への依存を弱めた即興を提示した。"
+        },
+        {
+          "id": "ornette-coleman-free-jazz",
+          "date": {
+            "year": 1961
+          },
+          "title": "『Free Jazz』を発表",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Ornette Coleman",
+              "url": "https://www.britannica.com/biography/Ornette-Coleman"
+            }
+          ],
+          "description": "集団即興を前面に出した作品を発表し、音楽潮流の名称にも影響を与えた。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Ornette Coleman",
+          "url": "https://www.britannica.com/biography/Ornette-Coleman"
+        }
+      ]
+    },
+    {
+      "id": "free-jazz",
+      "title": "フリー・ジャズ",
+      "category": "movement",
+      "description": "従来のコード進行、拍節、形式から距離を取り、音色、集団即興、自由な構造を重視して1960年代に発展したジャズの音楽潮流。",
+      "period": {
+        "start": {
+          "year": 1960
+        },
+        "end": {
+          "year": 1975
+        }
+      },
+      "events": [
+        {
+          "id": "free-jazz-album",
+          "date": {
+            "year": 1961
+          },
+          "title": "Ornette Coleman『Free Jazz』が発表される",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Ornette Coleman",
+              "url": "https://www.britannica.com/biography/Ornette-Coleman"
+            }
+          ],
+          "description": "集団即興を中心とする作品が発表され、フリー・ジャズを象徴する作品となった。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Free jazz",
+          "url": "https://www.britannica.com/art/free-jazz"
+        }
+      ]
+    },
+    {
+      "id": "herbie-hancock",
+      "title": "Herbie Hancock",
+      "category": "person",
+      "description": "ハードバップ、モード・ジャズ、ファンク、電子楽器、ヒップホップ的手法までを横断し、ジャズ・ピアノとジャズ・フュージョンの発展に大きな影響を与えたアメリカの音楽家。",
+      "period": {
+        "start": {
+          "year": 1940
+        },
+        "end": null
+      },
+      "events": [
+        {
+          "id": "herbie-hancock-maiden-voyage",
+          "date": {
+            "year": 1965
+          },
+          "title": "『Maiden Voyage』を発表",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Herbie Hancock",
+              "url": "https://www.britannica.com/biography/Herbie-Hancock"
+            }
+          ],
+          "description": "モードを活用した作曲とアンサンブルを示す代表作を発表した。"
+        },
+        {
+          "id": "herbie-hancock-head-hunters",
+          "date": {
+            "year": 1973
+          },
+          "title": "『Head Hunters』を発表",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Herbie Hancock",
+              "url": "https://www.britannica.com/biography/Herbie-Hancock"
+            }
+          ],
+          "description": "ファンク、シンセサイザー、反復的なグルーヴを融合した作品を発表した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Herbie Hancock",
+          "url": "https://www.britannica.com/biography/Herbie-Hancock"
+        }
+      ]
+    },
+    {
+      "id": "jazz-fusion",
+      "title": "ジャズ・フュージョン",
+      "category": "movement",
+      "description": "ジャズの即興とロック、ファンク、電子楽器、増幅されたサウンドを融合し、1960年代末から1970年代に大きく発展した音楽潮流。",
+      "period": {
+        "start": {
+          "year": 1968
+        },
+        "end": {
+          "year": 1980
+        }
+      },
+      "events": [
+        {
+          "id": "jazz-fusion-bitches-brew",
+          "date": {
+            "year": 1970
+          },
+          "title": "Miles Davis『Bitches Brew』が発表される",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Miles Davis",
+              "url": "https://www.britannica.com/biography/Miles-Davis"
+            }
+          ],
+          "description": "エレクトリック楽器とロック的リズムを大規模に導入した作品が発表された。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Jazz-rock",
+          "url": "https://www.britannica.com/art/jazz-rock"
+        }
+      ]
+    },
+    {
+      "id": "weather-report",
+      "title": "Weather Report",
+      "category": "organization",
+      "description": "電子楽器、ファンク、世界各地のリズム、高度な即興を融合し、1970年代から1980年代のジャズ・フュージョンを代表したアメリカの音楽グループ。",
+      "period": {
+        "start": {
+          "year": 1970
+        },
+        "end": {
+          "year": 1986
+        }
+      },
+      "events": [
+        {
+          "id": "weather-report-heavy-weather",
+          "date": {
+            "year": 1977
+          },
+          "title": "『Heavy Weather』を発表",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Weather Report",
+              "url": "https://www.britannica.com/topic/Weather-Report"
+            }
+          ],
+          "description": "「Birdland」を収録し、ジャズ・フュージョンを代表する作品となった。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Weather Report",
+          "url": "https://www.britannica.com/topic/Weather-Report"
+        }
+      ]
+    },
+    {
+      "id": "chick-corea",
+      "title": "Chick Corea",
+      "category": "person",
+      "description": "アコースティック・ジャズから電子楽器を用いたフュージョンまで幅広く活動し、現代ジャズのピアノ、作曲、アンサンブルに大きな影響を与えたアメリカの音楽家。",
+      "period": {
+        "start": {
+          "year": 1941
+        },
+        "end": {
+          "year": 2021
+        }
+      },
+      "events": [
+        {
+          "id": "chick-corea-return-to-forever",
+          "date": {
+            "year": 1972
+          },
+          "title": "Return to Foreverを結成",
+          "sources": [
+            {
+              "title": "Encyclopaedia Britannica - Chick Corea",
+              "url": "https://www.britannica.com/biography/Chick-Corea"
+            }
+          ],
+          "description": "ラテン音楽と電子楽器を取り入れたフュージョン・グループを結成した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Chick Corea",
+          "url": "https://www.britannica.com/biography/Chick-Corea"
+        }
+      ]
+    },
+    {
+      "id": "wynton-marsalis",
+      "title": "Wynton Marsalis",
+      "category": "person",
+      "description": "伝統的なジャズ語法を現代に継承し、演奏、作曲、教育活動を通じて1980年代以降のジャズ文化と制度化に大きな影響を与えたアメリカの音楽家。",
+      "period": {
+        "start": {
+          "year": 1961
+        },
+        "end": null
+      },
+      "events": [
+        {
+          "id": "wynton-marsalis-pulitzer",
+          "date": {
+            "year": 1997
+          },
+          "title": "『Blood on the Fields』でPulitzer Prizeを受賞",
+          "sources": [
+            {
+              "title": "Pulitzer Prize - Wynton Marsalis",
+              "url": "https://www.pulitzer.org/winners/wynton-marsalis"
+            }
+          ],
+          "description": "ジャズ作品として初めてPulitzer Prize for Musicを受賞した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Wynton Marsalis",
+          "url": "https://www.britannica.com/biography/Wynton-Marsalis"
+        }
+      ]
+    },
+    {
+      "id": "esperanza-spalding",
+      "title": "Esperanza Spalding",
+      "category": "person",
+      "description": "ベース演奏、歌唱、作曲を横断し、ジャズ、ソウル、ポップ、実験的なアンサンブルを融合して21世紀のジャズ表現を拡張したアメリカの音楽家。",
+      "period": {
+        "start": {
+          "year": 1984
+        },
+        "end": null
+      },
+      "events": [
+        {
+          "id": "esperanza-spalding-best-new-artist",
+          "date": {
+            "year": 2011
+          },
+          "title": "GRAMMY AwardsでBest New Artistを受賞",
+          "sources": [
+            {
+              "title": "GRAMMY - Esperanza Spalding",
+              "url": "https://www.grammy.com/artists/esperanza-spalding/14578"
+            }
+          ],
+          "description": "ジャズを主軸とする音楽家としてBest New Artistを受賞した。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Encyclopaedia Britannica - Esperanza Spalding",
+          "url": "https://www.britannica.com/biography/Esperanza-Spalding"
+        }
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "id": "jazz-origins",
+      "title": "ジャズの成立",
+      "description": "ラグタイムとニューオーリンズの音楽文化から、初期ジャズが形成される過程を追うサンプル。",
+      "recordIds": [
+        "ragtime",
+        "new-orleans-jazz",
+        "jelly-roll-morton",
+        "louis-armstrong"
+      ]
+    },
+    {
+      "id": "swing-era",
+      "title": "スウィング時代",
+      "description": "ビッグバンドとダンス音楽を中心にジャズが大衆文化の中心へ広がった時代を追うサンプル。",
+      "recordIds": [
+        "duke-ellington",
+        "swing",
+        "count-basie",
+        "billie-holiday"
+      ]
+    },
+    {
+      "id": "bebop-and-modern-jazz",
+      "title": "ビバップとモダン・ジャズ",
+      "description": "ビバップの成立からクール・ジャズ、ハードバップ、モード・ジャズへの展開を追うサンプル。",
+      "recordIds": [
+        "bebop",
+        "charlie-parker",
+        "dizzy-gillespie",
+        "thelonious-monk",
+        "cool-jazz",
+        "miles-davis",
+        "hard-bop",
+        "art-blakey",
+        "modal-jazz"
+      ]
+    },
+    {
+      "id": "jazz-avant-garde",
+      "title": "ジャズの前衛化",
+      "description": "モード・ジャズからフリー・ジャズへ、即興と形式の自由度が拡張される過程を追うサンプル。",
+      "recordIds": [
+        "john-coltrane",
+        "modal-jazz",
+        "ornette-coleman",
+        "free-jazz"
+      ]
+    },
+    {
+      "id": "fusion-and-contemporary-jazz",
+      "title": "フュージョンから現代ジャズへ",
+      "description": "電子楽器やファンクとの融合から、現代の多様なジャズ表現までを追うサンプル。",
+      "recordIds": [
+        "miles-davis",
+        "herbie-hancock",
+        "jazz-fusion",
+        "weather-report",
+        "chick-corea",
+        "wynton-marsalis",
+        "esperanza-spalding"
+      ]
+    }
+  ]
+}

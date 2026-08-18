@@ -754,6 +754,55 @@
       "sources": [
         { "title": "KANADA Yoshinori（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/kanada-yoshinori/index-2.html" }
       ]
+    },
+    {
+      "id": "jazz-movement",
+      "title": "Jazz",
+      "category": "movement",
+      "description": "ニューオーリンズの音楽文化から広がり、スウィング、ビバップ、モード、フュージョンなどへ展開した即興性の高い音楽文化。",
+      "period": { "start": { "year": 1910 }, "end": null },
+      "events": [
+        {
+          "id": "jazz-new-orleans-roots",
+          "date": { "year": 1910 },
+          "title": "ニューオーリンズの音楽文化から初期ジャズが形成される",
+          "sources": [{ "title": "The Course of Jazz（Smithsonian Music）", "url": "https://music.si.edu/story/jazz" }]
+        },
+        {
+          "id": "jazz-armstrong-hot-five",
+          "date": { "year": 1925 },
+          "title": "ルイ・アームストロングのHot Five録音が始まる",
+          "sources": [{ "title": "Biography（Louis Armstrong House Museum）", "url": "https://www.louisarmstronghouse.org/biography/" }]
+        },
+        {
+          "id": "jazz-ellington-cotton-club",
+          "date": { "year": 1927 },
+          "title": "デューク・エリントン楽団がCotton Clubに出演",
+          "sources": [{ "title": "Duke Ellington biography（PBS American Masters）", "url": "https://www.pbs.org/wnet/americanmasters/duke-ellington-about-duke-ellington/586/" }]
+        },
+        {
+          "id": "jazz-bebop-emerges",
+          "date": { "year": 1945 },
+          "title": "チャーリー・パーカーらによりビバップが録音で広がる",
+          "sources": [{ "title": "The Course of Jazz（Smithsonian Music）", "url": "https://music.si.edu/story/jazz" }]
+        },
+        {
+          "id": "jazz-kind-of-blue",
+          "date": { "year": 1959 },
+          "title": "Kind of Blueがモード・ジャズを象徴する作品となる",
+          "sources": [{ "title": "Releases（Miles Davis Official Site）", "url": "https://www.milesdavis.com/music/releases/" }]
+        },
+        {
+          "id": "jazz-bitches-brew",
+          "date": { "year": 1970, "month": 3, "day": 30 },
+          "title": "Bitches Brewがジャズとロックの境界を押し広げる",
+          "sources": [{ "title": "Bitches Brew（Miles Davis Official Site）", "url": "https://www.milesdavis.com/albums/bitches-brew/" }]
+        }
+      ],
+      "sources": [
+        { "title": "The Course of Jazz（Smithsonian Music）", "url": "https://music.si.edu/story/jazz" },
+        { "title": "Timeline（Miles Davis Official Site）", "url": "https://www.milesdavis.com/timeline/" }
+      ]
     }
   ],
   "samples": [
@@ -800,6 +849,20 @@
         "mamoru-oshii",
         "satoshi-kon",
         "makoto-shinkai"
+      ]
+    },
+    {
+      "id": "jazz-history",
+      "title": "ジャズ史",
+      "description": "初期ジャズからスウィング、ビバップ、モード、フュージョンへ続く流れ",
+      "recordIds": [
+        "jazz-movement",
+        "louis-armstrong",
+        "duke-ellington",
+        "charlie-parker",
+        "thelonious-monk",
+        "miles-davis",
+        "john-coltrane"
       ]
     }
   ]
