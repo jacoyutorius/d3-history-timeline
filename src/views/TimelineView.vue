@@ -12,6 +12,7 @@ const {
   movements,
   organizations,
   people,
+  deselectRecord,
   sampleIsSelected,
   samples,
   selectedRecords,
@@ -43,7 +44,7 @@ const {
 
       <section v-else aria-labelledby="selected-title">
         <h2 id="selected-title">選択したデータの年表</h2>
-        <TimelineChart :records="selectedRecords" />
+        <TimelineChart :records="selectedRecords" @deselect-record="deselectRecord" />
       </section>
     </template>
 

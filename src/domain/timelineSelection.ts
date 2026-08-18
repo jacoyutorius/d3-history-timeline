@@ -1,5 +1,14 @@
 import type { SelectableHistoryRecord, TimelineSample } from '../types/timeline'
 
+export function setRecordSelected(
+  histories: SelectableHistoryRecord[],
+  recordId: string,
+  selected: boolean,
+): void {
+  const record = histories.find((history) => history.id === recordId)
+  if (record) record.selected = selected
+}
+
 export function isSampleSelected(
   histories: SelectableHistoryRecord[],
   sample: TimelineSample,

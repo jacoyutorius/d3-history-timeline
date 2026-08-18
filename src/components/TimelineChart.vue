@@ -14,8 +14,15 @@ import {
 import type { HistoryRecord, TimelineEvent } from '../types/timeline'
 
 const props = defineProps<{ records: HistoryRecord[] }>()
+const emit = defineEmits<{
+  deselectRecord: [recordId: string]
+}>()
 type DetailMode = 'panel' | 'dialog'
 
+const RECORD_LABEL_X = 60
+const REMOVE_BUTTON_SIZE = 14
+const REMOVE_BUTTON_GAP = 14
+const LABEL_TO_ACTION_GAP = 10
 const currentYear = new Date().getFullYear()
 const container = useTemplateRef<HTMLElement>('container')
 const recordDetails = useTemplateRef<HTMLElement>('recordDetails')
@@ -42,6 +49,18 @@ const rowHeight = computed(() => timelineRowHeight(props.records.length))
 
 function rowY(index: number): number {
   return CHART_MARGIN.top + index * rowHeight.value + rowHeight.value / 2
+}
+
+function removeButtonX(): number {
+  return layout.value.plotLeft - REMOVE_BUTTON_SIZE - REMOVE_BUTTON_GAP
+}
+
+function labelClipWidth(): number {
+  return Math.max(72, removeButtonX() - RECORD_LABEL_X - LABEL_TO_ACTION_GAP)
+}
+
+function recordLabelClipId(record: HistoryRecord): string {
+  return `record-label-${record.id}`
 }
 
 function endYear(record: HistoryRecord): number {
@@ -95,6 +114,11 @@ function closeRecord(): void {
   activeRecord.value = null
 }
 
+function deselectRecord(record: HistoryRecord): void {
+  if (activeRecord.value?.id === record.id) closeRecord()
+  emit('deselectRecord', record.id)
+}
+
 onMounted(() => {
   if (!container.value) return
   resizeObserver = new ResizeObserver(([entry]) => {
@@ -144,6 +168,17 @@ watch([activeRecord, detailMode], async () => {
       >
       <title id="timeline-chart-title">選択した人物と組織の歴史年表</title>
 
+      <defs>
+        <clipPath v-for="record in records" :id="recordLabelClipId(record)" :key="record.id">
+          <rect
+            :x="RECORD_LABEL_X"
+            y="0"
+            :width="labelClipWidth()"
+            :height="layout.height"
+          />
+        </clipPath>
+      </defs>
+
       <g class="chart-axis">
         <line
           :x1="layout.plotLeft"
@@ -189,10 +224,45 @@ watch([activeRecord, detailMode], async () => {
           >
             <title>{{ record.image.alt }}</title>
           </image>
-          <text class="record-title" x="60" :y="rowY(index) - 4">{{ record.title }}</text>
-          <text class="record-period" x="60" :y="rowY(index) + 16">
-            {{ formatHistoricalPeriod(record.period.start, record.period.end) }}
-          </text>
+          <g :clip-path="`url(#${recordLabelClipId(record)})`">
+            <text class="record-title" :x="RECORD_LABEL_X" :y="rowY(index) - 4">
+              {{ record.title }}
+            </text>
+            <text class="record-period" :x="RECORD_LABEL_X" :y="rowY(index) + 16">
+              {{ formatHistoricalPeriod(record.period.start, record.period.end) }}
+            </text>
+          </g>
+        </g>
+
+        <g
+          class="record-remove-button"
+          role="button"
+          tabindex="0"
+          :aria-label="`${record.title}を年表から外す`"
+          @click.stop="deselectRecord(record)"
+          @keydown.enter.prevent.stop="deselectRecord(record)"
+          @keydown.space.prevent.stop="deselectRecord(record)"
+        >
+          <rect
+            :x="removeButtonX()"
+            :y="rowY(index) - REMOVE_BUTTON_SIZE / 2"
+            :width="REMOVE_BUTTON_SIZE"
+            :height="REMOVE_BUTTON_SIZE"
+            rx="5"
+          />
+          <line
+            :x1="removeButtonX() + 4"
+            :x2="removeButtonX() + 10"
+            :y1="rowY(index) - 3"
+            :y2="rowY(index) + 3"
+          />
+          <line
+            :x1="removeButtonX() + 10"
+            :x2="removeButtonX() + 4"
+            :y1="rowY(index) - 3"
+            :y2="rowY(index) + 3"
+          />
+          <title>{{ record.title }}を年表から外す</title>
         </g>
 
         <line

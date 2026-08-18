@@ -1,6 +1,6 @@
 import { computed, onMounted, ref } from 'vue'
 
-import { isSampleSelected, setSampleSelected } from '../domain/timelineSelection'
+import { isSampleSelected, setRecordSelected, setSampleSelected } from '../domain/timelineSelection'
 import { loadTimelineData } from '../services/timelineApi'
 import type { SelectableHistoryRecord, TimelineSample } from '../types/timeline'
 
@@ -33,6 +33,10 @@ export function useTimelineData() {
     record.selected = !record.selected
   }
 
+  function deselectRecord(recordId: string): void {
+    setRecordSelected(histories.value, recordId, false)
+  }
+
   function sampleIsSelected(sample: TimelineSample): boolean {
     return isSampleSelected(histories.value, sample)
   }
@@ -50,6 +54,7 @@ export function useTimelineData() {
     movements,
     organizations,
     people,
+    deselectRecord,
     sampleIsSelected,
     samples,
     selectedRecords,

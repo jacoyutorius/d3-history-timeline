@@ -5,7 +5,7 @@ export const CHART_MARGIN = {
   top: 56,
   right: 24,
   bottom: 36,
-  left: 160,
+  left: 220,
 } as const
 export const CHART_ROW_HEIGHT = 76
 export const CHART_COMPACT_ROW_HEIGHT = 62

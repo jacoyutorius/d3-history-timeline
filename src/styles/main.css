@@ -222,6 +222,34 @@ button {
   text-decoration-color: currentcolor;
 }
 
+.record-remove-button {
+  cursor: pointer;
+  outline: none;
+}
+
+.record-remove-button rect {
+  fill: #fff;
+  stroke: #cbd5e1;
+  stroke-width: 1;
+}
+
+.record-remove-button line {
+  stroke: #52616b;
+  stroke-linecap: round;
+  stroke-width: 1.5;
+}
+
+.record-remove-button:hover rect,
+.record-remove-button:focus rect {
+  fill: #fdecec;
+  stroke: #c2410c;
+}
+
+.record-remove-button:hover line,
+.record-remove-button:focus line {
+  stroke: #9a3412;
+}
+
 .history-line {
   stroke: #364f6b;
   stroke-linecap: round;

@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 
 import type { SelectableHistoryRecord, TimelineSample } from '../types/timeline'
-import { isSampleSelected, setSampleSelected } from './timelineSelection'
+import { isSampleSelected, setRecordSelected, setSampleSelected } from './timelineSelection'
 
 const record = (id: string, selected = false): SelectableHistoryRecord => ({
   id,
@@ -23,6 +23,17 @@ const sample: TimelineSample = {
 }
 
 describe('timeline sample selection', () => {
+  it('IDを指定してレコードを選択解除する', () => {
+    const target = histories.map((history) => ({ ...history, selected: true }))
+    setRecordSelected(target, 'organization-a', false)
+
+    expect(target.map(({ id, selected }) => [id, selected])).toEqual([
+      ['person-a', true],
+      ['organization-a', false],
+      ['other', true],
+    ])
+  })
+
   it('サンプルが参照するIDのデータだけを選択する', () => {
     const target = structuredClone(histories)
     setSampleSelected(target, sample, true)
