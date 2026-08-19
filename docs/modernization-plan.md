@@ -1,0 +1,82 @@
+# Vue 3・Vite移行計画
+
+## 目的
+
+Nuxt 1／Vue 2で実装された歴史年表SPAを、Vue 3とViteを中心とした保守可能な構成へ移行する。現行の表示機能を維持しながら、D3の座標計算、データ品質、テスト、Cloudflare Pagesへの継続的デプロイを段階的に改善する。
+
+## 採用技術
+
+- Vue 3（Composition API、`<script setup>`）
+- Vite、TypeScript、Vue Router
+- D3最新版（必要なモジュールのみ利用）
+- Vitest、Vue Test Utils、ESLint
+- UIはVue標準機能とプロジェクト固有CSSを基本とし、Bootstrap Vueは廃止
+- Cloudflare Pages（静的SPAとして配信）
+
+## 現行機能と課題
+
+- `/`：人物・組織・サンプルの選択、SVG年表、イベント・年齢・画像表示、新規レコードフォーム
+- `/about`：概要とYouTube動画
+- データ取得：履歴APIとサンプルAPI。環境変数で接続先を切り替える
+- `pages/index.vue`にD3描画と座標計算が集中し、同じ計算が重複している
+- 選択状態の反映を`setTimeout(200)`に依存しており、状態更新が非決定的
+- 旧データでは`end: 0`が「継続中」を表していたため、新スキーマの`period.end: null`へ移行する
+- 自動テストがなく、古いNuxt、D3、Bootstrap Vue、Axiosなどへの依存がある
+
+## 実施フェーズ
+
+### Phase 0：現状固定と移行基盤
+
+1. 主要ユースケースとデータ仕様を型として定義する。
+2. Vue 3＋Vite＋TypeScriptの最小構成を作る。
+3. ESLint、Vitest、ビルド検証を導入する。
+4. 旧実装は移植完了まで参照可能な状態で保持する。
+
+完了条件：新基盤でトップ画面とAbout画面へ遷移でき、lint・型検査・テスト・buildが成功する。
+
+### Phase 1：状態管理と画面移植
+
+1. APIクライアントと環境変数（`VITE_HISTORY_API_URL`、`VITE_SAMPLE_API_URL`）を整備する。
+2. 履歴選択、サンプル一括選択、loading、errorをComposableへ分離する。
+3. モーダル、一覧、フォーム、ナビゲーションをVue 3へ移植する。
+4. `setTimeout`を廃止し、同期的で予測可能な状態更新に置き換える。
+
+完了条件：現行の選択・登録フローをVue 3版で再現し、状態ロジックを単体テストできる。
+
+### Phase 2：D3描画と計算精度
+
+1. 描画領域の余白を明示し、`d3.scaleLinear`で年とX座標を相互変換する。
+2. 開始年、終了年、イベント、クリック位置、年齢計算で同じスケールを共有する。
+3. `period.end: null`を現在年へ正規化し、ゼロ期間や不正値を安全に処理する。
+4. `ResizeObserver`で再描画し、SVGに`viewBox`を設定する。
+5. 計算を純粋関数として分離し、境界値をVitestで検証する。
+
+完了条件：座標の往復変換、端点、継続中データ、狭い画面での表示がテスト済みである。
+
+### Phase 3：データ拡充
+
+1. `HistoryRecord`、`TimelineEvent`、`TimelineSample`のスキーマを確定する。（完了：`docs/data-schema.md`）
+2. 人物・組織以外のカテゴリ、出典、説明、日付精度、画像代替テキストを検討する。（完了）
+3. サンプルデータを外部JSONへ分離し、重複ID、期間、参照先を検証する。（完了：`src/data/bundledTimeline.json`、`src/domain/timelineDataValidation.ts`）
+4. 出典が確認できるデータから段階的に追加する。
+
+完了条件：データ検証が自動化され、追加データが既存表示を壊さない。
+
+### Phase 4：Cloudflare Pages
+
+1. Phase 0完了後にプレビュー配信を作り、SPAフォールバックと環境変数を確認する。
+2. `main`向けの本番ビルド、カスタムドメイン、HTTPS、キャッシュ方針を設定する。
+3. APIの配置先とCORSを確定し、秘密情報はCloudflare側の環境変数で管理する。
+
+完了条件：プレビューと本番が同じ手順でビルドされ、直接URLで各ルートを開ける。
+
+## 実装ルール
+
+- 各フェーズを小さなコミットに分け、移行と機能追加を同じ差分に混在させない。
+- コメントは処理内容の言い換えではなく、データ上の制約や設計理由を説明する。
+- 挙動変更にはテストを追加し、各区切りで`lint`、`typecheck`、`test`、`build`を実行する。
+- 旧実装の削除は、Vue 3版の機能比較とCloudflareプレビュー確認後に行う。
+
+## 現在の着手範囲
+
+Phase 3の残作業として、出典が確認できるデータを段階的に追加する。データ追加時は`src/data/bundledTimeline.json`を更新し、整合性検証テストで重複ID、期間、イベント日、サンプル参照切れを確認する。

@@ -1,61 +1,42 @@
-# d3-history-timeline
+# TimeLends
 
-> Nuxt.js project
+Vue 3とD3で、歴史上の人物や組織の関係を年表として可視化するSPAです。
 
-Visualize History.
+Visualize connected histories.
 
 ![https://s3-ap-northeast-1.amazonaws.com/public.jacoyutorius.com/d3-history-timeline.gif](https://s3-ap-northeast-1.amazonaws.com/public.jacoyutorius.com/d3-history-timeline.gif)
 
 ![https://s3-ap-northeast-1.amazonaws.com/public.jacoyutorius.com/d3-history-timeline.jpg](https://s3-ap-northeast-1.amazonaws.com/public.jacoyutorius.com/d3-history-timeline.jpg)
 
-## Build Setup
+## 開発環境
 
-``` bash
-# install dependencies
-$ yarn install # Or yarn install
+Node.js 24以降を使用してください。
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+```bash
+npm install
+npm run dev
 ```
 
-## Test data
+開発サーバーは`http://localhost:4000`で起動します。
 
-レコードのフォーマットは以下の通り。
-
-**format**
-
-```json
-{ 
-  title: "Walter Adolph Georg Gropius",
-  category: "people",
-  start: 1883,
-  end: 1969,
-  events: [
-    {start: 1919, content: "Become the first principal of Bauhaus"},
-  ], 
-  birth: "1883.5.18",
-  dead: "1969.7.5",
-  imageUrl: "" 
-},
+```bash
+npm run lint       # ESLint
+npm run typecheck  # TypeScript
+npm test           # Vitest
+npm run build      # 型検査と本番ビルド
 ```
 
+Vue 3への段階的な移行方針は[`docs/modernization-plan.md`](docs/modernization-plan.md)、データ形式は[`docs/data-schema.md`](docs/data-schema.md)、データ拡充の進め方は[`docs/data-expansion-guide.md`](docs/data-expansion-guide.md)、公開方法は[`docs/cloudflare-deployment.md`](docs/cloudflare-deployment.md)を参照してください。旧Nuxt実装は機能移植が完了するまで比較用に残しています。
 
-動作に必要なAPIサーバーを用意するには2種類の方法がある。
+## テストデータ
+
+同梱データは`src/data/bundledTimeline.json`にあります。レコード形式、ID、日付、出典の規約は[`docs/data-schema.md`](docs/data-schema.md)を参照してください。
 
 
-1. use [myjson](http://myjson.com/) to create test data.
+ローカルAPIが必要な場合は、Sinatraサーバーを起動します。
 
-[myjson](http://myjson.com/)でサンプルデータを登録したAPIを作成する。
-
-[https://api.myjson.com/bins/1cic7m](https://api.myjson.com/bins/1cic7m)
-
-2. use Ruby script
-
-[Sinatra](http://sinatrarb.com/intro.html) でローカルAPIサーバーを立てる。
-
-```
+```bash
 bundle install --path .bundle
 bundle exec ruby api/app.rb
-
-=> curl localhost:4567/data
+curl localhost:4567/data
 ```

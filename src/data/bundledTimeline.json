@@ -1,0 +1,998 @@
+{
+  "histories": [
+    {
+      "id": "bauhaus-movement",
+      "title": "Bauhaus",
+      "category": "movement",
+      "description": "1919年にヴァイマルで創設され、芸術・工芸・建築を横断した教育と制作を展開した造形運動。",
+      "period": { "start": { "year": 1919, "month": 4 }, "end": { "year": 1933, "month": 7, "day": 20 } },
+      "events": [
+        {
+          "id": "bauhaus-founded",
+          "date": { "year": 1919, "month": 4 },
+          "title": "ヴァイマルで創設",
+          "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
+        },
+        {
+          "id": "bauhaus-first-exhibition",
+          "date": { "year": 1923 },
+          "title": "バウハウス展で「芸術と技術、新たな統一」を掲げる",
+          "sources": [{ "title": "14 Years of Bauhaus（Bauhaus-Archiv）", "url": "https://www.bauhaus.de/en/discover/article/14-years-of-bauhaus/" }]
+        },
+        {
+          "id": "bauhaus-weimar-dissolution-declared",
+          "date": { "year": 1924, "month": 12, "day": 26 },
+          "title": "マイスターたちがヴァイマル校の閉鎖を宣言",
+          "sources": [{ "title": "14 Years of Bauhaus（Bauhaus-Archiv）", "url": "https://www.bauhaus.de/en/discover/article/14-years-of-bauhaus/" }]
+        },
+        {
+          "id": "bauhaus-moves-dessau",
+          "date": { "year": 1925 },
+          "title": "デッサウへ移転",
+          "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
+        },
+        {
+          "id": "bauhaus-dessau-official-status",
+          "date": { "year": 1926 },
+          "title": "デッサウでHochschule für Gestaltungとして公式地位を得る",
+          "sources": [{ "title": "Chronologie（Stiftung Bauhaus Dessau）", "url": "https://bauhaus-dessau.de/institution/chronologie/" }]
+        },
+        {
+          "id": "bauhaus-meyer-director",
+          "date": { "year": 1928 },
+          "title": "ハンネス・マイヤーが校長に就任",
+          "sources": [{ "title": "Chronologie（Stiftung Bauhaus Dessau）", "url": "https://bauhaus-dessau.de/institution/chronologie/" }]
+        },
+        {
+          "id": "bauhaus-mies-director",
+          "date": { "year": 1930 },
+          "title": "ミース・ファン・デル・ローエが校長に就任",
+          "sources": [{ "title": "Chronologie（Stiftung Bauhaus Dessau）", "url": "https://bauhaus-dessau.de/institution/chronologie/" }]
+        },
+        {
+          "id": "bauhaus-moves-berlin",
+          "date": { "year": 1932 },
+          "title": "ベルリンで私立学校として継続",
+          "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
+        },
+        {
+          "id": "bauhaus-closed",
+          "date": { "year": 1933, "month": 7, "day": 20 },
+          "title": "教員会議が閉鎖を決定",
+          "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
+        }
+      ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Bauhaus-Signet.svg",
+        "alt": "オスカー・シュレンマーがデザインしたバウハウスのシンボルマーク",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bauhaus-Signet.svg",
+        "creator": "Oskar Schlemmer",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
+      "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
+    },
+    {
+      "id": "bauhaus-weimar",
+      "title": "Bauhaus Weimar",
+      "category": "organization",
+      "description": "1919年にヴァイマルで開校したバウハウスの最初の拠点。",
+      "period": { "start": { "year": 1919 }, "end": { "year": 1925 } },
+      "events": [
+        {
+          "id": "bauhaus-weimar-founded",
+          "date": { "year": 1919 },
+          "title": "ヴァイマルで開校",
+          "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
+        },
+        {
+          "id": "bauhaus-weimar-exhibition",
+          "date": { "year": 1923 },
+          "title": "最初の大規模なバウハウス展を開催",
+          "sources": [{ "title": "14 Years of Bauhaus（Bauhaus-Archiv）", "url": "https://www.bauhaus.de/en/discover/article/14-years-of-bauhaus/" }]
+        },
+        {
+          "id": "bauhaus-weimar-dissolution",
+          "date": { "year": 1924, "month": 12, "day": 26 },
+          "title": "学校の閉鎖を宣言",
+          "sources": [{ "title": "14 Years of Bauhaus（Bauhaus-Archiv）", "url": "https://www.bauhaus.de/en/discover/article/14-years-of-bauhaus/" }]
+        }
+      ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Van-de-Velde-Bau_in_Weimar_%28Draufsicht%29.jpg",
+        "alt": "ヴァイマルの旧バウハウス校舎",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Van-de-Velde-Bau_in_Weimar_(Draufsicht).jpg",
+        "creator": "R.Möhler",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "modified": false
+      },
+      "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
+    },
+    {
+      "id": "bauhaus-dessau",
+      "title": "Bauhaus Dessau",
+      "category": "organization",
+      "description": "1925年にデッサウへ移転したバウハウス。",
+      "period": { "start": { "year": 1925 }, "end": { "year": 1932 } },
+      "events": [
+        {
+          "id": "bauhaus-dessau-building",
+          "date": { "year": 1926 },
+          "title": "デッサウ校舎が完成",
+          "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
+        },
+        {
+          "id": "bauhaus-dessau-public-opening",
+          "date": { "year": 1926, "month": 12, "day": 4 },
+          "title": "校舎、マイスターハウス、デッサウ・テルテン住宅を公開",
+          "sources": [{ "title": "Chronologie（Stiftung Bauhaus Dessau）", "url": "https://bauhaus-dessau.de/institution/chronologie/" }]
+        },
+        {
+          "id": "bauhaus-dessau-meyer-director",
+          "date": { "year": 1928 },
+          "title": "ハンネス・マイヤーが校長に就任",
+          "sources": [{ "title": "Chronologie（Stiftung Bauhaus Dessau）", "url": "https://bauhaus-dessau.de/institution/chronologie/" }]
+        },
+        {
+          "id": "bauhaus-dessau-mies-director",
+          "date": { "year": 1930 },
+          "title": "ミース・ファン・デル・ローエが校長に就任",
+          "sources": [{ "title": "Chronologie（Stiftung Bauhaus Dessau）", "url": "https://bauhaus-dessau.de/institution/chronologie/" }]
+        },
+        {
+          "id": "bauhaus-dessau-closing-resolution",
+          "date": { "year": 1932 },
+          "title": "デッサウ市議会がバウハウス閉鎖を決議",
+          "sources": [{ "title": "Chronologie（Stiftung Bauhaus Dessau）", "url": "https://bauhaus-dessau.de/institution/chronologie/" }]
+        }
+      ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Bauhaus.JPG",
+        "alt": "デッサウのバウハウス校舎",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bauhaus.JPG",
+        "creator": "Mewes",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
+      "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
+    },
+    {
+      "id": "bauhaus-berlin",
+      "title": "Bauhaus Berlin",
+      "category": "organization",
+      "description": "デッサウ閉鎖後、ミース・ファン・デル・ローエがベルリンで私立学校として継続した最後の拠点。",
+      "period": { "start": { "year": 1932, "month": 10 }, "end": { "year": 1933, "month": 7, "day": 20 } },
+      "events": [
+        {
+          "id": "bauhaus-berlin-opens",
+          "date": { "year": 1932, "month": 10 },
+          "title": "ベルリンで私立学校として開校",
+          "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
+        },
+        {
+          "id": "bauhaus-berlin-sealed",
+          "date": { "year": 1933, "month": 4, "day": 11 },
+          "title": "ゲシュタポによる捜索後に校舎を封鎖",
+          "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
+        },
+        {
+          "id": "bauhaus-berlin-closes",
+          "date": { "year": 1933, "month": 7, "day": 20 },
+          "title": "教員会議が学校の閉鎖を決定",
+          "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
+        }
+      ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Gedenktafel_Birkbuschstr_49_%28Lankw%29_Bauhaus_Berlin.jpg",
+        "alt": "ベルリンの旧バウハウス所在地に設置された記念板",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gedenktafel_Birkbuschstr_49_(Lankw)_Bauhaus_Berlin.jpg",
+        "creator": "OTFW, Berlin",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "modified": false
+      },
+      "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
+    },
+    {
+      "id": "hfg-ulm",
+      "title": "Hochschule für Gestaltung Ulm",
+      "category": "organization",
+      "description": "1953年にインゲ・ショル、オトル・アイヒャー、マックス・ビルによって設立された、戦後ドイツのデザイン教育を代表する造形大学。",
+      "period": { "start": { "year": 1953, "month": 8, "day": 3 }, "end": { "year": 1968 } },
+      "events": [
+        {
+          "id": "hfg-ulm-teaching-starts",
+          "date": { "year": 1953, "month": 8, "day": 3 },
+          "title": "ウルム市民大学の部屋で授業を開始",
+          "sources": [{ "title": "History（HfG Ulm）", "url": "https://www.hfg-ulm.de/en/hfg-ulm/history/" }]
+        },
+        {
+          "id": "hfg-ulm-campus-foundation-stone",
+          "date": { "year": 1953, "month": 9 },
+          "title": "オーバラー・クーベルクの校舎建設が始まる",
+          "sources": [{ "title": "History（HfG Ulm）", "url": "https://www.hfg-ulm.de/en/hfg-ulm/history/" }]
+        },
+        {
+          "id": "hfg-ulm-official-opening",
+          "date": { "year": 1955, "month": 10, "day": 1 },
+          "title": "マックス・ビル設計の校舎が開校",
+          "sources": [{ "title": "Die Hochschule für Gestaltung HfG（Stadt Ulm）", "url": "https://www.ulm.de/tourismus/stadtgeschichte/markenzeichen/die-hochschule-f%C3%BCr-gestaltung-hfg" }]
+        },
+        {
+          "id": "hfg-ulm-ends",
+          "date": { "year": 1968 },
+          "title": "早すぎる終焉を迎える",
+          "sources": [{ "title": "HfG-Archiv（Museum Ulm）", "url": "https://museumulm.de/sammlungen/hfg-ulm/" }]
+        }
+      ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Hochschule_f%C3%BCr_Gestaltung_Ulm_04.jpg",
+        "alt": "マックス・ビル設計のウルム造形大学校舎",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hochschule_f%C3%BCr_Gestaltung_Ulm_04.jpg",
+        "creator": "Andreas Bohnenstengel",
+        "license": "CC BY-SA 3.0 DE",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+        "modified": false
+      },
+      "sources": [
+        { "title": "The History of the Ulm School of Design（HfG-Archiv Ulm）", "url": "https://hfg-archiv.museumulm.de/en/the-hfg-archive/" },
+        { "title": "HfG-Archiv（Museum Ulm）", "url": "https://museumulm.de/sammlungen/hfg-ulm/" }
+      ]
+    },
+    {
+      "id": "walter-gropius",
+      "title": "Walter Adolph Georg Gropius",
+      "category": "person",
+      "description": "バウハウスの創設者であり、初代校長を務めた建築家。",
+      "period": {
+        "start": { "year": 1883, "month": 5, "day": 18 },
+        "end": { "year": 1969, "month": 7, "day": 5 }
+      },
+      "events": [
+        {
+          "id": "gropius-bauhaus-director",
+          "date": { "year": 1919 },
+          "title": "バウハウス初代校長に就任",
+          "sources": [{ "title": "Walter Gropius（Bauhaus Kooperation）", "url": "https://bauhauskooperation.com/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-1436" }]
+        },
+        {
+          "id": "gropius-dessau-building",
+          "date": { "year": 1926 },
+          "title": "デッサウのバウハウス校舎を設計",
+          "sources": [{ "title": "Chronologie（Stiftung Bauhaus Dessau）", "url": "https://bauhaus-dessau.de/institution/chronologie/" }]
+        },
+        {
+          "id": "gropius-leaves-bauhaus",
+          "date": { "year": 1928 },
+          "title": "バウハウス校長を退任",
+          "sources": [{ "title": "Walter Gropius（Bauhaus Kooperation）", "url": "https://bauhauskooperation.com/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-1436" }]
+        },
+        {
+          "id": "gropius-harvard",
+          "date": { "year": 1937 },
+          "title": "ハーバード大学大学院デザインスクールの教授となる",
+          "sources": [{ "title": "Bauhaus exhibit showcases influential art movement（Harvard Gazette）", "url": "https://news.harvard.edu/gazette/story/2019/02/bauhaus-exhibit-showcases-influential-art-movement-as-it-celebrates-centennia/" }]
+        },
+        {
+          "id": "gropius-tac",
+          "date": { "year": 1945 },
+          "title": "The Architects Collaborativeを設立",
+          "sources": [{ "title": "Bauhaus exhibit showcases influential art movement（Harvard Gazette）", "url": "https://news.harvard.edu/gazette/story/2019/02/bauhaus-exhibit-showcases-influential-art-movement-as-it-celebrates-centennia/" }]
+        }
+      ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/1955_01-Oct_HansGConrad_Portrait-WalterGropius_HfGUlm-Opening.jpg",
+        "alt": "ヴァルター・グロピウスの肖像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:1955_01-Oct_HansGConrad_Portrait-WalterGropius_HfGUlm-Opening.jpg",
+        "creator": "René Spitz",
+        "license": "CC BY-SA 3.0 DE",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+        "modified": false
+      },
+      "sources": [{ "title": "Walter Gropius（Bauhaus Kooperation）", "url": "https://bauhauskooperation.com/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-1436" }]
+    },
+    {
+      "id": "max-bill",
+      "title": "Max Bill",
+      "category": "person",
+      "description": "バウハウスで学び、ウルム造形大学の設立・校舎設計・初代校長として戦後デザイン教育に大きな影響を与えた建築家・芸術家・デザイナー。",
+      "period": {
+        "start": { "year": 1908, "month": 12, "day": 22 },
+        "end": { "year": 1994, "month": 12, "day": 9 }
+      },
+      "events": [
+        {
+          "id": "max-bill-bauhaus-student",
+          "date": { "year": 1927 },
+          "title": "バウハウス・デッサウで学ぶ",
+          "sources": [{ "title": "Max Bill（Bauhaus Kooperation）", "url": "https://bauhauskooperation.com/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-Bill-Max-1448" }]
+        },
+        {
+          "id": "max-bill-hfg-first-rector",
+          "date": { "year": 1953 },
+          "title": "ウルム造形大学の初代校長となる",
+          "sources": [{ "title": "The History of the Ulm School of Design（HfG-Archiv Ulm）", "url": "https://hfg-archiv.museumulm.de/en/the-hfg-archive/" }]
+        },
+        {
+          "id": "max-bill-leaves-hfg-rector",
+          "date": { "year": 1956 },
+          "title": "ウルム造形大学の校長を退任",
+          "sources": [{ "title": "Max Bill（Bauhaus Kooperation）", "url": "https://bauhauskooperation.com/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-Bill-Max-1448" }]
+        }
+      ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Com_L19-0188-0203A.jpg",
+        "alt": "1970年のマックス・ビル",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Com_L19-0188-0203A.jpg",
+        "creator": "Marcel Vogt",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modified": false
+      },
+      "sources": [
+        { "title": "Max Bill（Bauhaus Kooperation）", "url": "https://bauhauskooperation.com/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-Bill-Max-1448" },
+        { "title": "The History of the Ulm School of Design（HfG-Archiv Ulm）", "url": "https://hfg-archiv.museumulm.de/en/the-hfg-archive/" }
+      ]
+    },
+    {
+      "id": "otl-aicher",
+      "title": "Otl Aicher",
+      "category": "person",
+      "description": "ウルム造形大学の共同創設者で、視覚コミュニケーション教育、企業アイデンティティ、ミュンヘン五輪のピクトグラムで知られるグラフィックデザイナー。",
+      "period": {
+        "start": { "year": 1922, "month": 5, "day": 13 },
+        "end": { "year": 1991, "month": 9, "day": 1 }
+      },
+      "events": [
+        {
+          "id": "otl-aicher-hfg-founder",
+          "date": { "year": 1953 },
+          "title": "ウルム造形大学を共同創設",
+          "sources": [{ "title": "The bequest of Otl Aicher（HfG-Archiv Ulm）", "url": "https://hfg-archiv.museumulm.de/en/bequests/the-bequest-of-otl-aicher/" }]
+        },
+        {
+          "id": "otl-aicher-visual-communication",
+          "date": { "year": 1954 },
+          "title": "視覚コミュニケーション部門で教え始める",
+          "sources": [{ "title": "The biography of an exceptional designer（otl aicher 100）", "url": "https://www.otlaicher.de/en/vita/" }]
+        },
+        {
+          "id": "otl-aicher-munich-olympics",
+          "date": { "year": 1968 },
+          "title": "ミュンヘン五輪のデザイン責任者となる",
+          "sources": [{ "title": "The bequest of Otl Aicher（HfG-Archiv Ulm）", "url": "https://hfg-archiv.museumulm.de/en/bequests/the-bequest-of-otl-aicher/" }]
+        }
+      ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Otl_Aicher%2C_1959.tif/lossy-page1-1280px-Otl_Aicher%2C_1959.tif.jpg",
+        "alt": "1959年のオトル・アイヒャー",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Otl_Aicher,_1959.tif",
+        "creator": "Unknown author",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
+      "sources": [
+        { "title": "The bequest of Otl Aicher（HfG-Archiv Ulm）", "url": "https://hfg-archiv.museumulm.de/en/bequests/the-bequest-of-otl-aicher/" },
+        { "title": "Aicher, Otl（Deutsche Biographie）", "url": "https://www.deutsche-biographie.de/gnd118501208.html?language=en" }
+      ]
+    },
+    {
+      "id": "inge-aicher-scholl",
+      "title": "Inge Aicher-Scholl",
+      "category": "person",
+      "description": "ウルム市民大学を創設し、オトル・アイヒャー、マックス・ビルとともにウルム造形大学の設立を推進した教育者・著述家。",
+      "period": {
+        "start": { "year": 1917, "month": 8, "day": 11 },
+        "end": { "year": 1998, "month": 9, "day": 4 }
+      },
+      "events": [
+        {
+          "id": "inge-scholl-vh-ulm",
+          "date": { "year": 1946 },
+          "title": "ウルム市民大学を創設",
+          "sources": [{ "title": "Aicher-Scholl, Inge（Deutsche Biographie）", "url": "https://www.deutsche-biographie.de/sfz115568.html" }]
+        },
+        {
+          "id": "inge-scholl-hfg-founder",
+          "date": { "year": 1953 },
+          "title": "ウルム造形大学を共同創設",
+          "sources": [{ "title": "History（HfG Ulm）", "url": "https://www.hfg-ulm.de/en/hfg-ulm/history/" }]
+        }
+      ],
+      "sources": [
+        { "title": "Aicher-Scholl, Inge（Deutsche Biographie）", "url": "https://www.deutsche-biographie.de/sfz115568.html" },
+        { "title": "Educator, author, activist（otl aicher 100）", "url": "https://www.otlaicher.de/en/articles/educator-author-activist/" }
+      ]
+    },
+    {
+      "id": "hannes-meyer",
+      "title": "Hannes Meyer",
+      "category": "person",
+      "description": "バウハウス第2代校長。科学的な分析と社会的要請を重視する設計教育を推進した建築家。",
+      "period": { "start": { "year": 1889 }, "end": { "year": 1954 } },
+      "events": [
+        {
+          "id": "meyer-bauhaus-director",
+          "date": { "year": 1928 },
+          "title": "バウハウス第2代校長に就任",
+          "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
+        },
+        {
+          "id": "meyer-dismissed",
+          "date": { "year": 1930, "month": 8, "day": 1 },
+          "title": "バウハウス校長を解任",
+          "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
+        }
+      ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Hannes_Meyer_1928.png",
+        "alt": "1928年にベルナウの建設現場を視察するハンネス・マイヤー",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hannes_Meyer_1928.png",
+        "creator": "Hermann Bunzel",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
+      "sources": [
+        { "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" },
+        { "title": "People（Bauhaus Kooperation）", "url": "https://bauhauskooperation.com/knowledge/the-bauhaus/people/" }
+      ]
+    },
+    {
+      "id": "ludwig-mies-van-der-rohe",
+      "title": "Ludwig Mies van der Rohe",
+      "category": "person",
+      "description": "バウハウス第3代・最後の校長を務めた建築家。デッサウからベルリンへの移転後も学校を率いた。",
+      "period": {
+        "start": { "year": 1886, "month": 3, "day": 27 },
+        "end": { "year": 1969, "month": 8, "day": 17 }
+      },
+      "events": [
+        {
+          "id": "mies-bauhaus-director",
+          "date": { "year": 1930 },
+          "title": "バウハウス第3代校長に就任",
+          "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
+        },
+        {
+          "id": "mies-bauhaus-berlin",
+          "date": { "year": 1932 },
+          "title": "ベルリンで私立学校として運営を継続",
+          "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
+        }
+      ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Hugo_Erfurth_-_Portrait_Ludwig_Mies_van_der_Rohe%2C_1934.jpg",
+        "alt": "1934年のルートヴィヒ・ミース・ファン・デル・ローエ",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hugo_Erfurth_-_Portrait_Ludwig_Mies_van_der_Rohe,_1934.jpg",
+        "creator": "Hugo Erfurth",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
+      "sources": [
+        {
+          "title": "Ludwig Mies van der Rohe（Bauhaus Kooperation）",
+          "url": "https://bauhauskooperation.com/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-1438"
+        }
+      ]
+    },
+    {
+      "id": "johannes-itten",
+      "title": "Johannes Itten",
+      "category": "person",
+      "description": "バウハウスの予備課程を担当した画家・教育者。",
+      "period": {
+        "start": { "year": 1888, "month": 11, "day": 11 },
+        "end": { "year": 1967, "month": 5, "day": 27 }
+      },
+      "events": [
+        {
+          "id": "itten-bauhaus-master",
+          "date": { "year": 1919 },
+          "title": "バウハウスのマイスターに就任",
+          "sources": [{ "title": "Itten, Johannes（Bauhaus Kooperation）", "url": "https://bauhauskooperation.de/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-Itten-Johannes-565" }]
+        },
+        {
+          "id": "itten-leaves-bauhaus",
+          "date": { "year": 1923, "month": 3 },
+          "title": "バウハウスを離れる",
+          "sources": [{ "title": "Itten, Johannes（Bauhaus Kooperation）", "url": "https://bauhauskooperation.de/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-Itten-Johannes-565" }]
+        },
+        {
+          "id": "itten-school",
+          "date": { "year": 1926 },
+          "title": "イッテン・シューレを設立",
+          "sources": [{ "title": "Itten, Johannes（Bauhaus Kooperation）", "url": "https://bauhauskooperation.de/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-Itten-Johannes-565" }]
+        },
+        {
+          "id": "itten-krefeld-school",
+          "date": { "year": 1932 },
+          "title": "クレーフェルトのテキスタイル専門学校の校長となる",
+          "sources": [{ "title": "Itten, Johannes（Bauhaus Kooperation）", "url": "https://bauhauskooperation.de/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-Itten-Johannes-565" }]
+        },
+        {
+          "id": "itten-zurich-school",
+          "date": { "year": 1938 },
+          "title": "チューリヒの工芸学校と工芸美術館を率いる",
+          "sources": [{ "title": "Itten, Johannes（Bauhaus Kooperation）", "url": "https://bauhauskooperation.de/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-Itten-Johannes-565" }]
+        },
+        {
+          "id": "itten-hfg-ulm",
+          "date": { "year": 1955 },
+          "title": "マックス・ビルに招かれウルム造形大学に関わる",
+          "sources": [{ "title": "Itten, Johannes（Bauhaus Kooperation）", "url": "https://bauhauskooperation.de/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-Itten-Johannes-565" }]
+        }
+      ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Itten001.jpg",
+        "alt": "ヨハネス・イッテンの肖像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Itten001.jpg",
+        "creator": "Paula Stockmar",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "modified": false
+      },
+      "sources": [{ "title": "ヨハネス・イッテン（Wikipedia）", "url": "https://ja.wikipedia.org/wiki/ヨハネス・イッテン" }]
+    },
+    {
+      "id": "hayao-miyazaki",
+      "title": "宮崎駿",
+      "category": "person",
+      "description": "日本のアニメーション監督・映画監督。",
+      "period": { "start": { "year": 1941, "month": 1, "day": 5 }, "end": null },
+      "events": [
+        {
+          "id": "miyazaki-cagliostro",
+          "date": { "year": 1979, "month": 12, "day": 15 },
+          "title": "ルパン三世 カリオストロの城",
+          "sources": [{ "title": "ルパン三世 カリオストロの城（トムス・エンタテインメント）", "url": "https://www.tms-e.co.jp/alltitles/lupin/010302.html" }]
+        },
+        {
+          "id": "miyazaki-nausicaa",
+          "date": { "year": 1984, "month": 3 },
+          "title": "風の谷のナウシカが公開",
+          "sources": [{ "title": "スタジオジブリの年表（スタジオジブリ）", "url": "https://www.ghibli.jp/chronology/" }]
+        },
+        {
+          "id": "miyazaki-laputa",
+          "date": { "year": 1986, "month": 8, "day": 2 },
+          "title": "天空の城ラピュタが公開",
+          "sources": [{ "title": "天空の城ラピュタ（スタジオジブリ）", "url": "https://www.ghibli.jp/works/laputa/" }]
+        },
+        {
+          "id": "miyazaki-totoro",
+          "date": { "year": 1988, "month": 4 },
+          "title": "となりのトトロが公開",
+          "sources": [{ "title": "スタジオジブリの年表（スタジオジブリ）", "url": "https://www.ghibli.jp/chronology/" }]
+        },
+        {
+          "id": "miyazaki-mononoke",
+          "date": { "year": 1997, "month": 7 },
+          "title": "もののけ姫が公開",
+          "sources": [{ "title": "スタジオジブリの年表（スタジオジブリ）", "url": "https://www.ghibli.jp/chronology/" }]
+        },
+        {
+          "id": "miyazaki-spirited-away",
+          "date": { "year": 2001, "month": 7, "day": 20 },
+          "title": "千と千尋の神隠し",
+          "sources": [{ "title": "千と千尋の神隠し（スタジオジブリ）", "url": "https://www.ghibli.jp/works/chihiro/" }]
+        },
+        {
+          "id": "miyazaki-boy-and-heron",
+          "date": { "year": 2023, "month": 7 },
+          "title": "君たちはどう生きるか",
+          "sources": [{ "title": "スタジオジブリの年表（スタジオジブリ）", "url": "https://www.ghibli.jp/chronology/" }]
+        }
+      ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Hayao_Miyazaki.jpg",
+        "alt": "宮崎駿の肖像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hayao_Miyazaki.jpg",
+        "creator": "Thomas Schulz",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "modified": false
+      },
+      "sources": [{ "title": "宮崎駿（Wikipedia）", "url": "https://ja.wikipedia.org/wiki/宮崎駿" }]
+    },
+    {
+      "id": "isao-takahata",
+      "title": "高畑勲",
+      "category": "person",
+      "description": "日本のアニメーション監督・映画監督。",
+      "period": {
+        "start": { "year": 1935, "month": 10, "day": 29 },
+        "end": { "year": 2018, "month": 4, "day": 5 }
+      },
+      "events": [
+        {
+          "id": "takahata-horus",
+          "date": { "year": 1968, "month": 7 },
+          "title": "太陽の王子 ホルスの大冒険",
+          "sources": [{ "title": "太陽の王子 ホルスの大冒険（東映ビデオ）", "url": "https://www.toei-video.co.jp/catalog/dutd02103/" }]
+        },
+        {
+          "id": "takahata-grave-fireflies",
+          "date": { "year": 1988, "month": 4, "day": 16 },
+          "title": "火垂るの墓",
+          "sources": [{ "title": "火垂るの墓（スタジオジブリ）", "url": "https://www.ghibli.jp/works/hotarunohaka/" }]
+        },
+        {
+          "id": "takahata-only-yesterday",
+          "date": { "year": 1991, "month": 7 },
+          "title": "おもひでぽろぽろが公開",
+          "sources": [{ "title": "スタジオジブリの年表（スタジオジブリ）", "url": "https://www.ghibli.jp/chronology/" }]
+        },
+        {
+          "id": "takahata-pom-poko",
+          "date": { "year": 1994, "month": 7 },
+          "title": "平成狸合戦ぽんぽこが公開",
+          "sources": [{ "title": "スタジオジブリの年表（スタジオジブリ）", "url": "https://www.ghibli.jp/chronology/" }]
+        },
+        {
+          "id": "takahata-yamada",
+          "date": { "year": 1999, "month": 7 },
+          "title": "ホーホケキョ となりの山田くんが公開",
+          "sources": [{ "title": "スタジオジブリの年表（スタジオジブリ）", "url": "https://www.ghibli.jp/chronology/" }]
+        },
+        {
+          "id": "takahata-kaguya",
+          "date": { "year": 2013 },
+          "title": "かぐや姫の物語",
+          "sources": [{ "title": "高畑勲監督作品集（スタジオジブリ）", "url": "https://www.ghibli.jp/info/009689/" }]
+        }
+      ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Isao_Takahata.jpg",
+        "alt": "高畑勲の肖像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Isao_Takahata.jpg",
+        "creator": "Boungawa",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "modified": false
+      },
+      "sources": [{ "title": "高畑勲（Wikipedia）", "url": "https://ja.wikipedia.org/wiki/高畑勲" }]
+    },
+    {
+      "id": "mamoru-oshii",
+      "title": "押井守",
+      "category": "person",
+      "description": "『機動警察パトレイバー the Movie』や『GHOST IN THE SHELL / 攻殻機動隊』で知られる映画監督。実写、脚本、小説、演劇などにも活動を広げた。",
+      "period": { "start": { "year": 1951, "month": 8, "day": 8 }, "end": null },
+      "events": [
+        {
+          "id": "oshii-freelance",
+          "date": { "year": 1984 },
+          "title": "フリーランスとして活動を始める",
+          "sources": [{ "title": "OSHII Mamoru（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/oshii-mamoru/index-2.html" }]
+        },
+        {
+          "id": "oshii-patlabor",
+          "date": { "year": 1989 },
+          "title": "機動警察パトレイバー the Movieを監督",
+          "sources": [{ "title": "Mamoru Oshii interview（Ghost in the Shell Official Global Site）", "url": "https://theghostintheshell.jp/en/feature/interview02_2" }]
+        },
+        {
+          "id": "oshii-ghost-in-the-shell",
+          "date": { "year": 1995 },
+          "title": "GHOST IN THE SHELL / 攻殻機動隊を監督",
+          "sources": [{ "title": "Mamoru Oshii interview（Ghost in the Shell Official Global Site）", "url": "https://theghostintheshell.jp/en/feature/interview02_2" }]
+        },
+        {
+          "id": "oshii-innocence-cannes",
+          "date": { "year": 2004 },
+          "title": "イノセンスがカンヌ国際映画祭コンペティション部門に出品",
+          "sources": [{ "title": "OSHII Mamoru（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/oshii-mamoru/index-2.html" }]
+        }
+      ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Mamoru_Oshii_-_Lucca_Comics_%26_Games_2015.JPG",
+        "alt": "2015年のルッカ・コミックス＆ゲームズに登壇した押井守",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mamoru_Oshii_-_Lucca_Comics_%26_Games_2015.JPG",
+        "creator": "Niccolò Caranti",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modified": false
+      },
+      "sources": [
+        { "title": "OSHII Mamoru（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/oshii-mamoru/index-2.html" },
+        { "title": "Mamoru Oshii interview（Ghost in the Shell Official Global Site）", "url": "https://theghostintheshell.jp/en/feature/interview02_2" }
+      ]
+    },
+    {
+      "id": "satoshi-kon",
+      "title": "今敏",
+      "category": "person",
+      "description": "現実、記憶、夢、虚構が交錯する映像表現で知られるアニメーション監督・漫画家。『PERFECT BLUE』『千年女優』『東京ゴッドファーザーズ』『パプリカ』を監督した。",
+      "period": {
+        "start": { "year": 1963, "month": 10, "day": 12 },
+        "end": { "year": 2010, "month": 8, "day": 24 }
+      },
+      "events": [
+        {
+          "id": "kon-perfect-blue",
+          "date": { "year": 1997 },
+          "title": "PERFECT BLUEを監督",
+          "sources": [{ "title": "Who am I ?（KON'S TONE）", "url": "https://konstone.s-kon.net/modules/works/" }]
+        },
+        {
+          "id": "kon-millennium-actress",
+          "date": { "year": 2002 },
+          "title": "千年女優が公開",
+          "sources": [{ "title": "Who am I ?（KON'S TONE）", "url": "https://konstone.s-kon.net/modules/works/" }]
+        },
+        {
+          "id": "kon-tokyo-godfathers",
+          "date": { "year": 2003 },
+          "title": "東京ゴッドファーザーズが公開",
+          "sources": [{ "title": "Who am I ?（KON'S TONE）", "url": "https://konstone.s-kon.net/modules/works/" }]
+        },
+        {
+          "id": "kon-paprika",
+          "date": { "year": 2006 },
+          "title": "パプリカが公開",
+          "sources": [{ "title": "Who am I ?（KON'S TONE）", "url": "https://konstone.s-kon.net/modules/works/" }]
+        }
+      ],
+      "sources": [
+        { "title": "Who am I ?（KON'S TONE）", "url": "https://konstone.s-kon.net/modules/works/" },
+        { "title": "KON Satoshi（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/kon-satoshi/index.html" }
+      ]
+    },
+    {
+      "id": "makoto-shinkai",
+      "title": "新海誠",
+      "category": "person",
+      "description": "個人制作から商業長編へ進み、『君の名は。』『天気の子』『すずめの戸締まり』で国際的に広く知られるアニメーション監督。",
+      "period": { "start": { "year": 1973 }, "end": null },
+      "events": [
+        {
+          "id": "shinkai-voices-distant-star",
+          "date": { "year": 2002 },
+          "title": "ほしのこえで商業デビュー",
+          "sources": [{ "title": "Profile（Makoto Shinkai Works）", "url": "https://en.shinkaiworks.com/profile" }]
+        },
+        {
+          "id": "shinkai-your-name",
+          "date": { "year": 2016 },
+          "title": "君の名は。が公開",
+          "sources": [{ "title": "Profile（Makoto Shinkai Works）", "url": "https://en.shinkaiworks.com/profile" }]
+        },
+        {
+          "id": "shinkai-weathering-with-you",
+          "date": { "year": 2019 },
+          "title": "天気の子が公開",
+          "sources": [{ "title": "Weathering With You（CoMix Wave Films）", "url": "https://www.cwfilms.jp/en/products/article/tenkinoko.html" }]
+        },
+        {
+          "id": "shinkai-suzume",
+          "date": { "year": 2022 },
+          "title": "すずめの戸締まりが公開",
+          "sources": [{ "title": "Profile（Makoto Shinkai Works）", "url": "https://en.shinkaiworks.com/profile" }]
+        }
+      ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/MKr26291_Makoto_Shinkai_%28Suzume%2C_Berlinale_2023%29.jpg",
+        "alt": "2023年のベルリン国際映画祭に登壇した新海誠",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:MKr26291_Makoto_Shinkai_(Suzume,_Berlinale_2023).jpg",
+        "creator": "Martin Kraft",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modified": false
+      },
+      "sources": [
+        { "title": "Profile（Makoto Shinkai Works）", "url": "https://en.shinkaiworks.com/profile" },
+        { "title": "WORKS（CoMix Wave Films）", "url": "https://www.cwfilms.jp/en/products/" }
+      ]
+    },
+    {
+      "id": "yoshiyuki-tomino",
+      "title": "富野由悠季",
+      "category": "person",
+      "description": "『海のトリトン』『機動戦士ガンダム』『伝説巨神イデオン』などを手がけ、ロボットアニメーションに新しい表現と物語性を持ち込んだアニメーション監督・演出家。",
+      "period": { "start": { "year": 1941 }, "end": null },
+      "events": [
+        {
+          "id": "tomino-triton",
+          "date": { "year": 1972 },
+          "title": "海のトリトンを監督",
+          "sources": [{ "title": "TOMINO Yoshiyuki（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/tomino-yoshiyuki/index-2.html" }]
+        },
+        {
+          "id": "tomino-gundam",
+          "date": { "year": 1979 },
+          "title": "機動戦士ガンダムを監督",
+          "sources": [{ "title": "TOMINO Yoshiyuki（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/tomino-yoshiyuki/index-2.html" }]
+        },
+        {
+          "id": "tomino-ideon",
+          "date": { "year": 1980 },
+          "title": "伝説巨神イデオンを監督",
+          "sources": [{ "title": "TOMINO Yoshiyuki（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/tomino-yoshiyuki/index-2.html" }]
+        },
+        {
+          "id": "tomino-king-gainer",
+          "date": { "year": 2002 },
+          "title": "OVERMANキングゲイナーを手がける",
+          "sources": [{ "title": "TOMINO Yoshiyuki（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/tomino-yoshiyuki/index-2.html" }]
+        }
+      ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Yoshiyuki_Tomino_20181205_%28cropped%29.jpg",
+        "alt": "2018年の富野由悠季",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yoshiyuki_Tomino_20181205_(cropped).jpg",
+        "creator": "Shin Suzuki",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "modified": false
+      },
+      "sources": [
+        { "title": "TOMINO Yoshiyuki（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/tomino-yoshiyuki/index-2.html" },
+        { "title": "TOMINO Yoshiyuki × KAWAMORI Shoji（Shoji Kawamori Official Web Site）", "url": "https://shojikawamori.jp/en/expo2025/interview/tomino-kawamori/" }
+      ]
+    },
+    {
+      "id": "yoshinori-kanada",
+      "title": "金田伊功",
+      "category": "person",
+      "description": "大胆なタイミング、パース、エフェクト表現で後続のアニメーターに大きな影響を与えたアニメーター。ロボットアニメ、劇場長編、スタジオジブリ作品、ゲーム映像まで幅広く参加した。",
+      "period": {
+        "start": { "year": 1952 },
+        "end": { "year": 2009, "month": 7, "day": 21 }
+      },
+      "events": [
+        {
+          "id": "kanada-mako-debut",
+          "date": { "year": 1970 },
+          "title": "魔法のマコちゃんで動画デビュー",
+          "sources": [{ "title": "KANADA Yoshinori（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/kanada-yoshinori/index-2.html" }]
+        },
+        {
+          "id": "kanada-gaiking",
+          "date": { "year": 1976 },
+          "title": "大空魔竜ガイキングで作画監督となる",
+          "sources": [{ "title": "KANADA Yoshinori（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/kanada-yoshinori/index-2.html" }]
+        },
+        {
+          "id": "kanada-zambot-daitarn",
+          "date": { "year": 1977 },
+          "title": "無敵超人ザンボット3などのロボットアニメで注目される",
+          "sources": [{ "title": "KANADA Yoshinori（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/kanada-yoshinori/index-2.html" }]
+        },
+        {
+          "id": "kanada-ghibli",
+          "date": { "year": 1984 },
+          "title": "風の谷のナウシカ以降、ジブリ作品にも参加",
+          "sources": [{ "title": "KANADA Yoshinori（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/kanada-yoshinori/index-2.html" }]
+        }
+      ],
+      "sources": [
+        { "title": "KANADA Yoshinori（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/kanada-yoshinori/index-2.html" }
+      ]
+    },
+    {
+      "id": "jazz-movement",
+      "title": "Jazz",
+      "category": "movement",
+      "description": "ニューオーリンズの音楽文化から広がり、スウィング、ビバップ、モード、フュージョンなどへ展開した即興性の高い音楽文化。",
+      "period": { "start": { "year": 1910 }, "end": null },
+      "events": [
+        {
+          "id": "jazz-new-orleans-roots",
+          "date": { "year": 1910 },
+          "title": "ニューオーリンズの音楽文化から初期ジャズが形成される",
+          "sources": [{ "title": "The Course of Jazz（Smithsonian Music）", "url": "https://music.si.edu/story/jazz" }]
+        },
+        {
+          "id": "jazz-armstrong-hot-five",
+          "date": { "year": 1925 },
+          "title": "ルイ・アームストロングのHot Five録音が始まる",
+          "sources": [{ "title": "Biography（Louis Armstrong House Museum）", "url": "https://www.louisarmstronghouse.org/biography/" }]
+        },
+        {
+          "id": "jazz-ellington-cotton-club",
+          "date": { "year": 1927 },
+          "title": "デューク・エリントン楽団がCotton Clubに出演",
+          "sources": [{ "title": "Duke Ellington biography（PBS American Masters）", "url": "https://www.pbs.org/wnet/americanmasters/duke-ellington-about-duke-ellington/586/" }]
+        },
+        {
+          "id": "jazz-bebop-emerges",
+          "date": { "year": 1945 },
+          "title": "チャーリー・パーカーらによりビバップが録音で広がる",
+          "sources": [{ "title": "The Course of Jazz（Smithsonian Music）", "url": "https://music.si.edu/story/jazz" }]
+        },
+        {
+          "id": "jazz-kind-of-blue",
+          "date": { "year": 1959 },
+          "title": "Kind of Blueがモード・ジャズを象徴する作品となる",
+          "sources": [{ "title": "Releases（Miles Davis Official Site）", "url": "https://www.milesdavis.com/music/releases/" }]
+        },
+        {
+          "id": "jazz-bitches-brew",
+          "date": { "year": 1970, "month": 3, "day": 30 },
+          "title": "Bitches Brewがジャズとロックの境界を押し広げる",
+          "sources": [{ "title": "Bitches Brew（Miles Davis Official Site）", "url": "https://www.milesdavis.com/albums/bitches-brew/" }]
+        }
+      ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Tigerag.jpg",
+        "alt": "1918年に出版されたジャズ曲『Tiger Rag』の楽譜表紙",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tigerag.jpg",
+        "creator": "Unknown author",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
+      "sources": [
+        { "title": "The Course of Jazz（Smithsonian Music）", "url": "https://music.si.edu/story/jazz" },
+        { "title": "Timeline（Miles Davis Official Site）", "url": "https://www.milesdavis.com/timeline/" }
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "id": "bauhaus",
+      "title": "Bauhaus",
+      "description": "バウハウスの運動、歴代校長、教育者、拠点、ウルム造形大学への接続",
+      "recordIds": [
+        "bauhaus-movement",
+        "walter-gropius",
+        "max-bill",
+        "hannes-meyer",
+        "ludwig-mies-van-der-rohe",
+        "johannes-itten",
+        "bauhaus-weimar",
+        "bauhaus-dessau",
+        "bauhaus-berlin",
+        "hfg-ulm"
+      ]
+    },
+    {
+      "id": "modern-design-education",
+      "title": "近代デザイン教育",
+      "description": "バウハウスからウルム造形大学へつながるデザイン教育の系譜",
+      "recordIds": [
+        "bauhaus-movement",
+        "bauhaus-dessau",
+        "hfg-ulm",
+        "walter-gropius",
+        "max-bill",
+        "otl-aicher",
+        "inge-aicher-scholl"
+      ]
+    },
+    {
+      "id": "japanese-animation-directors",
+      "title": "日本のアニメーション作家",
+      "description": "戦後から現代までの日本アニメーションを代表する監督とアニメーター",
+      "recordIds": [
+        "isao-takahata",
+        "yoshiyuki-tomino",
+        "yoshinori-kanada",
+        "hayao-miyazaki",
+        "mamoru-oshii",
+        "satoshi-kon",
+        "makoto-shinkai"
+      ]
+    },
+    {
+      "id": "jazz-history",
+      "title": "ジャズ史",
+      "description": "初期ジャズからスウィング、ビバップ、モード、フュージョンへ続く流れ",
+      "recordIds": [
+        "jazz-movement",
+        "louis-armstrong",
+        "duke-ellington",
+        "charlie-parker",
+        "thelonious-monk",
+        "miles-davis",
+        "john-coltrane"
+      ]
+    }
+  ]
+}
