@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import AboutView from '../views/AboutView.vue'
+import DisclaimerView from '../views/DisclaimerView.vue'
 import TimelineView from '../views/TimelineView.vue'
 
 export default createRouter({
@@ -8,5 +9,6 @@ export default createRouter({
   routes: [
     { path: '/', name: 'timeline', component: TimelineView },
     { path: '/about', name: 'about', component: AboutView },
+    { path: '/disclaimer', name: 'disclaimer', component: DisclaimerView },
   ],
 })

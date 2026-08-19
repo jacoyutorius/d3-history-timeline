@@ -4,14 +4,14 @@ import { computed, nextTick, onBeforeUnmount, onMounted, ref, useTemplateRef, wa
 import { formatHistoricalDate, formatHistoricalPeriod } from '../domain/historicalDate'
 import { calculateTimelineRange, resolveEndYear } from '../domain/timelineRange'
 import {
-  ageAtYear,
+  ageAtDate,
   calculateTimelineLayout,
   CHART_MARGIN,
   createYearScale,
   timelineRowHeight,
   yearFromX,
 } from '../domain/timelineScale'
-import type { HistoryRecord, TimelineEvent } from '../types/timeline'
+import type { HistoricalDate, HistoryRecord, TimelineEvent } from '../types/timeline'
 
 const props = defineProps<{ records: HistoryRecord[] }>()
 const emit = defineEmits<{
@@ -27,9 +27,9 @@ const currentYear = new Date().getFullYear()
 const container = useTemplateRef<HTMLElement>('container')
 const recordDetails = useTemplateRef<HTMLElement>('recordDetails')
 const containerWidth = ref(0)
-const selectedYear = ref<number | null>(null)
+const selectedDate = ref<HistoricalDate | null>(null)
 const activeRecord = ref<HistoryRecord | null>(null)
-const detailMode = ref<DetailMode>('panel')
+const detailMode = ref<DetailMode>('dialog')
 const eventTooltip = ref<{
   event: TimelineEvent
   record: HistoryRecord
@@ -44,6 +44,7 @@ const yearScale = computed(() => {
   if (!range.value) return null
   return createYearScale(range.value[0], range.value[1], layout.value)
 })
+const selectedYear = computed(() => selectedDate.value?.year ?? null)
 const ticks = computed(() => yearScale.value?.ticks(8) ?? [])
 const rowHeight = computed(() => timelineRowHeight(props.records.length))
 
@@ -67,10 +68,12 @@ function endYear(record: HistoryRecord): number {
   return resolveEndYear(record.period.end, currentYear)
 }
 
-function recordAge(record: HistoryRecord): number | null {
-  if (selectedYear.value === null || record.category !== 'person') return null
-  if (selectedYear.value > endYear(record)) return null
-  return ageAtYear(record.period.start.year, selectedYear.value)
+function recordAgeLabel(record: HistoryRecord): string | null {
+  if (selectedDate.value === null || record.category !== 'person') return null
+  if (selectedDate.value.year > endYear(record)) return null
+  const result = ageAtDate(record.period.start, selectedDate.value)
+  if (!result) return null
+  return result.exact ? `${result.age}歳` : `約${result.age}歳`
 }
 
 function selectYear(event: MouseEvent): void {
@@ -78,7 +81,7 @@ function selectYear(event: MouseEvent): void {
   const svg = event.currentTarget as SVGSVGElement
   const bounds = svg.getBoundingClientRect()
   const viewBoxX = (event.clientX - bounds.left) * (layout.value.width / bounds.width)
-  selectedYear.value = yearFromX(viewBoxX, yearScale.value)
+  selectedDate.value = { year: yearFromX(viewBoxX, yearScale.value) }
 }
 
 function showEventTooltip(
@@ -103,7 +106,7 @@ function hideEventTooltip(): void {
 }
 
 function selectEventYear(timelineEvent: TimelineEvent): void {
-  selectedYear.value = timelineEvent.date.year
+  selectedDate.value = timelineEvent.date
 }
 
 function showRecord(record: HistoryRecord): void {
@@ -295,12 +298,12 @@ watch([activeRecord, detailMode], async () => {
         </circle>
 
         <text
-          v-if="recordAge(record) !== null"
+          v-if="recordAgeLabel(record) !== null"
           class="age-label"
           :x="yearScale(selectedYear ?? record.period.start.year) + 7"
           :y="rowY(index) + 20"
         >
-          {{ recordAge(record) }}歳
+          {{ recordAgeLabel(record) }}
         </text>
       </g>
 

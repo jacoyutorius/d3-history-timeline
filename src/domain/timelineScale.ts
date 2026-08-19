@@ -1,5 +1,7 @@
 import { scaleLinear, type ScaleLinear } from 'd3'
 
+import type { HistoricalDate } from '../types/timeline'
+
 export const CHART_MIN_WIDTH = 720
 export const CHART_MARGIN = {
   top: 56,
@@ -63,6 +65,35 @@ export function yearFromX(
   return Math.round(scale.invert(x))
 }
 
+export interface AgeAtDateResult {
+  age: number
+  exact: boolean
+}
+
+function hasMonthAndDay(date: HistoricalDate): date is HistoricalDate & Required<Pick<HistoricalDate, 'month' | 'day'>> {
+  return date.month !== undefined && date.day !== undefined
+}
+
+export function ageAtDate(birthDate: HistoricalDate, targetDate: HistoricalDate): AgeAtDateResult | null {
+  if (targetDate.year < birthDate.year) return null
+
+  if (!hasMonthAndDay(birthDate) || !hasMonthAndDay(targetDate)) {
+    return {
+      age: targetDate.year - birthDate.year,
+      exact: false,
+    }
+  }
+
+  const birthdayReached = targetDate.month > birthDate.month
+    || (targetDate.month === birthDate.month && targetDate.day >= birthDate.day)
+  if (targetDate.year === birthDate.year && !birthdayReached) return null
+
+  return {
+    age: targetDate.year - birthDate.year - (birthdayReached ? 0 : 1),
+    exact: true,
+  }
+}
+
 export function ageAtYear(birthYear: number, year: number): number | null {
-  return year < birthYear ? null : year - birthYear
+  return ageAtDate({ year: birthYear }, { year })?.age ?? null
 }

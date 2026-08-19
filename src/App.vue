@@ -7,6 +7,7 @@
       </RouterLink>
       <nav aria-label="メインナビゲーション">
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/disclaimer">免責事項</RouterLink>
       </nav>
     </header>
 

@@ -45,6 +45,12 @@ a {
   text-decoration: none;
 }
 
+.site-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -665,6 +671,24 @@ button {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+.document-page {
+  width: min(820px, 100%);
+}
+
+.document-page h1 {
+  margin-top: 0;
+}
+
+.document-page h2 {
+  margin-top: 2rem;
+  font-size: 1.15rem;
+}
+
+.document-page p {
+  color: #3d4f5f;
+  line-height: 1.8;
 }
 
 @media (max-width: 720px) {

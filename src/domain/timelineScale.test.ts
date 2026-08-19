@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 
 import {
+  ageAtDate,
   ageAtYear,
   CHART_COMPACT_ROW_HEIGHT,
   CHART_MARGIN,
@@ -49,5 +50,37 @@ describe('ageAtYear', () => {
 
   it('誕生前の年には年齢を返さない', () => {
     expect(ageAtYear(1883, 1800)).toBeNull()
+  })
+})
+
+describe('ageAtDate', () => {
+  it('年月日が揃っている場合は満年齢を返す', () => {
+    expect(ageAtDate(
+      { year: 1883, month: 12, day: 18 },
+      { year: 1919, month: 4, day: 1 },
+    )).toEqual({ age: 35, exact: true })
+    expect(ageAtDate(
+      { year: 1883, month: 12, day: 18 },
+      { year: 1919, month: 12, day: 18 },
+    )).toEqual({ age: 36, exact: true })
+  })
+
+  it('年月日が不足している場合は概算年齢を返す', () => {
+    expect(ageAtDate(
+      { year: 1883, month: 12, day: 18 },
+      { year: 1919 },
+    )).toEqual({ age: 36, exact: false })
+    expect(ageAtDate(
+      { year: 1883 },
+      { year: 1919, month: 12, day: 18 },
+    )).toEqual({ age: 36, exact: false })
+  })
+
+  it('誕生前の日付には年齢を返さない', () => {
+    expect(ageAtDate({ year: 1883 }, { year: 1800 })).toBeNull()
+    expect(ageAtDate(
+      { year: 1883, month: 12, day: 18 },
+      { year: 1883, month: 12, day: 17 },
+    )).toBeNull()
   })
 })
