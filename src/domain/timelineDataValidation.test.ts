@@ -102,7 +102,7 @@ describe('validateTimelineData', () => {
     })
   })
 
-  it('画像メタデータの空文字を検出する', () => {
+  it('画像メタデータの不備を検出する', () => {
     const issues = validateTimelineData(
       [
         baseRecord({
@@ -113,7 +113,7 @@ describe('validateTimelineData', () => {
             creator: '',
             license: '',
             licenseUrl: '',
-          },
+          } as HistoryRecord['image'],
         }),
       ],
       [baseSample()],
@@ -124,6 +124,7 @@ describe('validateTimelineData', () => {
       expect.objectContaining({ path: 'histories[0].image.creator', message: '画像の作者を指定してください。' }),
       expect.objectContaining({ path: 'histories[0].image.license', message: '画像ライセンスを指定してください。' }),
       expect.objectContaining({ path: 'histories[0].image.licenseUrl', message: '画像ライセンスURLを指定してください。' }),
+      expect.objectContaining({ path: 'histories[0].image.modified', message: '画像の改変有無をtrueまたはfalseで指定してください。' }),
     ]))
   })
 })

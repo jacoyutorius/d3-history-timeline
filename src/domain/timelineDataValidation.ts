@@ -121,17 +121,20 @@ function validateRecord(record: HistoryRecord, index: number): TimelineDataValid
   if (record.image !== undefined) {
     if (record.image.url.trim() === '') issues.push(issue(`${path}.image.url`, '画像URLを指定してください。'))
     if (record.image.alt.trim() === '') issues.push(issue(`${path}.image.alt`, '画像の代替テキストを指定してください。'))
-    if (record.image.sourceUrl !== undefined && record.image.sourceUrl.trim() === '') {
+    if (record.image.sourceUrl.trim() === '') {
       issues.push(issue(`${path}.image.sourceUrl`, '画像の出典URLを指定してください。'))
     }
-    if (record.image.creator !== undefined && record.image.creator.trim() === '') {
+    if (record.image.creator.trim() === '') {
       issues.push(issue(`${path}.image.creator`, '画像の作者を指定してください。'))
     }
-    if (record.image.license !== undefined && record.image.license.trim() === '') {
+    if (record.image.license.trim() === '') {
       issues.push(issue(`${path}.image.license`, '画像ライセンスを指定してください。'))
     }
-    if (record.image.licenseUrl !== undefined && record.image.licenseUrl.trim() === '') {
+    if (record.image.licenseUrl.trim() === '') {
       issues.push(issue(`${path}.image.licenseUrl`, '画像ライセンスURLを指定してください。'))
+    }
+    if (typeof record.image.modified !== 'boolean') {
+      issues.push(issue(`${path}.image.modified`, '画像の改変有無をtrueまたはfalseで指定してください。'))
     }
   }
 

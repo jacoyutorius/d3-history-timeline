@@ -97,19 +97,19 @@
 
 ## TimelineImage
 
-`image`は任意。画像を設定する場合は`url`と`alt`を必ず指定する。
+`image`は任意。画像を設定する場合は、画像URL、代替テキスト、出典、作者、ライセンス、改変有無を必ず指定する。
 
 | フィールド | 型 | 必須 | 説明 |
 | --- | --- | --- | --- |
 | `url` | `string` | 必須 | 画像URL |
 | `alt` | `string` | 必須 | 画像の代替テキスト |
-| `sourceUrl` | `string` | 任意 | 画像の出典URL。Wikimedia Commonsなどではファイル説明ページのURLを指定する |
-| `creator` | `string` | 任意 | 画像の作者、撮影者、著作権者 |
-| `license` | `string` | 任意 | 画像ライセンス名。例: `CC BY-SA 3.0`、`Public domain` |
-| `licenseUrl` | `string` | 任意 | ライセンス本文または説明ページのURL |
-| `modified` | `boolean` | 任意 | アプリ側で元画像を改変しているか。トリミング、色調補正、加工をした場合は`true` |
+| `sourceUrl` | `string` | 必須 | 画像の出典URL。Wikimedia Commonsなどではファイル説明ページのURLを指定する |
+| `creator` | `string` | 必須 | 画像の作者、撮影者、著作権者 |
+| `license` | `string` | 必須 | 画像ライセンス名。例: `CC BY-SA 3.0`、`Public domain` |
+| `licenseUrl` | `string` | 必須 | ライセンス本文または説明ページのURL |
+| `modified` | `boolean` | 必須 | アプリ側で元画像を改変しているか。トリミング、色調補正、加工をした場合は`true` |
 
-外部画像、特にCreative Commonsライセンスの画像を使う場合は、`sourceUrl`、`creator`、`license`、`licenseUrl`、`modified`をできるだけ記録する。ライセンス条件の確認が取れない画像は追加しない。
+ライセンス条件の確認が取れない画像は追加しない。
 
 ## SourceReference
 
@@ -200,7 +200,8 @@
 - `samples[].recordIds`が存在するレコードIDを参照している。
 - 同じサンプル内で`recordIds`の重複がない。
 - `image.url`と`image.alt`が空文字ではない。
-- `image.sourceUrl`、`image.creator`、`image.license`、`image.licenseUrl`がある場合は空文字ではない。
+- `image.sourceUrl`、`image.creator`、`image.license`、`image.licenseUrl`が空文字ではない。
+- `image.modified`が真偽値である。
 - `sources[].title`と`sources[].url`が空文字ではない。
 
 データを変更したら、少なくとも次を実行する。

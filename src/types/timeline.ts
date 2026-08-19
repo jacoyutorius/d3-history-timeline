@@ -14,11 +14,11 @@ export interface SourceReference {
 export interface TimelineImage {
   url: string
   alt: string
-  sourceUrl?: string
-  creator?: string
-  license?: string
-  licenseUrl?: string
-  modified?: boolean
+  sourceUrl: string
+  creator: string
+  license: string
+  licenseUrl: string
+  modified: boolean
 }
 
 export interface TimelineEvent {
