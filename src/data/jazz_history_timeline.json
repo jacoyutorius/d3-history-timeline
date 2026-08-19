@@ -139,6 +139,15 @@
     {
       "id": "jelly-roll-morton",
       "title": "Jelly Roll Morton",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/MortonBricktopRowCropMortonFace.jpg",
+        "alt": "Jelly Roll Mortonの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:MortonBricktopRowCropMortonFace.jpg",
+        "creator": "Photographer not credited.",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "ラグタイムとニューオーリンズの演奏様式を結び付け、作曲と編曲を通じて初期ジャズの発展に大きな影響を与えたアメリカの音楽家。",
       "period": {
@@ -225,6 +234,15 @@
     {
       "id": "louis-armstrong",
       "title": "Louis Armstrong",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Louis_Armstrong%2C_by_Harry_Warnecke_and_Gus_Schoenbaechler%2C_1947.jpg/1280px-Louis_Armstrong%2C_by_Harry_Warnecke_and_Gus_Schoenbaechler%2C_1947.jpg",
+        "alt": "Louis Armstrongの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Louis_Armstrong,_by_Harry_Warnecke_and_Gus_Schoenbaechler,_1947.jpg",
+        "creator": "Harry Warnecke, Gus Schoenbaechler",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "modified": false
+      },
       "category": "person",
       "description": "卓越したトランペット演奏と歌唱を通じて、集団即興中心だった初期ジャズからソロ即興中心の表現への転換に大きな影響を与えたアメリカの音楽家。",
       "period": {
@@ -307,6 +325,15 @@
     {
       "id": "duke-ellington",
       "title": "Duke Ellington",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Duke_Ellington_-_publicity.JPG",
+        "alt": "Duke Ellingtonの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Duke_Ellington_-_publicity.JPG",
+        "creator": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "ビッグバンドを独自の作曲・編曲表現の媒体として発展させ、ジャズの音色、形式、長編作品の可能性を大きく拡張したアメリカの音楽家。",
       "period": {
@@ -465,6 +492,15 @@
     {
       "id": "count-basie",
       "title": "Count Basie",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Count_Basie_in_Rhythm_and_Blues_Revue.jpg",
+        "alt": "Count Basieの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Count_Basie_in_Rhythm_and_Blues_Revue.jpg",
+        "creator": "Unknown",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "簡潔で推進力のあるリズム・セクションと余白を生かした編曲を発展させ、カンザスシティ・ジャズとスウィングに大きな影響を与えたアメリカの音楽家。",
       "period": {
@@ -543,6 +579,15 @@
     {
       "id": "billie-holiday",
       "title": "Billie Holiday",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Billie_Holiday_Billboard.jpg",
+        "alt": "Billie Holidayの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Billie_Holiday_Billboard.jpg",
+        "creator": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "歌詞の語り方、タイミング、音色を重視した独自の歌唱によって、ジャズ・ヴォーカルの表現を大きく拡張したアメリカの歌手。",
       "period": {
@@ -687,6 +732,15 @@
     {
       "id": "charlie-parker",
       "title": "Charlie Parker",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Portrait_of_Charlie_Parker_in_1947.jpg/1280px-Portrait_of_Charlie_Parker_in_1947.jpg",
+        "alt": "Charlie Parkerの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portrait_of_Charlie_Parker_in_1947.jpg",
+        "creator": "William P. Gottlieb",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "高速で複雑な即興、拡張された和声感覚、独自のフレージングを通じてビバップを確立し、モダン・ジャズの即興表現に大きな影響を与えたアメリカの音楽家。",
       "period": {
@@ -759,6 +813,15 @@
     {
       "id": "dizzy-gillespie",
       "title": "Dizzy Gillespie",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Dizzy_Gillespie_playing_horn_1955.jpg",
+        "alt": "Dizzy Gillespieの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dizzy_Gillespie_playing_horn_1955.jpg",
+        "creator": "Carl Van Vechten",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "高度なトランペット演奏、複雑な和声、作曲と編曲を通じてビバップを確立し、さらにアフロ・キューバン・ジャズの発展にも大きな影響を与えたアメリカの音楽家。",
       "period": {
@@ -831,6 +894,15 @@
     {
       "id": "thelonious-monk",
       "title": "Thelonious Monk",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Thelonious_Monk%2C_Minton%27s_Playhouse%2C_New_York%2C_N.Y.%2C_ca._Sept._1947_%28William_P._Gottlieb_06191%29.jpg/1280px-Thelonious_Monk%2C_Minton%27s_Playhouse%2C_New_York%2C_N.Y.%2C_ca._Sept._1947_%28William_P._Gottlieb_06191%29.jpg",
+        "alt": "Thelonious Monkの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thelonious_Monk,_Minton%27s_Playhouse,_New_York,_N.Y.,_ca._Sept._1947_(William_P._Gottlieb_06191).jpg",
+        "creator": "William P. Gottlieb / Adam Cuerden",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "独特の和声、間の取り方、角張った旋律、反復的な構造を通じて、ビバップ以降のジャズ作曲とピアノ表現に大きな影響を与えたアメリカの音楽家。",
       "period": {
@@ -975,6 +1047,15 @@
     {
       "id": "miles-davis",
       "title": "Miles Davis",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Miles_Davis_%28Three_Deuces%2C_New_York%2C_N.Y._1947%29.jpg",
+        "alt": "Miles Davisの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Miles_Davis_(Three_Deuces,_New_York,_N.Y._1947).jpg",
+        "creator": "William P. Gottlieb",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "ビバップ、クール・ジャズ、ハードバップ、モード・ジャズ、ジャズ・ロックを横断し、編成とサウンドを継続的に刷新して戦後ジャズの方向性に大きな影響を与えたアメリカの音楽家。",
       "period": {
@@ -1107,6 +1188,15 @@
     {
       "id": "art-blakey",
       "title": "Art Blakey",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Art_Blakey_and_the_Jazz_Messengers_in_the_Kurzaal_Concert_Hall_in_Den_Haag%2C_30.03.1963_-_10.jpg/1280px-Art_Blakey_and_the_Jazz_Messengers_in_the_Kurzaal_Concert_Hall_in_Den_Haag%2C_30.03.1963_-_10.jpg",
+        "alt": "Art Blakeyの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Art_Blakey_and_the_Jazz_Messengers_in_the_Kurzaal_Concert_Hall_in_Den_Haag,_30.03.1963_-_10.jpg",
+        "creator": "Fotopersbureau De Boer",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "modified": false
+      },
       "category": "person",
       "description": "強いドラム演奏とJazz Messengersでの活動を通じてハードバップを代表し、多数の若手ジャズ演奏家の育成に大きな影響を与えたアメリカの音楽家。",
       "period": {
@@ -1175,6 +1265,15 @@
     {
       "id": "john-coltrane",
       "title": "John Coltrane",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/John_Coltrane_1963_cropped_ver2.jpg/1280px-John_Coltrane_1963_cropped_ver2.jpg",
+        "alt": "John Coltraneの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:John_Coltrane_1963_cropped_ver2.jpg",
+        "creator": "Gelderen, Hugo van / Anefo",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "modified": false
+      },
       "category": "person",
       "description": "高速な即興、モードを用いた演奏、長時間の展開、精神性を重視した作品を通じて、ハードバップからフリー・ジャズに至るジャズの表現を大きく拡張したアメリカの音楽家。",
       "period": {
@@ -1343,6 +1442,15 @@
     {
       "id": "ornette-coleman",
       "title": "Ornette Coleman",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Ornette_Coleman.jpg",
+        "alt": "Ornette Colemanの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ornette_Coleman.jpg",
+        "creator": "Geert Vandepoele",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "modified": false
+      },
       "category": "person",
       "description": "固定的なコード進行や拍節への依存を弱めた即興を追求し、フリー・ジャズとアヴァンギャルド・ジャズの形成に大きな影響を与えたアメリカの音楽家。",
       "period": {
@@ -1521,6 +1629,15 @@
     {
       "id": "herbie-hancock",
       "title": "Herbie Hancock",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Herbie_Hancock.jpg",
+        "alt": "Herbie Hancockの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Herbie_Hancock.jpg",
+        "creator": "pixgremlin: http://www.aworan.com c/o Pix Gremlin",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "modified": false
+      },
       "category": "person",
       "description": "ハードバップ、モード・ジャズ、ファンク、電子楽器、ヒップホップ的手法までを横断し、ジャズ・ピアノとジャズ・フュージョンの発展に大きな影響を与えたアメリカの音楽家。",
       "period": {
@@ -1723,6 +1840,15 @@
     {
       "id": "weather-report",
       "title": "Weather Report",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Weather_Report_19810611_shinjuku_fn23.jpg",
+        "alt": "Weather Reportの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Weather_Report_19810611_shinjuku_fn23.jpg",
+        "creator": "Jun Tendo",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "organization",
       "description": "電子楽器、ファンク、世界各地のリズム、高度な即興を融合し、1970年代から1980年代のジャズ・フュージョンを代表したアメリカの音楽グループ。",
       "period": {
@@ -1805,6 +1931,15 @@
     {
       "id": "chick-corea",
       "title": "Chick Corea",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Chick_Corea_Kongsberg_Jazzfestival_2018_%28170650%29.jpg/1280px-Chick_Corea_Kongsberg_Jazzfestival_2018_%28170650%29.jpg",
+        "alt": "Chick Coreaの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chick_Corea_Kongsberg_Jazzfestival_2018_(170650).jpg",
+        "creator": "Tore Sætre",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "modified": false
+      },
       "category": "person",
       "description": "アコースティック・ジャズから電子楽器を用いたフュージョンまで幅広く活動し、現代ジャズのピアノ、作曲、アンサンブルに大きな影響を与えたアメリカの音楽家。",
       "period": {
@@ -1887,6 +2022,15 @@
     {
       "id": "wynton-marsalis",
       "title": "Wynton Marsalis",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Wynton_Marsalis_free.jpg",
+        "alt": "Wynton Marsalisの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wynton_Marsalis_free.jpg",
+        "creator": "feinsteinphotos",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "modified": false
+      },
       "category": "person",
       "description": "伝統的なジャズ語法を現代に継承し、演奏、作曲、教育活動を通じて1980年代以降のジャズ文化と制度化に大きな影響を与えたアメリカの音楽家。",
       "period": {
@@ -1971,6 +2115,15 @@
     {
       "id": "esperanza-spalding",
       "title": "Esperanza Spalding",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/IPWH-Creativity-WH06-Spalding_smaller_0.jpg",
+        "alt": "Esperanza Spaldingの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:IPWH-Creativity-WH06-Spalding_smaller_0.jpg",
+        "creator": "Official White House photo by Amanda Lucidon",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "ベース演奏、歌唱、作曲を横断し、ジャズ、ソウル、ポップ、実験的なアンサンブルを融合して21世紀のジャズ表現を拡張したアメリカの音楽家。",
       "period": {

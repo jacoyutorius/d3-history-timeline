@@ -3,6 +3,15 @@
     {
       "id": "chuck-berry",
       "title": "Chuck Berry",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Chuck_Berry_%288275961%29.jpeg/1280px-Chuck_Berry_%288275961%29.jpeg",
+        "alt": "Chuck Berryの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chuck_Berry_(8275961).jpeg",
+        "creator": "Pablo Vaz",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "modified": false
+      },
       "category": "person",
       "description": "ブルース、R&B、カントリーの要素を結び付け、ギター演奏と作曲の両面から初期ロックンロールの形成に大きな影響を与えたアメリカの音楽家。",
       "period": {
@@ -89,6 +98,15 @@
     {
       "id": "elvis-presley",
       "title": "Elvis Presley",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Elvis_Presley_1973_RCA_Records_and_Tapes_publicity_2_-_cropped.png",
+        "alt": "Elvis Presleyの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elvis_Presley_1973_RCA_Records_and_Tapes_publicity_2_-_cropped.png",
+        "creator": "RCA Records",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "R&B、カントリー、ゴスペルなどの要素を横断し、ロックンロールを大衆文化の中心へ押し上げるうえで大きな影響を与えたアメリカの音楽家。",
       "period": {
@@ -175,6 +193,15 @@
     {
       "id": "buddy-holly",
       "title": "Buddy Holly",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Buddy_Holly_cropped.JPG/1280px-Buddy_Holly_cropped.JPG",
+        "alt": "Buddy Hollyの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Buddy_Holly_cropped.JPG",
+        "creator": "Buddy_Holly_Brunswick_Records.jpg: Brunswick Records derivative work: GDuwenTell me!",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "ロックンロールのバンド編成、作曲、歌唱、ギター演奏の様式を発展させ、後続のロックバンドに大きな影響を与えたアメリカの音楽家。",
       "period": {
@@ -269,6 +296,15 @@
     {
       "id": "little-richard",
       "title": "Little Richard",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Little_Richard_in_2007_%28cropped%29.jpg",
+        "alt": "Little Richardの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Little_Richard_in_2007_(cropped).jpg",
+        "creator": "Anna Bleker",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "激しいピアノ演奏、強烈な歌唱、舞台表現によって1950年代のロックンロールを発展させ、後続のロック表現に大きな影響を与えたアメリカの音楽家。",
       "period": {
@@ -359,6 +395,15 @@
     {
       "id": "the-beatles",
       "title": "The Beatles",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Beatles_Trenter_1963.jpg",
+        "alt": "The Beatlesの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beatles_Trenter_1963.jpg",
+        "creator": "Bo Trenter",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "organization",
       "description": "作曲、録音技術、アルバム表現、バンド文化を大きく発展させ、1960年代以降のロックとポピュラー音楽に大きな影響を与えたイギリスのロックバンド。",
       "period": {
@@ -441,6 +486,15 @@
     {
       "id": "the-rolling-stones",
       "title": "The Rolling Stones",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Rolling_Stones_bow_post-show_22_May_2018_in_London_%2841437870275%29.jpg/1280px-Rolling_Stones_bow_post-show_22_May_2018_in_London_%2841437870275%29.jpg",
+        "alt": "The Rolling Stonesの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rolling_Stones_bow_post-show_22_May_2018_in_London_(41437870275).jpg",
+        "creator": "Raph_PH",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "modified": false
+      },
       "category": "organization",
       "description": "アメリカのブルースと初期ロックンロールを基盤に独自のサウンドを発展させ、長期にわたりロックの演奏様式とバンド文化に大きな影響を与えたイギリスのロックバンド。",
       "period": {
@@ -535,6 +589,15 @@
     {
       "id": "bob-dylan",
       "title": "Bob Dylan",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/DylanYoungKilkenny140719v2_%2850_of_52%29_%2852246124397%29_%28cropped%29.jpg/1280px-DylanYoungKilkenny140719v2_%2850_of_52%29_%2852246124397%29_%28cropped%29.jpg",
+        "alt": "Bob Dylanの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:DylanYoungKilkenny140719v2_(50_of_52)_(52246124397)_(cropped).jpg",
+        "creator": "Raph_PH",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "modified": false
+      },
       "category": "person",
       "description": "フォークの語法とロックの電気的サウンドを結び付け、歌詞表現とシンガーソングライター像の発展に大きな影響を与えたアメリカの音楽家。",
       "period": {
@@ -641,6 +704,15 @@
     {
       "id": "the-beach-boys",
       "title": "The Beach Boys",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/The_Beach_Boys%2C_May_29%2C_2012.jpg/1280px-The_Beach_Boys%2C_May_29%2C_2012.jpg",
+        "alt": "The Beach Boysの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Beach_Boys,_May_29,_2012.jpg",
+        "creator": "Louise Palanker",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "modified": false
+      },
       "category": "organization",
       "description": "サーフ・ロックと緻密なコーラスワークを発展させ、スタジオ制作を重視したポップ／ロックの表現に大きな影響を与えたアメリカのロックバンド。",
       "period": {
@@ -743,6 +815,15 @@
     {
       "id": "the-jimi-hendrix-experience",
       "title": "The Jimi Hendrix Experience",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Jimi_Hendrix_Experience_in_Fenklup.png",
+        "alt": "The Jimi Hendrix Experienceの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jimi_Hendrix_Experience_in_Fenklup.png",
+        "creator": "VARA",
+        "license": "CC BY-SA 3.0 nl",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+        "modified": false
+      },
       "category": "organization",
       "description": "ブルースを基盤にフィードバック、即興、スタジオ技術を大胆に取り入れ、ロックギターとサイケデリック・ロックの表現に大きな影響を与えたロックバンド。",
       "period": {
@@ -843,6 +924,15 @@
     {
       "id": "led-zeppelin",
       "title": "Led Zeppelin",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Led_zeppelin_revista_pelo_1971.jpg",
+        "alt": "Led Zeppelinの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Led_zeppelin_revista_pelo_1971.jpg",
+        "creator": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "organization",
       "description": "ブルース、フォーク、ハードロックを融合し、重厚なリフ、アルバム志向、スタジアム規模のライブ表現を通じてハードロックとヘヴィメタルの発展に大きな影響を与えたイギリスのロックバンド。",
       "period": {
@@ -943,6 +1033,15 @@
     {
       "id": "david-bowie",
       "title": "David Bowie",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/David-Bowie_Chicago_2002-08-08_photoby_Adam-Bielawski-cropped.jpg",
+        "alt": "David Bowieの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:David-Bowie_Chicago_2002-08-08_photoby_Adam-Bielawski-cropped.jpg",
+        "creator": "Adam Bielawski",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "modified": false
+      },
       "category": "person",
       "description": "グラム・ロック、アート・ロック、ソウル、電子音楽などを横断し、音楽性と視覚的表現の両面からロックの可能性を拡張したイギリスの音楽家。",
       "period": {
@@ -1061,6 +1160,15 @@
     {
       "id": "ramones",
       "title": "Ramones",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Ramones_30081980_10_800.jpg",
+        "alt": "Ramonesの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ramones_30081980_10_800.jpg",
+        "creator": "Helge Øverås",
+        "license": "CC BY 2.5",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+        "modified": false
+      },
       "category": "organization",
       "description": "短く速い楽曲、簡潔なコード進行、削ぎ落とした演奏を通じてパンク・ロックの様式確立に大きな影響を与えたアメリカのロックバンド。",
       "period": {
@@ -1161,6 +1269,15 @@
     {
       "id": "the-clash",
       "title": "The Clash",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Clash_21051980_12_800.jpg",
+        "alt": "The Clashの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clash_21051980_12_800.jpg",
+        "creator": "Helge Øverås",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "modified": false
+      },
       "category": "organization",
       "description": "パンク・ロックを基盤にレゲエ、スカ、ロックンロールなどを取り込み、政治的・社会的な主題を扱うロック表現に大きな影響を与えたイギリスのロックバンド。",
       "period": {
@@ -1239,6 +1356,15 @@
     {
       "id": "talking-heads",
       "title": "Talking Heads",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Talking_Heads_Remain_In_Light_%281980_Sire_publicity_photo%29_%285-4_cropped%29.jpg",
+        "alt": "Talking Headsの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Talking_Heads_Remain_In_Light_(1980_Sire_publicity_photo)_(5-4_cropped).jpg",
+        "creator": "Distributed by Sire Records. Photographer uncredited.",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "organization",
       "description": "パンク以後のロックにファンク、アフリカ音楽、アート志向のアレンジを取り込み、ニュー・ウェイヴとアート・ロックの発展に大きな影響を与えたアメリカのロックバンド。",
       "period": {
@@ -1335,6 +1461,15 @@
     {
       "id": "rem",
       "title": "R.E.M.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/R.E.M._at_Stadio_Euganeo%2C_Padova%2C_Italy%2C_2003-07-22_04.jpg",
+        "alt": "R.E.M.の画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:R.E.M._at_Stadio_Euganeo,_Padova,_Italy,_2003-07-22_04.jpg",
+        "creator": "Stefano",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "modified": false
+      },
       "category": "organization",
       "description": "大学街のインディー・シーンから出発し、ギターを中心とするオルタナティヴ・ロックをアメリカのメインストリームへ広げるうえで大きな影響を与えたロックバンド。",
       "period": {
@@ -1421,6 +1556,15 @@
     {
       "id": "metallica",
       "title": "Metallica",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Metallica_Live_at_The_O2%2C_London%2C_England%2C_22_October_2017.jpg/1280px-Metallica_Live_at_The_O2%2C_London%2C_England%2C_22_October_2017.jpg",
+        "alt": "Metallicaの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Metallica_Live_at_The_O2,_London,_England,_22_October_2017.jpg",
+        "creator": "Kreepin Deth",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "modified": false
+      },
       "category": "organization",
       "description": "高速なリフ、複雑な楽曲構成、重厚なサウンドを発展させ、スラッシュメタルとヘヴィメタルの大衆化に大きな影響を与えたアメリカのロックバンド。",
       "period": {
@@ -1575,6 +1719,15 @@
     {
       "id": "pearl-jam",
       "title": "Pearl Jam",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/PearlJam-Oakland-2013.JPG/1280px-PearlJam-Oakland-2013.JPG",
+        "alt": "Pearl Jamの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:PearlJam-Oakland-2013.JPG",
+        "creator": "Lugnuts",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "modified": false
+      },
       "category": "organization",
       "description": "グランジを起点にクラシック・ロックやパンクの要素を取り込み、1990年代以降のオルタナティヴ・ロックに大きな影響を与えたアメリカのロックバンド。",
       "period": {
@@ -1651,6 +1804,15 @@
     {
       "id": "radiohead",
       "title": "Radiohead",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/RadioheadO2211125_composite.jpg/1280px-RadioheadO2211125_composite.jpg",
+        "alt": "Radioheadの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:RadioheadO2211125_composite.jpg",
+        "creator": "Raph_PH",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "modified": false
+      },
       "category": "organization",
       "description": "ギター・ロックから電子音楽、実験音楽まで表現領域を拡張し、1990年代以降のオルタナティヴ・ロックとアート・ロックに大きな影響を与えたイギリスのロックバンド。",
       "period": {
@@ -1727,6 +1889,15 @@
     {
       "id": "green-day",
       "title": "Green Day",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Green_Day_-_Hella_Mega_Tour_-_August_10%2C_2021.jpg/1280px-Green_Day_-_Hella_Mega_Tour_-_August_10%2C_2021.jpg",
+        "alt": "Green Dayの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Green_Day_-_Hella_Mega_Tour_-_August_10,_2021.jpg",
+        "creator": "ECarterSterling",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "modified": false
+      },
       "category": "organization",
       "description": "パンク・ロックの簡潔さとポップな旋律を結び付け、1990年代以降のポップ・パンクを世界的に普及させるうえで大きな影響を与えたアメリカのロックバンド。",
       "period": {
@@ -1803,6 +1974,15 @@
     {
       "id": "foo-fighters",
       "title": "Foo Fighters",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/FoosLollBerlin190917-74_%28cropped%29.jpg/1280px-FoosLollBerlin190917-74_%28cropped%29.jpg",
+        "alt": "Foo Fightersの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:FoosLollBerlin190917-74_(cropped).jpg",
+        "creator": "Raph_PH",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "modified": false
+      },
       "category": "organization",
       "description": "オルタナティヴ・ロックとハードロックを軸に長期的な活動を続け、1990年代後半以降のメインストリーム・ロックに大きな影響を与えたアメリカのロックバンド。",
       "period": {
@@ -1879,6 +2059,15 @@
     {
       "id": "the-white-stripes",
       "title": "The White Stripes",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Whitestripes.jpg",
+        "alt": "The White Stripesの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whitestripes.jpg",
+        "creator": "Unknown",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "modified": false
+      },
       "category": "organization",
       "description": "ギターとドラムを中心とする最小編成でブルースとガレージ・ロックを再解釈し、2000年代のガレージロック・リバイバルに大きな影響を与えたアメリカのロックバンド。",
       "period": {

@@ -67,6 +67,15 @@
     {
       "id": "josquin-des-prez",
       "title": "Josquin des Prez",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Josquin_des_Prez.jpg",
+        "alt": "Josquin des Prezの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Josquin_des_Prez.jpg",
+        "creator": "Original uploader was Clattuc at en.wikipedia",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "明瞭な声部構成、模倣技法、歌詞表現を統合し、ルネサンス期の宗教曲と世俗曲に大きな影響を与えたフランドル楽派の作曲家。",
       "period": {
@@ -135,6 +144,15 @@
     {
       "id": "giovanni-pierluigi-da-palestrina",
       "title": "Giovanni Pierluigi da Palestrina",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Giovanni_Pierluigi_da_Palestrina.jpg",
+        "alt": "Giovanni Pierluigi da Palestrinaの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giovanni_Pierluigi_da_Palestrina.jpg",
+        "creator": "Unknown",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "均整の取れた声楽ポリフォニーと明瞭な宗教曲様式を発展させ、ルネサンス後期の教会音楽と後世の対位法教育に大きな影響を与えたイタリアの作曲家。",
       "period": {
@@ -267,6 +285,15 @@
     {
       "id": "claudio-monteverdi",
       "title": "Claudio Monteverdi",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bernardo_Strozzi_-_Claudio_Monteverdi_%28c.1630%29.jpg/1280px-Bernardo_Strozzi_-_Claudio_Monteverdi_%28c.1630%29.jpg",
+        "alt": "Claudio Monteverdiの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bernardo_Strozzi_-_Claudio_Monteverdi_(c.1630).jpg",
+        "creator": "Bernardo Strozzi",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "ルネサンスの声楽ポリフォニーからバロックの劇的な音楽表現への転換を担い、マドリガーレと初期オペラの発展に大きな影響を与えたイタリアの作曲家。",
       "period": {
@@ -335,6 +362,15 @@
     {
       "id": "antonio-vivaldi",
       "title": "Antonio Vivaldi",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Onbekend_-_Antonio_Vivaldi_-_Bologna_Museo_Internationale_e_biblioteca_della_musica_di_bologna_28-04-2012_9-21-050.jpg/1280px-Onbekend_-_Antonio_Vivaldi_-_Bologna_Museo_Internationale_e_biblioteca_della_musica_di_bologna_28-04-2012_9-21-050.jpg",
+        "alt": "Antonio Vivaldiの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Onbekend_-_Antonio_Vivaldi_-_Bologna_Museo_Internationale_e_biblioteca_della_musica_di_bologna_28-04-2012_9-21-050.jpg",
+        "creator": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "独奏協奏曲の形式、明瞭なリトルネッロ構造、鮮明な器楽書法を発展させ、後期バロックの協奏曲様式に大きな影響を与えたイタリアの作曲家。",
       "period": {
@@ -403,6 +439,15 @@
     {
       "id": "johann-sebastian-bach",
       "title": "Johann Sebastian Bach",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Johann_Sebastian_Bach.png/1280px-Johann_Sebastian_Bach.png",
+        "alt": "Johann Sebastian Bachの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Johann_Sebastian_Bach.png",
+        "creator": "Elias Gottlob Haussmann",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "対位法、和声、宗教曲、鍵盤曲、協奏曲を高い水準で統合し、バロック音楽の総合と後世の西洋音楽教育に大きな影響を与えたドイツの作曲家。",
       "period": {
@@ -485,6 +530,15 @@
     {
       "id": "george-frideric-handel",
       "title": "George Frideric Handel",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/George_Frideric_Handel_by_Balthasar_Denner.jpg/1280px-George_Frideric_Handel_by_Balthasar_Denner.jpg",
+        "alt": "George Frideric Handelの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:George_Frideric_Handel_by_Balthasar_Denner.jpg",
+        "creator": "Attributed to Balthasar Denner",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "イタリア・オペラ、英語オラトリオ、器楽曲を横断し、国際的なバロック様式をイギリスで発展させたドイツ生まれの作曲家。",
       "period": {
@@ -635,6 +689,15 @@
     {
       "id": "joseph-haydn",
       "title": "Joseph Haydn",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Joseph_Haydn%2C_m%C3%A5lning_av_Thomas_Hardy_fr%C3%A5n_1792.jpg",
+        "alt": "Joseph Haydnの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Joseph_Haydn,_m%C3%A5lning_av_Thomas_Hardy_fr%C3%A5n_1792.jpg",
+        "creator": "Thomas Hardy",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "交響曲と弦楽四重奏曲の形式を大きく発展させ、古典派の器楽様式とソナタ形式の成熟に大きな影響を与えたオーストリアの作曲家。",
       "period": {
@@ -703,6 +766,15 @@
     {
       "id": "wolfgang-amadeus-mozart",
       "title": "Wolfgang Amadeus Mozart",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Wolfgang-amadeus-mozart_1.jpg/1280px-Wolfgang-amadeus-mozart_1.jpg",
+        "alt": "Wolfgang Amadeus Mozartの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wolfgang-amadeus-mozart_1.jpg",
+        "creator": "Barbara Krafft",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "オペラ、交響曲、協奏曲、室内楽の各分野で古典派様式を高度に統合し、旋律、形式、劇的表現の発展に大きな影響を与えたオーストリアの作曲家。",
       "period": {
@@ -781,6 +853,15 @@
     {
       "id": "ludwig-van-beethoven",
       "title": "Ludwig van Beethoven",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Beethoven.jpg",
+        "alt": "Ludwig van Beethovenの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beethoven.jpg",
+        "creator": "Joseph Karl Stieler",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "古典派の形式を基盤に規模、動機展開、劇的対比、個人的表現を拡張し、古典派からロマン派への転換に大きな影響を与えたドイツの作曲家。",
       "period": {
@@ -943,6 +1024,15 @@
     {
       "id": "franz-schubert",
       "title": "Franz Schubert",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Franz_Schubert_by_Wilhelm_August_Rieder_1875_larger_version.png",
+        "alt": "Franz Schubertの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Franz_Schubert_by_Wilhelm_August_Rieder_1875_larger_version.png",
+        "creator": "Wilhelm August Rieder",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "歌曲、室内楽、ピアノ曲、交響曲を通じて古典派の形式とロマン派的な抒情性を結び付け、歌曲と器楽表現の発展に大きな影響を与えたオーストリアの作曲家。",
       "period": {
@@ -1015,6 +1105,15 @@
     {
       "id": "hector-berlioz",
       "title": "Hector Berlioz",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Berlioz_Petit_BNF_Gallica-crop.jpg/1280px-Berlioz_Petit_BNF_Gallica-crop.jpg",
+        "alt": "Hector Berliozの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Berlioz_Petit_BNF_Gallica-crop.jpg",
+        "creator": "Pierre Petit",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "巨大な管弦楽編成、標題音楽、革新的なオーケストレーションを発展させ、19世紀の管弦楽表現に大きな影響を与えたフランスの作曲家。",
       "period": {
@@ -1087,6 +1186,15 @@
     {
       "id": "frederic-chopin",
       "title": "Frédéric Chopin",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Chopin%2C_by_Wodzinska.JPG/1280px-Chopin%2C_by_Wodzinska.JPG",
+        "alt": "Frédéric Chopinの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chopin,_by_Wodzinska.JPG",
+        "creator": "Maria Wodzińska",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "ピアノの歌唱的旋律、和声、ルバート、独自の小品形式を発展させ、ロマン派のピアノ音楽と演奏技法に大きな影響を与えたポーランド生まれの作曲家。",
       "period": {
@@ -1159,6 +1267,15 @@
     {
       "id": "robert-schumann",
       "title": "Robert Schumann",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Robert-schumann.jpg",
+        "alt": "Robert Schumannの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Robert-schumann.jpg",
+        "creator": "Williamtosun",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "文学的発想と音楽を結び付け、ピアノ小品、歌曲、室内楽、交響曲を通じてロマン派の内面的な表現を発展させたドイツの作曲家。",
       "period": {
@@ -1223,6 +1340,15 @@
     {
       "id": "franz-liszt",
       "title": "Franz Liszt",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/FLisztFXD.jpg/1280px-FLisztFXD.jpg",
+        "alt": "Franz Lisztの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:FLisztFXD.jpg",
+        "creator": "Franz Hanfstaengl",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "超絶的なピアノ技巧、主題変容、交響詩、公開演奏文化を発展させ、ロマン派のピアノ音楽と標題音楽に大きな影響を与えたハンガリーの作曲家。",
       "period": {
@@ -1287,6 +1413,15 @@
     {
       "id": "richard-wagner",
       "title": "Richard Wagner",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/RichardWagner.jpg/1280px-RichardWagner.jpg",
+        "alt": "Richard Wagnerの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:RichardWagner.jpg",
+        "creator": "Franz Hanfstaengl",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "ライトモティーフ、半音階和声、巨大な管弦楽、連続的な音楽構成を用いて楽劇を発展させ、後期ロマン派の和声とオペラに大きな影響を与えたドイツの作曲家。",
       "period": {
@@ -1355,6 +1490,15 @@
     {
       "id": "johannes-brahms",
       "title": "Johannes Brahms",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/JohannesBrahms.jpg/1280px-JohannesBrahms.jpg",
+        "alt": "Johannes Brahmsの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:JohannesBrahms.jpg",
+        "creator": "C. Brasch, Berlin (biography)",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "古典的な形式と緻密な動機展開をロマン派の和声と音色に統合し、交響曲、室内楽、歌曲の発展に大きな影響を与えたドイツの作曲家。",
       "period": {
@@ -1423,6 +1567,15 @@
     {
       "id": "pyotr-ilyich-tchaikovsky",
       "title": "Pyotr Ilyich Tchaikovsky",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Portr%C3%A4t_des_Komponisten_Pjotr_I._Tschaikowski_%281840-1893%29.jpg/1280px-Portr%C3%A4t_des_Komponisten_Pjotr_I._Tschaikowski_%281840-1893%29.jpg",
+        "alt": "Pyotr Ilyich Tchaikovskyの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portr%C3%A4t_des_Komponisten_Pjotr_I._Tschaikowski_(1840-1893).jpg",
+        "creator": "Nikolai Kuznetsov",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "西欧的な管弦楽技法とロシア的な旋律感覚を結び付け、交響曲、協奏曲、バレエ、オペラでロマン派の豊かな旋律表現を発展させたロシアの作曲家。",
       "period": {
@@ -1505,6 +1658,15 @@
     {
       "id": "antonin-dvorak",
       "title": "Antonín Dvořák",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Dvorak.jpg/1280px-Dvorak.jpg",
+        "alt": "Antonín Dvořákの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dvorak.jpg",
+        "creator": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "チェコの民族的な旋律とリズムを西欧の交響曲・室内楽形式に統合し、19世紀後半の国民楽派に大きな影響を与えたチェコの作曲家。",
       "period": {
@@ -1573,6 +1735,15 @@
     {
       "id": "giuseppe-verdi",
       "title": "Giuseppe Verdi",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Giuseppe_Verdi_xilografia.jpg/1280px-Giuseppe_Verdi_xilografia.jpg",
+        "alt": "Giuseppe Verdiの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giuseppe_Verdi_xilografia.jpg",
+        "creator": "Disegnatore: A. Cairoli - Incisore: Ernesto Mancastroppa",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "明瞭な旋律、劇的な人物表現、合唱とオーケストラの効果的な配置を通じて、19世紀イタリア・オペラを大きく発展させたイタリアの作曲家。",
       "period": {
@@ -1659,6 +1830,15 @@
     {
       "id": "claude-debussy",
       "title": "Claude Debussy",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Claude_Debussy_by_Atelier_Nadar.jpg/1280px-Claude_Debussy_by_Atelier_Nadar.jpg",
+        "alt": "Claude Debussyの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Claude_Debussy_by_Atelier_Nadar.jpg",
+        "creator": "Adam Cuerden",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "機能和声から距離を取った和音、全音音階、旋法、繊細な音色設計を用い、19世紀末から20世紀初頭の音楽語法を大きく拡張したフランスの作曲家。",
       "period": {
@@ -1709,6 +1889,15 @@
     {
       "id": "gustav-mahler",
       "title": "Gustav Mahler",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Gustav-Mahler-Kohut.jpg",
+        "alt": "Gustav Mahlerの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gustav-Mahler-Kohut.jpg",
+        "creator": "Leonard Berlin / E. Bieber",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "巨大な管弦楽、歌曲的要素、引用、極端な感情対比を交響曲に統合し、後期ロマン派から20世紀音楽への転換に大きな影響を与えたオーストリアの作曲家。",
       "period": {
@@ -1745,6 +1934,15 @@
     {
       "id": "richard-strauss",
       "title": "Richard Strauss",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Postcard-1910_Strauss_Richard.jpg/1280px-Postcard-1910_Strauss_Richard.jpg",
+        "alt": "Richard Straussの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Postcard-1910_Strauss_Richard.jpg",
+        "creator": "unidentified photograph",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "交響詩とオペラで高度な管弦楽法、半音階和声、劇的表現を発展させ、後期ロマン派から20世紀初頭の音楽に大きな影響を与えたドイツの作曲家。",
       "period": {
@@ -1795,6 +1993,15 @@
     {
       "id": "arnold-schoenberg",
       "title": "Arnold Schoenberg",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Arnold_sch%C3%B6nberg_man_ray.jpg",
+        "alt": "Arnold Schoenbergの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arnold_sch%C3%B6nberg_man_ray.jpg",
+        "creator": "Man Ray",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "modified": false
+      },
       "category": "person",
       "description": "後期ロマン派の半音階和声から無調音楽へ進み、十二音技法を体系化して20世紀の作曲技法に大きな影響を与えたオーストリア生まれの作曲家。",
       "period": {
@@ -1845,6 +2052,15 @@
     {
       "id": "igor-stravinsky",
       "title": "Igor Stravinsky",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Igor_Stravinsky_LOC_32392u.jpg/1280px-Igor_Stravinsky_LOC_32392u.jpg",
+        "alt": "Igor Stravinskyの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Igor_Stravinsky_LOC_32392u.jpg",
+        "creator": "George Grantham Bain Collection",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "大胆なリズム、変拍子、鋭い和声、音色設計を発展させ、原始主義、新古典主義、十二音技法まで作風を変化させながら20世紀音楽に大きな影響を与えたロシア生まれの作曲家。",
       "period": {
@@ -1895,6 +2111,15 @@
     {
       "id": "maurice-ravel",
       "title": "Maurice Ravel",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Maurice_Ravel_1925.jpg/1280px-Maurice_Ravel_1925.jpg",
+        "alt": "Maurice Ravelの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maurice_Ravel_1925.jpg",
+        "creator": "Unknown authorUnknown author The image holder, the Bibliothèque nationale de France has not identified a photographer. (Follow link and click on \"Detailed information\".)",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "精密な形式、色彩的な管弦楽法、旋法やジャズを含む多様な語法を用い、20世紀初頭のフランス音楽を代表する独自の様式を発展させたフランスの作曲家。",
       "period": {
@@ -1931,6 +2156,15 @@
     {
       "id": "dmitri-shostakovich",
       "title": "Dmitri Shostakovich",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Dmitri_Shostakovich_credit_Deutsche_Fotothek_adjusted.jpg/1280px-Dmitri_Shostakovich_credit_Deutsche_Fotothek_adjusted.jpg",
+        "alt": "Dmitri Shostakovichの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dmitri_Shostakovich_credit_Deutsche_Fotothek_adjusted.jpg",
+        "creator": "Fotothek_df_roe-neg_0002792_002_Portrait_Dmitri_Dmitrijewitsch_Schostakowitchs_im_Publikum_der_Bachfeier.jpg: Roger Renate Rössing, credit Deutsche Fotothek. derivative work: Improvist (talk)",
+        "license": "CC BY-SA 3.0 de",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+        "modified": false
+      },
       "category": "person",
       "description": "調性、鋭い不協和音、風刺、巨大な交響的構成を用い、ソビエト社会との緊張関係の中で20世紀の交響曲と室内楽を大きく発展させたロシアの作曲家。",
       "period": {
@@ -1967,6 +2201,15 @@
     {
       "id": "john-cage",
       "title": "John Cage",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Opdracht_GPD_componist_John_Cage_%2C_kop%2C_Bestanddeelnr_934-2728.jpg/1280px-Opdracht_GPD_componist_John_Cage_%2C_kop%2C_Bestanddeelnr_934-2728.jpg",
+        "alt": "John Cageの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Opdracht_GPD_componist_John_Cage_,_kop,_Bestanddeelnr_934-2728.jpg",
+        "creator": "Rob Bogaerts for Anefo",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "modified": false
+      },
       "category": "person",
       "description": "偶然性、沈黙、非伝統的な楽器使用、演奏行為そのものへの問いを通じて、20世紀後半の実験音楽と音楽概念に大きな影響を与えたアメリカの作曲家。",
       "period": {
@@ -2003,6 +2246,15 @@
     {
       "id": "steve-reich",
       "title": "Steve Reich",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Steve_Reich%2C_composer%2C_cropped.jpg",
+        "alt": "Steve Reichの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Steve_Reich,_composer,_cropped.jpg",
+        "creator": "Gotfryd, Bernard, photographer",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "category": "person",
       "description": "反復、位相ずれ、パルス、段階的な変化を用いてミニマル・ミュージックを発展させ、20世紀後半以降の現代音楽に大きな影響を与えたアメリカの作曲家。",
       "period": {
@@ -2051,6 +2303,15 @@
     {
       "id": "philip-glass",
       "title": "Philip Glass",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Philip_Glass_018_crop.jpg/1280px-Philip_Glass_018_crop.jpg",
+        "alt": "Philip Glassの画像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Philip_Glass_018_crop.jpg",
+        "creator": "Pasquale Salerno",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "modified": false
+      },
       "category": "person",
       "description": "反復する音型、加算的なリズム、明瞭な和声を用いてミニマル・ミュージックを発展させ、オペラ、映画音楽、現代音楽の境界を広げたアメリカの作曲家。",
       "period": {

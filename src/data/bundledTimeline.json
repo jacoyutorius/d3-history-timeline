@@ -62,6 +62,15 @@
           "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
         }
       ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Bauhaus-Signet.svg",
+        "alt": "オスカー・シュレンマーがデザインしたバウハウスのシンボルマーク",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bauhaus-Signet.svg",
+        "creator": "Oskar Schlemmer",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
     },
     {
@@ -176,6 +185,15 @@
           "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
         }
       ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Gedenktafel_Birkbuschstr_49_%28Lankw%29_Bauhaus_Berlin.jpg",
+        "alt": "ベルリンの旧バウハウス所在地に設置された記念板",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gedenktafel_Birkbuschstr_49_(Lankw)_Bauhaus_Berlin.jpg",
+        "creator": "OTFW, Berlin",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "modified": false
+      },
       "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
     },
     {
@@ -210,6 +228,15 @@
           "sources": [{ "title": "HfG-Archiv（Museum Ulm）", "url": "https://museumulm.de/sammlungen/hfg-ulm/" }]
         }
       ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Hochschule_f%C3%BCr_Gestaltung_Ulm_04.jpg",
+        "alt": "マックス・ビル設計のウルム造形大学校舎",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hochschule_f%C3%BCr_Gestaltung_Ulm_04.jpg",
+        "creator": "Andreas Bohnenstengel",
+        "license": "CC BY-SA 3.0 DE",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+        "modified": false
+      },
       "sources": [
         { "title": "The History of the Ulm School of Design（HfG-Archiv Ulm）", "url": "https://hfg-archiv.museumulm.de/en/the-hfg-archive/" },
         { "title": "HfG-Archiv（Museum Ulm）", "url": "https://museumulm.de/sammlungen/hfg-ulm/" }
@@ -296,6 +323,15 @@
           "sources": [{ "title": "Max Bill（Bauhaus Kooperation）", "url": "https://bauhauskooperation.com/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-Bill-Max-1448" }]
         }
       ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Com_L19-0188-0203A.jpg",
+        "alt": "1970年のマックス・ビル",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Com_L19-0188-0203A.jpg",
+        "creator": "Marcel Vogt",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modified": false
+      },
       "sources": [
         { "title": "Max Bill（Bauhaus Kooperation）", "url": "https://bauhauskooperation.com/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-Bill-Max-1448" },
         { "title": "The History of the Ulm School of Design（HfG-Archiv Ulm）", "url": "https://hfg-archiv.museumulm.de/en/the-hfg-archive/" }
@@ -330,6 +366,15 @@
           "sources": [{ "title": "The bequest of Otl Aicher（HfG-Archiv Ulm）", "url": "https://hfg-archiv.museumulm.de/en/bequests/the-bequest-of-otl-aicher/" }]
         }
       ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Otl_Aicher%2C_1959.tif/lossy-page1-1280px-Otl_Aicher%2C_1959.tif.jpg",
+        "alt": "1959年のオトル・アイヒャー",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Otl_Aicher,_1959.tif",
+        "creator": "Unknown author",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "sources": [
         { "title": "The bequest of Otl Aicher（HfG-Archiv Ulm）", "url": "https://hfg-archiv.museumulm.de/en/bequests/the-bequest-of-otl-aicher/" },
         { "title": "Aicher, Otl（Deutsche Biographie）", "url": "https://www.deutsche-biographie.de/gnd118501208.html?language=en" }
@@ -383,6 +428,15 @@
           "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
         }
       ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Hannes_Meyer_1928.png",
+        "alt": "1928年にベルナウの建設現場を視察するハンネス・マイヤー",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hannes_Meyer_1928.png",
+        "creator": "Hermann Bunzel",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "sources": [
         { "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" },
         { "title": "People（Bauhaus Kooperation）", "url": "https://bauhauskooperation.com/knowledge/the-bauhaus/people/" }
@@ -411,6 +465,15 @@
           "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
         }
       ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Hugo_Erfurth_-_Portrait_Ludwig_Mies_van_der_Rohe%2C_1934.jpg",
+        "alt": "1934年のルートヴィヒ・ミース・ファン・デル・ローエ",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hugo_Erfurth_-_Portrait_Ludwig_Mies_van_der_Rohe,_1934.jpg",
+        "creator": "Hugo Erfurth",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "sources": [
         {
           "title": "Ludwig Mies van der Rohe（Bauhaus Kooperation）",
@@ -627,6 +690,15 @@
           "sources": [{ "title": "OSHII Mamoru（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/oshii-mamoru/index-2.html" }]
         }
       ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Mamoru_Oshii_-_Lucca_Comics_%26_Games_2015.JPG",
+        "alt": "2015年のルッカ・コミックス＆ゲームズに登壇した押井守",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mamoru_Oshii_-_Lucca_Comics_%26_Games_2015.JPG",
+        "creator": "Niccolò Caranti",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modified": false
+      },
       "sources": [
         { "title": "OSHII Mamoru（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/oshii-mamoru/index-2.html" },
         { "title": "Mamoru Oshii interview（Ghost in the Shell Official Global Site）", "url": "https://theghostintheshell.jp/en/feature/interview02_2" }
@@ -704,6 +776,15 @@
           "sources": [{ "title": "Profile（Makoto Shinkai Works）", "url": "https://en.shinkaiworks.com/profile" }]
         }
       ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/MKr26291_Makoto_Shinkai_%28Suzume%2C_Berlinale_2023%29.jpg",
+        "alt": "2023年のベルリン国際映画祭に登壇した新海誠",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:MKr26291_Makoto_Shinkai_(Suzume,_Berlinale_2023).jpg",
+        "creator": "Martin Kraft",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "modified": false
+      },
       "sources": [
         { "title": "Profile（Makoto Shinkai Works）", "url": "https://en.shinkaiworks.com/profile" },
         { "title": "WORKS（CoMix Wave Films）", "url": "https://www.cwfilms.jp/en/products/" }
@@ -741,6 +822,15 @@
           "sources": [{ "title": "TOMINO Yoshiyuki（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/tomino-yoshiyuki/index-2.html" }]
         }
       ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Yoshiyuki_Tomino_20181205_%28cropped%29.jpg",
+        "alt": "2018年の富野由悠季",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yoshiyuki_Tomino_20181205_(cropped).jpg",
+        "creator": "Shin Suzuki",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "modified": false
+      },
       "sources": [
         { "title": "TOMINO Yoshiyuki（Japan Media Arts Festival）", "url": "https://j-mediaarts-festival.bunka.go.jp/en/award/profile/tomino-yoshiyuki/index-2.html" },
         { "title": "TOMINO Yoshiyuki × KAWAMORI Shoji（Shoji Kawamori Official Web Site）", "url": "https://shojikawamori.jp/en/expo2025/interview/tomino-kawamori/" }
@@ -829,6 +919,15 @@
           "sources": [{ "title": "Bitches Brew（Miles Davis Official Site）", "url": "https://www.milesdavis.com/albums/bitches-brew/" }]
         }
       ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Tigerag.jpg",
+        "alt": "1918年に出版されたジャズ曲『Tiger Rag』の楽譜表紙",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tigerag.jpg",
+        "creator": "Unknown author",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
+      },
       "sources": [
         { "title": "The Course of Jazz（Smithsonian Music）", "url": "https://music.si.edu/story/jazz" },
         { "title": "Timeline（Miles Davis Official Site）", "url": "https://www.milesdavis.com/timeline/" }
