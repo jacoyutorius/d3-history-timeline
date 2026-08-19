@@ -449,6 +449,27 @@ button {
   gap: 1rem;
 }
 
+.record-detail-image {
+  margin: 0.75rem 0 1rem;
+}
+
+.record-detail-image img {
+  display: block;
+  max-width: min(100%, 360px);
+  max-height: 240px;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.record-detail-image figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.75rem;
+  margin-top: 0.45rem;
+  color: #52616b;
+  font-size: 0.8rem;
+}
+
 .record-details h3,
 .record-details h4 {
   margin: 0.2rem 0 0.5rem;

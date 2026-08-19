@@ -6,7 +6,7 @@
         <span>TimeLends</span>
       </RouterLink>
       <nav aria-label="メインナビゲーション">
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/about">このアプリについて</RouterLink>
         <RouterLink to="/disclaimer">免責事項</RouterLink>
       </nav>
     </header>

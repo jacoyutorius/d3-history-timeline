@@ -35,7 +35,7 @@
 | `period.start` | `HistoricalDate` | 必須 | 期間の開始日。人物では生年月日 |
 | `period.end` | `HistoricalDate \| null` | 必須 | 期間の終了日。人物では没年月日。継続中は`null` |
 | `events` | `TimelineEvent[]` | 必須 | 対象に関連する出来事の配列 |
-| `image` | `TimelineImage` | 任意 | 詳細表示に使う画像情報 |
+| `image` | `TimelineImage` | 任意 | 詳細表示に使う画像情報。外部画像を使う場合はライセンス情報も記録する |
 | `sources` | `SourceReference[]` | 必須 | レコード全体の根拠となる出典配列 |
 
 ### `id`
@@ -103,7 +103,13 @@
 | --- | --- | --- | --- |
 | `url` | `string` | 必須 | 画像URL |
 | `alt` | `string` | 必須 | 画像の代替テキスト |
-| `sourceUrl` | `string` | 任意 | 画像の出典URL |
+| `sourceUrl` | `string` | 任意 | 画像の出典URL。Wikimedia Commonsなどではファイル説明ページのURLを指定する |
+| `creator` | `string` | 任意 | 画像の作者、撮影者、著作権者 |
+| `license` | `string` | 任意 | 画像ライセンス名。例: `CC BY-SA 3.0`、`Public domain` |
+| `licenseUrl` | `string` | 任意 | ライセンス本文または説明ページのURL |
+| `modified` | `boolean` | 任意 | アプリ側で元画像を改変しているか。トリミング、色調補正、加工をした場合は`true` |
+
+外部画像、特にCreative Commonsライセンスの画像を使う場合は、`sourceUrl`、`creator`、`license`、`licenseUrl`、`modified`をできるだけ記録する。ライセンス条件の確認が取れない画像は追加しない。
 
 ## SourceReference
 
@@ -157,7 +163,11 @@
       "image": {
         "url": "https://example.com/image.jpg",
         "alt": "Example Personの肖像",
-        "sourceUrl": "https://example.com/image-source"
+        "sourceUrl": "https://example.com/image-source",
+        "creator": "Example Photographer",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "modified": false
       },
       "sources": [
         { "title": "レコード出典", "url": "https://example.com/source" }
@@ -190,6 +200,7 @@
 - `samples[].recordIds`が存在するレコードIDを参照している。
 - 同じサンプル内で`recordIds`の重複がない。
 - `image.url`と`image.alt`が空文字ではない。
+- `image.sourceUrl`、`image.creator`、`image.license`、`image.licenseUrl`がある場合は空文字ではない。
 - `sources[].title`と`sources[].url`が空文字ではない。
 
 データを変更したら、少なくとも次を実行する。

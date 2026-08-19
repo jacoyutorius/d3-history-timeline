@@ -92,7 +92,12 @@
       ],
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Van-de-Velde-Bau_in_Weimar_%28Draufsicht%29.jpg",
-        "alt": "ヴァイマルの旧バウハウス校舎"
+        "alt": "ヴァイマルの旧バウハウス校舎",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Van-de-Velde-Bau_in_Weimar_(Draufsicht).jpg",
+        "creator": "R.Möhler",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "modified": false
       },
       "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
     },
@@ -136,7 +141,12 @@
       ],
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Bauhaus.JPG",
-        "alt": "デッサウのバウハウス校舎"
+        "alt": "デッサウのバウハウス校舎",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bauhaus.JPG",
+        "creator": "Mewes",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "modified": false
       },
       "sources": [{ "title": "Chronology（Bauhaus Dessau Foundation）", "url": "https://bauhaus-dessau.de/en/institution/chronology/" }]
     },
@@ -248,7 +258,12 @@
       ],
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/1955_01-Oct_HansGConrad_Portrait-WalterGropius_HfGUlm-Opening.jpg",
-        "alt": "ヴァルター・グロピウスの肖像"
+        "alt": "ヴァルター・グロピウスの肖像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:1955_01-Oct_HansGConrad_Portrait-WalterGropius_HfGUlm-Opening.jpg",
+        "creator": "René Spitz",
+        "license": "CC BY-SA 3.0 DE",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+        "modified": false
       },
       "sources": [{ "title": "Walter Gropius（Bauhaus Kooperation）", "url": "https://bauhauskooperation.com/wissen/das-bauhaus/koepfe/biografien/biografie-detail/person-1436" }]
     },
@@ -452,7 +467,12 @@
       ],
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Itten001.jpg",
-        "alt": "ヨハネス・イッテンの肖像"
+        "alt": "ヨハネス・イッテンの肖像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Itten001.jpg",
+        "creator": "Paula Stockmar",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "modified": false
       },
       "sources": [{ "title": "ヨハネス・イッテン（Wikipedia）", "url": "https://ja.wikipedia.org/wiki/ヨハネス・イッテン" }]
     },
@@ -508,7 +528,12 @@
       ],
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Hayao_Miyazaki.jpg",
-        "alt": "宮崎駿の肖像"
+        "alt": "宮崎駿の肖像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hayao_Miyazaki.jpg",
+        "creator": "Thomas Schulz",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "modified": false
       },
       "sources": [{ "title": "宮崎駿（Wikipedia）", "url": "https://ja.wikipedia.org/wiki/宮崎駿" }]
     },
@@ -561,7 +586,12 @@
       ],
       "image": {
         "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Isao_Takahata.jpg",
-        "alt": "高畑勲の肖像"
+        "alt": "高畑勲の肖像",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Isao_Takahata.jpg",
+        "creator": "Boungawa",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "modified": false
       },
       "sources": [{ "title": "高畑勲（Wikipedia）", "url": "https://ja.wikipedia.org/wiki/高畑勲" }]
     },

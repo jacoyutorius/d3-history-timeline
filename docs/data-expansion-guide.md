@@ -96,6 +96,20 @@ jq -r '.histories[] | select((.events|length) < 4) | .id + "\t" + .title + "\t" 
 
 やむを得ず二次資料を使う場合は、できれば別系統の出典も併記する。
 
+## 画像の扱い
+
+画像を追加する場合は、画像URLだけでなくライセンス条件も確認する。Wikipediaの記事で表示されている画像でも、実際の再利用条件はWikimedia Commonsなどのファイル説明ページに書かれていることが多い。
+
+Creative Commonsライセンスの画像では、原則として次を記録する。
+
+- `sourceUrl`: ファイル説明ページ
+- `creator`: 作者、撮影者、著作権者
+- `license`: ライセンス名
+- `licenseUrl`: ライセンス本文または説明ページ
+- `modified`: アプリ側で改変したか
+
+Public domain画像でも、来歴確認のために`sourceUrl`、`creator`、`license`を記録する。Fair use、非フリー利用、権利状態が不明な画像は同梱データに追加しない。
+
 ## 記述スタイル
 
 - `title`は短く、年表上で読める粒度にする。

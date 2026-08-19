@@ -101,4 +101,29 @@ describe('validateTimelineData', () => {
       message: '日を指定する場合は月も指定してください。',
     })
   })
+
+  it('画像メタデータの空文字を検出する', () => {
+    const issues = validateTimelineData(
+      [
+        baseRecord({
+          image: {
+            url: 'https://example.com/image.jpg',
+            alt: '画像',
+            sourceUrl: '',
+            creator: '',
+            license: '',
+            licenseUrl: '',
+          },
+        }),
+      ],
+      [baseSample()],
+    )
+
+    expect(issues).toEqual(expect.arrayContaining([
+      expect.objectContaining({ path: 'histories[0].image.sourceUrl', message: '画像の出典URLを指定してください。' }),
+      expect.objectContaining({ path: 'histories[0].image.creator', message: '画像の作者を指定してください。' }),
+      expect.objectContaining({ path: 'histories[0].image.license', message: '画像ライセンスを指定してください。' }),
+      expect.objectContaining({ path: 'histories[0].image.licenseUrl', message: '画像ライセンスURLを指定してください。' }),
+    ]))
+  })
 })

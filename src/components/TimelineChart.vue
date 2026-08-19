@@ -76,6 +76,13 @@ function recordAgeLabel(record: HistoryRecord): string | null {
   return result.exact ? `${result.age}歳` : `約${result.age}歳`
 }
 
+function hasImageCredit(record: HistoryRecord): boolean {
+  return record.image?.sourceUrl !== undefined
+    || record.image?.creator !== undefined
+    || record.image?.license !== undefined
+    || record.image?.modified !== undefined
+}
+
 function selectYear(event: MouseEvent): void {
   if (!yearScale.value) return
   const svg = event.currentTarget as SVGSVGElement
@@ -353,6 +360,32 @@ watch([activeRecord, detailMode], async () => {
           </div>
           <button class="icon-button" type="button" aria-label="詳細を閉じる" @click="closeRecord">×</button>
         </div>
+        <figure v-if="activeRecord.image" class="record-detail-image">
+          <img :src="activeRecord.image.url" :alt="activeRecord.image.alt">
+          <figcaption v-if="hasImageCredit(activeRecord)">
+            <span v-if="activeRecord.image.creator">画像: {{ activeRecord.image.creator }}</span>
+            <a
+              v-if="activeRecord.image.license && activeRecord.image.licenseUrl"
+              :href="activeRecord.image.licenseUrl"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {{ activeRecord.image.license }}
+            </a>
+            <span v-else-if="activeRecord.image.license">{{ activeRecord.image.license }}</span>
+            <a
+              v-if="activeRecord.image.sourceUrl"
+              :href="activeRecord.image.sourceUrl"
+              target="_blank"
+              rel="noreferrer"
+            >
+              出典
+            </a>
+            <span v-if="activeRecord.image.modified !== undefined">
+              {{ activeRecord.image.modified ? '変更あり' : '変更なし' }}
+            </span>
+          </figcaption>
+        </figure>
         <p>{{ activeRecord.description }}</p>
         <dl>
           <dt>期間</dt>
