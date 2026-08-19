@@ -1372,6 +1372,107 @@
       ]
     },
     {
+      "id": "bill-evans",
+      "title": "Bill Evans",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Bill_Evans.jpg",
+        "alt": "ピアノを演奏するBill Evans",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bill_Evans.jpg",
+        "creator": "Brianmcmillen",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "modified": false
+      },
+      "category": "person",
+      "description": "繊細なタッチと和声感覚、メンバー間の対話を重視したピアノ・トリオ表現を発展させ、モード・ジャズ以降のピアニストに大きな影響を与えたアメリカの音楽家。",
+      "period": {
+        "start": {
+          "year": 1929,
+          "month": 8,
+          "day": 16
+        },
+        "end": {
+          "year": 1980,
+          "month": 9,
+          "day": 15
+        }
+      },
+      "events": [
+        {
+          "id": "bill-evans-miles-davis",
+          "date": {
+            "year": 1958
+          },
+          "title": "Miles Davisのバンドに参加",
+          "sources": [
+            {
+              "title": "Bill Evans Official Site - About",
+              "url": "https://billevansofficial.com/about/"
+            }
+          ],
+          "description": "Miles DavisのグループでJohn ColtraneやCannonball Adderleyと共演し、Davisがモードを用いた即興へ進む時期に重要な役割を担った。"
+        },
+        {
+          "id": "bill-evans-kind-of-blue",
+          "date": {
+            "year": 1959
+          },
+          "title": "Miles Davisの『Kind of Blue』に参加",
+          "sources": [
+            {
+              "title": "Bill Evans Official Site - About",
+              "url": "https://billevansofficial.com/about/"
+            }
+          ],
+          "description": "モード・ジャズを代表する録音にピアニストとして参加し、独自の和声感覚を示した。"
+        },
+        {
+          "id": "bill-evans-trio-formed",
+          "date": {
+            "year": 1959
+          },
+          "title": "Scott LaFaro、Paul Motianとトリオを結成",
+          "sources": [
+            {
+              "title": "Bill Evans Official Site - About",
+              "url": "https://billevansofficial.com/about/"
+            }
+          ],
+          "description": "ピアノ、ベース、ドラムが対等に応答する集団即興的なトリオ表現を発展させ、後世のピアノ・トリオに大きな影響を与えた。"
+        },
+        {
+          "id": "bill-evans-village-vanguard",
+          "date": {
+            "year": 1961,
+            "month": 6,
+            "day": 25
+          },
+          "title": "Village Vanguard公演を録音",
+          "sources": [
+            {
+              "title": "Library of Congress - The Complete Village Vanguard Recordings, 1961",
+              "url": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Complete-Village-Vanguard-Recordings_Nass.pdf"
+            },
+            {
+              "title": "Bill Evans Official Site - About",
+              "url": "https://billevansofficial.com/about/"
+            }
+          ],
+          "description": "Scott LaFaro、Paul Motianとのトリオによる演奏を録音し、『Sunday at the Village Vanguard』などとして発表された。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Bill Evans Official Site - About",
+          "url": "https://billevansofficial.com/about/"
+        },
+        {
+          "title": "GRAMMY - Bill Evans",
+          "url": "https://www.grammy.com/artists/bill-evans/9689/"
+        }
+      ]
+    },
+    {
       "id": "modal-jazz",
       "title": "モード・ジャズ",
       "category": "movement",
@@ -1838,6 +1939,109 @@
       ]
     },
     {
+      "id": "jaco-pastorius",
+      "title": "Jaco Pastorius",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Jaco_Pastorius_with_bass_1980.jpg",
+        "alt": "1980年にエレクトリックベースを演奏するJaco Pastorius",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jaco_Pastorius_with_bass_1980.jpg",
+        "creator": "Chris Hakkens",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "modified": false
+      },
+      "category": "person",
+      "description": "フレットレス・エレクトリックベースの歌うような音色、ハーモニクス、俊敏な即興を前面に押し出し、ジャズ・フュージョンにおけるベースの役割を大きく変えたアメリカの音楽家。",
+      "period": {
+        "start": {
+          "year": 1951,
+          "month": 12,
+          "day": 1
+        },
+        "end": {
+          "year": 1987,
+          "month": 9,
+          "day": 21
+        }
+      },
+      "events": [
+        {
+          "id": "jaco-pastorius-solo-debut",
+          "date": {
+            "year": 1976
+          },
+          "title": "ソロ・アルバム『Jaco Pastorius』を発表",
+          "sources": [
+            {
+              "title": "Jaco Pastorius Official Site - The Life of Jaco",
+              "url": "https://jacopastorius.com/life/"
+            },
+            {
+              "title": "Jaco Pastorius Official Site - Jaco Pastorius",
+              "url": "https://jacopastorius.com/music/jaco-pastorius/"
+            }
+          ],
+          "description": "ハーモニクスを生かした「Portrait of Tracy」などを収録し、エレクトリックベースを独奏楽器として強く印象付けた。"
+        },
+        {
+          "id": "jaco-pastorius-weather-report",
+          "date": {
+            "year": 1976
+          },
+          "title": "Weather Reportに加入",
+          "sources": [
+            {
+              "title": "Jaco Pastorius Official Site - The Life of Jaco",
+              "url": "https://jacopastorius.com/life/"
+            },
+            {
+              "title": "Sony Music - Jaco Pastorius Profile",
+              "url": "https://www.sonymusic.co.jp/artist/JacoPastorius/profile/"
+            }
+          ],
+          "description": "『Black Market』の2曲に参加した後に正式加入し、作曲、演奏、共同プロデュースを通じてグループのサウンドを刷新した。"
+        },
+        {
+          "id": "jaco-pastorius-heavy-weather",
+          "date": {
+            "year": 1977
+          },
+          "title": "Weather Reportの『Heavy Weather』に参加",
+          "sources": [
+            {
+              "title": "Jaco Pastorius Official Site - Heavy Weather",
+              "url": "https://jacopastorius.com/music/heavy-weather/"
+            }
+          ],
+          "description": "共同リーダーとして演奏と制作に参加し、自作曲「Teen Town」ではベースとドラムを担当した。"
+        },
+        {
+          "id": "jaco-pastorius-word-of-mouth",
+          "date": {
+            "year": 1981
+          },
+          "title": "『Word of Mouth』を発表",
+          "sources": [
+            {
+              "title": "Jaco Pastorius Official Site - The Life of Jaco",
+              "url": "https://jacopastorius.com/life/"
+            }
+          ],
+          "description": "ビッグバンド的な編成と緻密な作編曲を組み合わせ、ソロ・アーティストとしての音楽性を広げた。"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Jaco Pastorius Official Site - The Life of Jaco",
+          "url": "https://jacopastorius.com/life/"
+        },
+        {
+          "title": "Sony Music - Jaco Pastorius Profile",
+          "url": "https://www.sonymusic.co.jp/artist/JacoPastorius/profile/"
+        }
+      ]
+    },
+    {
       "id": "weather-report",
       "title": "Weather Report",
       "image": {
@@ -2256,6 +2460,7 @@
         "miles-davis",
         "hard-bop",
         "art-blakey",
+        "bill-evans",
         "modal-jazz"
       ]
     },
@@ -2278,6 +2483,7 @@
         "miles-davis",
         "herbie-hancock",
         "jazz-fusion",
+        "jaco-pastorius",
         "weather-report",
         "chick-corea",
         "wynton-marsalis",
