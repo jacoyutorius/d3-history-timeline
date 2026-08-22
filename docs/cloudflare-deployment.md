@@ -4,7 +4,7 @@
 
 このアプリはサーバー処理を持たないVue 3製SPAとして、Cloudflare Workers Static Assetsへ配信する。Cloudflareが新規の静的サイトとSPAに推奨しているWorkers Static Assetsを使用し、Pagesは使用しない。
 
-GitHub連携にはWorkers Buildsを使用する。`main`への更新を本番デプロイ、その他のブランチとプルリクエストをプレビュー用バージョンとして扱う。
+GitHub連携にはGitHub Actionsを使用し、`main`への更新を本番デプロイする。デプロイ前にlint、単体テスト、型検査、本番ビルドを実行する。
 
 Vue RouterはHTML5 Historyモードを使用している。`wrangler.jsonc`の`assets.not_found_handling`に`single-page-application`を指定し、`/about`や`/disclaimer`を直接開いた場合も`index.html`へフォールバックさせる。
 
@@ -26,31 +26,29 @@ Vue RouterはHTML5 Historyモードを使用している。`wrangler.jsonc`の`a
 
 Worker名はCloudflare Dashboard上のプロジェクト名と一致させる。アカウント固有のIDやAPIトークンは設定ファイルへ記録しない。
 
-## Workers Buildsの設定
+## GitHub Actionsの設定
 
-Cloudflare Dashboardの「Workers & Pages」から「Import a repository」を選び、GitHubの`jacoyutorius/d3-history-timeline`を接続する。
+`.github/workflows/deploy.yml`が`main`へのpushを検知し、Cloudflare公式のWrangler Actionでデプロイする。
 
-| 項目 | 値 |
+GitHubリポジトリの「Settings」→「Secrets and variables」→「Actions」に、次のRepository secretsを登録する。
+
+| Secret | 値 |
 | --- | --- |
-| Worker name | `d3-history-timeline` |
-| Production branch | `main` |
-| Build command | `npm run build` |
-| Deploy command | `npx wrangler deploy` |
-| Non-production branch deploy command | `npx wrangler versions upload` |
-| Root directory | `/`（未指定） |
+| `CLOUDFLARE_ACCOUNT_ID` | デプロイ先CloudflareアカウントのID |
+| `CLOUDFLARE_API_TOKEN` | 対象アカウントへ限定したWorkers編集用APIトークン |
 
-Node.jsは`.node-version`により24系を使用する。Dashboardで上書きする場合は、ProductionとPreviewの両方にビルド変数`NODE_VERSION=24`を設定する。
+APIトークンはCloudflare Dashboardの「API Tokens」で「Edit Cloudflare Workers」テンプレートから作成し、対象アカウントだけへスコープを限定する。値をリポジトリ内へ記録しない。
 
-本番ブランチではビルド後に新しいバージョンを有効化する。その他のブランチではバージョンをアップロードするだけに留め、プレビューURLで確認してから`main`へマージする。
+Node.jsは`.node-version`により24系を使用する。同じコミットから複数の実行が重なった場合も本番デプロイを途中でキャンセルしない。
 
 ## 環境変数
 
-APIを使用しない場合、追加設定は不要で、アプリは同梱データを利用する。外部APIを使用する場合は、ProductionとPreviewそれぞれのビルド変数に次を設定する。
+APIを使用しない場合、追加設定は不要で、アプリは同梱データを利用する。外部APIを使用する場合は、GitHub ActionsのRepository variablesに次を設定する。
 
 - `VITE_HISTORY_API_URL`：新スキーマの履歴配列を返すURL
 - `VITE_SAMPLE_API_URL`：新スキーマのサンプル配列を返すURL
 
-`VITE_`で始まる値はViteのビルド成果物へ埋め込まれ、ブラウザから参照できる。APIトークンなどの秘密情報は設定しないこと。Workerの実行時変数ではなく、ビルド時に参照できるBuild variablesへ設定する。
+`VITE_`で始まる値はViteのビルド成果物へ埋め込まれ、ブラウザから参照できる。APIトークンなどの秘密情報は設定しないこと。
 
 ## デプロイ前確認
 
@@ -73,13 +71,13 @@ npm run build
 npx wrangler deploy
 ```
 
-通常の本番デプロイにはWorkers Buildsを使用し、手動デプロイは初期設定や障害対応に限定する。
+通常の本番デプロイにはGitHub Actionsを使用し、手動デプロイは初期設定や障害対応に限定する。Cloudflare側のWorkers Buildsを併用すると二重デプロイになるため、有効化しない。
 
 ## 初回デプロイ後の確認
 
 1. 発行された`*.workers.dev`のトップページを開く。
 2. `https://<worker>.workers.dev/about`と`https://<worker>.workers.dev/disclaimer`をアドレスバーから直接開く。
-3. 非本番ブランチのプレビューURLでも同梱データと年表が表示されることを確認する。
+3. GitHub Actionsのデプロイジョブが成功していることを確認する。
 4. APIを設定した場合は、ブラウザの開発者ツールでCORSエラーがないことを確認する。
 5. GitHubの`main`へpushしたときだけ本番が更新されることを確認する。
 6. 問題がなければカスタムドメインを追加する。
@@ -93,6 +91,6 @@ Cloudflare側のキャッシュ設定はWorkers Static Assetsの既定値を使�
 ## 参考資料
 
 - [Workers Static Assets](https://developers.cloudflare.com/workers/static-assets/)
-- [Workers Builds](https://developers.cloudflare.com/workers/ci-cd/builds/)
-- [Workers Builds configuration](https://developers.cloudflare.com/workers/ci-cd/builds/configuration/)
+- [GitHub Actions](https://developers.cloudflare.com/workers/ci-cd/external-cicd/github-actions/)
+- [Wrangler GitHub Action](https://github.com/cloudflare/wrangler-action)
 - [Workers rollbacks](https://developers.cloudflare.com/workers/versions-and-deployments/rollbacks/)
