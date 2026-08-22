@@ -2,7 +2,7 @@
 
 ## プロジェクト構成とモジュール
 
-このリポジトリは、Vue 3とD3で歴史年表を可視化するVite製SPAへ移行中です。新規実装は`src/`に置き、画面は`src/views/`、型は`src/types/`、計算ロジックは`src/domain/`で管理します。`pages/`、`components/`、`layouts/`、`store/`は比較用の旧Nuxt実装です。移植対象を確認する場合を除き、新機能を追加しないでください。`api/app.rb`はローカル用のSinatraサンプルAPI、`base_html/`は初期のD3単体プロトタイプです。
+このリポジトリは、Vue 3とD3で歴史年表を可視化するVite製SPAへ移行中です。新規実装は`src/`に置き、画面は`src/views/`、型は`src/types/`、計算ロジックは`src/domain/`で管理します。`pages/`、`components/`、`layouts/`、`store/`は比較用の旧Nuxt実装です。移植対象を確認する場合を除き、新機能を追加しないでください。`base_html/`は初期のD3単体プロトタイプです。
 
 ## ビルド・テスト・開発コマンド
 
@@ -13,9 +13,6 @@
 - `npm test`：Vitestの単体テストを実行します。
 - `npm run build`：型検査後に本番用バンドルを生成します。
 - `npm run preview`：本番用バンドルをローカルで確認します。
-- `bundle install --path .bundle`：Sinatraの依存関係をローカルに導入します。
-- `bundle exec ruby api/app.rb`：サンプルAPIをポート4567で起動します。`curl localhost:4567/data`で確認できます。
-
 移行後のAPI接続先には`VITE_HISTORY_API_URL`と`VITE_SAMPLE_API_URL`を使用します。詳細は`docs/modernization-plan.md`を参照してください。
 
 ## コーディング規約と命名
@@ -26,7 +23,7 @@ VueコンポーネントはPascalCase（`HistoryForm.vue`）、ページはル�
 
 ## テスト方針
 
-単体テストにはVitestを使用し、対象ファイルと同じディレクトリに`*.test.ts`として置きます。すべての変更で`npm run lint`、`npm run typecheck`、`npm test`を通してください。年表の変更では、イベントなし、継続中のレコード（`period.end: null`）、人物と組織の混在、日本語表示を確認します。API変更では対象ルートを`curl`で呼び出し、JSONの構造を検証してください。
+単体テストにはVitestを使用し、対象ファイルと同じディレクトリに`*.test.ts`として置きます。すべての変更で`npm run lint`、`npm run typecheck`、`npm test`を通してください。年表の変更では、イベントなし、継続中のレコード（`period.end: null`）、人物と組織の混在、日本語表示を確認します。外部API接続を変更する場合は、レスポンスが現行スキーマに適合することを検証してください。
 
 ## コミットとプルリクエスト
 
